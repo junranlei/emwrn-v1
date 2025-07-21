@@ -1,0 +1,440 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>EMWRN Facsimile Viewer</title>
+	<link type="text/css" rel="stylesheet" media="all" href="viewer.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<script type="text/javascript" src="facsimileviewer.js"></script>
+
+<!-- TO DO
+
+- highlight selected thumb (and hide other highlights)
+- select the thumb and scroll to it when entering from specific link
+- layout pager and zoom
+- help
+- plus and minus for zoom
+- collapse and show the tools
+- disable image download
+- next page buttons for the manuscript
+
+-->
+
+
+
+
+</head>
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75710457-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="fviewer">
+
+
+
+
+
+<div id="head">
+	<div id="headingtools">
+		<div class="details info">
+
+ <p><strong>Author: </strong>
+			Elizabeth Delaval </p> <p><strong>Title: </strong>
+			Mrs Delaval </p> <p><strong>Material: </strong>
+			MSS </p> <p><strong>Source: </strong>
+			Bodleian MS. Rawl. D. 78  </p> <p><strong>Permissions: </strong>
+			The Bodleian Libraries, The University of Oxford, Bodleian MS. Rawl. D. 78. </p>
+</div>
+
+
+
+		<div class="details help">
+<h3>EMWRN Facsimile Viewer</h3>
+
+		<div class="details zoombox">
+<p>Zoom</p>
+<table id="zoomer" border=1><tr><td class="zoom">-</td><td><div id="slider"></div></td><td class="zoom" style="text-align: right;">+</td></tr></table>
+		</div>
+
+<p><a id="highRes">High Res</span> | <a id="lowRes">Low Res</span><br /></p>
+ <p alt="Click and drag image. Adjust the slidebar to zoom." title="Click and drag the image. Adjust the slidebar to zoom." class="helpQ"><a href="http://hri.newcastle.edu.au/emwrn/index.php?content=help">Help</a></p>
+
+		</div>
+
+		<div id="pagecontainer">
+
+			<div class="pages">
+ <a href="../delaval/img/delaval_memoirs/delaval_memoirs_000_Front%20Cover.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_000_Front%20Cover-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_000_Inside%20Front%20Cover.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_000_Inside%20Front%20Cover-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_000_i.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_000_i-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_000_ii.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_000_ii-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_000_iii.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_000_iii-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_000_iv.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_000_iv-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_000_v.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_000_v-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_000_vi.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_000_vi-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_000_vii.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_000_vii-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_001.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_001-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_002.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_002-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_003.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_003-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_004.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_004-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_005.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_005-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_006.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_006-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_007.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_007-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_008.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_008-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_009.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_009-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_010.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_010-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_011.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_011-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_012.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_012-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_013.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_013-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_014.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_014-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_015.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_015-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_016.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_016-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_017.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_017-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_018.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_018-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_019.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_019-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_020.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_020-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_021.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_021-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_022.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_022-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_023.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_023-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_024.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_024-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_025.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_025-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_026.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_026-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_027.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_027-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_028.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_028-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_029.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_029-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_030.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_030-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_031.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_031-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_032.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_032-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_033.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_033-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_034.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_034-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_035.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_035-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_036.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_036-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_037.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_037-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_038.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_038-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_039.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_039-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_040.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_040-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_041.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_041-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_042.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_042-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_043.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_043-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_044.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_044-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_045.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_045-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_046.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_046-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_047.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_047-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_048.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_048-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_049.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_049-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_050.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_050-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_051.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_051-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_052.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_052-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_053.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_053-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_054.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_054-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_055.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_055-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_056.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_056-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_057.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_057-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_058.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_058-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_059.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_059-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_060.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_060-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_061.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_061-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_062.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_062-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_063.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_063-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_064.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_064-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_065.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_065-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_066.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_066-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_067.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_067-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_068.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_068-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_069.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_069-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_070.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_070-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_071.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_071-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_072.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_072-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_073.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_073-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_074.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_074-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_075.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_075-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_076.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_076-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_077.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_077-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_078.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_078-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_079.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_079-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_080.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_080-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_081.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_081-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_082.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_082-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_083.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_083-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_084.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_084-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_085.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_085-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_086.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_086-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_087.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_087-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_088.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_088-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_089.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_089-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_090.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_090-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_091.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_091-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_092.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_092-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_093.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_093-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_094.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_094-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_095.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_095-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_096.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_096-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_097.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_097-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_098.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_098-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_099.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_099-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_100.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_100-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_101.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_101-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_102.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_102-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_103.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_103-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_104.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_104-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_106.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_106-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_107.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_107-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_108.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_108-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_109.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_109-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_110.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_110-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_111.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_111-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_112.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_112-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_113.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_113-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_114.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_114-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_115.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_115-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_116.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_116-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_117.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_117-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_118.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_118-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_119.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_119-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_120.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_120-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_121.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_121-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_122.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_122-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_123.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_123-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_124.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_124-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_125.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_125-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_126.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_126-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_127.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_127-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_128.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_128-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_129.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_129-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_130.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_130-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_131.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_131-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_132.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_132-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_133.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_133-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_134.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_134-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_135.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_135-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_136.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_136-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_137.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_137-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_138.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_138-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_139.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_139-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_140.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_140-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_141.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_141-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_142.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_142-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_143.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_143-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_144.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_144-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_145.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_145-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_146.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_146-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_147.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_147-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_148.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_148-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_149.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_149-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_150.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_150-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_151.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_151-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_152.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_152-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_153.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_153-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_154.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_154-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_155.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_155-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_156.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_156-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_157.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_157-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_158.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_158-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_159.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_159-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_160.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_160-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_161.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_161-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_162.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_162-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_163.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_163-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_164.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_164-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_165.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_165-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_166.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_166-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_167.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_167-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_168.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_168-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_169.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_169-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_170.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_170-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_171.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_171-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_172.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_172-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_173.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_173-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_174.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_174-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_175.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_175-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_176.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_176-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_177.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_177-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_178.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_178-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_179.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_179-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_180.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_180-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_181.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_181-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_182.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_182-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_183.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_183-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_184.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_184-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_185.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_185-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_186.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_186-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_187.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_187-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_188.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_188-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_189.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_189-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_190.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_190-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_191.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_191-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_192.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_192-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_193.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_193-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_194.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_194-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_195.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_195-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_196.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_196-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_197.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_197-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_198.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_198-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_199.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_199-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_200.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_200-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_201.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_201-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_202.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_202-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_203.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_203-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_204.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_204-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_205.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_205-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_206.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_206-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_207.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_207-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_208.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_208-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_209.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_209-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_210.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_210-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_211.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_211-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_212.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_212-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_213.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_213-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_214.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_214-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_215.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_215-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_216.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_216-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_217.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_217-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_218.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_218-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_219.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_219-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_220.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_220-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_221.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_221-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_222.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_222-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_223.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_223-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_224.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_224-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_225.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_225-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_226.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_226-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_227.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_227-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_228.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_228-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_229.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_229-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_230.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_230-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_231.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_231-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_232.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_232-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_233.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_233-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_234.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_234-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_235.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_235-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_236.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_236-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_237.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_237-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_238.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_238-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_239.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_239-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_240.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_240-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_241.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_241-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_242.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_242-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_243.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_243-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_244.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_244-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_245.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_245-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_246.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_246-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_247.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_247-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_248.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_248-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_249.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_249-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_250.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_250-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_251.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_251-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_252.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_252-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_253.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_253-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_254.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_254-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_255.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_255-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_256.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_256-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_257.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_257-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_258.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_258-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_259.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_259-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_260.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_260-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_261.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_261-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_262.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_262-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_263.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_263-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_264.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_264-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_265.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_265-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_266.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_266-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_267.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_267-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_268.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_268-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_269.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_269-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_270.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_270-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_271.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_271-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_272.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_272-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_273.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_273-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_274.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_274-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_275.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_275-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_276.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_276-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_277.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_277-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_278.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_278-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_279.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_279-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_280.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_280-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_281.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_281-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_282.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_282-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_283.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_283-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_284.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_284-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_285.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_285-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_286.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_286-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_287.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_287-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_288.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_288-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_289.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_289-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_290.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_290-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_291.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_291-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_292.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_292-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_293.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_293-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_294.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_294-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_295.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_295-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_296.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_296-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_297.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_297-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_298.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_298-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_299.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_299-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_300.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_300-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_301.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_301-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_302.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_302-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_303.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_303-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_304.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_304-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_305.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_305-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_306.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_306-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_307.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_307-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_308.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_308-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_309.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_309-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_310.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_310-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_311.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_311-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_312.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_312-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_313.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_313-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_314.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_314-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_315.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_315-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_316.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_316-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_317.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_317-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_318.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_318-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_319.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_319-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_320.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_320-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_321.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_321-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_322.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_322-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_323.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_323-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_324.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_324-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_325.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_325-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_326.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_326-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_327.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_327-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_328.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_328-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_329.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_329-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_330.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_330-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_331.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_331-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_332.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_332-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_333.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_333-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_999_Back%20Cover.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_999_Back%20Cover-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../delaval/img/delaval_memoirs/delaval_memoirs_999_blank%20page.jpg"><img src="../delaval/img/delaval_memoirs/delaval_memoirs_999_blank%20page-thumbnail.jpg" alt="page thumbnail" /></a>
+					</div>
+		</div>
+	</div>
+</div><!-- end head -->
+
+<div id="viewfield">
+<img id="facsimile" src="../delaval/img/delaval_memoirs/delaval_memoirs_084.jpg" />
+</div><!-- end viewfield -->
+
+
+
+
+
+<div id="leftarrow">L</div>
+<div id="rightarrow">R</div>
+
+
+</div><!-- end fviewer -->
+
+
+</body>
+</html>

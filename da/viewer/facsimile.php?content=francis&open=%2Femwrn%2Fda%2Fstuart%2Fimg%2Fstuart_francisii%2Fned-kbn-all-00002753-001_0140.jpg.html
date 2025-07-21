@@ -1,0 +1,104 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>EMWRN Facsimile Viewer</title>
+	<link type="text/css" rel="stylesheet" media="all" href="viewer.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<script type="text/javascript" src="facsimileviewer.js"></script>
+
+<!-- TO DO
+
+- highlight selected thumb (and hide other highlights)
+- select the thumb and scroll to it when entering from specific link
+- layout pager and zoom
+- help
+- plus and minus for zoom
+- collapse and show the tools
+- disable image download
+- next page buttons for the manuscript
+
+-->
+
+
+
+
+</head>
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75710457-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="fviewer">
+
+
+
+
+
+<div id="head">
+	<div id="headingtools">
+		<div class="details info">
+
+ <p><strong>Author: </strong>
+			Mary Stuart </p> <p><strong>Title: </strong>
+			Ode on the Death of Francis II </p> <p><strong>Date: </strong>
+			1665 </p> <p><strong>Material: </strong>
+			Print </p> <p><strong>Source: </strong>
+			Image from Meffire Pierre du Bourdeille, Seigneur de Brantôme, <i>Memoires de contenans Les Vies des Dames Illustres de France de son temps</i> (François Foppens, 1665), pp. 121–123. </p> <p><strong>Permissions: </strong>
+			This image is a public domain image from Archive.org 
+<a href="https://archive.org/stream/ned-kbn-all-00002753-001#page/n138/mode/2up">https://archive.org/stream/ned-kbn-all-00002753-001#page/n138/mode/2up</a>
+The original book is held at the National Library of the Netherlands, Nationale bibliotheek van Nederland.
+ </p>
+</div>
+
+
+
+		<div class="details help">
+<h3>EMWRN Facsimile Viewer</h3>
+
+		<div class="details zoombox">
+<p>Zoom</p>
+<table id="zoomer" border=1><tr><td class="zoom">-</td><td><div id="slider"></div></td><td class="zoom" style="text-align: right;">+</td></tr></table>
+		</div>
+
+<p><a id="highRes">High Res</span> | <a id="lowRes">Low Res</span><br /></p>
+ <p alt="Click and drag image. Adjust the slidebar to zoom." title="Click and drag the image. Adjust the slidebar to zoom." class="helpQ"><a href="http://hri.newcastle.edu.au/emwrn/index.php?content=help">Help</a></p>
+
+		</div>
+
+		<div id="pagecontainer">
+
+			<div class="pages">
+ <a href="../stuart/img/stuart_francisii/ned-kbn-all-00002753-001_0139.jpg"><img src="../stuart/img/stuart_francisii/ned-kbn-all-00002753-001_0139-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../stuart/img/stuart_francisii/ned-kbn-all-00002753-001_0140.jpg"><img src="../stuart/img/stuart_francisii/ned-kbn-all-00002753-001_0140-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../stuart/img/stuart_francisii/ned-kbn-all-00002753-001_0141.jpg"><img src="../stuart/img/stuart_francisii/ned-kbn-all-00002753-001_0141-thumbnail.jpg" alt="page thumbnail" /></a>
+					</div>
+		</div>
+	</div>
+</div><!-- end head -->
+
+<div id="viewfield">
+<img id="facsimile" src="../stuart/img/stuart_francisii/ned-kbn-all-00002753-001_0140.jpg" />
+</div><!-- end viewfield -->
+
+
+
+
+
+<div id="leftarrow">L</div>
+<div id="rightarrow">R</div>
+
+
+</div><!-- end fviewer -->
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>EMWRN Facsimile Viewer</title>
+	<link type="text/css" rel="stylesheet" media="all" href="viewer.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<script type="text/javascript" src="facsimileviewer.js"></script>
+
+<!-- TO DO
+
+- highlight selected thumb (and hide other highlights)
+- select the thumb and scroll to it when entering from specific link
+- layout pager and zoom
+- help
+- plus and minus for zoom
+- collapse and show the tools
+- disable image download
+- next page buttons for the manuscript
+
+-->
+
+
+
+
+</head>
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75710457-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="fviewer">
+
+
+
+
+
+<div id="head">
+	<div id="headingtools">
+		<div class="details info">
+
+ <p><strong>Author: </strong>
+			Mary Stuart </p> <p><strong>Title: </strong>
+			Meditation on the Inconstancy and Vanity of the World, Sonnet “L’ire de Dieu” and Poem “A L’Evesque de Rosse” </p> <p><strong>Material: </strong>
+			Print </p> <p><strong>Source: </strong>
+			John Leslie, Bishop of Ross, ‘Piae Afflicti Animi Consolationes Divinaeque Remedia’, in <i>Libri Duo: Quorum vno, Piae Afflicti Animi Consolationes, diuinaque remedia: Altero, Animi Tranqvilli Mvnimentum et conservatio, continentur</i> (London: Petri l’Huillier, 1574), 39-42. 
+<br />Gustave Pawlowski, <i>Poésies Françaises de la Reine Marie Stuart</i>  (Paris, 1883), p.16. </p> <p><strong>Permissions: </strong>
+			© The British Library Board. All Rights Reserved. General Reference Collection .22.(1.) 38v-42r. </p>
+</div>
+
+
+
+		<div class="details help">
+<h3>EMWRN Facsimile Viewer</h3>
+
+		<div class="details zoombox">
+<p>Zoom</p>
+<table id="zoomer" border=1><tr><td class="zoom">-</td><td><div id="slider"></div></td><td class="zoom" style="text-align: right;">+</td></tr></table>
+		</div>
+
+<p><a id="highRes">High Res</span> | <a id="lowRes">Low Res</span><br /></p>
+ <p alt="Click and drag image. Adjust the slidebar to zoom." title="Click and drag the image. Adjust the slidebar to zoom." class="helpQ"><a href="http://hri.newcastle.edu.au/emwrn/index.php?content=help">Help</a></p>
+
+		</div>
+
+		<div id="pagecontainer">
+
+			<div class="pages">
+ <a href="../stuart/img/stuart_meditation/stuart_meditation_38v.jpg"><img src="../stuart/img/stuart_meditation/stuart_meditation_38v-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../stuart/img/stuart_meditation/stuart_meditation_39r.jpg"><img src="../stuart/img/stuart_meditation/stuart_meditation_39r-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../stuart/img/stuart_meditation/stuart_meditation_39v.jpg"><img src="../stuart/img/stuart_meditation/stuart_meditation_39v-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../stuart/img/stuart_meditation/stuart_meditation_40r.jpg"><img src="../stuart/img/stuart_meditation/stuart_meditation_40r-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../stuart/img/stuart_meditation/stuart_meditation_40v.jpg"><img src="../stuart/img/stuart_meditation/stuart_meditation_40v-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../stuart/img/stuart_meditation/stuart_meditation_41r.jpg"><img src="../stuart/img/stuart_meditation/stuart_meditation_41r-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../stuart/img/stuart_meditation/stuart_meditation_41v.jpg"><img src="../stuart/img/stuart_meditation/stuart_meditation_41v-thumbnail.jpg" alt="page thumbnail" /></a>
+		 <a href="../stuart/img/stuart_meditation/stuart_meditation_42r.jpg"><img src="../stuart/img/stuart_meditation/stuart_meditation_42r-thumbnail.jpg" alt="page thumbnail" /></a>
+					</div>
+		</div>
+	</div>
+</div><!-- end head -->
+
+<div id="viewfield">
+<img id="facsimile" src="../stuart/img/stuart_meditation/stuart_meditation_42r.jpg" />
+</div><!-- end viewfield -->
+
+
+
+
+
+<div id="leftarrow">L</div>
+<div id="rightarrow">R</div>
+
+
+</div><!-- end fviewer -->
+
+
+</body>
+</html>

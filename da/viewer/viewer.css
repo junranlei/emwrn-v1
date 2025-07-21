@@ -1,0 +1,139 @@
+body {
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	color: white;
+	background-color: #000000;
+}
+div {
+	border-width: 1px;
+	border-color: red;
+	border-style: none;
+}
+
+#fviewer {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	padding: 0px;
+	margin: 0px;
+	z-index: 800;
+	display: block;
+	margin-top: 194px;
+}
+
+#head {
+	/* seems this won't stay in front of the dragged image unless it's absolute */
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+	width: 100%;
+	z-index: 20001;
+      background-color: #444444;
+	opacity: 0.8;
+}
+
+#headingtools {
+	width: 100%;
+	border: none;
+	z-index: 20001;
+}
+.details {
+	width: 20%;
+	line-height: 1;
+	padding: 2px;
+}
+.details p {
+	margin: 0px;
+}
+.help {
+	text-align: right;
+}
+
+#zoomer {
+	width: 100%;
+	border: none;
+}
+
+#zoomer td {
+	border: none;
+}
+
+.zoom {
+	border: none;
+	width: 20px;
+	padding: 0px 5px 0px 5px;
+}
+
+
+#leftarrow {
+float:left;
+color: white:
+}
+
+#rightarrow {
+float:right;
+color: white;
+}
+
+#pagecontainer {
+	display: block;
+	width: 100%;
+	height: 120px;
+	z-index: 20000;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space:nowrap;
+	margin: 0px;
+	padding: 0px;
+}
+
+.pages {
+	display: inline;
+	height: 100px; /* height: 256px; */
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+.pages img {
+	margin: 2px;
+	height: 100px;
+}
+
+a {
+	color: white;
+}
+
+#details h2, h3, p, a {
+	font-size: 10pt;
+}
+
+#head h3{
+	font-family: 'Quattrocento', "Baskerville Old Face", Baskerville, Garamond, Perpetua, serif;
+	text-align:right;
+	font-variant:small-caps;
+	letter-spacing: 0.3em;
+	color: #ec1f1f;
+}
+
+.info {
+	display: inline;
+	float: left;
+	width: 30%;
+	min-width: 50px;
+}
+.zoombox {
+	display: inline;
+	width: 70%;
+	float: left;
+	min-width: 50px;
+}
+.help {
+	display: inline;
+	float: right;
+	width: 67%;
+	min-width: 50px;
+}
+#facsimile {
+	z-index: 3;
+}
