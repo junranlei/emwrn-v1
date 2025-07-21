@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../tweetie/tweetie.js%3F1747311468"></script>
+	<script src="../scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=brucelyrics&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="../index.html"><img src="../img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li class="has-child"><a href="../digitalarchive.html">Digital Archive</a><ul><li><a href="../bradstreet.html">Anne Bradstreet</a></li><li><a href="../elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="../maryjacob.html">Mary Jacob</a></li><li><a href="../elizabethmelville.html">Elizabeth Melville</a></li><li><a href="../lucyrussell.html">Lucy Russell</a></li><li><a href="../marystuart.html">Mary Stuart</a></li><li><a href="../marywroth.html">Mary Wroth</a></li><li><a href="../techno.html">Technical Note</a></li></ul></li><li><a href="../conferences.html">Conferences</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../grants.html">Grants, Linkages & Fellowships</a></li><li><a href="../resources.html">Resources</a></li><li><a href="../networkaffiliates.html">Network Affiliates</a></li><li><a href="../contacts.html">Contacts</a></li><li><a href="../help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="../digitalarchive.html">Digital Archive</a></li><li><a href="../elizabethmelville.html">Elizabeth Melville</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="13" class="authorheading">Elizabeth Melville</h2><h3>Bruce manuscript lyrics</h3><p><strong>Contributor:</strong> <a href="http://www.victoria.ac.nz/seftms/about/staff/sarah-ross">Associate Professor Sarah Ross</a></p><p><strong>Material:</strong> MSS</p><p><strong>Description:</strong> Other MS contents: Robert Bruce, 29 unpublished sermons on Hebrews XI, preached at St Giles, Edinburgh, in late 1590 and spring 1591.
+  Editorial assistance provided by Anna Plumridge. See also,
+<a href="http://www.dsl.ac.uk">Dictionary of the Scots Language</a>.</p><p><strong>Source:</strong> New College Library, Edinburgh University, MS Bru 2, p. 170</p><p><strong>Permissions:</strong> Edinburgh University Library. Reproduced with permission.</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 13 da brucelyrics">
+                                <script type="text/javascript" src="../scripts/concertinaColumns.js"></script>
+  
+
+  <div class="digarch">
+  
+  <!-- C O N T E N T -->
+  <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+  <!-- APMS: End Header Start Content -->
+  
+  <!-- Body inserted here. -->
+  
+    <form action="https://c21ch.newcastle.edu.au/search.html" method="get">
+      <div id="search">
+        <p>Select versions to display:<br />
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription
+       	<br /><br />
+        <!-- <input name="checkbox" type="checkbox" value="checkbox"
+        	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+        	-->
+      </div>
+    </form>	
+  
+  
+  <div>
+  <table class="content" id="general">
+  <tr class="shade">
+  	<th style="min-width: 200px;">Images</th>
+  	<th style="min-width: 380px;">Transcription</th>
+  </tr>
+  <tr>
+  <td>
+  <p>
+      <a href="melville/img/melville_bruce/melville_bruce.jpg">
+      <img src="melville/img/melville_bruce/melville_bruce-lowres.jpg" alt="Page of Melville manuscript." /></a>
+  </p>
+  
+  </td>
+  <td>
+  <div class="indent">
+     <p><strong>1.</strong></p>	
+          <div class="indent">
+               <p>Ane Anagram</p>
+               <div class="indent">
+               <p>
+               SOB Sille COR
+               </p>
+               </div>
+          </div>
+</div>
+                    <p>
+                         Sob sille cor* <span class="strike">and grone</span> since lyke ane pilgrime pure
+</p><p>
+Thow livis below and can not sie thy love
+</p><p>
+Och wounded hairt quho* sall thy seiknes cure
+</p><p>
+Sin hes thee slaine thow braithis* to be aboue
+</p><p>
+och sorrowing saull that murnis and wold remove
+</p><p>
+Braik throw those bondis assay* thy self and flie
+</p><p>
+That efter paine those pleasuris thou may prove*
+</p><p>
+that in his word that prince hes promis’d thee
+</p><p>
+Chryst is thy King, none hes thy hairt bot he 
+</p><p>
+He is not heir then lerne for to lament 
+</p><p>
+pearce throw those cludis* and seik vntill thou sie
+</p><p>
+that sicht so sweit that sall thy saull content
+</p><p>
+Heir is thy hell and sin assaillis thee sore
+</p><p>
+sob sille cor and grone to sie that glore
+</p><p>
+     <strong>Anagram:</strong> The phrase <i>Sob sille cor</i>, occurring in lines 1 and 14, is an anagram of <i>Isbel Colros</i>. Isobel is an attested variation of Elizabeth in Scottish texts (Reid Baxter).
+</p><p>
+     <strong>sille, silie</strong>  foolish; cor  heart 
+</p><p>
+     <strong>quho</strong>  who 
+</p><p>
+     <strong>braithis</strong>  breathes
+</p><p>
+     <strong>assay</strong>  test, try one’s strength
+</p><p>
+     <strong>prove</strong>  undergo, enjoy
+</p><p>
+     <strong>cludis</strong>  clouds
+</p>
+
+     <div class="indent">
+<p><strong>2.</strong>	
+</p>
+          </div>
+<p>
+In hope to sie the sicht that thou desyris
+</p><p>
+     Some courage tak tho clogged heir w<sup>t</sup> clay
+</p><p>
+Aboue the cludis thy soaring saull asspyris*
+</p><p>
+Bot be content a litill tyme to stay
+</p><p>
+End out thy ficht then sall thou sie that day
+</p><p>
+Long luikit* for, then sall thy sorrow ceace
+</p><p>
+Licht, lyfe, and love sall dryve thy dumpis away
+</p><p>
+     Chryst sall the[e] croun w<sup>t</sup> gladnes glore and grace
+</p><p>
+o then be still and clive* to chryst thy scheild
+</p><p>
+Rejoyce thy fill for faith sall win the feild
+</p><p>
+     <i><strong>This dixain operates as an anagram on the name ISABELL COR.</strong></i>
+</p><p>
+     <strong>asspyris</strong>  aspires 
+</p><p>
+     <strong>luke, luik</strong>  to look
+</p><p>
+     <strong>clive</strong>  cleave
+</p>
+     <div class="indent">
+          <p>
+<strong>3.</strong>	
+</p>
+          </div>
+     <p>
+O Pilgrime pure quhat mervell* tho thou murne
+</p><p>
+Thy deirest spous hes now forsaikin thee
+</p><p>
+Tho thou intreat yit will he not returne
+</p><p>
+The more thou murnis the faster doth he flie
+</p><p>
+Thow plungit, art into perplexitie
+</p><p>
+most lyke ane wofull widow* left alone
+</p><p>
+Thow seimis to live yit dois thow daylie die
+</p><p>
+Quhat* hope of helth since inward joy is gone
+</p>
+     <div class="indent">
+          <p>
+O hardnit* hairt live still in peirles* paine
+</p><p>
+and vaill* for wo till he returne again
+</p>
+     </div>
+     <p>
+           
+</p><p>
+O Loyall love quhy linger I so long 
+</p><p>
+O faithfull freind art thow becum my fo
+</p><p>
+In siching* sore now chainged is my song
+</p><p>
+my greivous grones ar hard quhair evir* I go
+</p><p>
+Wilt thow foirsaik thy simple servand so 
+</p><p>
+that hes so oft thy favour felt befoir
+</p><p>
+O hardnit hairt will thow not burst in two
+</p><p>
+Och will thy wraith be kendled* evirmore
+</p>
+     <div class="indent">
+          <p>
+O siching saull live &c
+</p>
+          </div>
+     <p>
+ 
+</p><p>
+My eyis ar dim my feible hairt is fant
+</p><p>
+my braith is spent my throt is hoars and dry
+</p><p>
+The rockis resound at my most pitious plaint
+</p><p>
+Yit heiris thow not thy captivis cairfull* cry
+</p><p>
+Thy promeis sweit thow nevir can deny
+</p><p>
+Wilt thow foirsaik the hevie humble hairt
+</p><p>
+Tho for for a tyme tholl do thy childrein try 
+</p><p>
+With frowning face yit will thow not depairt
+</p>
+     <div class="indent">
+          <p>
+O hevie hairt live still &c
+</p>
+          </div><p>
+ 
+</p><p>
+Tho thou me slay yit will I in thee trust
+</p><p>
+for thow can rais me from the lowest grave
+</p><p>
+Thou art almichtie mercifull and just
+</p><p>
+and siching saull yit did thou nevir leave
+</p><p>
+my humbell sute* mak haist for to receave
+</p><p>
+Thy holie spirit yit once againe restore
+</p><p>
+No gold nor gude* nor worldlie welth I crave
+</p><p>
+Give me thy self and I desyre no more
+</p>
+     <div class="indent">
+          <p>
+O siching saull live still &c
+</p>
+          </div>
+     <p>
+ 
+</p><p>
+Remember on thy worthie word so sweit
+</p><p>
+Come vnto me all ye with paine opprest
+</p><p>
+I sall refresche your faint and feble spirit
+</p><p>
+Learne to be meik then sall yo<sup>r</sup> saull find rest
+</p>
+     <div class="indent">
+          <p>
+     [<i>continues</i>]
+</p>
+          </div>
+     <p>
+ 
+</p><p>
+     <strong>mervell</strong>  a miracle
+</p><p>
+     <strong>wedow</strong>  widow
+</p><p>
+     <strong>quhat</strong>  what 
+</p><p>
+     <strong>hardnit</strong>  hardened; <strong>peirles</strong>  unequalled 
+</p><p>
+     <strong>vaill</strong>  to utter cries of grief
+</p><p>
+     <strong>siching</strong>  sighing 
+</p><p>
+     <strong>quhair evir</strong>  wherever 
+</p><p>
+     <strong>kendle</strong>  to ignite, to kindle 
+</p><p>
+     <strong>cairfull</strong>  anxious 
+</p><p>
+     <strong>sute</strong>  suit, supplication 
+</p><p>
+     <strong>gude</strong>  possessions, goods 
+</p>
+  </td>
+  </tr>
+  
+  </table>
+  
+
+  
+  	</div>
+
+</div>
+                              </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

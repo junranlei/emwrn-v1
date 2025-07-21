@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../tweetie/tweetie.js%3F1747311468"></script>
+	<script src="../scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=fotheringay&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="../index.html"><img src="../img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li class="has-child"><a href="../digitalarchive.html">Digital Archive</a><ul><li><a href="../bradstreet.html">Anne Bradstreet</a></li><li><a href="../elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="../maryjacob.html">Mary Jacob</a></li><li><a href="../elizabethmelville.html">Elizabeth Melville</a></li><li><a href="../lucyrussell.html">Lucy Russell</a></li><li><a href="../marystuart.html">Mary Stuart</a></li><li><a href="../marywroth.html">Mary Wroth</a></li><li><a href="../techno.html">Technical Note</a></li></ul></li><li><a href="../conferences.html">Conferences</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../grants.html">Grants, Linkages & Fellowships</a></li><li><a href="../resources.html">Resources</a></li><li><a href="../networkaffiliates.html">Network Affiliates</a></li><li><a href="../contacts.html">Contacts</a></li><li><a href="../help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="../digitalarchive.html">Digital Archive</a></li><li><a href="../marystuart.html">Mary Stuart</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="14" class="authorheading">Mary Stuart</h2><h3>Sonnet written at Fotheringay Castle</h3><p><strong>Contributor:</strong> <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a></p><p><strong>Date:</strong> 1587</p><p><strong>Material:</strong> MSS</p><p><strong>Source:</strong> The Bodleian Libraries, The University of Oxford, MS. Add c. 92, fol.24r.</p><p><strong>Permissions:</strong> The Bodleian Libraries, The University of Oxford. </p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 14 da fotheringay">
+                                  <script type="text/javascript" src="../scripts/concertinaColumns.js"></script>
+  
+
+  <div class="digarch">
+  
+  <!-- C O N T E N T -->
+  <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+  <!-- APMS: End Header Start Content -->
+  
+  <!-- Body inserted here. -->
+  
+
+      <div id="search">
+        <p>Select versions to display:<br />
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription 
+		<input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 2);" /> Translation
+       	<br /><br />
+        <!-- <input name="checkbox" type="checkbox" value="checkbox"
+        	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+        	-->
+      </div>
+
+  
+  
+  <div>
+  
+  
+  
+  
+    <table class="content" id="general">
+  <tr class="shade">
+  	<th style="min-width: 200px;">Images</th>
+  	<th style="min-width: 380px;">Transcription</th>
+	<th style="min-width: 380px;">Translation</th>
+  </tr>
+
+<tr>
+<td>
+  <p> </p>
+<a href="stuart/img/stuart_fotheringay/bab0003.jpg"><img src="stuart/img/stuart_fotheringay/bab0003-lowres.jpg" alt="manuscript" /></a>
+</td><td>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+Que suis ie helas et de quoy sert ma vie
+</p><p>
+Je n suis fois qun corps priue de cueur
+</p><p>
+vn ombre vayn vn obiect de mal heur
+</p><p>
+Qui na plus rien que de mourir enuie
+</p><p>
+Plus ne portez o enemis danuie
+</p><p>
+a qui na plus lesprit a la grandeur
+</p><p>
+Ja consomme dexsessiue doulleur
+</p><p>
+Vottre ire en brief ce voirr assouie
+</p><p>
+Et vous amys qui mauez temi  chere
+</p><p>
+Souuenez vous que sans heur sans santay
+</p><p>
+Je ne scaurois au dun bon oeuure fayre
+</p><p>
+Souhatez donc fin de calamitay
+</p><p>
+Et que sa bas estant asses punie
+</p><p>
+Jaye mapart en la ioye infinie
+</p>
+
+
+
+</td><td>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+What am I, Alas, and what use is my life?
+</p><p>
+I am at once only a body deprived of a heart,
+</p><p>
+A vain shadow, an object of misfortune
+</p><p>
+Who no longer has anything in life, but to die.
+</p><p>
+No longer, O enemies, be envious
+</p><p>
+Of one who no longer has the disposition for greatness,
+</p><p>
+Being consumed with extreme sorrow.
+</p><p>
+Your anger, in brief, finds me abandoned.
+</p><p>
+And you, friends, who have been so dear to me,
+</p><p>
+Consider that, without luck, distressed,
+</p><p>
+I am not capable of doing anything good,
+</p><p>
+And so wish for an end to my calamity,
+</p><p>
+And that, having been punished enough here,
+</p><p>
+I may have a share in everlasting joy.
+</p>
+
+</td>
+</tr>
+
+</table>
+  
+
+  
+  	</div>
+  </div>
+  
+  
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

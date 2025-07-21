@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../tweetie/tweetie.js%3F1747311468"></script>
+	<script src="../scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=toqueenelizabeth&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="../index.html"><img src="../img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li class="has-child"><a href="../digitalarchive.html">Digital Archive</a><ul><li><a href="../bradstreet.html">Anne Bradstreet</a></li><li><a href="../elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="../maryjacob.html">Mary Jacob</a></li><li><a href="../elizabethmelville.html">Elizabeth Melville</a></li><li><a href="../lucyrussell.html">Lucy Russell</a></li><li><a href="../marystuart.html">Mary Stuart</a></li><li><a href="../marywroth.html">Mary Wroth</a></li><li><a href="../techno.html">Technical Note</a></li></ul></li><li><a href="../conferences.html">Conferences</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../grants.html">Grants, Linkages & Fellowships</a></li><li><a href="../resources.html">Resources</a></li><li><a href="../networkaffiliates.html">Network Affiliates</a></li><li><a href="../contacts.html">Contacts</a></li><li><a href="../help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="../digitalarchive.html">Digital Archive</a></li><li><a href="../marystuart.html">Mary Stuart</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="14" class="authorheading">Mary Stuart</h2><h3>Sonnet to Elizabeth I, in Italian and French</h3><p><strong>Contributor:</strong> <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a></p><p><strong>Date:</strong> 1568</p><p><strong>Material:</strong> MSS</p><p><strong>Source:</strong> British Library. Cotton Collection. Caligula BV fol. 316.</p><p><strong>Permissions:</strong> © The British Library Board. All Rights Reserved. Cotton Collection, Caligula BV fol. 316.</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 14 da toqueenelizabeth">
+                                  <script type="text/javascript" src="../scripts/concertinaColumns.js"></script>
+  
+
+  <div class="digarch">
+  
+  <!-- C O N T E N T -->
+  <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+  <!-- APMS: End Header Start Content -->
+  
+  <!-- Body inserted here. -->
+  
+
+      <div id="search">
+        <p>Select versions to display:<br />
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Italian Transcription [verso]
+		<input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 3);" /> Italian Translation
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 2);" /> French Transcription [recto]
+       	<input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 3);" /> French Translation
+        <br /><br />
+        <!-- <input name="checkbox" type="checkbox" value="checkbox"
+        	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+        	-->
+      </div>
+
+  
+  
+  <div>
+  
+  
+  
+  
+    <table class="content" id="general" >
+  <tr class="shade">
+  	<th style="min-width: 200px;">Images</th>
+  	<th style="min-width: 380px;">Italian [verso]</th>
+    <th style="min-width: 380px;">Italian Translation</th>
+  	<th style="min-width: 380px;">French [recto]</th>
+    <th style="min-width: 380px;">French Translation</th>
+  </tr>
+
+<tr>
+<td>
+  <p> </p>
+<a href="stuart/img/stuart_toqe/SonnettoQEFrItM00008-53.jpg"><img src="stuart/img/stuart_toqe/SonnettoQEFrItM00008-53-lowres.jpg" alt="manuscript" /></a>
+</td><td>
+<p> </p>
+<p> </p>
+<p>
+Il pensier che mi nuoce insieme e giova
+</p><p>
+Amaro e dolce al mio cor cangia spesso
+</p><p>
+E fra tema e speranza lo tien’ si oppresso
+</p><p>
+Che la quiette pace unque no[n] troua
+</p><p>
+ 
+</p><p>
+Pero’, se questa carta à uoi rinuoua
+</p><p>
+Il bel disio di uederui in me impresso
+</p><p>
+Cio fa il grand’ affauno ch’m ‘se stesso
+</p><p>
+Ha, non puotendo homai da se far proua
+</p><p>
+ 
+</p><p>
+Ho ueduto talbor uicino al porto
+</p><p>
+Rispinger naue in mar contrario uento
+</p><p>
+E nel maggior’ seren’ turbar si il Cielo
+</p><p>
+ 
+</p><p>
+Cosi sorella chara temo e pauento
+</p><p>
+Non gia per uoi, ma quante uolte à torto
+</p><p>
+Rompe fortuna un ben’ ordito uello?
+</p>
+</td>
+
+<td>
+<p> </p>
+<p> </p>
+<p>
+The thought which at once harms and helps me
+</p><p>
+Often changing my heart from bitter to sweet 
+</p><p>
+And holds it so oppressed between fear and hope, 
+</p><p>
+That still peace is nowhere found.
+</p><p>
+ 
+</p><p>
+However if this page [addressed] to you renews
+</p><p>
+In me the good desire to see you
+</p><p>
+It will show you the deep concern that I myself 
+</p><p>
+Have, that can never show itself
+</p><p>
+ 
+</p><p>
+At times I have seen, nearing the port
+</p><p>
+A ship pushed back by contrary winds
+</p><p>
+And the most serene heaven change
+</p><p>
+ 
+</p><p>
+So, dear sister I fear and am frightened
+</p><p>
+Not for you, but how many times, unjustly,
+</p><p>
+Does fortune ruin the best laid plans?
+</p>
+
+</td>
+
+<td>
+<p> </p>
+<p> </p>
+<p>
+Vng seul penser qui me profficte et nuit
+</p><p>
+Amer et doulx change en mon cueur sans cesse
+</p><p>
+Entre le doubte et l’espoir il m’oppresse
+</p><p>
+Tant que la paix et le repos me fuit
+</p><p>
+ 
+</p><p>
+Donc, chere soeur, si ceste carte suit
+</p><p>
+L’affection de uous ueoir qui me presse;
+</p><p>
+C’est que ie uiz en peine et en tristesse
+</p><p>
+Si promptement l’effect ne s’en ensuit
+</p><p>
+ 
+</p><p>
+Jay ueu la nef relascher par contraincte
+</p><p>
+En haulte mer, proche d’entrer au port,
+</p><p>
+Et le serain se conuertir en trouble
+</p><p>
+ 
+</p><p>
+Ainsi ie suis en soucy et en craincte
+</p><p>
+Non pas de uous, mais quantes fois à tort
+</p><p>
+Fortune rompt voille et cordage double ?
+</p>
+
+</td>
+<td>
+<p> </p>
+<p> </p>
+<p>
+A single thought, that fortifies and is hurtful to me,
+</p><p>
+Bitter and sweet, changes ceaselessly in my heart,
+</p><p>
+Between doubt and hope, it oppresses me,
+</p><p>
+So much so that peace and rest fly from me.
+</p><p>
+ 
+</p><p>
+So, dear sister, if this document stresses,
+</p><p>
+Through our mutual affection, my pressing desire to see you,
+</p><p>
+It is that I live in pain and distress
+</p><p>
+The result of which ensues so swiftly.
+</p><p>
+ 
+</p><p>
+I have seen a ship disabled
+</p><p>
+On the high seas, near the harbour entrance,
+</p><p>
+And calm transform into chaos.
+</p><p>
+ 
+</p><p>
+Thus, I am anxious and fearful
+</p><p>
+Not of you, but how many times wrongly,
+</p><p>
+Fortune shreds the sail and snaps the hawser.
+</p>
+</td>
+</tr>
+
+</table>
+  
+
+  
+  	</div>
+  </div>
+  
+  
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../tweetie/tweetie.js%3F1747311468"></script>
+	<script src="../scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=stuartbio&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="../index.html"><img src="../img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li class="has-child"><a href="../digitalarchive.html">Digital Archive</a><ul><li><a href="../bradstreet.html">Anne Bradstreet</a></li><li><a href="../elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="../maryjacob.html">Mary Jacob</a></li><li><a href="../elizabethmelville.html">Elizabeth Melville</a></li><li><a href="../lucyrussell.html">Lucy Russell</a></li><li><a href="../marystuart.html">Mary Stuart</a></li><li><a href="../marywroth.html">Mary Wroth</a></li><li><a href="../techno.html">Technical Note</a></li></ul></li><li><a href="../conferences.html">Conferences</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../grants.html">Grants, Linkages & Fellowships</a></li><li><a href="../resources.html">Resources</a></li><li><a href="../networkaffiliates.html">Network Affiliates</a></li><li><a href="../contacts.html">Contacts</a></li><li><a href="../help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="../digitalarchive.html">Digital Archive</a></li><li><a href="../marystuart.html">Mary Stuart</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="14" class="authorheading">Mary Stuart</h2><h3>Biography</h3><p><strong>Contributor:</strong> <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a></p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 14 da stuartbio">
+                                <p>
+Mary Stuart (1542-1587), known as <strong>Mary, Queen of Scots</strong>, was born on 8 December 1542 in Linlithgow Palace, West Lothian, Scotland.  The third and only surviving child of King James V (1512-1542) and Mary of Guise (1515-1560), Mary was only six days old when her father died on 14 December 1542, leaving her to be crowned, as an infant, queen regent of Scotland.  James’ death and Mary’s succession came at a time of crisis for Scotland, resulting in Mary inheriting a kingdom at war with England.
+</p><p>In the weeks before her birth, the Scottish armies suffered a humiliating defeat by the English at the Battle of Solway Moss, and further religious strife with England continued throughout Mary’s childhood.  Adding to this tension was Mary’s credible claim to the English throne.  A great-niece of Henry VIII and a great-granddaughter of Henry VII, Mary posed a potential threat to the English succession, which led Henry VIII to seek an agreement from the Scots that would secure Mary to his son Edward VI in marriage through the Treaty of Greenwich.  Although initially accepted, this proposal was later renounced by the Scots. In retaliation, Henry waged a war on Scotland known as The Rough Wooing, in which his soldiers burned and looted in a series of invasions designed to force the Scots to adhere to the terms of the treaty.
+</p><p>During this time, Mary was kept under constant protection and remained in the company of her mother for fear that she would be abducted and removed to England.  On 7 July 1548, the Scottish Parliament approved an arrangement in which Mary would be betrothed to François II (1544-1560), Dauphin of France, in exchange for French assistance against the English. Shortly after, Mary set sail for France, where she was to be brought up at the French court in preparation for her future marriage.  She was accompanied by an entourage which included her aunt, Lady Fleming, her nurse, Jean Sinclair, and the four ‘Queen’s Maries’ – girls of a similar age who became her maids-of-honour: Mary Fleming, Mary Seton, Mary Livingston and Mary Beaton.  At a succession of royal residences in France, Mary Stuart, alongside the French royal children, received a humanist education with instruction in Latin, Greek, Italian, Spanish and French, with Mary showing particular talent in music, dancing, singing, needlework and horsemanship.  Her education also served to ensure her that she knew her place within the palace hierarchy.  Retha M. Warnicke describes the way in which “[t]he children assembled daily in the nursery’s great hall to pay homage to the dauphin and his betrothed as their social superiors”.<a href="index.php%3Fcontent=stuartbio.html#f1" class="foot">1</a> Rosalind K. Marshall comments on the fact that her French relations from the Guise family, eager to assure the marriage between their relative and the dauphin actually went ahead, “constantly emphasised to her, and to everyone else, that she was not merely a foreign princess but a queen in her own right”.<a href="index.php%3Fcontent=stuartbio.html#f2" class="foot">2</a> Mary’s early training was to have a significant impact on her understanding of herself; in her own mind she was above all, a Queen, and this position is reflected in her poetry as well as in her letters and speeches.
+</p><p>On 24 April 1558, at the age of 15, Mary married François, Dauphin of France at Notre Dame Cathedral in Paris.  Three weeks previous to her marriage, she signed a set of secret documents bequeathing her Scottish throne to the French if she were to die childless, along with her claim to the throne of England. In addition to this, the French king would have all the Scottish crown revenues until his debts incurred through military support for the Scots and in bringing up Mary were repaid.  A final document gave assurances that these documents were legal and could not be overturned by past or future agreements, cementing the Scottish and French alliance against England.  Later that same year on 17 November, Elizabeth I (1533-1603) became Queen of England, but the disputed status of her birth resulted in the French court regarding Elizabeth as illegitimate and therefore unable to inherit the English crown.  Henri II (1519-1559) immediately announced that his daughter-in-law, Mary Queen of Scots, was the legitimate Queen of England and a new coat of arms was created for her that placed the arms of England alongside those of Scotland and France.
+</p><p>In July 1559, Henri II unexpectedly died from an injury incurred at a royal tournament, and on 18 September 1559, the Dauphin François II became king of France, and Mary the queen consort.  At some point in this period as queen, Mary may have written her first poetic quatrain as marginalia in her aunt Anne of Lorraine, Duchess of Aerschot’s, Book of Hours, signing herself ‘Reine de France, Marie’, and asking her aunt to always save her place within the security of the French court.<a href="index.php%3Fcontent=stuartbio.html#f3" class="foot">3</a>   
+</p>
+<div class="indent"><p>	Si ce lieu est pour ecrire ordonne
+</p><p>Ce qu’il vous plest avoir en sovenance
+</p><p>Je vous requiers que lieu mi soit donne
+</p><p>Et que nul temps ne n’oste l’ordonance.
+</p><p>Royne de Fra[n]ce (monogram M.S.) Marie
+</p>
+</div>
+<p>This first known poem of Mary’s is poignant considering that the following year the protection of the French court that she had enjoyed for the majority of her life, as well as her royal position in France, was no longer secure.  The year of 1560 was characterised by two crucial bereavements.  First, Mary’s mother, Mary of Guise, died in Edinburgh on 11 June.  Then, only six months later on 5 December, her husband François also died.  Mary donned the white mourning clothes that were traditional in France and observed the usual mourning rituals, spending 40 days in a darkened room.  Her biographer, Pierre de Bourdeille, seigneur (and abbé) de Brantôme, comments that during this time, there were poems written about the grieving queen, and that she herself wrote a song in her mourning, the now famous “Ode on the Death of her Husband.” Despite its frequent reproduction as Mary’s work, doubts remain as to whether Mary in fact wrote this poem, or whether it was falsely attributed to her by Brantôme.<a href="index.php%3Fcontent=stuartbio.html#f4" class="foot">4</a> 
+</p><p>Mary was now left without position and was no longer ‘Reine de France’, her status being significantly reduced within the French court.  With the younger brother of François, Charles IX (1550-1574), becoming King of France, and his mother, Catherine de Medici (1519-1589) the Regent, Mary was now a figure inimical to the court faction of the Guises, with whom Mary was aligned through her mother.  With the French having no further political use or symbolic roles for Mary to fulfil, and a marriage proposal thwarted by the Regent Queen, Mary ceased to use the English arms and title and made plans to return to Scotland.  Nine months after her husband’s death she left France and on 19 August 1561 arrived home to a country she had not seen for thirteen years.  In her absence the country had adopted Protestantism as its official religion and proved to be a hostile environment for a Catholic Queen, with the Protestant evangelist John Knox delivering inflammatory speeches against “the tyranny of the pope” and the “sinfulness…of female rulers”,<a href="index.php%3Fcontent=stuartbio.html#f5" class="foot">5</a> along with public attempts to disrupt her private worship.<a href="index.php%3Fcontent=stuartbio.html#f6" class="foot">6</a>  
+</p><p>Mary’s Scottish reign was tumultuous.  To add to the religious difficulties she faced, her relations with Queen Elizabeth I of England were strained, as was the relationship with her own nobles, who had in effect ruled in her absence since the death of her mother.  Elizabeth, who was well acquainted to hostility surrounding her birthright as queen, had good reason to be suspicious of her cousin, given her earlier, public claims to the English throne.  Nevertheless, Mary was determined to win Elizabeth’s affection, aiming to be recognised as her heir, and made many unsuccessful attempts to arrange a meeting with her cousin. Her poem “Adamas Loquitur” was written at this time, and sent to her cousin along with a heart-shaped diamond ring as a means to demand a reciprocal favour from Elizabeth, leading to the imagined, dazzling union of their powers.<a href="index.php%3Fcontent=stuartbio.html#f7" class="foot">7</a>  
+</p><p>During this time, amongst much political upheaval within Scotland, Mary was occupied also with finding a suitable candidate for marriage.  Following the death of her first husband Mary determined that her honour would be best served by marrying another prince, with one early candidate being Don Carlos, the Spanish heir.  This potential match, along with several others, did not eventuate and no husband was secured.  Her cousin Elizabeth intervened, determining that whoever Mary married should not be an enemy to England, and therefore, offered a series of alternative matches, one of which was Robert Dudley, Earl of Leicester, who was widely rumoured to be Elizabeth’s lover.  Mary may have been prepared to marry Leicester, but only on the condition that Elizabeth promised legislation naming her the heir apparent of England, a condition Elizabeth refused to meet. 
+</p><p>On 29 July 1565 the question of Mary’s marriage was settled when she married her cousin Henry Stuart, Lord Darnley.  Although not a prince, Darnley’s father was descended from a daughter of James II, King of Scots, and his mother was a granddaughter of Henry VII of England.  The bloodline of both Darnley and Mary could produce an heir that would strengthen the Stuart’s claim to the English throne.  The marriage seems to have been happy at first, but Darnley was widely reputed as being vain, arrogant, ambitious, foolish, jealous, and dissatisfied with his position as king consort.  This resulted in Mary refusing to petition parliament to bestow on him the crown matrimonial, as she had previously promised.  Aggrieved at not being a king in his own right and not sharing power equally with Mary, he viewed this refusal as a deprivation of his position as the head of his household.  Mary’s many enemies took advantage of the discord between husband and wife and launched a plot which would serve their own ends, striving to convince Darnley that Mary was having an affair with her Italian secretary David Rizzio, who they accused of fathering Mary’s unborn child.
+</p><p>The result of these machinations was a plot that saw Rizzio deliberately murdered in the presence of Mary while she was six months pregnant.  Mary was then held captive by her husband and a group of nobles, whose stated aim was to acquire the crown for Darnley and to uphold the Protestant religion.  During her captivity, Mary convinced her husband that his own prospects were as bleak as hers under the new regime, and the two of them escaped, travelling by horse to Dunbar Castle.  At Edinburgh Castle on 19 June 1566 Mary gave birth to a son, the future James VI of Scotland (James I of England).  Although Mary reconciled temporarily with her husband, relations between them continued to be strained, and Mary remained convinced that the conspiracy had threatened her life and that of her then unborn son.  Darnley refused to accompany the queen as she travelled through the Borders to dispense justice, and Mary began discussions with her nobles about the possibility of divorce. 
+</p><p>By January the following year a group of nobles were planning Darnley’s murder, and by 10 February 1567 it had been accomplished.  Darnley’s lodgings at Kirk o’Field were blown up, and his corpse discovered in a garden nearby.  Once the body was examined, however, it was found to be uninjured by the explosion and it became apparent that Darnley had been murdered, possibly by asphyxiation, and the lodgings blown up either as a part of the murder plot or to ensure no incriminating evidence survived.  Within a week, popular literature began to circulate first accusing James Hepburn, Earl of Bothwell of the murder, and then implying that Mary had been Bothwell’s lover and was complicit in the assassination of her husband. Darnley’s father, the Earl of Lennox, accused Bothwell of the murder, and Mary faced mounting pressure to bring him to trial and to combat rumours that she colluded in the death of her husband.  Bothwell did face court on 12 April 1567, but was acquitted in a trial that several commentators suggest was unfair.<a href="index.php%3Fcontent=stuartbio.html#f8" class="foot">8</a> 
+</p><p>Eight days later, on 20 April 1567, a banquet called the Ainslie’s Supper was held where several lords, earls and bishops (many of who were former Rizzio conspirators) signed a bond pledging support of Bothwell’s bid to marry the queen.  The following day, Mary travelled to Stirling Castle to visit her son.  As she returned, her party was intercepted by Bothwell and his men who diverted Mary and her entourage to Dunbar Castle, under the pretext that her life was in danger.  Once there, it is asserted that Bothwell raped her, creating a situation that required their marriage as the only way of saving her reputation.  
+</p><p>Suspicion against Mary over the death of her second husband was further fuelled when she married Bothwell on 15 May 1567.  Some of those who initially signed the Ainslie bond revoked their support and revolted against the marriage.  There are those who argued at the time, and those who have argued since, that Mary colluded to Bothwell’s abduction to design an excuse for marrying him.  Warnicke argues that this rumour was started by those of Bothwell’s adherents who had been accused as accomplices in Darnley’s murder, and who were now eager to shift the blame from themselves.<a href="index.php%3Fcontent=stuartbio.html#f9" class="foot">9</a>  
+</p><p>Several of Mary’s contemporaries concurred with the claim of James Melville, who was present at Dunbar Castle, that “the quen culd not bot mary him, seing he had ravissit hir and lyen with hir against hir will.”<a href="index.php%3Fcontent=stuartbio.html#f10" class="foot">10</a>  Although she did not approve of the abduction, Mary declared publicly that she was willing to marry Bothwell. There is a direct reference to the rape in the ninth sonnet of the sequence known as The Casket Sonnets, which was attributed to Mary by the Scottish lords seeking to depose her from the throne. It is reproduced here in the French and Scots translation of their first print publication in George Buchanan’s <i>Ane Detectiovn of the duinges of Marie Queen of Scots</i>:
+</p>
+<div class="indent">
+    <p>	Pour luy aussi ie iette mainte larme.
+</p><p>Premier quand il se fist de ce corps possesseur,
+</p><p>Duquel alors il n’auoit pas le cœur.
+</p><p> 
+</p><p>For him also I powred out many tearis.
+</p><p>	First quhen he made himselfe possessor of thys body.
+</p><p>	Of the quhilk then he had nat the hart.<a href="index.php%3Fcontent=stuartbio.html#f11" class="foot">11</a> 
+</p>
+</div>
+<p>Such visceral detail is surprising in the voice of a female sovereign, and draws as much from popular traditions of complaint as from the sonnet.<a href="index.php%3Fcontent=stuartbio.html#f12" class="foot">12</a>  The hasty wedding between Bothwell and Mary effectively annulled the rape, as contemporary statute law excluded husbands from the charge of raping their wives.  The Protestant ceremony took place at Holyroodhouse and was not followed by any further celebrations. 
+</p><p>However it came about, the marriage was to have disastrous consequences for Mary.  Though Bothwell had gained the consent of several nobles for his plan to wed the queen, the marriage proved unpopular, and Bothwell soon found himself isolated and facing military opposition.  Both sides raised armies, but no battle eventuated.  Bothwell fled into exile and after capture, spent the rest of his life in a Danish prison.   Mary surrendered to the confederate army, and was led into the confederate camp amidst shouts that she was a whore, the murderess of her husband and should be burned.   She was held captive at Lochleven, where she was prevailed upon by a number of people, including Queen Elizabeth, to divorce Bothwell.   She refused, saying she was pregnant and did not want to give birth out of wedlock.  She miscarried on 23 July 1567 and a day later was forced to sign a document abdicating the throne in favour of her thirteen-month-old son, Prince James, who was duly crowned five days later on 29 July 1567.  Her primary enemy and illegitimate half-brother, the Earl of Moray, was proclaimed Regent a few days later, effectively securing control of the Scottish throne.  Mary continued to be held prisoner, despite seeking assistance from Catherine de Medici and Elizabeth, who both declined to come to her aid.  She made two escape attempts: one unsuccessful in the disguise of a washerwoman on 25 March, and one successful, by hiding under the seat of a boat on 2 May 1568. Immediately, she gathered an impressive group of supporters, including nine earls and eighteen lords, and raised an army. Her forces met those of Moray on 13 May 1568 at the village of Langside, but were defeated. She fled, disguised in men’s clothing, and rode south to Terregles Castle.  Against the advice of her supporters there, who recommended seeking assistance from France, Mary determined to flee to England where she would seek the protection of her cousin, Elizabeth I. 
+</p><p>Rather than the help she had expected from her cousin, however, she found herself a prisoner once again.<a href="index.php%3Fcontent=stuartbio.html#f13" class="foot">13</a> Her arrival placed Elizabeth in an invidious position.  On the one hand she could not support the kind of rebellion against, and deposition of a sovereign experienced by Mary, especially as a female sovereign.  On the other hand, Mary’s presence in England as a rival Catholic queen with some claim to the English throne meant that she would be a dangerous rallying point for Catholic supporters in England, and a threat to Elizabeth’s own Protestant sovereignty.  Elizabeth had to find a politically expedient way of dealing with her cousin and the situation her sudden and unexpected arrival had created.  She sent a message to Mary stating that she could in no way receive the Queen of Scots until she was cleared of the accusations that were made against her, and then proceeded to set up an official enquiry to examine Mary’s complaints and the Earl of Moray’s assertions of adultery and murder.  Despite Mary’s protests that the court had no jurisdiction over her, the enquiry opened on 4 October 1568.<a href="index.php%3Fcontent=stuartbio.html#f14" class="foot">14</a>  Among the evidence brought against her was a silver casket said to have been found in the possession of one of Bothwell’s servants, which contained twelve poems, two marriage contracts and eight love letters said to have been written by Mary to Bothwell, while she was still married to Darnley.  The attribution of these materials to Mary is highly questionable, but the poems are included in this edition in both their print and contemporary manuscript copy forms as they were widely circulated as the work of the queen.<a href="index.php%3Fcontent=stuartbio.html#f15" class="foot">15</a>   
+</p><p>The verdict in the enquiry, handed down at the beginning of January 1569, was inconclusive.  However, Mary was still kept under house arrest in England in a series of castles, with a household that fluctuated in size.  This final period of captivity would last eighteen years and would end with her death.  However, it is the period in which she was most productive as a writer, and, significantly, a poet.  During the long period of her imprisonment, she frequently addressed Elizabeth and her supporters on the Continent in both letters and verse.  Early in her captivity during 1568, a sonnet attributed to Mary may have been sent to Elizabeth, although again the attribution is questionable.<a href="index.php%3Fcontent=stuartbio.html#f16" class="foot">16</a> Written in both French and Italian, the speaker writes of her ardent desire to meet her “dear sister” :
+</p>
+<div class="indent">
+    <p>	Donc, chere soeur, si ceste carte suit
+</p><p>L’affection de vous veoir qui me presse;
+</p><p>C’est que ie viz en peine et en tristesse
+</p><p>Si promptement l’effect ne s’en ensuit 
+</p>
+</div>
+<p>Five years later, she also composed a long meditation in French in response to a Latin work composed by John Leslie, Bishop of Ross, <i>Piae Afflicti Animi Consolationes Divinique Remedia</i>, while he himself was in prison.  This one hundred-line poem aligns its speaker with Solomon in rejecting earthly pleasures and desires as vanity, and argues that birth, rank and wealth are no guarantee for the stability of any ruler, whether “les plus grands rois, monarques, empereurs”. Instead, the only certainty lies in “le vrai repos, le plaisir et la grace” found with God in heaven.  The poem mediates between the Protestant concept of pre-ordination and the Catholic concept of good works, asserting that the birthright of heaven is both “[de]ja ordonne” and the result of abandoning “son peche et offense”.  Overall, however, the poem positions Mary as Catholic martyr, empowered by “ma mere, L’Eglise” and evokes the narrative of the speaker ultimately freed from captivity by God that is consistent with Mary’s other poems from this period.  It was accompanied by a sonnet, “l’ire de Dieu par le sang ne s’apaise”, also published in 1573 in the first edition of the <i>Consolationes</i>. A third poem attributed to Mary, and written in two quatrains, celebrates the release of John Leslie from prison, “A l’Eveque de Ross, après sa deliverance de prison” and was published in a later French edition of the Consolationes in 1595. 
+</p><p>A rich archive of manuscript poems also exist from the long period of her captivity.  The most significant of these archives consists of marginalia in Mary’s manuscript Book of Hours: a collection of fourteen quatrains and some fragments that form a linked sequence of meditations on the vanities and abuses of the world, on the speaker’s redemption in death, and her transformation into “un bel ange”. Many of the completed quatrains are fair copies, closely related to the biblical texts they append, and part of the kind of aristocratic coterie circulation evidenced by other signatures within the prayer book.<a href="index.php%3Fcontent=stuartbio.html#f17" class="foot">17</a> Two additional manuscript quatrains are held in the Public Record Office; one commenting on the practice of writing occasional verse, and the other on the speaker’s response to her misfortunes: “prier souffrir pleurer a chacun etre amie.” Neither of these quatrains are in Mary’s hand, however.
+</p><p>A group of two devotional meditations and a secular poem or collection of couplets addressed to Ronsard also exist in manuscript, dated at 1583. The sonnets are conventional poems presenting their speaker as the penitent sinner calling for God’s grace to cleanse her sins, give her courage and hope and save her from earthly passions and vices.  At the conclusion of each sonnet, the speaker is left in receipt of such grace, repentant, constant with “un coueur deuot and bonnes actions”. The couplets to Ronsard have an entirely different focus: they are secular poems of reassurance and support to a friend of “bon coeur de gentille nature” who has fallen out of favour at court.  They end more generally, however, in a self-reflexive couplet urging the speaker to write not of the heights to which her subject rose, but of his desire for support in his misfortunes.<a href="index.php%3Fcontent=stuartbio.html#f18" class="foot">18</a> The speaker’s self-presentation as a devout and virtuous recipient of God’s grace and at times favour in all of these manuscript poems, has, of course, a political purpose: she is presented as God’s elect after death in a project that transforms her earthly errors and suffering in prison into virtue. 
+</p><p>During Mary’s captivity she lived in a series of castles across England: Carlisle, Bolton, Tutbury, Wingfield Manor, Chatsworth and Chartley.  She was permitted to visit the spa at Buxton to bathe in its waters, and a Latin couplet inscribed upon a window in the Old Hall at Buxton has been attributed to her, but is now destroyed. During this period, she also completed spectacular panels of embroidery and stitching, most notably in the care of the Earl of Shrewsbury and his wife, Bess of Hardwick.<a href="index.php%3Fcontent=stuartbio.html#f19" class="foot">19</a> Her successful escape from imprisonment in Scotland may have contributed to Mary attempting further escapes in England, which were a contributing factor in her execution.  On 11 August 1586, Mary was arrested and charged with committing treason against Elizabeth by her involvement in the Babington Plot, where Catholic courtier Sir Anthony Babington attempted to initiate an invasion of England which would free Mary from her captors, assassinate Elizabeth, and place Mary on the throne of England.  An intercepted letter in code firmly implicated Mary as approving the plot.  On 21 September she was moved to Fotheringay Castle, where she was later tried for treason.  She was pronounced guilty and publically executed by beheading on 8 February 1587, aged 44. 
+</p><p>Mary has been portrayed as a Catholic martyr, an ill-fated romantic figure, a symbol of Scottish pride, and a victim of the politics of her time, yet although over thirty poems have been attributed to her, she has rarely been depicted as a poet.<a href="index.php%3Fcontent=stuartbio.html#f20" class="foot">20</a> While some of these poems were forgeries, all were circulated under Mary’s signature, at times widely, and as such she was one of the most read women poets of the 16th century. Those poems that have secure attribution also speak to her rhetorical power as a poet, as well as her ingenious modes of textual circulation while in captivity. 
+</p>
+<div class="footnotes">
+    <ol>
+        <li><a id="f1"></a>
+          Retha M. Warnicke, <i>Mary Queen of Scots</i> (London and New York: Routledge, 2006), p. 33.
+</li><li><a id="f2"></a>  Rosalind K. Marshall, <i>Mary, Queen of Scots: ‘In My End is My Beginning’</i> (Edinburgh: NMS Enterprises Ltd., 2013), p. 11.
+</li><li><a id="f3"></a>  J. B. Silvestre, ‘Plate CXCVIII Gothic Miniscule Writing XVth Century: Book of Prayers of Mary Stuart’, in <i>Universal Palæography</i>, Vol II, Trans. Sir Frederic Madden (London: Henry G. Bohn, 1849), pp. 550-553. <a href="https://archive.org/stream/universalpalaeo00silvgoog#page/n192/mode/2up">https://archive.org/stream/universalpalaeo00silvgoog#page/n192/mode/2up</a>. See also Robin Bell, (trans. and ed.), <i>Bittersweet Within My Heart: The Love Poems of Mary, Queen of Scots</i> (London: Pavilion, 1992), pp. 14-15.
+</li><li><a id="f4"></a>  See Mrs P Stewart-Mackenzie Arbuthnot (ed.), <i>Queen Marys Book: A Collection of Poems and Essays by Mary Queen of Scots</i> (London: George Bell and Sons, 1907), p. 88. She draws upon Louis A. Barbé’s claims that the author was Brantôme himself. See Louis A. <i>Barbé, In Byways of Scottish History</i> (London: Glasgow & Bombay; Blackie and Sons, 1912), p. 84, and an anonymous article in the <i>New York Times</i>, July 20, 1913, summarising the debate :‘Famous "Song of Mary Queen of Scots" not by her?’ <a href="http://query.nytimes.com/mem/archive-free/pdf?res=950CE6DE113CE633A25753C2A9619C946296D6CF">http://query.nytimes.com/mem/archive-free/pdf?res=950CE6DE113CE633A25753C2A9619C946296D6CF.</a>
+</li><li><a id="f5"></a> Warnicke, <i>Mary Queen of Scots</i>, pp. 69-71.  
+</li><li><a id="f6"></a>  Antonia Fraser, <i>Mary Queen of Scots</i> (London: Weidenfeld & Nicolson, 1969), p. 152.
+</li><li><a id="f7"></a>  Robin Bell argues that Mary made “an error of judgement” in the “conciliatory and anxious” tone of “Adamas Loquitur”, claiming “Elizabeth respected strength and trampled on weakness” (Bell, Bittersweet, p. 24).
+</li><li><a id="f8"></a>  Marshall notes that “Bothwell was finally tried on 12 April 1567, but the town was packed with his supporters and he was swiftly acquitted.” (Marshall, <i>Mary, Queen of Scots</i>, p. 46).  Fraser writes that “Lennox understandably shrank for appearing in Edinburgh with the six followers permitted to him by law, in view of the fact that the city was swarming with 4,000 of Bothwell’s adherents” and that, “[a]lthough the due processes of justice were observed at the trial […] the absence of the accuser Lennox meant that Bothwell was inevitably acquitted” (Fraser, <i>Mary Queen of Scots</i>, p.n312).
+</li><li><a id="f9"></a>  Warnicke, <i>Mary Queen of Scots</i>, p. 154.   
+</li><li><a id="f10"></a>  Thomas Thompson (ed.), <i>Memoirs of Sir James Melville</i> (Bannatyne Club: Edinburgh, 1827), p. 177.
+</li><li><a id="f11"></a>  George Buchanan, ‘Ane Detection of the Duinges of Marie, Quene of Scottes, Touchand the Murder of Hir Husband’, London, 1571. The British Library Board, General Reference Collection C 8.b.13.(1.) ff..64r-fol.66v.
+</li><li><a id="f12"></a>  See Rosalind Smith, ‘The Case of Mary Queen of Scots, Lord Darnley and Lord Bothwell: Initiating the Literature of Husband-Murder in Sixteenth-Century England’, in <i>Notes and Queries</i> (N&Q) 59.4 (2012): 498-501; ‘A ‘goodly sample’: exemplarity, female complaint and early modern women’s poetry’, in Susan Wiseman (ed.), <i>Early Modern Women and the Poem</i> (Manchester and New York: Manchester University Press, 2013), p. 197 and <i>Sonnets and the English Woman Writer, 1560-1621: The Politics of Absence</i> (Basingstoke, London: Palgrave Macmillan), 2005.
+</li><li><a id="f13"></a>  For a full account of her period in England, see Patrick Collinson, <i>The English captivity of Mary, Queen of Scots</i> (Sheffield: Sheffield History Pamphlets, 1987). 
+</li><li><a id="f14"></a>  See Gordon Donaldson, <i>The First Trial of Mary, Queen of Scots</i> (London: New English Library, 1969).
+</li><li><a id="f15"></a>  For a discussion of the Buchanan text see Rosalind Smith, ‘Reading Mary Stuart's Casket Sonnets: Reception, Authorship, and Early Modern Women's Writing’, in <i>Parergon: Journal of the Australian and New Zealand Association for Medieval and Early Modern Studies (Parergon)</i> 29.2 (2012): 149-173.
+</li><li><a id="f16"></a>  See Peter C. Herman, <i>Royal Poetrie: Monarchic Verse and the Political Imaginary of Early Modern England</i> (New York: Cornell University, 2010), p. 102.
+</li><li><a id="f17"></a>  See Rosalind Smith, ‘‘Le pouvoir a faire dire’: Marginalia in Mary Queen of Scots’ Book of Hours’, in Patricia Pender and Rosalind Smith (eds.), <i>Material Cultures of Early Modern Women’s Writing</i> (Basingstoke: Palgrave, 2014), pp. 55–75.
+</li><li><a id="f18"></a>  For the French context of these poems, see Jessica Erin DeVos, <i>Autobiography, Authorship and Artifice: Reconsidering Renaissance Women Poets</i>, Diss. Yale U, 2013.
+</li><li><a id="f19"></a>  Susan Frye, 'Sewing Connections: Elizabeth Tudor, Mary Stuart, Elizabeth Talbot, and Seventeenth-Century Anonymous Needleworkers', in Susan Frye and Karen Robertson (eds.), <i>Maids and Mistresses, Cousins and Queens: Women's Alliances in Early Modern England</i> (New York: Oxford University Press, 1999), pp. 165-182
+</li><li><a id="f20"></a>  Jayne Elizabeth Lewis examines the different ways in which Mary has been characterised during the Elizabethan, Stuart, Georgian and Victorian eras in: Jayne Elizabeth Lewis, <i>Mary Queen of Scots: Romance and Nation</i> (London and New York: Routledge, 1998). Jane E. A. Dawson examines the figure of Mary in the context of the political struggles which dominated Anglo-Scottish politics during her lifetime in: Jane E. A. Dawson, <i>The Politics of Religion in the Age of Mary, Queen of Scots</i> (Cambridge: Cambridge University Press, 2002), as does Jenny Wormald in: Jenny Wormald, <i>Mary Queen of Scots: A Study in Failure</i> (London: George Philip, 1988). Julian Goodare’s entry in the Oxford DNB concludes that “ultimately one is left with a historical Mary remarkably close to the popular image: a romantic tragedy queen” in Julian Goodare, ‘Mary (1542-1587)’, <i>Oxford Dictionary of National Biography</i> (Oxford: Oxford University Press, 2004), online edn, May 2007. <a href="http://www.oxforddnb.com.rp.nla.gov.au/view/article/18248">http://www.oxforddnb.com.rp.nla.gov.au/view/article/18248</a>, p. 26.
+</li>
+    </ol>
+</div>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../tweetie/tweetie.js%3F1747311468"></script>
+	<script src="../scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=bradstreetbio&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="../index.html"><img src="../img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li class="has-child"><a href="../digitalarchive.html">Digital Archive</a><ul><li><a href="../bradstreet.html">Anne Bradstreet</a></li><li><a href="../elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="../maryjacob.html">Mary Jacob</a></li><li><a href="../elizabethmelville.html">Elizabeth Melville</a></li><li><a href="../lucyrussell.html">Lucy Russell</a></li><li><a href="../marystuart.html">Mary Stuart</a></li><li><a href="../marywroth.html">Mary Wroth</a></li><li><a href="../techno.html">Technical Note</a></li></ul></li><li><a href="../conferences.html">Conferences</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../grants.html">Grants, Linkages & Fellowships</a></li><li><a href="../resources.html">Resources</a></li><li><a href="../networkaffiliates.html">Network Affiliates</a></li><li><a href="../contacts.html">Contacts</a></li><li><a href="../help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="../digitalarchive.html">Digital Archive</a></li><li><a href="../bradstreet.html">Anne Bradstreet</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="8" class="authorheading">Anne Bradstreet</h2><h3>Biography</h3><p><strong>Contributor:</strong> Associate Professor Patricia Pender and Alexandra Day</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 8 da bradstreetbio">
+                                          <p>
+               Most of the information we have about Anne Bradstreet’s life comes from her published poetry and her posthumous manuscripts.  Known to contemporaries and later generations by the title of her first volume of poetry, “The tenth muse lately sprung up in America,” Bradstreet was the second of six children, born to Thomas Dudley and Dorothy York in Northamptonshire, England in 1612/3.  She spent the first 18 years of her life in England before moving with her family to the Massachusetts Bay colony in New England in 1630. The Dudley family were devout Puritans, followers of John Dod of Canons Ashby in Northamptonshire and later John Cotton, preacher at St Botolphs in Boston, Lincolnshire. Thomas Dudley worked as a lawyer’s clerk and subsequently as steward to the fourth Earl of Lincoln.<a href="index.php%3Fcontent=bradstreetbio.html#f1" class="foot">1</a>  
+          </p><p>
+               Bradstreet’s family was thus deeply religious, and though none of the writing from her early years survives, she recalls in her later autobiographical sketch “To my dear children” a turning point in her own faith: 
+          </p>
+          <div class="indent"><p>
+               … as I grew vp to bee about 14 or 15 I fovnd my heart more carnall, and sitting loose from God, vanity & the follyes of youth take hold of me. 
+          </p><p>
+               About 16, the Lord layd his hand sore vpon me and smott mee with the small pox. When I was in my affliction, I besovght the Lord, and confessed my Pride and Vanity and he was entreated of me, and again restored me.<a href="index.php%3Fcontent=bradstreetbio.html#f2" class="foot">2</a> 
+          </p>
+          </div>
+          <p>
+               As a retrospective construction of Bradstreet’s adolescent self, these words evoke three of Bradstreet’s ongoing poetic concerns: her delight in secular or natural pleasures, her struggle with illness, and the faith she called on to assist her throughout her life.
+          </p><p>
+               From 1619 to 1624 Bradstreet and her family lived on the Earl’s estate at Sempringham in Lincolnshire where Anne was exposed to a “liberal and enlightened household.”<a href="index.php%3Fcontent=bradstreetbio.html#f3" class="foot">3</a> When Dudley came to take up the post of steward, the Earl of Lincoln, Theophilus Fiennes-Clinton, was just twenty, and had younger siblings still under his mother’s charge. Bradstreet’s education seems to have been similar to that of the Dowager Countess Elizabeth’s children, and she may even have been tutored alongside them during these years.  The Clintons were a Puritan family who, like the Dudleys, strongly valued education, and the Dowager Countess “seems to have believed that classical history and literature were vital to the education of women – an unusual viewpoint at a time when it was rare for females to be able to read much more than rudimentary passages from Scripture.”<a href="index.php%3Fcontent=bradstreetbio.html#f4" class="foot">4</a> In the Dowager Countess, the young Anne Dudley had an early role model for combining writing, reading and domestic duties: in 1622, during Dudley’s time as steward, the Dowager Countess published a book entitled <i>The Countesse of Lincolnes Nurserie</i>, in which she exhorts mothers to nurse their own babies.  Bradstreet’s father, who apparently considered Anne his favourite, also encouraged her education, probably tutored her, and certainly shared with her his love of history.
+          </p><p>
+               When Anne was about nine years old, and her family still living at Sempringham, twenty-year-old Simon Bradstreet, Anne’s future husband, took up a post as John Dudley’s assistant. Anne and her family subsequently moved eleven miles away, to the market town of Boston, and Simon Bradstreet to a position in the household of the Dowager Countess of Warwick. When Anne was 16 she contracted, and survived, smallpox. Though no church record survives, Anne Bradstreet’s own later account indicates it was shortly after her recovery from smallpox in 1628 that she married Simon Bradstreet.<a href="index.php%3Fcontent=bradstreetbio.html#f6" class="foot">6</a>
+          </p><p>
+               In the mid-1620s, discouraged by the increasing political difficulty of establishing a reformed church in England, and in the face of increasing persecution, Puritan leaders began to plot a fresh start in New England. Plans were made for a Puritan migration to the Massachusetts Bay colony. Both the Earl of Lincoln and the Dowager Countess of Warwick’s households were centres of Puritan activity, and Bradstreet’s husband and father were involved in planning the migration.  In 1628 the Massachusetts Bay Company was formally established, and was granted permission to establish a colony and plantations in the Massachusetts Bay area. John Dudley and Simon Bradstreet were among the 26 men who formed the Company’s corporate body. Theirs was to be the first colonial settlement to be locally administered and it was intended to be an explicitly Puritan settlement. 
+          </p><p>
+               In April 1630, with John Winthrop chosen as Governor, and Thomas Dudley as Deputy Governor, the Dudley family, with Anne and Simon Bradstreet, set sail in the <i>Arbella</i> for the three-month voyage to New England. The <i>Arbella</i>, named after Arbella Johnson, sister to the Earl of Lincoln and both a passionate advocate and crucial financier of the trip, “was the flag-ship, or admiral, of the fleet of eleven vessels that carried seven hundred colonists to the shores of Massachusetts.”<a href="index.php%3Fcontent=bradstreetbio.html#f7" class="foot">7</a> While there were no casualties on the <i>Arbella</i>, the long, rough sea voyage took its toll. Seventeen people from the other three ships travelling in convoy with the <i>Arbella</i> died on the way to New England, and “many of the colonists arrived ill and weakened with malnutrition.”<a href="index.php%3Fcontent=bradstreetbio.html#f8" class="foot">8</a> The voyage was long and arduous, with critical provisions lost on the way. Thomas Dudley writes in his letter to Lady Bridget, Countess of Lincoln, that “half of our cows, and almost all our mares and goats, sent us out of England died at sea in their passage hither.”<a href="index.php%3Fcontent=bradstreetbio.html#f9" class="foot">9</a>  
+          </p><p>
+               The <i>Arbella</i> was the first of the fleet to arrive, sailing into Salem on the 12<sup>th</sup> June 1630, and over the next month the rest of the fleet also arrived. The immigrants arrived to find a sickly and starving colony. Thomas Dudley wrote to the Countess of Lincoln:
+          </p><div class="indent"><p>
+               Our four ships… arrived here in June and July, where we found the Colony in a sad and unexpected condition, above eighty of them being dead the winter before; and many of those alive weak and sick; all the corn and bread amongst them all hardly sufficient to feed them a fortnight.<a href="index.php%3Fcontent=bradstreetbio.html#f10" class="foot">10</a> 
+          </p></div><p>
+               Salem was “primitive” and “overcrowded; provisions were in very short supply, and such necessities of life as were not still on hand, from stores brought over from England, had to be produced in the most immediate and rudimentary fashion.”<a href="index.php%3Fcontent=bradstreetbio.html#f11" class="foot">11</a> Bradstreet afterwards recalled how she “came into this country, where I found a new world and new manners, at which my heart rose [in protest]. But after I was convinced it was the way of God, I submitted to it and joined the church at Boston.”<a href="index.php%3Fcontent=bradstreetbio.html#f12" class="foot">12</a> 
+          </p><p>
+               The Dudleys and Bradstreets arrived in Salem, but quickly relocated to the fledgling settlement of Charlestown. In these harsh environs the new settlers set about establishing their reformed Church, and establishing their reformed religion as the primary authority among the first wave of settlers. Reports recount that more than 200 members of their original group fled home that first winter, and at least another 200 settlers died.<a href="index.php%3Fcontent=bradstreetbio.html#f13" class="foot">13</a> After their first winter, Anne’s father, Thomas Dudley, moved his family to New Towne – another frontier outpost, further inland. Though this, too, was a primitive settlement, the land was more fertile than at Charlestown. In 1635 they moved to the frontier town of Ipswich before finally settling in Merrimack (later Andover) in the early 1640s.<a href="index.php%3Fcontent=bradstreetbio.html#f14" class="foot">14</a> 
+          </p><p>
+               Like her father, Bradstreet’s husband Simon held a number of public offices, including Governor of Massachusetts, and was often away from home for long periods. The love poems Bradstreet wrote to her husband attest to her deep affection (“If ever two were one, then surely we./ If ever man were lov’d by wife, then thee”).<a href="index.php%3Fcontent=bradstreetbio.html#f15" class="foot">15</a> As his official responsibilities increased, so did his time away. One of Bradstreet’s more famous poems is entitled “A Letter to her Husband, absent upon Publick employment.”<a href="index.php%3Fcontent=bradstreetbio.html#f16" class="foot">16</a>
+          </p><p>
+               Bradstreet’s first child, a son, was born in 1633 or 1634. He was to be the first of eight. She refers to her children in her poem beginning:
+          </p><p>
+               I Had eight birds hatcht in one nest,
+          </p><p>
+               Four Cocks there were, and Hens the rest, 
+          </p><p>
+               I nurst them up with pain and care,
+          </p><p>
+               Nor cost, nor labour did I spare,
+          </p><p>
+               Till at the last they felt their wing,
+          </p><p>
+               Mounted the Trees, and learn’d to sing…<a href="index.php%3Fcontent=bradstreetbio.html#f17" class="foot">17</a> 
+          </p><p>
+               All eight children survived, although her grandchildren were not so fortunate. The poem quoted above is immediately followed in the <i>Selected Poems</i> by three poems in memory of grandchildren who died in infancy: “<i>In memory of my dear grand-child Elizabeth Bradstreet, who deceased August, 1665. being a yer and half old</i>”; “<i>In memory of my dear grand-child Anne Bradstreet. Who deceased June 20. 1669. being three years and seven Moneths old</i>”; and “<i>On my dear grandchild Simon Bradstreet, Who dyed on 16 Novemb. 1669. being but a moneth, and one day old.</i>”<a href="index.php%3Fcontent=bradstreetbio.html#f18" class="foot">18</a>
+          </p><p>
+               In 1666 the Bradstreet family home burned down, destroying the library of over 800 books, as well as some of the poet’s manuscripts.<a href="index.php%3Fcontent=bradstreetbio.html#f19" class="foot">19</a> The frightening event is recorded in one of Bradstreet’s most famous poems, often anthologized as “Upon the Burning of My House”. The poem begins: 
+          </p><div class="indent"><p>
+               In silent night when rest I took, 
+          </p><p>
+               For sorrow neer I did not look, 
+          </p><p>
+               I waken’d was with thundring nois 
+          </p><p>
+               And Piteovs shreiks of dreadfull voice. 
+          </p><p>
+               That fearfull sound of fire and fire, 
+          </p><p>
+               Let no man know is my Desire.<a href="index.php%3Fcontent=bradstreetbio.html#f20" class="foot">20</a>  
+          </p></div>
+          <p>
+               The biographical relevance and emotional intensity of this poem are characteristic of her later poems.
+          </p><p>
+               
+          </p><p>
+               Bradstreet suffered ill health throughout her life. She wrote poems called “For Deliverance from a feaver”, “ffrom another sore ffit.”, and “Deliverance from a fitt of ffainting.”<a href="index.php%3Fcontent=bradstreetbio.html#f21" class="foot">21</a>  During one severe bout of illness she wrote a letter for her children to read after her death. This letter provides a sketch of her early life. The epigraph reads:
+          </p>
+          <div class="indent"><p>
+               This Book by Any yet vnread,
+          </p><p>
+               I leave for yov when I am dead,
+          </p><p>
+               That being gone, here yov may find
+          </p><p>
+               What was yr liuing mothers mind. 
+          </p><p>
+               Make vse of what I leaue in Loue
+          </p><p>
+               And God shall blesse yov from above.<a href="index.php%3Fcontent=bradstreetbio.html#f22" class="foot">22</a>  
+          </p></div>
+          <p>
+               And in 1669, Bradstreet wrote a farewell poem (“As weary pilgrim”)<a href="index.php%3Fcontent=bradstreetbio.html#f23" class="foot">23</a> – the only poem to survive in her own handwriting.<a href="index.php%3Fcontent=bradstreetbio.html#f24" class="foot">24</a> 
+          </p><p>
+               By 1671 Anne Bradstreet, aged 59, had contracted consumption. On 16 September, 1672 she died.  She was succeeded by all of her children, and her husband, Simon Bradstreet, who was with her when she died. Simon remarried four years later and continued his career of public service. Her poems are saluted in Cotton Mather’s <i>Magnalia Christi Americana</i> (1702) for having “afforded a grateful Entertainment unto the Ingenious, and a Monument for her Memory beyond the Stateliest <i>Marbles</i>.”<a href="index.php%3Fcontent=bradstreetbio.html#f25" class="foot">25</a> 
+          </p><p>
+               Bradstreet turned to pen and paper throughout her life in colonial New England. Her poems range from sweeping historical epics to intimate lyrics of domestic life and occasional, often familial, poems. She was a “pioneer” in the sense that she was one of the early European settlers in the Massachusetts Bay Colony, but she was also a literary pioneer.  The Oxford Dictionary of National Biography presents her as “the first English woman and the first New Englander to publish a collection of original poems, and so may claim to be both the first female poet and the first colonial poet in English, and a radical figure.”<a href="index.php%3Fcontent=bradstreetbio.html#f26" class="foot">26</a> 
+          </p>
+          <div class="footnotes"><ol>
+               <li><a id="f1"></a>
+                    N. H. Keeble, “Bradstreet, Anne (1612/13–1672),” <i>Oxford Dictionary of National Biography</i>, Oxford University Press, 2004; online ed., May 2014 [<a href="http://www.oxforddnb.com/view/article/3209">http://www.oxforddnb.com/view/article/3209</a>, accessed 1 Dec 2015]
+               </li><li><a id="f2"></a>
+                    The letter “To my dear children” survives in the notebook known as the Andover manuscript, now at Harvard (MS 1007.1). It was first printed in John Harvard Ellis (ed.), <i>The Works of Anne Bradstreet in Prose and Verse</i> (Abram E. Cutter, 1867), 4-5.
+               </li><li><a id="f3"></a>
+                    Ann Stanford, <i>Anne Bradstreet: The Worldly Puritan</i> (New York: Burt Franklin & Co., 1974), x.
+               </li><li><a id="f4"></a>
+                    Charlotte Gordon, <i>Mistress Bradstreet: The Untold Life of America’s First Poet</i> (New York & Boston: Little, Brown and Company, 2005), 32.
+               </li><li><a id="f5"></a>
+                    Countesse of Lincolne, <i>The Countesse of Lincolnes Nurserie</i> (Oxford: John Lichfield and James Short, Printers to the famous University, 1622).
+               </li><li><a id="f6"></a>
+                    See Ellis, 5.
+               </li><li><a id="f7"></a>
+                    Elizabeth Wade White, <i>Anne Bradstreet: The Tenth Muse</i> (New York: Oxford University Press, 1971), 103.
+               </li><li><a id="f8"></a>
+                    White, 109.
+               </li><li><a id="f9"></a>
+                    Quoted in Gordon, <i>Mistress Bradstreet</i>, 110
+               </li><li><a id="f10"></a>
+                    Quoted in White, 113.
+               </li><li><a id="f11"></a>
+                    White, 111.
+               </li><li><a id="f12"></a>
+                    Ellis, 5.
+               </li><li><a id="f13"></a>
+                    Gordon, 115, 117.
+               </li><li><a id="f14"></a>
+                    Keeble, “Bradstreet, Anne (1612/13–1672),” ODNB.  
+               </li><li><a id="f15"></a>
+                    Anne Bradstreet, <i>Several Poems</i> (Boston, Massachusetts: John Foster, 1678), 240.
+               </li><li><a id="f16"></a>
+                    Anne Bradstreet, <i>Several Poems</i>, 240.
+               </li><li><a id="f17"></a>
+                    Anne Bradstreet, <i>Several Poems</i>, 245.
+               </li><li><a id="f18"></a>
+                    Anne Bradstreet, <i>Several Poems</i>, 248-50.
+               </li><li><a id="f19"></a>
+                    Jeannine Hensley (ed.), <i>The Works of Anne Bradstreet</i> (Cambridge, Massachusetts: The Belknap Press of Harvard University Press, 1967), xxvi.
+               </li><li><a id="f20"></a>
+                    Ellis, 40.
+               </li><li><a id="f21"></a>
+                    Ellis, 12-15.
+               </li><li><a id="f22"></a>
+                    Ellis, 3.
+               </li><li><a id="f24"></a>
+                    Ellis, 42-4.
+               </li><li><a id="f25"></a>
+                    White, 353.
+               </li><li><a id="f26"></a>
+                    Cotton Mather, <i>Magnalia Christi Americana</i>, ed. Kenneth B. Murdock (Cambridge, Massachusetts and London: The Belknap Press of Harvard University Press, 1977), 233.
+               </li><li><a id="f27"></a>
+                    Keeble, “Bradstreet, Anne (1612/13–1672),” <i>ODNB</i>. 
+               </li>
+          </ol></div>
+                                      </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

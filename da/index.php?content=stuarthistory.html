@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../tweetie/tweetie.js%3F1747311468"></script>
+	<script src="../scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=stuarthistory&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="../index.html"><img src="../img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li class="has-child"><a href="../digitalarchive.html">Digital Archive</a><ul><li><a href="../bradstreet.html">Anne Bradstreet</a></li><li><a href="../elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="../maryjacob.html">Mary Jacob</a></li><li><a href="../elizabethmelville.html">Elizabeth Melville</a></li><li><a href="../lucyrussell.html">Lucy Russell</a></li><li><a href="../marystuart.html">Mary Stuart</a></li><li><a href="../marywroth.html">Mary Wroth</a></li><li><a href="../techno.html">Technical Note</a></li></ul></li><li><a href="../conferences.html">Conferences</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../grants.html">Grants, Linkages & Fellowships</a></li><li><a href="../resources.html">Resources</a></li><li><a href="../networkaffiliates.html">Network Affiliates</a></li><li><a href="../contacts.html">Contacts</a></li><li><a href="../help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="../digitalarchive.html">Digital Archive</a></li><li><a href="../marystuart.html">Mary Stuart</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="14" class="authorheading">Mary Stuart</h2><h3>Textual History</h3><p><strong>Contributor:</strong> <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a></p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 14 da stuarthistory">
+                                <h3>
+I. INTRODUCTION
+</h3><p>
+Because of the dramatic complexity of Mary Stuart’s life, she is better known as a historical figure than as a poet. However, a small archive of poetry exists in manuscript in her distinctive hand that testifies to her interest in lyric composition, rhetorical experimentation and to the spectrum of uses to which poetry could be put in the early modern period. Circulated in manuscript, these lyrics may have accompanied her letters or exist as marginalia within Books of Hours. An additional group of poems were circulated in print in from 1574 under her signature and can be attributed to her. Together, these poems use a number of lyric forms, from linked quatrains to sonnets to meditations, and together amount to a relatively significant collection of poetry by a sixteenth-century woman writer. Located in four distinct manuscript archives, these poems are collected here for the first time as manuscript or print images, diplomatic transcriptions, and in English translation from French by Mike Nolan.
+</p><p>
+A second group of poems of less certain attribution were circulated as Mary Stuart’s in her lifetime or attributed to her posthumously. Together, these form a fascinating textual history of dubious attributions, original ‘discoveries’ and lost or missing sources. These narratives are both indicative of textual studies relating to early modern women writers and a hyperbolised form of these lacunae, producing an astounding set of narratives of antiquarian one-upmanship and examples of bibliographical fraud. Many of these poems were circulated in print in Mary Stuart’s lifetime and beyond, in multiple editions, and were read by some sections of their audience as authentic.<a href="index.php%3Fcontent=stuarthistory.html#f1" class="foot">1</a>  Others were added to Mary’s corpus in the centuries following her death, as part of religious, political and antiquarian interests attached to her status as a historical figure. These poems have also been included in this archive with brief textual histories, as many of the attributions are unresolvable in the absence of original manuscripts. The material contexts of transmission and reception of these poems in print provide new ways of understanding the ways in Mary’s Stuart’s work has been recovered, ‘discovered’, circulated and read at distinct literary and historical moments. Mike Nolan’s translations from French are here supplemented by a translation from Italian by Julie Robarts and Andrea Rizzi, and a translation from Latin by Brenda Hosington. I am indebted to my colleagues for their thoughtful and elegant retransmission of these texts for a new audience. 
+</p><p>
+Unlike many early modern women poets, Mary Stuart’s poetic oeuvre has been consistently reproduced in the centuries following its first circulation, in the form of individual poems or sequences within anthologies and historical accounts, and as edited collections. The casket sonnets are the most reproduced, followed by the ode on the death of Francis II, also known as “Farewell to France”, and the details of these reprintings are traced in the specific textual histories below. The poems were first collected in 1873 by Julian Sharman. His edition of <i>The Poems of Mary Queen of Scots</i> asserts that “it is as a poet and an encourager of verse-writers that she may appear to many in altogether a new character,” reading her verse alongside the dramatic events of her life as “produced on occasions of extraordinary grief or emotion.”<a href="index.php%3Fcontent=stuarthistory.html#f2" class="foot">2</a> It was followed in 1907 by P. Stewart-Mackenzie Arbuthnot’s <i>Queen Mary’s Book: A Collection of Poems and Essays by Mary Queen of Scots</i>.<a href="index.php%3Fcontent=stuarthistory.html#f3" class="foot">3</a> Two further editions of selected writings that included some of her poetry also appeared in the first half of the twentieth century: A. A Methven’s <i>A Year Book of Mary Queen of Scots</i> in 1913 and Clifford Bax’s <i>The Silver Casket: Being Love-Letters and Love-Poems Attributed to Mary Stuart</i> in 1946.<a href="index.php%3Fcontent=stuarthistory.html#f4" class="foot">4</a> In 1982, Betty Travitsky reproduced a selection of Mary Stuart’s poetry in <i>The Paradise of Women</i>, followed by Robin Bell’s 1992 edition of the poems, <i>Bittersweet Within My Heart: The Love Poems of Mary, Queen of Scots</i>.<a href="index.php%3Fcontent=stuarthistory.html#f5" class="foot">5</a> 
+</p><h3>
+II. MANUSCRIPT AND PRINT SOURCES
+</h3><p>
+The collection of texts in this archive is designed to present a scholarly edition of Mary Stuart’s poems, in a digital format that allows the reader to view the first instance of a text’s circulation against selected later redactions, as well as alongside transcriptions and translations. In the poems that exist in manuscript, and are of secure attribution, the queen emerges as an accomplished composer of predominantly religious verse in French, favouring the forms of the couplet, the quatrain and the sonnet. Her print publications also include poetry in Latin. However, what has emerged most dramatically in preparing this archive is the number of texts that are of doubtful attribution. 
+</p><h3>
+II.I: Poems written by Mary Stuart
+</h3><p>
+Autograph manuscripts exist for the poems and fragments written in the queen’s Book of Hours (M.E. Saltykov-Schredin Library MS.Lat.Q.V.1.112), and in two single leaves held in the Bodleian Library. The first contains two devotional sonnets and an eight-line verse made up of couplets to Ronsard (Bodleian Library MS. Add.c. 92 fol. 22r-v); the second the last poem that Mary wrote, the sonnet beginning “Que suis-je helas? Et de quoi sert ma vie”, sent to her brother-in-law King Henry III of France shortly before her execution (Bodleian Library MS. Add.c. 92 fol. 24r). These are reproduced as images in the archive, although it must be noted that the images from the Book of Hours, held at the National Library of Russia are reproduced only partially as photographs held in the National Library of Scotland Advocates Library (MS.81.55). The National Library of Russia did not grant permission to reproduce the manuscript images first-hand. The entire body of marginalia within the Book of Hours, including signatures by the queen and her associates before and after her death, was first transcribed in print by Prince Alexander Labanoff in <i>Receuil Des Lettres, Instrucutions Et Memoires De Marie Stuart</i> in 1844.<a href="index.php%3Fcontent=stuarthistory.html#f6" class="foot">6</a> The relevant pages from Labanoff’s text are also reproduced as images here, and provide transcripts of additional quatrains in the Book of Hours that are not included in the National Library of Scotland photographs.<a href="index.php%3Fcontent=stuarthistory.html#f7" class="foot">7</a> 
+</p><p>
+Although no autograph manuscript can yet be located, it is likely that the quatrain written in Anne of Lorraine’s prayer book can also be attributed to the queen. It was first attributed in print to Mary Queen of Scots in Joseph-Balthazar Silvestre’s 1839-41 <i>Paléographie Universelle</i> (translated into English in 1849).<a href="index.php%3Fcontent=stuarthistory.html#f8" class="foot">8</a> After discussing Mary’s own Book of Hours, he turns to “Another small book of Prayers, also belonging in the Bibliothèque Royale, and which was used by Anne of Lorraine and Diane de Dammartin, wife of her only son.”<a href="index.php%3Fcontent=stuarthistory.html#f9" class="foot">9</a> According to Silvestre, this volume is “remarkable on account of the number of verses, mottoes, cyphers and signatures, among whom Mary Stuart wrote the following lines with her own hand”; the French quatrain is then reprinted.<a href="index.php%3Fcontent=stuarthistory.html#f10" class="foot">10</a> The Anne of Lorraine Book of Hours was in the Bibliothèque Nationale in the La Vallière collection from 1724, but at some point it passed into private hands and was listed in the 1876 Mogand et Fatout catalogue of sale.<a href="index.php%3Fcontent=stuarthistory.html#f11" class="foot">11</a> It is not currently listed in in the Catalogue Collectif de France, again indicating that it is not kept in a French public collection. Silvestre’s image of the manuscript and his transcription is reproduced as the earliest available text of the quatrain. 
+</p><p>
+To date, it is thought that no autograph manuscripts survive for the French poems attributed to Mary Stuart in the 1574 edition of John Leslie, Bishop of Ross’s <i>Libri Duo: Quorum vno, Piae Afflicti Animi Consolationes, diuinaque remedia: Altero, Animi Tranqvilli Mvnimentum et conservatio, continentur</i>.<a href="index.php%3Fcontent=stuarthistory.html#f12" class="foot">12</a> However, the attribution of these poems is not disputed. Leslie wrote <i>Piae Afflicti Animi Consolationes Divinaeque Remedia</i> in 1571 or 1572, while imprisoned in the Tower of London for his involvement in the Ridolfi plot, which would have seen Elizabeth deposed with the aid of Spanish forces, Mary freed from imprisonment in England, married to the Duke of Norfolk, and placed on the English throne. Two manuscript copies of Leslie’s meditations exist: Lambeth Place Library MS. 566 and British Library Add. MS. 48180. Both have dedicatory epistles to Mary and it is possible that the Lambeth Place manuscript was sent to Mary from the Tower in 1572 and the British Library manuscript from Farnham Castle in 1573.<a href="index.php%3Fcontent=stuarthistory.html#f13" class="foot">13</a> Mary Stuart’s meditation of exactly one hundred lines in couplets and her sonnet “L’ire de Dieu par le sang ne s’apaise” were written in response to Leslie’s treatise, and was first circulated in print in French and Latin translation in John Leslie’s Libri Duo, (which also contains his <i>Piae Afflicti Animi Consolationes Divinique Remedia</i>), published in Paris in 1574 by Pierre L’Huillier.<a href="index.php%3Fcontent=stuarthistory.html#f14" class="foot">14</a> Mary’s meditation is signed here, and in subsequent republications, “Sa vertue m’attire”, an anagram of Marie Stuvarte, and likewise her sonnet concludes “Va tu meritas”. The poems were republished, as David Laing notes, by Juliani Thorelli in 1609, in Adam Blackwood’s <i>Varii Generis Poematia</i>, and again by David Home in “a little rare volume entitled <i>Lettres et Traitez Christiens</i>, printed at Bergerac in 1613".<a href="index.php%3Fcontent=stuarthistory.html#f15" class="foot">15</a>  
+</p><p>
+Despite appearing a number of times in print during the Renaissance, however, they were forgotten until the nineteenth century. In reproducing them in <i>The Bannatyne Miscellany</i>, David Laing writes that, up until then, the poems had not generally been included in lists of Mary’s works, and “seems to have escaped the research of other writers” whom, he suggests, had been distracted by debates about the authenticity of the more controversial casket sonnets.<a href="index.php%3Fcontent=stuarthistory.html#f16" class="foot">16</a> Robin Bell also reproduces two quatrains in French, “Puisque Dieu a par sa bonté immense” and “Remerciez sa diuine clémence”, which he says were included in a later French edition of <i>Piae Afflicti Animi Consolationes Divinaeque Remedia</i>, headed by the title “A l’Evêque de Ross, après sa deliverance de prison”.<a href="index.php%3Fcontent=stuarthistory.html#f17" class="foot">17</a> This title means that it is assumed that these poems were also written by Mary in 1573/4 following Leslie’s release. The second quatrain repeats the phrase “humble et dévot” found in line 9 of the sonnet “L’ire de Dieu par le sang ne s’apaise”. Two of the poems attributed to Mary Stuart in these texts are reproduced in the archive in the form of their first print circulation in the 1574 edition of Leslie’s <i>Piae Afflicti Animi Consolationes Divinaeque Remedia</i>. The third, 8-line poem is reproduced from Gustave Pawlowski’s article which first appeared in Le Livre in 1883, and was reprinted as <i>Poésies Françaises de la Reine Marie Stuart</i> (Paris, 1883). 
+</p><h3>
+II.II: Poems of uncertain attribution
+</h3><p>
+The remainder of the poems attributed to Mary Stuart are of less secure attribution. A manuscript held in the Public Record Office contains two quatrains that were first attributed to Mary Queen of Scots in the nineteenth century by Markham Thorpe, discovered while he was compiling the document calendars for Mary’s period (PRO Mary Queen of Scots Vol XII. 31: SP53/12).<a href="index.php%3Fcontent=stuarthistory.html#f18" class="foot">18</a> Although they are in a clear italic hand like Mary’s, and in one of the queen’s preferred forms, the quatrains are not in Mary’s hand. P. Stewart Mackenzie Arbuthnot comments that Markham Thorpe made the attribution in the absence of any other, “it is otherwise difficult to account for their origin”.<a href="index.php%3Fcontent=stuarthistory.html#f19" class="foot">19</a> The Public Record Office manuscript of the poems is reproduced in the archive. 
+</p><p>
+Similarly, the archive reproduces the only surviving manuscript copy of a sonnet to Queen Elizabeth in French and Italian, which is also not in Mary’s hand (British Library Cotton Collection. Caligula B V fol. 316). A commonly repeated narrative about the sonnet claims that it was written in 1568, shortly after Mary had arrived in England after escaping captivity in Scotland, and was sent to Elizabeth “by way of asking for refuge”.<a href="index.php%3Fcontent=stuarthistory.html#f20" class="foot">20</a> Peter Herman argues, however, that this narrative is based merely on an assumption made by eighteenth-century historian Malcolm Laing, which has been taken up as fact by subsequent critics and editors.<a href="index.php%3Fcontent=stuarthistory.html#f21" class="foot">21</a> He notes in fact that there is no record of the poem ever having been officially sent, nor received:
+</p>
+<div class="indent">
+<p>
+Unlike “Adamas Loquitur” […], no record of “Une seul penser” exists in Mary’s correspondence or the calendars of state papers, English or Scottish, domestic or foreign. Mary did send Elizabeth a letter, dated 1 September 1568, in which she used nautical imagery to describe her plight […] but in this letter Mary does not mention including a poem. Nor does the calendar indicate that one was received.<a href="index.php%3Fcontent=stuarthistory.html#f22" class="foot">22</a>  
+</p>
+</div>
+<p>
+The poem was first published in Malcolm Laing’s early nineteenth-century <i>History of Scotland</i>,<a href="index.php%3Fcontent=stuarthistory.html#f23" class="foot">23</a> as part of the appendices to “A Preliminary Dissertation on the Participation of Mary, Queen of Scots, in the murder of Darnley”, which includes this and other writings by Mary. It has been suggested that this sonnet sparked a poetic exchange between the two queens, seeing in Elizabeth’s “The doubt of future foes” (which also contains maritime imagery) a hostile response to the entreaties contained within Mary’s “Une seul penser”.<a href="index.php%3Fcontent=stuarthistory.html#f24" class="foot">24</a> Herman thinks this unlikely, however, citing the fact that a gap of two years exists between the composition of the two poems, and (as mentioned above) the fact that there is no record of Elizabeth ever having read Mary’s poem.<a href="index.php%3Fcontent=stuarthistory.html#f25" class="foot">25</a>
+</p><p>
+Similar doubts attend the other poems attributed to Mary Stuart, which have only print sources. One of the earliest, most famous, and widely reproduced of her poems is the Ode on the Death of Francis: “En mon triste et doux chant”, said to have been written by Mary following the death of her first husband, Francois II, King of France, in 1560. The poem is first attributed to Mary by her biographer Pierre de Bourdeille, Abbot of Brantôme, who describes the circumstances of its composition and transcribes the eleven stanzas in his portrait of Mary in <i>Memoires de Messire Pierre du Bourdeille, Seigneur de Brantome, contenans Les Vies des Dames Illustres de France de son temps</i>, first published in in French 1665 and in English translation as the <i>Book of the Ladies</i> in 1899:
+</p>
+<div class="indent">
+<p>
+Next, King Henri dying, they came to be King and Queen of France, the king and queen of two great kingdoms, happy, and most happy in themselves, had death not seized the king and left her widowed in the sweet April of her finest youth, having enjoyed together of love and pleasure and felicity but four short years, - a felicity indeed of such short duration, which evil fortune might well have spared; but no, malignant as she is, she wished to miserably treat this princess, who made a song herself upon her sorrows in this wise […].<a href="index.php%3Fcontent=stuarthistory.html#f26" class="foot">26</a> 
+</p>
+</div>
+<p>
+However, this attribution was questioned in 1883 by Gustave Pawlowski, citing M. Galy’s discovery of a manuscript of sixteenth-century poetry, consisting of two distinct parts.<a href="index.php%3Fcontent=stuarthistory.html#f27" class="foot">27</a>  The first contained, together with some anonymous poems, extracts from the works of Clement Marot, Pierre de Ronsard, and other writers of the period. The second section was made up of a number of poems, chiefly sonnets, composed by Brantôme, and bearing the general title “Recueil d’alcunes rymes de mes Jeunes Amours que j’ay d’aultres fois composées telles quelles”. In the first section of the collection is a seventeen-stanza anonymous “Song” composed “at Court”, in honour of Mary Stuart. This poem contains the eleven-stanza Ode on the Death of Francis within it.<a href="index.php%3Fcontent=stuarthistory.html#f28" class="foot">28</a>   It has been speculated that the poem was written by an anonymous author and then falsely attributed to Mary Stuart in print by Brantôme, or that Brantôme himself was the author of the entire poem.<a href="index.php%3Fcontent=stuarthistory.html#f29" class="foot">29</a>  However, recent work on this manuscript, currently held in the Bibliothèque Nationale (NAF 11688) has revealed a diverse range of authors for the first section of the manuscript, including fifteen poems by Mellin de Saint-Gelais, as well as poems by Taillemont, Ronsard and du Bellay.<a href="index.php%3Fcontent=stuarthistory.html#f30" class="foot">30</a>  This would suggest that Brantôme was not the author of the seventeen-stanza song, but falsely excerpted it as Mary’s work in 1665. It is this print excerpt, marking the moment of the poem’s first circulation with Mary Stuart as its author, which is reproduced in the archive. 
+</p><p>
+A similarly complex textual history attends the Latin poem “Adamas Loquitur”, said to have been written in 1562, three years after Elizabeth’s coronation, to accompany the gift of a precious gem Mary sent to Elizabeth. It is assumed that the poem was written in French, but that the original was lost, leaving only two Latin translations, one by Sir Thomas Chaloner in <i>De Republica Anglorum</i> (London, 1579) and the other published by George Conn in <i>Vita Mariae Stuartae Scotiae Reginae</i> (Rome, 1624). Chaloner states that his poem is “a translation of certain verses which were first written in the French language, and sent by the most serene Queen of Scotland to the most serene Elizabeth, Queen of England, … together with a ring of excellent workmanship, in which a remarkable diamond was conspicuous.” As Peter Herman notes, it is not clear whether the translation is Chaloner’s or Mary Stuart’s, and he draws upon Arbuthnot’s discovery of “a very similar Latin poem by Buchanan, which he says he wrote for Mary to accompany the gift of a diamond heart”.<a href="index.php%3Fcontent=stuarthistory.html#f31" class="foot">31</a>  The attribution of the poem remains unresolved. Mary could have written the French original and Buchanan a Latin translation; or the Latin original was composed by Buchanan and translated into French by Mary, then retranslated into Latin by Chaloner. Chaloner’s distinct, contemporary crediting of the authorship of the poem in French to Mary is striking, but not conclusive. 
+</p><p>
+The most controversial attribution in the Mary Stuart corpus, however, relates to the casket sonnets. Unlike much of Mary’s poetry, which was circulated mostly in manuscript and reached only a small audience during her lifetime, the casket sonnets were widely circulated, first in manuscript and in numerous print editions from 1571, in a complex and politically charged transmission history.
+</p><p>
+On 20 June 1567, while Mary was being held prisoner in Scotland following her forced abdication, a silver casket was said to have been discovered in the possession of George Dalgleish, a servant of her third husband, the Earl of Bothwell. When opened the following day it was found to contain several documents, including eight letters, sonnets, and two marriage contracts. The sonnets, said to have been written by Mary in her own hand while she was still married to Lord Darnley, describe the speaker’s adulterous love affair, her rivalry with her lover’s wife, and her desire to prove her love for him. They were eventually brought to England by the Scottish Lords who had deposed Mary and presented as evidence to an English tribunal considering the charge that Mary had been complicit in Darnley’s murder and an unlawful plot to establish Bothwell as king. 
+</p><p>
+The question of their authorship is highly contested. Mary denies having written the documents said to have been discovered in the casket, complaining to Elizabeth in 1569 that, even if she had imagined the foolish remarks […], she would never have put them in writing.<a href="index.php%3Fcontent=stuarthistory.html#f32" class="foot">32</a>  Centuries of commentary highlight the unlikely circumstances of their discovery and the possibility of their forgery by the Scottish lords seeking to implicate Mary in the murder of her second husband Darnley as a means to marry her third, Lord Bothwell.<a href="index.php%3Fcontent=stuarthistory.html#f33" class="foot">33</a>  Despite their scandalous content, the casket’s contents were not immediately published, but that rumours of what had been found started to circulate in England and abroad within weeks.<a href="index.php%3Fcontent=stuarthistory.html#f34" class="foot">34</a>  There is no specific mention of the sonnets until October 1568, when they were shown privately to the English Commissioners where they became central to William Cecil’s case against Mary, assembled in the interests of Elizabeth I.<a href="index.php%3Fcontent=stuarthistory.html#f35" class="foot">35</a>   
+</p><p>
+The sonnets were officially produced at Westminster on 8 December 1568 by the Scottish Regent James Stewart, Earl of Moray. MacRobert writes that Moray testified upon producing them that they were the original manuscripts, in French, in Mary’s handwriting, and that copies of the documents were made at this point by the English Commissioners.<a href="index.php%3Fcontent=stuarthistory.html#f36" class="foot">36</a>  However, John Guy notes that William Cecil, Queen Elizabeth’s chief advisor, only later amended the minutes of the 1568 tribunal to specify that the documents were written with “the Queen of Scots’ own hand.”<a href="index.php%3Fcontent=stuarthistory.html#f37" class="foot">37</a>   The matter of the handwriting was obviously crucial to the perceived authenticity of the documents, and it was much scrutinized. MacRobert notes that, at a meeting of the English Privy Council at Hampton Court on 14 December, the handwriting was compared to handwriting in letters written by Mary to Elizabeth, and was found to be the same.<a href="index.php%3Fcontent=stuarthistory.html#f38" class="foot">38</a> Yet Mary’s own response to the claim that certain documents had been found proving her guilt in the matter of Darnley’s death was that they were forgeries: “there are several in Scotland, both men and women, that can counterfeit my handwriting, and write the same manner of writing which I use as well as myself.”<a href="index.php%3Fcontent=stuarthistory.html#f39" class="foot">39</a> 
+</p><p>
+When the hearings at Westminster ended with an inconclusive verdict, Moray took the casket and its contents back to Scotland with him. On Moray’s death in January 1570, they passed to the next Regent, the Earl of Lennox. In February 1571 Morton took the casket and its contents (including the 12 sonnets) to London, after making copies. It is uncertain what then happened to the original manuscript; it may have returned to Scotland and passed to the Earl of Gowrie, but after his execution in 1584 both casket and letters vanished. In 1632 the casket was purchased by the Marchioness of Douglas, but its contents had disappeared.<a href="index.php%3Fcontent=stuarthistory.html#f40" class="foot">40</a>   
+</p><p>
+First read by coterie audiences in manuscript as evidence for Mary’s complicity in murder, they were then circulated to the lay reader in print as part of a carefully framed narrative seeking to further establish her guilt. The casket letters first appeared in print in George Buchanan’s <i>De Maria Scotorum Regina</i>, possibly published in London, around October 1571.<a href="index.php%3Fcontent=stuarthistory.html#f41" class="foot">41</a>  The sonnets were not included in this volume, however, but did appear later in a vernacular translation of it, entitled <i>Ane Detectiovn of the Duinges of Mary Quene of Scottes</i>. The sonnets appear at the end of the volume, following multiple prose tracts by Buchanan detailing Mary’s disdain for Darnley and passion for Bothwell, her motivations for murder, her immoderate character and desire, as well as other quasi-legal documents: a memorandum detailing the discovery of the casket, a version of one of the marriage contracts within it, and the indictment of Bothwell at his April 1567 trial in the assize court. This assemblage of “writings and witnesses sa prouable” is followed by the sonnets, printed in both French and what Cathy Shrank has described as “a pseudo-Scottish voice, easily comprehensible to an English reader, but marked with selected Scottishisms.”<a href="index.php%3Fcontent=stuarthistory.html#f42" class="foot">42</a>  There were two such editions of Buchanan’s <i>Detectiovn</i>, distinguished by variations to the title pages. A French edition appeared in February 1572 under the title <i>Histoire de Marie Royne d’Escosse</i> (a translation, attributed to Filipe Camuz, of the Anglicized Scots translation, sometimes attributed to Thomas Wilson, of George Buchanan’s <i>De Maria Scotorum Regina</i>.) Also in 1572, a Scots edition was printed by Robert Lekprevik at St Andrews, possibly translated by Buchanan.<a href="index.php%3Fcontent=stuarthistory.html#f43" class="foot">43</a>  Cumulatively, the sonnets included within these various editions of <i>Ane Detectiovn</i> circulated widely in Scotland, England and France, with Elizabeth’s clandestine approval, as a form of semi-publicity designed to covertly damage Mary’s character.<a href="index.php%3Fcontent=stuarthistory.html#f44" class="foot">44</a>  
+</p><p>
+The archive reproduces the only existing manuscript copy of the casket sonnets, Cambridge University Library MS Oo.7.47, distinguished by its marginalia. These comments show a reader attempting to align the events of Mary’s biography with the narrative elements of the sequence. The archive also reproduces the first print circulation of the sonnets from Buchanan’s 1571 edition of <i>Ane Detectiovn</i>. 
+</p><h3>
+III. LOST POEMS
+</h3><p>
+The remaining poems attributed to Mary Stuart have no extant sixteenth century print or manuscript source. They have not been reproduced in the archive because their only sources are apocryphal. They include two lines that George Chalmers identifies as scratched on a window in the Old Hall at Buxton, now destroyed:
+</p><p>
+Buxtona, quae calidae celebrans nomen lymphae,
+</p><p>
+Fortuna mihi posthoc non adeunda, vale.<a href="index.php%3Fcontent=stuarthistory.html#f45" class="foot">45</a>   
+</p><p>
+Another short poem is reported to have been scratched on Mary’s window at Fotheringay Castle, a few days before her execution, now also destroyed:
+</p><p>
+From the top of all my trust
+</p><p>
+Mishap has laid me in the dust.<a href="index.php%3Fcontent=stuarthistory.html#f46" class="foot">46</a> 
+</p><p>
+As Robin Bell notes, this would be the only poem Mary Stuart wrote in English in her lifetime.<a href="index.php%3Fcontent=stuarthistory.html#f47" class="foot">47</a>  Julian Sharman and Agnes Strickland both also include a poem claimed to have been written in Latin on the morning of her execution:
+</p><p>
+O Domine Deus speravi in Te. 
+</p><p>
+O care mi Jesu nunc libera me.
+</p><p>
+In dura catena, in misera poena, desidero.
+</p><p>
+Languendo, gemendo, et genuflectendo,
+</p><p>
+Adoro, imploro, ut liberes me.<a href="index.php%3Fcontent=stuarthistory.html#f48" class="foot">48</a>  
+</p><p>
+None can be securely attributed and until further evidence emerges, cannot be considered part of her works. It might be noted that the only poems that we can be confident were written by Mary Stuart are, without exception, in French. 
+</p><p>
+As Bell notes, a final missing text attributed to Mary Stuart and circulating in manuscript in the sixteenth and early seventeenth centuries is one written to her son, known as “Quatrains à son Fils” or “Institutions of a Prince.”<a href="index.php%3Fcontent=stuarthistory.html#f49" class="foot">49</a>  In his 1863 preface to <i>Inventoires de la Royne Descosse Douairiere de France. Catalogues of the Jewels, Dresses, Furniture, Books, and Paintings of Mary Queen of Scots. 1556-1569</i>, Joseph Robertson notes that these quatrains to James I are lost, although still in circulation in “more than one copy, so late as 1627” and “long treasured by him as a choice relic.”<a href="index.php%3Fcontent=stuarthistory.html#f50" class="foot">50</a>  
+</p>
+<div class="bibliography">
+<h3>
+IV. SELECTED BIBLIOGRAPHY
+</h3><p>
+William Calin, <i>The Lily and the Thistle: The French Tradition and the Older Literature of Scotland: Essays in Criticism</i> (Toronto: University of Toronto Press, 2013).
+</p><p>
+Jessica Erin DeVos, <i>Autobiography, Authorship and Artifice: Reconsidering Renaissance Women Poets,</i> Phd diss., Yale University, 2012.
+</p><p>
+Jessica Erin DeVos, 'Authenticity, Artifice, and Ovid’s <i>Heroides</i> in Mary Stuart’s Casket Sonnets', <i>French Studies</i> 71.4 (2017): 489-508.
+</p><p>
+Sarah Dunnigan, <i>Eros and the Poetry at the Courts of Mary Queen of Scots and James VI</i> (Basingstoke: Palgrave Macmillan, 2003), pp. 15-45. 
+</p><p>
+---. ‘Sacred Afterlives: Mary, Queen of Scots, Elizabeth Melville and the Politics of Sanctity’, <i>Women’s Writing</i> 10.3 (2003): 401-424. 
+</p><p>
+Irène Fasal and François Rigolot, ‘Ronsard et Marie Stuart: Sur des vers autographes conservés à Oxford’, <i>L’Année ronsardienne</i> 1 (2019): 115-123.
+</p><p>
+Susan Frye, 'Political Designs: Elizabeth Tudor, Mary Stuart and Bess of Hardwick', in <i>Pens and Needles: Women's Textualities in Early Modern England</i> (Philadelphia: University of Pennsylvania Press, 2010), pp. 30-74.
+</p><p>
+Peter C. Herman, <i>Royal Poetrie: Monarchic Verse and the Political Imaginary of Early Modern England</i> (New York: Cornell University, 2010), pp. 52-98.
+</p><p>
+---. (ed.) <i>Reading Monarch's Writing: The Poetry of Henry VIII, Mary Stuart, Elizabeth I, and James VI/I</i> (Tempe, Arizona: Arizona Center for Medieval and Renaissance Studies, 2002).
+</p><p>
+A. E. MacRobert, <i>Mary Queen of Scots and the Casket Letters</i> (London: L.B. Tauris & Co. Ltd., 2002).
+</p><p>
+Francois Rigolot, ‘When Petrarchan Errors Become Political Crimes: Mary Stuart’s French Sonnets to Bothwell’, in Elizabeth Vinestock and David Foster (eds.), <i>Writers in Conflict in Sixteenth-Century France: Essays in Honour of Malcolm Quainton</i> (Durham: Durham Modern Languages Series, 2008), pp. 37-50.
+</p><p>
+Cathy Shrank, ‘Manuscript, Authenticity and ‘evident proofs’ against the Scottish Queen’, in A.S.G. Edwards (ed.), <i>Tudor Manuscripts 1485-1603,</i> British Library: English Manuscript Studies 1100-1700, 15 (Chicago: University of Chicago Press, 2010), pp. 198-218.
+</p><p>
+Rosalind Smith, ‘A ‘goodly sample’: Exemplarity, Female Complaint and Early Modern Women’s Poetry’, in Susan Wiseman (ed.), <i>Early Modern Women and the Poem</i> (Manchester and New York: Manchester University Press, 2013). 
+</p><p>
+---. ‘The Case of Mary Queen of Scots, Lord Darnley and Lord Bothwell: Initiating the Literature of Husband-Murder in Sixteenth-Century England’, <i>Notes & Queries</i> 59.4 (2012): 498-501.
+</p><p>
+---. ‘’Le pouvoir a faire dire’: Marginalia in Mary Queen of Scots’ Book of Hours’, in Patricia Pender and Rosalind Smith (eds.), <i>Material Cultures of Early Modern Women’s Writing</i> (Basingstoke: Palgrave, 2014), pp. 55–75.
+</p><p>
+---. ‘Reading Mary Stuart’s Casket Sonnets: Reception, Authorship, and Early Modern Women’s Writing’, in Sarah Ross, Patricia Pender and Rosalind Smith (eds.), <i>Early Modern Women and the Apparatus of Authorship,</i> Spec. Iss. of <i>Parergon</i> 29.2 (2012): 149-74.  
+</p><h3>
+V. TRANSCRIPTION PROTOCOLS
+</h3><p>
+Transcriptions have retained all original features of the manuscript, including punctuation, except for the modernisation of the long s. Where a manuscript contains multiple deletions, notes have been added at the end of the transcription for clarity of reading.
+</p>
+</div>
+<div class="footnotes">
+<ol>
+<li><a id="f1"></a>
+  For a full account of the reception of the sonnets, see Rosalind Smith, ‘Reading Mary Stuart’s Casket Sonnets: Reception, Authorship, and Early Modern Women’s Writing’, in Sarah Ross, Patricia Pender and Rosalind Smith (eds.), Early Modern Women and the Apparatus of Authorship, Spec. Issue of <i>Parergon</i> 29.2 (2012): 149-74. 
+</li><li><a id="f2"></a>
+  Julian Sharman (ed.), <i>The Poems of Mary Queen of Scots</i> (London: Basil Montagu Pickering, 1873).
+</li><li><a id="f3"></a>
+  Patricia Stewart-Mackenzie Arbuthnot (ed.), <i>Queen Mary’s Book: A Collection of Poems and Essays</i> (London: George Bell & Sons, 1907).
+</li><li><a id="f4"></a>
+  A. A. Methven (ed.), <i>A Year Book of Mary Queen of Scots</i> (London: T. N. Foulis, 1913); Clifford Bax, <i>The Silver Casket: Being Love-Letters and Love-Poems Attributed to Mary Stuart, Queen of Scots</i> (London: Home and Van Thal, 1946). 
+</li><li><a id="f5"></a>
+  Betty Travitsky, <i>The Paradise of Women: Writings by Englishwomen of the Renaissance</i> (Westport, CT: Greenwood, 1982); Robin Bell, (ed. and trans.), <i>Bittersweet Within My Heart: The Collected Poems of Mary Queen of Scots</i> (London: Pavilion, 1992). 
+</li><li><a id="f6"></a>
+  Alexander Labanoff, <i>Receuil Des Lettres, Instructions Et Memoires De Marie Stuart</i>, Vol. 7 (London: Charles Dolman, 1844), pp. 346-352.
+</li><li><a id="f7"></a>
+  See Rosalind Smith, ‘‘Le pouvoir a faire dire’: Marginalia in Mary Queen of Scots’ Book of Hours’, in Patricia Pender and Rosalind Smith (eds.), <i>Material Cultures of Early Modern Women’s Writing</i> (Basingstoke: Palgrave, 2014), pp. 55–75.
+</li><li><a id="f8"></a>
+  J. B. Silvestre, ‘Plate CXCVIII Gothic Miniscule Writing XVth Century: Book of Prayers of Mary Stuart’, in <i>Universal Palæography</i>, Vol II, Trans. Sir Frederic Madden (London: Henry G. Bohn, 1849), pp. 550-553. <a href="https://archive.org/stream/universalpalaeo00silvgoog#page/n192/mode/2up">https://archive.org/stream/universalpalaeo00silvgoog#page/n192/mode/2up</a>. Originally published as <i>Paléographie Universelle</i> (Paris, 1839-41). 
+</li><li><a id="f9"></a>
+  J. B. Silvestre, <i>Universal Palæography</i>, Vol II, p. 552.
+</li><li><a id="f10"></a>
+  J. B. Silvestre, <i>Universal Palæography</i>, Vol II, pp. 552–553.
+</li><li><a id="f11"></a>
+  Morgand and Fatout, <i>Bulletin de la Librairie Morgand et Fatout</i> (Paris: Damascène Morgand et Charles Fatout, 1876 -1886). <a href="http://rarebooks.info/v3/h_list.php">http://rarebooks.info/v3/h_list.php</a> 
+</li><li><a id="f12"></a>
+  Pamela Robinson, ‘‘John Leslie’s ‘Libri Duo’: Manuscripts belonging to Mary Queen of Scots?’, in R. C. Alston (ed.), <i>Order and Connexion: Studies in Bibliography and Book History</i> (Cambridge: D.S. Brewer, 1997), p. 63.
+</li><li><a id="f13"></a>
+  Pamela Robinson, ‘John Leslie’s ‘Libri Duo’’, pp. 63-75. 
+</li><li><a id="f14"></a>
+  John Leslie, Bishop of Ross, ‘Piae Afflicti Animi Consolationes Divinaeque Remedia’, in, <i>Libri Duo: Quorum vno, Piae Afflicti Animi Consolationes, diuinaque remedia: Altero, Animi Tranqvilli Mvnimentum et conservatio, continentur</i> (London: Petri l’Huillier, 1574), pp. 39–42. <a href="https://archive.org/stream/bub_gb_IWM_TwsnxvkC#page/n93/mode/2up">https://archive.org/stream/bub_gb_IWM_TwsnxvkC#page/n93/mode/2up</a>
+</li><li><a id="f15"></a>
+  Walter Scott, David Laing, and Thomas Thomson (eds.), <i>The Bannatyne Miscellany; Containing Original Papers and Tracts Chiefly Relating to the History and Literature of Scotland</i>, Volume 1 (Edinburgh: The Bannatyne Club, 1827), p. 342, n. 4 & p. 343, n. 1.
+</li><li><a id="f16"></a>
+  Walter Scott, David Laing, and Thomas Thomson (eds), <i>The Bannatyne Miscellany</i>, p. 341. 
+</li><li><a id="f17"></a>
+  I have been unable to locate the 1595 edition referred to by Bell; his source is possibly Arbuthnot, <i>Queen Mary’s Book</i>, p. 112, 167, who dates the edition at 1593. Her source in turn is Gustave Pawlowski, <i>Poésies Francaises de la Reine Marie Stuart</i> (Paris, 1883), pp. 3-16, who prints the “huitain” on p. 14, having located it in a recently discovered French translation of Leslie’s text entitled <i>Consolations divines et remedes sovverains de l’esprit affligé</i> (Paris 1593). An image of Pawlowski’s transcription is included here as the earliest reproduction of this poem. According to Pawlowski, the 1593 French edition was rare in 1883; purchased for 1,390 francs (compared to 20-25 francs for the 1574 Latin edition) and then held in private hands. I have been unable to locate it in any public collection. See Pawlowski, p. 15. 
+</li><li><a id="f18"></a>
+  Robin Bell (ed. and trans.), <i>Bittersweet Within My Heart</i>, p. 93.
+</li><li><a id="f19"></a>
+  Patricia Stewart-Mackenzie Arbuthnot (ed.) <i>Queen Mary’s Book</i>, p. 128.
+</li><li><a id="f20"></a>
+  Peter C. Herman, <i>Royal Poetrie: Monarchic Verse and the Political Imaginary of Early Modern England</i> (New York: Cornell University, 2010), p. 102.
+</li><li><a id="f21"></a>
+  Herman cites Laing: “This sonnet must have been written when Mary solicited admission to Elizabeth’s presence, upon her arrival in England” (p. 102, n. 14), and notes that Laing’s assumption has been taken up by “subsequent critics and editors […], but without his admission of ambiguity.” (Peter C. Herman, <i>Royal Poetrie</i>, p. 102).
+</li><li><a id="f22"></a>
+  Peter C. Herman, <i>Royal Poetrie</i>, p. 106.
+</li><li><a id="f23"></a>
+  Herman gives the following publication details: Laing, Malcolm, <i>History of Scotland</i>, 4 Vols (London: J. Mawman, 1804), pp. 220-221. See Peter C. Herman, <i>Royal Poetrie</i>, p.102, n. 14.
+</li><li><a id="f24"></a>
+  Francois Rigolot writes: “Mary wrote a beautiful sonnet in French and Italian, in the fine dolce amaro style, hoping to ease relations between them […]. Elizabeth’s response was a hostile poem, printed in Puttenham’s <i>Arte of Englishe Poesie</i> in 1589. (Francois Rigolot ‘When Petrarchan errors become political crimes: Mary Stuart’s French sonnets to Bothwell’, in Elizabeth Vinestock and David Foster (eds.), <i>Writers in Conflict in Sixteenth-Century France: Essays in Honour of Malcolm Quainton</i> (Durham: Durham Modern Languages Series, 2008), p. 50). Robin Bell quotes the following lines from Elizabeth’s “The Doubt of Future Foes” to illustrate: “No forreine bannisht wight shall ancre in this port,/Our realme it brookes no stranger’s force, let them/ elsewhere resort” (Robin Bell, <i>Bittersweet Within My Heart</i>, p. 62). See also Jennifer Summit, ‘‘A Ladies Penne’: Elizabeth I and the Making of English Poetry,’ in <i>Lost Property: The Woman Writer and English Literary History, 1380 – 1589</i> (Chicago: University of Chicago Press, 2000), pp. 194-202. 
+</li><li><a id="f25"></a>
+  Peter C. Herman, <i>Royal Poetrie</i>, pp. 105-6.
+</li><li><a id="f26"></a>
+  Pierre de Bourdeille, <i>The Book of the Ladies (Illustrious Dames)</i>, trans. Katharine Prescott Wormeley (Boston: Hardy, Pratt & Company, 1899), pp. 94-6.  Originally: Pierre du Bourdeille, Seigneur de Brantôme, <i>Memoires de Messire Pierre de Bourdeille, Seigneur de Brantome, contenans Les Vies des Dames Illustres de France de son temps</i> (Leyde, 1665), pp. 120–123. <a href="https://archive.org/details/ned-kbn-all-00002753-001">https://archive.org/details/ned-kbn-all-00002753-001</a>
+</li><li><a id="f27"></a>
+   Gustave Pawlowski, <i>Poésies Françaises de la Reine Marie Stuart</i> (Paris: A. Quantin, 1883), p. 10.  
+</li><li><a id="f28"></a>
+  Louis A. Barbé, <i>In Byways of Scottish History, London</i> (Glasgow & Bombay: Blackie and Sons, 1912), pp. 82-3, 15-16.
+</li><li><a id="f29"></a>
+  See Patricia Stewart McKenzie Arbuthnot for the attribution to an anonymous author, Louis Barbé for the attribution to Brantôme.  Patricia Stewart-Mackenzie Arbuthnot (ed.), <i>Queen Marys Book</i>, p. 88; Louis A. Barbé, <i>In Byways of Scottish History</i>, pp. 82-3. When Barbé published his book in 1912 his claims about the authenticity of the poem excited some public interest, and an article summarising the debate was published in the <i>New York Times</i>, July 20, 1913. ‘Famous "Song of Mary Queen of Scots" not by her?’ <a href="http://query.nytimes.com/mem/archive-free/pdf?res=950CE6DE113CE633A25753C2A9619C946296D6CF">http://query.nytimes.com/mem/archive-free/pdf?res=950CE6DE113CE633A25753C2A9619C946296D6CF</a>. There is no author attributed to this article, which gives a persuasive and identical summary of Barbé’s findings.
+</li><li><a id="f30"></a>
+  See Pascal Joubard and Claire Sicart, “De quelques attributions dans le MS. Brantôme (B.N. NAF 11688)” <i>Notules XVI</i> (2015). <a href="https://www.openedition.org/15923?lang=fr">https://www.openedition.org/15923?lang=fr</a>
+</li><li><a id="f31"></a>
+  Patricia Stewart-Mackenzie Arbuthnot (ed.), <i>Queen Marys Book</i>, p. 174.
+</li><li><a id="f32"></a>
+  Retha M. Warnicke,<i> Mary Queen of Scots</i> (London and New York: Routledge, 2006), p.175.
+</li><li><a id="f33"></a>
+  Rosalind K. Marshall, <i>Mary, Queen of Scots: ‘In My End is My Beginning’</i> (Edinburgh: NMS Enterprises Limited Publishing), p. 55. 
+</li><li><a id="f34"></a>
+  For an early discussion of the letters in foreign diplomatic correspondence, see A.E. MacRobert, <i>Mary Queen of Scots and the Casket Letters</i> (London: L.B. Tauris & Co. Ltd.), p. 88. 
+</li><li><a id="f35"></a>
+  A.E. MacRobert, <i>Mary Queen of Scots and the Casket Letters</i>, pp. 93-4.
+</li><li><a id="f36"></a>
+  A.E. MacRobert, <i>Mary Queen of Scots and the Casket Letters</i>, p. 96.
+</li><li><a id="f37"></a>
+  John Guy, <i>‘My Heart is My Own’: The Life of Mary Queen of Scots</i> (London: Fourth Estate, 2004), p. 432.
+</li><li><a id="f38"></a>
+  A.E. MacRobert, <i>Mary Queen of Scots and the Casket Letters</i>, p. 97.
+</li><li><a id="f39"></a>
+  Cited in A.E. MacRobert, <i>Mary Queen of Scots and the Casket Letters</i>, p. 100.
+</li><li><a id="f40"></a>
+  Rosalind K. Marshall, <i>Mary, Queen of Scots: ‘In My End is My Beginning’</i>, p. 55.
+</li><li><a id="f41"></a>
+  MacRoberts writes: “The earliest surviving edition of the <i>Detection</i> gives no indication of the place of printing or the date or the printer. Presumably this was to shield the English government from any resulting opprobrium, as such a book could not have been openly published at that time without official approval. (A.E. MacRobert, <i>Mary Queen of Scots and the Casket Letters</i>, p. 104.)
+</li><li><a id="f42"></a>
+  Cathy Shrank, ‘Manuscript, Authenticity and “evident proofs” against the Scottish Queen’, in A.S.G. Edwards (ed.), <i>Tudor Manuscripts 1485-1603</i>, British Library: English Manuscript Studies 1100-1700, 15 (Chicago: University of Chicago Press, 2010), pp. 198-218 (p. 203).
+</li><li><a id="f43"></a>
+  A.E. MacRobert, <i>Mary Queen of Scots and the Casket Letters</i>, p. 105.
+</li><li><a id="f44"></a>
+  Rosalind Smith, “A ‘goodly sample’: exemplarity, female complaint and early modern women’s poetry’, in Susan Wiseman (ed.), <i>Early Modern Women and the Poem</i> (Manchester and New York: Manchester University Press, 2013), p. 197.
+</li><li><a id="f45"></a>
+  See George Chalmers, <i>The Life of Mary Queen of Scots; Drawn from State Papers</i>. 2 vols. (London: John Murray, 1818), vol. 1. p. 392.
+</li><li><a id="f46"></a>
+  Julian Sharman (ed.), <i>The Poems of Mary Queen of Scots</i>, Introduction, n.p.
+</li><li><a id="f47"></a>
+  Robin Bell, (ed. and trans.), <i>Bittersweet Within My Heart</i>, p. 107.
+</li><li><a id="f48"></a>
+  Agnes Strickland, <i>Life of Mary Queen of Scots</i> Volume II (London: George Bell and Sons, 1873), p. 448; Julian Sharman (ed.), <i>The Poems of Mary Queen of Scots</i>, Introduction, n.p.
+</li><li><a id="f49"></a>
+  Robin Bell (ed. and trans.), <i>Bittersweet Within My Heart</i>, p. 110.
+</li><li><a id="f50"></a>
+  Joseph Robertson (ed.), <i>Inventoires de la Royne Descosse Douairiere de France. Catalogues of the Jewels, Dresses, Furniture, Books, and Paintings of Mary Queen of Scots. 1556-1569</i> (Edinburgh: Bannatyne Club, 1863), p. cxvii. 
+</li>
+</ol>
+</div>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2361 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../tweetie/tweetie.js%3F1747311468"></script>
+	<script src="../scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=uraniapoems&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="../index.html"><img src="../img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li class="has-child"><a href="../digitalarchive.html">Digital Archive</a><ul><li><a href="../bradstreet.html">Anne Bradstreet</a></li><li><a href="../elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="../maryjacob.html">Mary Jacob</a></li><li><a href="../elizabethmelville.html">Elizabeth Melville</a></li><li><a href="../lucyrussell.html">Lucy Russell</a></li><li><a href="../marystuart.html">Mary Stuart</a></li><li><a href="../marywroth.html">Mary Wroth</a></li><li><a href="../techno.html">Technical Note</a></li></ul></li><li><a href="../conferences.html">Conferences</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../grants.html">Grants, Linkages & Fellowships</a></li><li><a href="../resources.html">Resources</a></li><li><a href="../networkaffiliates.html">Network Affiliates</a></li><li><a href="../contacts.html">Contacts</a></li><li><a href="../help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="../digitalarchive.html">Digital Archive</a></li><li><a href="../marywroth.html">Mary Wroth</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="15" class="authorheading">Mary Wroth</h2><p><strong>Contributor:</strong> <a href="https://www.newcastle.edu.au/profile/paul-salzman">Professor Paul Salzman and co-edited by Kelly Peihopa</a></p><p><strong>Permissions:</strong> <p>
+Images of the poems were generously provided by the Newberry Library, which has also given us permission to reproduce them here: Newberry Library, Chicago, VAULT Case MS folio Y 1565.W95. Manuscript images of Herbert’s poem are reproduced with the permission of the British Library.
+</p>
+<p>
+Note: Page references are to the poem in the authoritative edition of the manuscript: Josephine A. Roberts, ed., completed by Suzanne Gossett and Janel Mueller, <i>The Second Part of the Countess of Montgomery’s Urania</i> (Tempe: Renaissance Text Society/ACMRS, 1999).
+</p></p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 15 da uraniapoems">
+                                <div class="digarch">
+
+        <!-- C O N T E N T -->
+        <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+        <!-- APMS: End Header Start Content -->
+        <!-- Body inserted here. -->
+
+        <h2 id="titleHumanities">Poems from the Urania Manuscript</h2>
+
+
+        <div id="showhidecontrol">
+            <p>
+                Select versions to display:<br />
+                <input name="checkbox" type="checkbox" value="checkbox" onclick="show_hide_column(this, 'general', 0);" /> Images
+                <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription
+                <input name="checkbox" type="checkbox" value="checkbox" onclick="show_hide_column(this, 'general', 2);" /> Modernisation
+                <input name="checkbox" type="checkbox" value="checkbox" onclick="show_hide_column(this, 'general', 3);" /> Annotation
+                <br /><br />
+                <!-- <input name="checkbox" type="checkbox" value="checkbox"
+                  onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+                  -->
+			</p>
+        </div>
+
+
+
+        <div class="WrothText">
+            <table class="content" id="general">
+                <tr class="shade">
+                    <th style="min-width: 200px;">Images</th>
+                    <th style="min-width: 380px;">Transcription</th>
+                    <th style="min-width: 380px;">Modernization</th>
+                    <th style="min-width: 200px;">Annotation</th>
+                </tr>
+                <tr>
+                    <td style="display: none;">
+<a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg8v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg8v_o2-lowres.jpg" alt="manuscript" /></a>
+		    </td>                    
+		    <td>
+                        <p>
+
+N1</p>
+<p>Why doe you thus torment my poorest hart?</p>
+<p>
+why doe you cleerest eyes obʃcure all day</p>
+<p>
+from mee loves poorest vaʃsall, can my ʃmart</p>
+<p>	
+ad triumph to your Croune, make noe delay</p>
+<p>
+butt quickly O conclude, and doe nott stay,</p>
+<p>	
+rebellions must bee crusht by preʃent art</p>
+<p>
+yett I a subiect ame w<sup>t</sup> out dismaye,</p>
+<p>	
+for loyalty I iustly claime great part,</p>
+<p>
+butt if thos cruell eyes will nott impart</p>
+<p>
+a favourable ʃenʃure, Oh poore claye</p>
+<p>	
+how can an new mould bee to eaʃe my ʃmart?</p>
+<p>	
+noe an new death must all thes ills repay,</p>
+<p>
+Then wellcom death ʃince by thos eyes I dy,</p>
+<p>
+Love looke, are any cleerer in your skye;/
+
+                        </p>                    </td>
+                    <td>
+                        <p>
+
+N1</p>
+<p>
+Why do you thus torment my poorest heart?</p>
+<p>
+Why do you clearest eyes obscure all day</p>
+<p>
+from me, loves poorest vassal? Can my smart</p>
+<p>
+add triumph to your crown? Make no delay</p>
+<p>
+but quickly oh conclude, and do not stay.</p>
+<p>
+Rebellions must be crushed by present art,</p>
+<p>
+yet I a subject am without dismay;</p>
+<p>
+for loyalty I justly claim great part,</p>
+<p>
+but if those cruel eyes will not impart</p>
+<p>
+a favourable censure, oh poor clay,</p>
+<p>
+how can a new mould be to ease my smart?</p>
+<p>
+No, a new death must all these ills repay.</p>
+<p>
+Then welcome death, since by those eyes I die,</p>
+<p>
+love look, are any clearer in your sky?
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+N1 (p. 24): This is a song sung by the Prince of Corinth and overheard by Pamphilia and Amphilanthus. Unfortunately, music only exists for one song in the manuscript continuation of <i>Urania</i> (see N14), but we are told that this song is sung 'to an od kind of music' (24), although the prince's voice is 'suteable to his ditty' (24). Katie Larson (private communication) suggests that the idea of the song being odd might mean that it is unusual, rather than odd having a pejorative meaning, especially given the Prince’s ‘suitable voice’. (For song in Wroth in general see Katie R. Larson, <i>The Matter of Song in Early Modern England</i>, OUP, 2019.) The Prince’s song and state are provoked by his unrequited love for ‘a scornefull, senceles creature’ (27). The song is in the form of a sonnet using the kind of elaborate rhyme scheme found, for example, in Wroth’s uncle Philip Sidney’s ‘Astrophil and Stella’: ABAB BABA ABAB CC. </p>
+<p>
+<b>heart</b>: the tortured heart is a common image in Wroth’s poetry.</p>
+<p>
+<b>obscure all day/from me</b>: i.e. block out the day’s light. Note the clever use of enjambment where the break of the line mimics the obscuring. </p>
+<p>
+<b>vassal</b>: servant/slave. </p>
+<p>
+<b>Rebellions</b>: the political overtones in this poem are worth noting: the scornful lover is a ruler with a crown, rejecting the rebellion of the speaker, who is a loyal subject, but nevertheless one who will be crushed by ‘art’. Like so much of Wroth’s work, especially <i>Urania</i>, the vicissitudes of desire cannot be separated from anxieties over Jacobean foreign policy, forward Protestant demands for engagement in religious conflict, and some resistance to increasingly arbitrary monarchical power.</p>
+<p>
+<b>poor clay</b>: it what the body is fashioned from (in the story of Genesis).</p>
+<p>
+<b>new mould</b>: i.e. a refashioned body (clay in a new mould) as opposed to ‘welcome death’, which is the only escape from the frustrated lover’s torment.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="display: none;"><img src="index.php%3Fcontent=uraniapoems.html"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg10_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg10_o2-lowres.jpg" alt="manuscript" /></a><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg10v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg10v_o2-lowres.jpg" alt="manuscript" /></a></td>
+                    <td>
+                        <p>
+N2</p>
+<p>
+Had I loved butt att that rate</p>
+<p>
+which hath bin̅ ordain’d by fate</p>
+<p>	   
+	<p class="indent"> to all your kinde; </p> 
+<p>	
+I had full requited bin̅ </p>
+<p>
+nor your slighting mee had ʃeene, </p>
+<p><strike>
+nor once reprinde</strike></p>
+<p>	
+	<p class="indent"> nor once repined</p>
+<p>
+	<p class="indent"> neglect to find, 
+
+</p><p>
+
+</p><p>
+<br>For I ame ʃoe wholy thine</p>
+<p>
+as in least ʃort to bee mine</p>
+<p>	
+	<p class="indent"> My hart denies</p>
+<p>
+I doe think no thought butt thee, </p>
+<p>
+nor deʃire more light to ʃee</p>
+<p>
+	<p class="indent"> then what doth riʃe</p>
+<p>
+	<p class="indent"> from thy faire eyes, 
+
+</p><p>
+
+</p><p>
+<br>Deer I blame nott thy neglect</p>
+<p>
+in exceʃs of my respect</p>
+<p>
+	<p class="indent"> the fault doth rest</p>
+<p>
+thou dost pretty love impart, </p>
+<p>
+as can lodge in woemans hart</p>
+<p>
+	<p class="indent"> non showld bee prest </p>
+<p>	
+	<p class="indent"> beeyound ther best, 
+
+</p><p>
+
+</p><p>
+<br>Butt when I did give thee more, </p>
+<p>
+then againe thou cowldst restore, </p>
+<p>	
+	<p class="indent"> and woeman bee</p>
+<p>
+I made thee against thy will</p>
+<p>
+to remaine vngratefull still</p>
+<p>
+	<p class="indent"> by binding thee</p>
+<p>
+	<p class="indent"> ʃoe much to mee; </p>
+
+
+                    </td>
+                    <td>
+                        <p>
+N2</p>
+<p>
+Had I loved but at that rate</p>
+<p>
+which has been ordained by fate</p>
+<p>
+	<p class="indent"> to all your kind, </p>
+<p>
+I had full requited been, </p>
+<p>
+nor your slighting me had seen, </p>
+<p>
+	<p class="indent"> nor once repined</p>
+<p> 
+	<p class="indent"> neglect to find. 
+
+</p><p>
+
+</p><p>
+
+</p><p>
+<br>For I am so wholly thine</p>
+<p>
+as in least sort to be mine</p>
+<p>
+	<p class="indent"> my heart denies. </p>
+<p>
+I do think no thought but thee, </p>
+<p>
+nor desire more light to see</p>
+<p>
+	<p class="indent"> than what doth rise</p>
+<p>
+	<p class="indent"> from thy fair eyes. 
+
+</p><p>
+
+</p><p>
+<br>Dear, I blame not thy neglect, </p>
+<p>
+in excess of my respect</p>
+<p>
+	<p class="indent"> the fault doth rest; </p>
+<p>
+thou dost pretty love impart, </p>
+<p>
+as can lodge in woman’s heart, </p>
+<p>
+	<p class="indent"> none should be pressed</p>
+<p>
+	<p class="indent"> beyond their best. 
+
+</p><p>
+
+</p><p>
+<br>But when I did give thee more, </p>
+<p>
+than again thou couldst restore</p>
+<p>
+	<p class="indent"> and woman be; </p>
+<p>
+I made thee against thy will</p>
+<p>
+to remain ungrateful still</p>
+<p>
+	<p class="indent"> by binding thee</p>
+<p>
+	<p class="indent"> so much to me. </p>
+
+
+
+
+                    </td>
+                    <td>
+                        <p>N2 (pp. 30-31): This poem is a remarkable example of the intersection between Wroth’s invented characters and their parallel figures ‘in real life’, as well as an example of how the fictionalisation enables Wroth to make some subtle points about her characters and about emotional and political contexts. This is a song composed by Amphilanthus and presented to Antissia ‘when hee made a shew of love’ to her (30), even though it was meant for ‘a higher beauty’ (that is, for Pamphilia). We are not told how the song has made its way from Antissia into Pamphilia’s repertoire; one can only assume that Amphilanthus presented it to her as the true recipient. The song was indeed written by William Herbert, Wroth’s lover and the ‘real life’ equivalent of Amphilanthus, and it exists in six extant manuscripts, ascribed to Herbert in three of them. So Wroth has taken Herbert’s song/poem, ‘given’ it to Amphilanthus, but imagined a situation in which Pamphilia would sing the song and thus underlines the irony of this male lament that is in a sense a have your cake and eat it too position: if only he had loved as women do, he would have been requited, but women are in fact unreliable, ‘ungrateful’, because of their being bound to the male lover’s desire. Because Wroth contrives to have the song sung by a woman rather than a man, it becomes part of her exploration of female desire in a world of casual misogyny. The fictional context is also ironic, because at this point in the narrative, Pamphilia is married to the King of Tartaria, and Amphilanthus is married to the Princess of Slavonia. Amphilanthus, in a fascinating example of politically significant wish-fulfilment, has become the Holy Roman Emperor, which would, if it happened in real life, offer a Protestant ascendancy in Europe, just as Pamphilia’s marriage offers a reconciliation between East and West.</p>
+<p>Manuscripts containing the poem: British Library Additional manuscripts: 25303, fol. 130v; 21433, fols. 119v-120v; 10309, fols. 125-125v; British Library Harley MS 6917 fols. 33v-34; National Library of Scotland MS 6504, fol. 98v; National Library of Scotland MS 2067, fols. 1-1v.</p>
+<p>For a detailed examination of the poetic interactions between Wroth and Herbert see Mary Ellen Lamb, ‘“Can you suspect a change in me”: Poems by Mary Wroth and William Herbert, Third Earl of Pembroke’, in Katherine R. Larson et al., eds., <i>Re-Reading Mary Wroth</i> (New York: Palgrave Macmillan, 2015), pp. 53-68.</p>
+<p><b>that rate</b>: with that intensity, at that level.
+</p>
+<p> See Appendix (at end, after Poem 19) for images of the poem as it appears in four British Library Manuscripts.
+</p>
+
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><img src="index.php%3Fcontent=uraniapoems.html"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg13_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg13_o2-lowres.jpg" alt="manuscript" /></a></td>
+                    <td>
+                        <p>
+N3</p>
+<p>
+Most deere, more hapy ʃoverainʃing harts</p>	
+<p>
+	<p class="indent"> free from flattering</p>
+<p>	
+murdering peeces prove your ʃweet eye darts</p>
+<p>
+	<p class="indent"> Joys from deʃire ʃcattering, </p>
+<p>
+
+<br>Why alas were you fram if alone to kill</p>
+<p>	
+	<p class="indent"> you knowe murdering</p>
+<p>
+A crime by all condemn’d, is this your skill, </p>
+<p>
+	<p class="indent"> nor cauʃ’d nor furdering, </p>
+<p>
+
+<br>Yet you alas may certainly controle</p>
+<p>
+              <p class="indent"> thos humours flowing</p>
+<p>
+butt if itt bee you love to fleet, and role</p>
+<p>
+	<p class="indent"> poor slaves for honors showing</p>
+<p>
+
+<br>Certainly you will end att last as wee, </p>
+<p>	
+and pitty wanting cry alas wo’s mee;/</p>
+
+                    </td>
+                    <td>
+                        <p>
+N3</p>
+<p>
+Most dear, more happy sovereign[i]sing hearts,</p> 
+<p>
+	<p class="indent"> free from flattering, </p>
+<p>
+murdering pieces prove your sweet eye darts, </p>
+<p>
+	<p class="indent"> joys from desire scattering. </p>
+<p>
+
+<br>Why, alas, were you fram[ed] if alone to kill? </p>
+<p>
+	<p class="indent"> You know murdering</p>
+<p>
+a crime by all condemned; is this your skill? </p>
+<p>
+	<p class="indent"> Nor caused nor furthering. </p>
+<p>
+
+<br>Yet you alas may certainly control</p>
+<p>
+	<p class="indent"> those humours flowing, </p>
+<p>
+but if it be you love to fleet, and rule</p>
+<p>
+	<p class="indent"> poor slaves for honours showing</p>
+<p>
+
+<br>certainly you will end at last as we, </p>
+<p>
+and pity wanting cry, ‘alas, woe’s me!’</p>
+
+                    </td>
+                    <td>
+                        <p>N3 (p. 40): This is a song sung by a farmer’s daughter named Fancy who was initially resistant to the idea of being tied down to a domestic life: ‘mee thought a little mirthe was better then ties att home, brawling of brats, monthes keepings-in, houswyfery, and dairies, and a pudder of all home-made troubles’ (38). But having been scornful of her lovers she began to be conscious of growing old and being alone, and accordingly now regrets that she rejected the offer of marriage from the equally aptly-named Love, son of the King’s chief herdsman.</p>
+<p>The poem itself takes the form of a sonnet in the so-called English rhyme scheme of ABAB, CDCD, EFEF, GG. The poem intertwines images of desire and images that have a political implication: so, for example, hearts are rulers (sovereignising) free from the kind of courtly flatterers familiar to any in the Jacobean court. The control exerted over the victim of desire leads to rebellion, so that the person apparently empowered will end up as abandoned and as wanting in fulfilment as the speaker and her allies. The poem can also be placed in the tradition of female-voiced complaint (for an analysis see Rosalind Smith, Michelle O’Callaghan and Sarah C. E. Ross, ‘Complaint’, in Catherine Bates, ed., <i>A Companion to Renaissance Poetry</i> (Wiley Blackwell, 2018), pp. 339-52.), where ‘woe’s me’ is the cry of those who are abandoned by their lovers.</p>
+<p><b>dear</b>: punning on most valuable and most beloved.</p>
+<p><b>sovereignising</b>: ruling over (like a sovereign). </p>
+<p><b>murdering pieces</b>: pieces are guns (that murder). </p>
+<p><b>Nor caused nor furthering</b>: the ‘murder’ is the rejection of the one who desires, so there will be no advance possible. </p>
+<p><b>humours</b>: in humoral theory, the four humours (yellow and black bile, blood, and phlegm) represented bodily and psychological states. By the 1620s the idea included the notion of what we might characterise as sensations and feelings, as alluded to here. </p>
+<p><b>fleet</b>: from flout: reject or sneer at. </p>
+<p><b>role/poor slaves</b>: this may mean rule poor slaves, or more obscurely roll as in disturb. </p>
+
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg15_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg15_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+                            <p>
+N4</p>
+<p>
+<strike>Behold the lovs great God of love </strike></p>	
+<p>Honor now injoye the day</p>
+<p>Love is falen into desmay, </p> 	 
+<p>nay is conquer’d, yeeld all right</p> 	
+<p>to the <strike> ho̭ṋo̭r </strike> power [‘power’ inserted above] of his might </p>
+<p> honor, honor, now is all</p>
+<p>Captive Cupid<strike>s</strike> ʃee’s his fall; </p>	
+
+<p></p>
+<p>
+<br>Never let a slight love come</p>
+<p>in honors ʃight for a doombe</p>
+<p>or thinke light affections thrall</p>
+<p>dare apeere, noe now ’t’is gall</p>	
+<p>Honor Monarck is of Love, </p>	
+<p>vnder him affections move, </p>
+
+<p></p>
+<p>
+<br>This is Honors purest throne, </p>
+<p>heere hee brightly shines alone, </p>
+<p>poore love like meane sphears appeere, </p>
+<p>in him’s onely brightnes cleere, </p>
+<p>had I knowne him thus before, </p>	
+<p>myne’ armes, I had layd att his dore, </p>
+
+<p></p>
+<p>
+<br>Now I yeeld them to his worthe</p>
+<p>this doth knowledg true bring forthe </p>
+<p>Arrowes, bowe, darts, and wings</p>
+<p>w<sup>ch</sup> death brought to mortallings</p>
+<p>All I offer up to you</p>
+<p>Deere Honour, as the Monarck true;/ 
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>
+N4</p>
+<p>
+ [‘Behold the great God of Love’] </p>
+<p>Honour now enjoy the day, </p>
+<p>love is fallen into dismay, </p>
+<p>nay is conquered, yield all right</p>
+<p>to the power of his might. </p>
+<p>Honour, honour, now is all, </p>
+<p>Captive Cupid, sees his fall. </p>
+
+<p></p>
+<p>
+<br>Never let a slight love come</p>
+<p>in honour’s sight for a doom, </p>
+<p>or think light affection’s thrall</p>
+<p>dare appear, no now ‘tis gall. </p>
+<p>Honour Monarch is of Love, </p>
+<p>under him affections move. </p>
+
+<p></p>
+<p>
+<br>This is Honour’s purest throne</p>
+<p>here he brightly shines alone, </p>
+<p>poor love like mean spheres appear</p>
+<p>in him only brightness clear. </p>
+<p>Had I known him thus before, </p>
+<p>mine arms I had laid at his door. </p>
+
+<p></p>
+<p>
+<br>Now I yield them to his worth, </p>
+<p>this doth knowledge true bring forth, </p>
+<p>arrows, bow, darts, and wings, </p>
+<p>which death brought to mortalings, </p>
+<p>all I offer up to you</p>
+<p>dear Honour, as the Monarch true. </p>
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>N4 (pp. 47-48): This poem comes from a masque staged by Pamphilia’s husband, Rodomandro, King of Tartaria. Wroth herself participated in the elaborate masques which were such a feature of the entertainment at King James’s court, dancing in Ben Jonson’s <i>Masque of Blackness</i> in 1605, for example. There are a considerable number of masques staged and described in both parts of <i>Urania</i>. The masque was rather like a combination of drama, opera and ballet, with spectacular scenery and special effects. The women who participated in masque performances, such as Wroth, had to have a considerable level of skill. This particular masque features masquers dressed ‘after the Tartarian fashion’ (46). The masque involves Cupid being berated by Honour for his wanton behaviour, and Cupid is in this process stripped of his bow and arrow and his wings. This song is Cupid’s response: a plea for forgiveness and a recognition of a higher power involved in Love. The masque and accompanying songs have some associations with the treatment of desire and of the figures of Cupid and Venus in <i>Love’s Victory</i>.</p>
+<p><b>Crossed out line</b>: this may well have been more of a title than the first line of the poem, referring to Cupid.</p>
+<p><b>Honour</b>: Honour is personified in the masque as outlined in the romance. </p>
+<p><b>fall</b>: so Honour has replaced Cupid. </p>
+<p><b>doom</b>: i.e. a decree, a judgement (OED). Honour, unlike Cupid, will not preside over a ‘light’ love, only a serious one. </p>
+<p><b>mine arms</b>: so Cupid will lay the weapons that cause humans such anguish through their desire at Honour’s feet. </p>
+<p><b>mortalings</b>: i.e. mortals, who in this image are subject to mortality and to the pains of desire. </p>
+
+                        </p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg15_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg15_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+                        
+N5</p>
+<p style="text-align: center;">1.</p>
+<p>This is Honors holly day</p>
+<p>now sheapheard ʃwains, neatheards play</p>
+<p class="indent">Cupid wills itt ʃoe</p>
+<p>kings, and princes come alonge</p>
+<p>you shall ʃafely paʃs from wronge</p>
+<p class="indent"><strike>foḽly</strike> deʃire [‘deʃire’ inserted above] was your foe, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>2.</p>
+<p>Fond deʃire is now layd waste</p>
+<p>truth of love in his stead plaste </p>
+<p class="indent">honor guids you now, </p>
+<p>‘T’is true Cupid was deʃire, </p>
+<p><strike>and</strike> fondly vʃing <strike>butt</strike> wanton fire</p> 
+<p class="indent">therefor thus doth bowe, </p>	
+
+<p></p>
+<p style="text-align: center;">
+<br>3. </p>
+<p>Love”s nott Love, that vainely flings</p>	
+<p>like a harmfull waspe that stings</p>
+<p class="indent">therin I did miʃs </p>	
+<p>deʃire should nott bee stil’d love</p>	
+<p>butt w<sup>t</sup> honors wings to move</p> 
+<p class="indent">bright love tells vs this</p>
+
+<p></p>
+<p style="text-align: center;">
+<br>4. </p> 
+<p>Honor like the brightest morne</p>		
+<p>shines while Clowded love is worne</p>	
+<p class="indent">and conʃum’d to dust, </p> 
+<p>like faire flowrs long being pulld </p>	
+<p>dy, and wither if nott culld</p>
+<p class="indent">slighted like the wurst </p>
+
+<p></p>
+<p>
+<br>Butt let harts, and voices ʃinge</p> 
+<p>Honor’s Cupids la̭w̭fṷll iust borne [‘iust borne’ inserted above] kinge;/ </p>
+
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>
+N5</p>
+<p>
+1.</p>
+<p>This is Honour’s holy day, </p>
+<p>now shepherd[s], swains, neatheards play, </p>
+<p class="indent">Cupid wills it so. </p>
+<p>Kings and princes come along, </p>
+<p>you shall safely pass from wrong, </p>
+<p class="indent">desire was your foe. </p>
+
+<p></p>
+<p>
+<br>2.</p>
+<p>Fond desire is now laid waste, </p>
+<p>truth of love in his stead placed, </p>
+<p class="indent">honour guides you now. </p>
+<p>‘Tis true Cupid was desire, </p>
+<p>fondly using wanton fire, </p>
+<p class="indent">therefore thus doth bow. </p>
+
+<p></p>
+<p>
+<br>3. </p>
+<p>Love’s not Love, that vainly flings</p>
+<p>like a harmful wasp that stings</p>
+<p class="indent">therein I did miss. </p>
+<p>Desire should not be styled love, </p>
+<p>but with honour’s wings to move; </p>
+<p class="indent">bright love tells us this. </p>
+
+<p></p>
+<p>
+<br>4. </p>
+<p>Honour like the brightest morn</p>
+<p>shines while clouded love is worn</p>
+<p class="indent">and consumed to dust. </p>
+<p>Like fair flowers, long being pulled, </p>
+<p>die and wither if not culled, </p>
+<p class="indent">slighted like the worst. </p>
+
+<p></p>
+<p>
+<br>But let hearts and voices sing, </p>
+<p>Honour’s Cupid’s just born king. </p>
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>N5 (pp. 48-49): This song concludes the masque of which N4 is a part: with this song, we are told ‘the masquers danced their last dance to curious voices, Cupid leading the song, which said thus’ (48). The song continues the theme of Cupid conquered by Honour. </p> 
+<p><b>shepherds, swains, neatherds</b>: these are three pastoral figures: a swain is a country lover, a neatherd is in charge of cows as a shepherd is of sheep. </p>
+<p><b>desire was your foe</b>: Wroth interrogates desire in much of her writing; here the quelling of Cupid allows for an escape from the control exerted by desire and in the song desire is replaced by love. </p>
+
+                        </p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg15v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg15v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg16_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg16_o2-lowres.jpg" alt="manuscript" /></a></td>
+                    <td>
+                        <p>
+                            <p>
+N6</p>
+<p>
+Come lusty gamesters of the ʃea </p>	
+<p class="indent">billowes waves, and winds, </p>	
+<p>Like to  ̭most [‘most’ inserted above] louers make your plea</p>
+<p class="indent">ʃay love all combinds</p>	 
+<p>lett nott Dian rule your sprites</p> 	
+<p>her pale face shuns all delights,</p>
+
+<p></p>
+<p>
+<br>Venus was borne, of the ʃea foame </p>
+<p class="indent">Queene of love is she</p>	
+<p>like her ʃweet pleaʃant phantiʃies roame, </p>  
+<p class="indent">this varietie; </p>
+<p>Juno yett a firme wife is</p>
+<p>ʃoe may I bee in my blis,</p>
+
+<p></p>
+<p>
+<br>Pallas is yett a fierce, sterne laʃs, </p>
+<p class="indent">wisdome doth profeʃs, </p>
+<p>Ceares a hous=wife I ʃoone paʃs, </p>	
+<p class="indent">lovers I expreʃs</p>
+<p>Venus, my deere ʃea borne Queene</p>
+<p>gives mee pleaʃures still vnʃeen</p>
+
+<p></p>
+<p>
+<br>And you faire starry sky, beeholde</p>
+<p class="indent">Venus mee com̅aunds, </p> 	
+<p>that by noe means love should grow colde</p>
+<p class="indent">butt blowe the fire brands</p>	
+<p>Solls best heat must fill our vaines, </p> 	
+<p>thes are true loves highest straines, </p> 	
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>
+N6</p>
+<p>
+Come lusty gamesters of the sea, </p>
+<p class="indent">billows, waves and winds, </p>
+<p>like to most lovers make your plea, </p>
+<p class="indent">say love all combines, </p>
+<p>let not Dian rule your spirits</p>
+<p>her pale face shuns all delights.</p>
+
+<p></p> 
+<p>
+<br>Venus was born of the sea foam, </p>
+<p class="indent">Queen of love is she, </p>
+<p>like her sweet pleasant fantasies roam</p>
+<p class="indent">this variety.
+<p>Juno yet a firm wife is, </p>
+<p>so may I be in my bliss.</p>
+
+<p></p>
+<p>
+<br>Pallas is yet a fierce, stern lass, </p>
+<p class="indent">wisdom doth profess, </p>
+<p>Ceres a housewife I soon pass</p>
+<p class="indent">lovers I express. </p>
+<p>Venus, my dear sea-born Queen, </p>
+<p>gives me pleasures still unseen.</p>
+
+<p></p>
+<p>
+<br>And you fair starry sky, behold</p>
+<p class="indent">Venus me commands, </p>
+<p>that by no means love should grow cold</p>
+<p class="indent">but blow the fire brands. </p>
+<p>Sol’s best heat must fill our veins, </p>
+<p>these are true love’s highest strains. </p>
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>N6 (p. 51): This is a song sung by Antissia during a fit of madness which will eventually be cured later in the narrative. Antissia is, like Pamphilia, in love with Amphilanthus, and his eventual rejection and also it would seem her creative impulses drive her into madness. Antissia goes on to marry Dolorindus, the King of Negropont. Antissia’s symptoms include taking on an equally unbalanced tutor in poetry. This particular song is sung while Dolorindus tries to deal with Antissia’s madness; it is described as a ‘tedious ditty, only noiseworthy but no way sensible’ (50). It is difficult to assess a poem/song which within the narrative is meant to be tedious and unworthy. </p>
+<p><b>lusty gamesters</b>: gamesters can be sportive people and lusty can simply mean strong, but paired together they suggest sexual adventurousness (OED has gamester meaning someone who is licentious or we might say sexually adventurous, as a current meaning in the early seventeenth century).</p>
+<p><b>Dian</b>: Diana, Goddess of the hunt, traditionally associated with chastity. </p>
+<p><b>spirits</b>: where Wroth write ‘sprites’ she intends spirits, a word which carries a complex set of associations ranging from the modern idea of spirit as a person’s vigour (as in spirited) through to the idea of one’s own nature in a metaphysical sense. In a notable sonnet from the ‘Pamphilia to Amphilanthus’ sequence, ‘When everyone to pleasing pastime hies’ Wroth depicts the speaker as seeking respite from court vanities as she talks ‘with my spirit’. </p>
+<p><b>Venus</b>: goddess of love, as in the famous painting by Botticelli, Venus, the Roman equivalent of the Greek goddess Aphrodite, was said to have been born from the sea foam.</p>
+<p><b>Juno</b>: goddess of love and marriage, wife of Jupiter. Antissia is stating that even in her ‘bliss’ (which implies possible sexual abandonment) she wants to be a ‘firm wife’.</p>
+<p><b>Pallas</b>: Pallas Athena, goddess of war and wisdom. </p>
+<p><b>Ceres</b>: goddess of agriculture, she symbolises fertility and was therefore associated with wedding ceremonies. </p>
+<p><b>Sol’s</b>: the sun</p>
+
+                        </p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg16_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg16_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+                           <p>
+N7</p>
+<p>
+This night the Moone eclipʃed was</p>
+<p class="indent">alas, </p>
+<p>butt quickly she did brightlier shine</p>
+<p class="indent">devine, </p>
+<p>prognosticating by ʃweet raine </p>	
+<p>that all things showld  bee cleere again,</p>	
+
+<p></p>
+<p>
+<br>Sweet raine foretells vs good to growe, </p>	
+<p class="indent">and flowe, </p>
+<p>Coole drops ʃweet moisture, flowers bring</p>	
+<p class="indent">to spring</p>
+<p>Which fruict bring’s forthe, and ʃoe shall wee</p>	
+<p>live hopefully all good to ʃee	</p>
+
+<p></p>
+<p>
+<br>Butt in this time the ʃun is <strike>last</strike> loste</p>		
+<p class="indent">and crost
+<p>though in Antipides nott quite bereft</p>
+<p class="indent">nor left, </p>
+<p>Butt in iust courʃe shall come againe, </p>
+<p>And w<sup>t</sup> pure light both shine, and raigne; </p>
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>
+N7</p>
+<p>
+This night the moon eclipsed was</p>
+<p class="indent">alas, </p>
+but quickly she did brightlier shine</p>
+<p class="indent">divine, </p>
+prognosticating by sweet rain</p>
+that all things should be clear again.</p>
+
+<p></p>
+<p>
+<br>Sweet rain foretells us good to grow</p>
+<p class="indent">and flow, </p>
+cool drops, sweet moisture, flowers bring</p>
+<p class="indent">to spring, </p>
+which fruit brings forth and so shall we</p>
+live hopefully all good to see.</p>
+
+<p></p>
+<p>
+<br>But in this time the sun is lost</p>
+<p class="indent">and crossed,</p>
+<p>though in Antipodes not quite bereft, </p>
+<p class="indent">nor left, </p>
+<p>but in just course shall come again, </p> 
+<p>and with pure light both shine and reign. </p>
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>N7 (pp. 51-53): This, like N6, is a song sung by Antissia still in her fit of madness. She addresses the song to Melissea, a magician and sage presiding over many of the more magical events in <i>Urania</i>, who will cure Antissia of her madness, which was Dorolindus’s purpose in bringing Antissia to see Melissea. The unusual structure with its two-syllable second and fourth lines in each stanza, might be intended to represent Antissia’s agitated state of mind, though at the same time the elaborate structure is perfectly controlled by Wroth. The speech that Antissia makes following on from the song is, however, much more clearly ‘deranged’ in its excessively flowery language (e.g. describing eyes as ‘flamigerous beacons’). </p>
+<p><b>Antipodes</b>: the idea of the Sun spending winter in the antipodes reflects the notion that it is the sun revolving around the earth, rather than the reverse, which was posited by Copernicus in the mid sixteenth century. </p> 
+
+                        </p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg24v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg24v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+                           <p>
+N8</p>
+<p>
+Stay holy fires</p>		
+<p>of my deʃires</p>
+<p>flame nott ʃoe fast</p>
+<p>my loves butt young</p>
+<p>from bud new sprunge</p> 	
+<p>ʃcarce knows loves taste, </p>
+
+<p></p>
+<p>
+<br>Flames shovld nott riʃe</p> 	
+<p>till ʃacrifies</p>
+<p>were reddy made</p>
+<p>a love ʃcarce greene</p> 	
+<p>was never seene</p>
+<p>in withring shade,</p>
+
+<p></p>
+<p>
+<br>Stray till ‘t’is blowne</p>	
+<p>if then orethrowne</p>	
+<p>w<sup>t</sup> curst denyes</p>		
+<p>poore hart ʃwell’out</p>
+<p>ʃend flames about</p>
+<p>w<sup>t</sup> murdering eyes,</p>
+
+<p></p>
+<p>
+<br>Sum̅on all men</p> 	
+<p>To Court agen</p>
+<p>Wher loves inthround, </p>
+<p>if they perʃist</p>
+<p>and ʃmiles reʃist, </p> 	
+<p>while chast love is ʃcornd</p>
+
+<p></p>
+<p>
+<br>Then spoile their harts</p>	
+<p>w<sup>t</sup> fierce lov’s darts, </p>	
+<p>and w<sup>t</sup> that store</p>
+<p>of harts w<sup>ch</sup> shakes</p>		
+<p>make martir stakes</p>
+<p>still framing more</p>
+
+<p></p>
+<p>
+<br>Then w<sup>t</sup> thos eyes</p>
+<p>wher all truth lies</p>
+<p>a blaʃe of fire frame</p>
+<p>As Heccatombbe</p>	
+<p>for victors doombe</p>	
+<p>to true loves name</p>
+
+<p></p>
+<p>
+<br>Soe holy fires</p>	
+<p>of my deʃirs</p>
+<p>may riʃe, and flame</p>
+<p>Pheanix for truth </p>	
+<p>conʃum’de in youth</p>	
+<p>burnt to loves fame;/ </p>
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>
+N8</p>
+<p>
+<p>Stay holy fires</p>
+<p>of my desires</p>
+<p>flame not so fast; </p>
+<p>my love’s but young</p>
+<p>from bud new sprung, </p>
+<p>scarce knows love’s taste.</p>
+
+<p></p>
+<p>
+<br>Flames should not rise</p>
+<p>till sacrifices</p>
+<p>were ready made; </p>
+<p>a love scarce green</p>
+<p>was never seen</p>
+<p>in withering shade.</p>
+
+<p></p>
+<p>
+<br>Stray till ‘tis blown</p>
+<p>if then overthrown</p>
+<p>with cursed denies; </p>
+<p>poor heart swell out, </p>
+<p>send flames about</p>
+<p>with murdering eyes.</p>
+
+<p></p>
+<p>
+<br>Summon all men</p>
+<p>to Court again, </p>
+<p>where love’s enthroned; </p>
+<p>if they persist</p>
+<p>and smiles resist</p>
+<p>while chaste love is scorned.</p>
+
+<p></p>
+<p>
+<br>Then spoil their hearts</p>
+<p>with fierce love’s darts, </p>
+<p>and with that store, </p>
+<p>of hearts which shakes</p>
+<p>make martyr stakes</p>
+<p>still framing more.</p>
+
+<p></p>
+<p>
+<br>Then with those eyes</p>
+<p>where all truth lies</p>
+<p>a blaze of fire frame, </p>
+<p>as Hecatombe</p>
+<p>for victors doom</p>
+<p>to true loves name.</p>
+
+<p></p>
+<p>
+<br>So holy fires </p>
+<p>of my desires</p>
+<p>may rise and flame; </p>
+<p>Phoenix for truth </p>
+<p>consumed in youth</p>
+<p>burned to love’s fame. </p> 
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>N8 (pp. 74-75): This is a song sung by the King of Tartaria’s sister. She is overheard by Licandro, the Prince of Athens, who falls violently in love with her (see N9). She is described in considerable detail and summed up as a woman whose ‘rarenes sett harts on fire’ (76). </p> 
+<p><b>holy fires</b>: this slightly disconcerting blending of the sacred and the profane evokes a Petrarchan image of desire. It seems unlikely that the image alludes to the so-called Holy Fire acclaimed as a miracle by the Orthodox Church since the fourth century. </p>
+<p><b>murdering eyes</b>: like so much of Wroth’s poetry, eyes feature as both symbols of a gaze which positions women as objects, and as potentially redemptive when they can be used by the woman to counter that gaze. </p> 
+<p><b>to Court again</b>: this is another example of Wroth offering a political angle to her treatment of desire: here Love is the ruler and men are summoned to Love’s Court. A distinction is made in the poem between those who acquiesce to Love’s demands, and those who resist and will accordingly be attacked by fierce love’s darts: i.e. Cupid’s arrows, which will therefore take control of desire away from them. </p> 
+<p><b>martyr stakes</b>: this is potentially quite a chilling image given the very real execution of martyrs during the sectarian conflict characteristic of the early modern period. </p>
+<p><b>Hecatombe</b>: deriving from the sacrifice of 100 cattle to the gods but generally meaning mass destruction. </p> 
+<p><b>Phoenix</b>: the mythical single bird that immolates itself in flames and then a new bird arises from the ashes. The poem itself mimics this movement, as it returns in circular fashion to the images with which it began. </p> 
+
+                        </p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg26_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg26_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg26v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg26v_o2-lowres.jpg" alt="manuscript" /></a></td>
+                    <td>
+                        <p>
+                            <p>
+N9</p>
+<p>
+Were ever eyes of ʃuch devinitie</p>
+<p>devine? noe they are of the Gods</p>
+<p class="indent">and ʃoe have ods, </p>
+<p>Of the Gods? Noe, more of Eternitie; </p>	
+<p>They are blew, ʃure they are then heavens sky</p>
+<p class="indent">firmly</p>
+<p>kings they rule and com̅aund, </p> 	
+<p>motives of government doe ly</p>
+<p class="indent">to their imply</p>
+<p class="indent"><p class="indent">      readely,</p>	
+<p>and ʃoe att mercy stand, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>2. </p>
+<p>Bee they nott tow ʃuns, most shiningly</p>	
+<p>Beam̅ing, noe they are meators rare	</p>
+<p class="indent">w<sup>t</sup> out compare, </p>
+<p>Meators noe? thunderbolts killingly</p>
+<p>were they of Gods, they would deale beningly</p>
+<p class="indent">gently</p>	
+<p>Tow ʃun̅s were never ʃeene</p> 
+<p>att once, devinitie</p>
+<p class="indent">doth that deny</p>
+<div class="indent"><p class="indent">really</p></div>
+<p>butt lightnings oft have bin̅, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>3.</p>
+<p>Lightnings O noe, they are induring, </p>
+<p>and bright, are they nott Cupids eyes</p>	
+<p class="indent">falen from the skies</p>
+<p>while hee is doubly blinded in aluring? </p>	
+<p>shall I yet name them trust, O then ʃay</p>	
+<p class="indent">you may</p>
+<p>They are of Gods, of eyes, </p>
+<p>of the heavens, of ayre most bright, </p>
+<p class="indent">of purest light, </p>
+<div class="indent"><p class="indent">fierce ʃight, </p></div>
+<p>Yett ʃweetest under skies;/ </p>
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>
+N9</p>
+<p>
+Were ever eyes of such divinity</p>
+<p>divine? No, they are of the Gods</p>
+<p class="indent">and so have odds. </p>
+<p>Of the Gods? No, more of eternity; </p>
+<p>they are blue, sure they are then Heaven’s sky, </p>
+<p class="indent">firmly</p>
+<p>kings they rule and command, </p>
+<p>motives of government do lie</p>
+<p class="indent">to their imply</p> 
+<div class="indent"><p class="indent">readily,</p></div>
+<p>and so at mercy stand. </p>
+
+<p></p>
+<p>
+<br>2. </p>
+<p>Be they not two suns most shiningly</p>
+<p>beaming? No, they are meteors rare</p>
+<p class="indent">without compare. </p>
+<p>Meteors? No? Thunderbolts killingly; </p>
+<p>were they of God’s, they would deal benignly, </p>
+<p class="indent">gently. </p>
+<p>Two suns were never seen</p>
+<p>at once, divinity</p>
+<p class="indent">doth that deny</p>
+<div class="indent"><p class="indent">really, </p></div>
+<p>but lightnings oft have been. </p>
+
+<p></p>
+<p>
+<br>3.</p>
+<p>Lightnings? Oh no, they are enduring</p>
+<p>and bright. Are they not Cupid’s eyes</p>
+<p class="indent">fallen from the skies, </p>
+<p>while he is doubly blinded in alluring? </p>
+<p>Shall I yet name them trust? Oh then say</p>
+<p class="indent">you may;
+<p>they are of Gods, of eyes, </p>
+<p>of the heavens, of air most bright, </p>
+<p class="indent">of purest light, </p>
+<div class="indent"><p class="indent">fierce sight, </p></div>
+<p>yet sweetest under skies. </p>
+
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <p>N9 (p. 79): In this companion poem to N8, Licandro unburdens himself of his love for the Princess of Tartaria: it is described as a ‘woefull piece of poetry’ (79), i.e. full of the woe which he feels because his love is unrequited. Like the preceding poem, this one turns upon images of eyes, in this case the blue eyes of Licandro’s beloved. The poem also continues the interconnection between desire and political agency, especially the reference in the first stanza to ‘motives of government’. </p>
+<p><b>doubly blinded</b>: Cupid is traditionally depicted as blind, so that the arrows he shoots that induce desire are distributed randomly. </p> 
+
+                        </p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg27_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg27_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg27v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg27v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N10</p>
+<p>
+Fierce love, alas yett lett mee rest, </p>
+<p>beeholde my boyling brest: </p>
+<p>Lett mee butt slumber, if nott sleepe</p> 	
+<p class="indent">continually to weepe</p>	
+<div class="indent"><p class="indent">is too great a ʃmart</p></div>
+<div class="indent"><div class="indent"><p class="indent">to a hart,</p>
+</div>
+</div>	
+<p>Transform’d like Niobé to watry powers</p>	
+<div class="indent"><div class="indent"><div class="indent"><p class="indent">telling howers</p>
+</div>
+</div>
+</div>
+<p>in drops of my misfortunes arte;</p>
+
+<p></p>
+<p style="text-align: center;">
+<br>2. </p>
+<p>Cruell, alas, why doe thos eyes</p>	
+<p>rule of the heavenly skies</p>
+<p>Joye in my ruin, my poore streames</p>
+<p class="indent">flumes can nott [blotted out word] coole [‘coole’ inserted above] our beames	</p>	
+<div class="indent"><p class="indent">for loves ʃacred fire</p></div>
+<div class="indent"><div class="indent"><p class="indent">must aspire</p>
+</div>
+</div>
+<p>Transcendant to the highest powers</p>
+<div class="indent"><div class="indent"><div class="indent"><p class="indent">telling howers</p>
+</div>
+</div>
+</div>
+<p>In flames of my conʃuming fire</p>
+
+<p></p>
+<p style="text-align: center;">
+<br>3. </p>
+<p>The Firmament may mee imbrace</p>
+<p>ther wanderers may finde place</p>
+<p>transform’d by love into a space</p>	
+<p class="indent">borowing of lovers trace</p>
+<div class="indent"><p class="indent">wher continuall faire</p></div>
+<div class="indent"><div class="indent"><p class="indent">will tell ayre</p>
+</div>
+</div>
+<p>wee destined by force,<strike> water</strike> earth [‘earth' inserted above], <strike>fire ayre ear̭th</strike> water [‘water’ inserted above], ayre, fire</p>
+<div class="indent"><div class="indent"><div class="indent"><p class="indent">bred in ire</p>
+</div>
+</div>
+</div>
+<p>may yet to evenings faire aspire,</p>
+
+<p></p>
+<p style="text-align: center;">
+<br>4. </p>
+<p>Butt dull earth I see you contend</p>	
+<p>nott willing I aʃsend, </p> 	
+<p>give mee then fruicts of plenty heere</p>
+<p class="indent">true increaʃe of beauties cheere, </p>
+<div class="indent"><p class="indent">why doe you create</p></div>
+<div class="indent"><div class="indent"><p class="indent">ʃuch a bate</p>
+</div>
+</div> 	
+<p><strike>to make all harts obay a sainte</strike></p>
+<p>to ʃinge all harts by ʃuch a fire </p>	
+<div class="indent"><div class="indent"><div class="indent"><p class="indent">and intire</p>
+</div>
+</div>
+</div>
+<p>conʃuming vs to our last fate;/</p>
+
+                    </td>
+                    <td>
+                        <p>
+N10</p>
+<p>
+Fierce love, alas, yet let me rest, </p>
+<p>behold my boiling breast; </p>
+<p>let me slumber, if not sleep, </p>
+<p class="indent">continually to weep</p>
+<div class="indent"><p class="indent">is too great a smart</p></div>
+<div class="indent"><div class="indent"><p class="indent">to a heart, </p>
+</div>
+</div> 
+<p>transformed like Niobé to watery powers</p>
+<div class="indent"><div class="indent"><div class="indent"><p class="indent">telling hours</p>
+</div>
+</div>
+</div>
+<p>in drops of my misfortune’s art. </p>
+
+<p></p>
+<p>
+<br>2. </p>
+<p>Cruel, alas, why do those eyes</p>
+<p>rule of the heavenly skies? </p>
+<p>Joy in my ruin, my poor streams: </p>
+<p class="indent">flumes cannot cool our beams, </p>
+<div class="indent"><p class="indent">for love’s sacred fire</p></div>
+<div class="indent"><div class="indent"><p class="indent">must aspire, </p>
+</div>
+</div> 
+<p>transcendent to the highest powers</p>
+<div class="indent"><div class="indent"><div class="indent"><p class="indent">telling hours</p>
+</div>
+</div>
+</div>
+<p>in flames of my consuming fire. </p>
+
+<p></p>
+<p>
+<br>3. </p>
+<p>The firmament may me embrace, </p>
+<p>there wanderers may find place</p>
+<p>transformed by love into a space</p>
+<p class="indent">borrowing of lovers’ trace, </p>
+<div class="indent"><p class="indent">where continual fair</p></div>
+<div class="indent"><div class="indent"><p class="indent">will tell air</p>
+</div>
+</div> 
+<p>we destined by force, earth, water, air, fire</p>
+<div class="indent"><div class="indent"><div class="indent"><p class="indent">bred in ire</p>
+</div>
+</div>
+</div>
+<p>may yet to evenings fair aspire. </p>
+
+<p></p>
+<p>
+<br>4. </p>
+<p>But dull earth I see you contend; </p>
+<p>not willingly I ascend. </p>
+<p>Give me then fruits of plenty here</p>
+<p class="indent">true increase of beauty’s cheer. </p>
+<div class="indent"><p class="indent">Why do you create</p></div>
+<div class="indent"><div class="indent"><p class="indent">such a bait, </p>
+</div>
+</div> 
+<p>to singe all hearts by such a fire</p>
+<div class="indent"><div class="indent"><div class="indent"><p class="indent">and entire</p>
+</div>
+</div>
+</div>
+<p>consuming us to our last fate? </p>
+
+                    </td>
+                    <td>
+                        <p>
+N10 (pp. 81-82): This is another song, this time one sung by a group of women who are servants to the Princess of Argos. The song is overheard by two callow young Princes, Lusandrino and Nummerandro, who are entranced by the ‘heavenly voices’ (81). </p> 
+<p><b>Niobe</b>: In Greek mythology, Niobe boasted of her fourteen children to Leto, whose two children, Apollo and Artemis, respectively kill Niobe’s seven sons and seven daughters. Niobe turns to stone but weeps constantly so that water gushes from the stone, and so she became an image of constant grief, often associated with the complaint genre in poetry. </p> 
+<p><b>flumes</b>: i.e. the water vapour from tears cannot quench the fire of Love. </p>
+<p><b>sacred fire</b>: this echoes the holy fire image of N8. </p>
+<p><b>earth, water, air, fire</b>: these are the four elements. </p>
+<p><b>bait</b>: desire is like a bait on a hook which will lead those captured to be singed by love’s fire. 
+</p>
+
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg36v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg36v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N11</p>
+<p>
+Beehold this ʃacred fire</p>
+<p>in waters curstest ire</p>	
+<p class="indent">remains in mee</p>
+<p>disdaining change to ʃee</p>
+<p>as hee makes waters touch</p>
+<p>his prowd incloʃing my deʃire</p>	
+<p>and in his boʃome keeps my fire</p>		
+<p>while I lament too much</p>
+
+<p></p>
+<p style="text-align: center;">
+<br>2. </p>
+<p>This lampe inflamed w<sup>t</sup> love</p>
+<p>conʃumes nott yet doth move</p>
+<p class="indent"><strike>yet</strike> and [‘and’ inserted above] spends the oyle</p>
+<p>ʃoe doe I waste [in] toile</p>	 
+<p>to clime to honors high</p>
+<p>w<sup>ch</sup> w<sup>t</sup> water, and the time</p>	
+<p>doth the flame make higher clime</p>
+<p>and ʃoe I may riʃe nigh;/ </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>3. </p>
+<p>Butt while I heere admire</p>
+<p>water, and flames conspire</p>
+<p class="indent">nott yeeld to mee</p>
+<p><strike>butt </strike>yett [‘yett’ inserted above] cunningly agree</p> 
+<p>noe eaʃe vnto my burning ʃmart</p>		
+<p>butt extinguish fyry rays</p>
+<p>the aulter for my loving bays</p>	
+<p>to act his latest part;/ </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>4. </p>
+<p>Time butt an attome is</p>
+<p>limited by powers blis</p>	
+<p class="indent">of heavenly mi̭ght</p>
+<p>made by eternall right</p>
+<p>for heaven erelasting beeing</p> 	
+<p>makes eternitie the name, </p>
+<p> [whole line smudged out] </p>
+<p>and mee the attome of my flame, </p> 	
+<p>conʃumed, and burnt by ʃeeing;/ 
+</p>
+
+                    </td>
+                    <td>
+                        <p>
+N11</p>
+<p>
+Behold this sacred fire</p>
+<p>in water’s curstest ire</p>
+<p class="indent">remains in me, </p>
+<p>disdaining change to see, </p>
+<p>as he makes waters touch, </p>
+<p>his proud enclosing my desire, </p>
+<p>and in his bosom keeps my fire, </p>
+<p>while I lament too much. </p>
+
+<p></p>
+<p>
+<br>2. </p>
+<p>This lamp enflamed with love</p>
+<p>consumes not, yet doth move, </p>
+<p class="indent">and spends the oil, </p>
+<p>so do I waste in toil</p>
+<p>to climb to honours high, </p>
+<p>which with water, and the time, </p>
+<p>doth the flame make higher climb</p>
+<p>and so I may rise nigh. </p>
+
+<p></p>
+<p>
+<br>3. </p>
+<p>But while I here admire, </p>
+<p>water and flames conspire: </p>
+<p class="indent">not yield to me, </p>
+<p>yet cunningly agree</p>
+<p>no ease unto my burning smart, </p>
+<p>but extinguish fiery rays</p>
+<p>the altar for my loving bays, </p>
+<p>to act his latest part. </p>
+
+<p></p>
+<p>
+<br>4. </p>
+<p>Time but an atom is</p>
+<p>limited by power’s bliss</p>
+<p class="indent">of heavenly might, </p>
+<p>made by eternal right, </p>
+<p>for heaven everlasting being</p>
+<p>makes eternity the name, </p>
+<p>and me the atom of my flame, </p>
+<p>consumed, and burnt by seeing. 
+</p>
+
+                    </td>
+                    <td>
+                        <p>N11 (pp.102-03): This is a song sung by Lindavera, the Princess of Frigia. She is disguised as a shepherdess and is overheard by three young princes: Antidorindo, Verolindo and Floristello. Her song is provoked by her love for the Prince of Albania, and we are told her ‘sweet Voice did express sadness, as her eyes did teares’ (102). </p>
+<p><b>sacred fire</b>: presumably deliberately repeating the image from N10, this again emphasises the power of desire with a battle between the elements of fire and water forming a key part of the poem’s imagery. </p>
+<p><b>water’s curstest ire</b>: the implication of this image is that the speaker/singer’s tears do not dampen the fire of Love. Curstest = most cursed. </p>
+<p><b>his proud</b>: unclear but seems to mean Love’s pride ensures that she is trapped. If we take proud as an adjective, Love is proudly enclosing the speaker; if we take proud as a noun, it can refer to Love as a proud individual, with also some suggestion of sexual predatoriness. </p>
+<p><b>Stanza 2</b>: this stanza explores the paradox at the centre of the poem’s depiction of desire: despite the water (tears) the flames grow stronger, just as the oil lamp burns fiercely yet the amount of oil remains the same (which is perhaps an allusion to the fact that the sacred lamp in the restored Second Temple was able to burn for eight days instead of the single day that the remaining oil should have fuelled). The paradox continues in stanza 3. </p>
+<p><b>in toil</b>: in the manuscript a blotted t makes it possible that this word began as ‘not’ and was probably altered to ‘in’. </p>
+<p><b>loving bays</b>: the bay tree (laurel) wreath, symbol of victory, especially a sign of an acclaimed poet, in this instance laid on the altar it seems to represent the speaker’s tribute/sacrifice for her unrequited love. </p>
+<p><b>atom</b>: in the time when Wroth was writing, an atom referred to a minute particle and also the smallest unit of time (OED). The image in this stanza is then further developed so that at the end the speaker is an atom consumed by her unrequited love. </p>
+<p><b>burnt by seeing</b>: the speaker is, in this final stage of the image of fire/desire, consumed by the sight of her love, who is rejecting her. </p>
+
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg41_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg41_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg41v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg41v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N12</p>
+<p>
+Love let mee live, ore let mee dye, </p>
+<p>Vʃe mee nott wurʃe then porest fly </p>	
+<p>who finds ʃome comfort, while alone</p>
+<p class="indent">I live, and waste in moane; </p>
+
+<p></p>
+<p>
+<br>I have noe shrowding place from woe,</p>
+<p>the billowes beare my ouer throwe</p>
+<p>and ʃands they cover in disgrace</p>
+<p class="indent">of my loves truest face</p>
+
+<p></p>
+<p>
+<br>Wretch ʃayth the ʃea heer stay, and drowne</p> 	
+<p>can you nott feare her curstest frowne? </p>		
+<p>alas she chides vs that you stay</p>
+<p class="indent">after her iust denay,</p>
+
+<p></p>
+<p>
+<br>ʃhe is the Goddess ʃole of love, </p>		
+<p>how dare you mortall thus to moue</p>
+<p>bow hart, and ʃoule to her least frowne</p>
+<p class="indent">and ʃenʃur’d thus ly downe;/ </p>	
+
+                    </td>
+                    <td>
+                        <p>
+N12</p>
+<p>
+Love let me live, or let me die, </p>
+<p>use me not worse than poorest fly</p>
+<p>who finds some comfort, while alone</p>
+<p class="indent">I live, and waste in moan. </p>
+
+<p></p>
+<p>
+<br>I have no shrouding place from woe, </p>
+<p>the billows bear my overthrow,</p>
+<p>and sands, they cover in disgrace</p>
+<p class="indent">of my love’s truest face. </p>
+
+<p></p>
+<p>
+<br> ‘Wretch,’ sayeth the sea, ‘here stay and drown, </p>
+<p>can you not fear her curstest frown? </p>
+<p>Alas, she chides us that you stay</p>
+<p class="indent">after her just denay. </p>
+
+<p></p>
+<p>
+<br>She is the Goddess sole of love, </p>
+<p>how dare you mortal thus to move? </p>
+<p>Bow heart and soul to her least frown, </p>
+<p class="indent">and censured thus lie down.' </p>
+
+                    </td>
+                    <td>
+                        <p>N12 (pp. 113-14): This song comes from another masque. This one is staged by Melissea, the enchantress who presides over the events in the narrative, and often brings about resolutions, and stages enchantments which test the characters. This song is sung by ‘a younge sea-faring lad’ (113) in the masque, who is in love with ‘a dainty sea nimphe’ (113). </p> 
+<p><b>waste</b>: i.e. waste away. </p>
+<p><b>shrouding place</b>: i.e. a place to shield/protect him</p>
+<p><b>billows</b>: referencing the ocean theme of the masque and the singer’s character as a seaman. </p>
+<p><b>denay</b>: denial often spelled/pronounced as denay in the period e.g. Shakespeare, <i>12th Night</i> II.iv.124 ‘My love can give no place, bide no denay’. </p>
+<p><b>sole of love</b>: i.e. she is the only Goddess of love. 
+</p>
+
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg41v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg41v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N13</p>
+<p>
+Love butt a phanteʃie light, and vaine</p>	
+<p>fluttering butt in poorest braine, </p>	
+<p>birds in Chimnies make a thunder, </p>	
+<p>putting ʃilly ʃoules in wounder, </p>
+<p>ʃoe doth this love, this all com̅aunder </p>
+<p>to a weake poore understander; </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>2. </p>
+<p>ʃlight him, and hee’le your ʃervant bee</p>
+<p>adore him, you his slave must bee, </p>	
+<p>ʃcorne him, O how hee will pray you, </p>
+<p>pleaʃe him, and hee’lle ʃure betray you</p>
+<p>let nott his faulshood bee esteemed</p>	
+<p>least your ʃelf bee disesteemed</p>
+
+<p></p>
+<p style="text-align: center;">
+<br>3. </p>
+<p>Crush nott your witts to place him high,	</p>
+<p>a thought thing, never ʃeene by eye, </p>	
+<p>implore nott heaven, nor dieties</p>
+<p>they know to well his forgeries</p>	
+<p>nor ʃaints by imprications moue	</p>	
+<p>‘t’is butt the Idolatry of love;/</p>
+
+<p></p>
+<p>
+<br>Noe ʃaints by imprications moue</p>		
+<p>to bace idolatrie of love;/ 
+</p>
+
+                    </td>
+                    <td>
+                        <p>
+N13</p>
+<p>
+Love but a fantasy light and vain, </p>
+<p>fluttering but in poorest brain, </p>
+<p>birds in chimneys make a thunder, </p>
+<p>putting silly souls in wonder. </p>
+<p>So doth this love, this all commander, </p>
+<p>to a weak, poor understander. </p>
+
+<p></p>
+<p>
+<br>2. </p>
+<p>Slight him, and he’ll your servant be, </p>
+<p>adore him, you his slave must be, </p>
+<p>scorn him, oh how he will pray you, </p>
+<p>please him, and he’ll sure betray you. </p>
+<p>Let not his falsehood be esteemed</p>
+<p>lest yourself be disesteemed. </p>
+
+<p></p>
+<p>
+<br>3. </p>
+<p>Crush not your wits to place him high, </p>
+<p>a thought thing never seen by eye, </p>
+<p>implore not heaven nor deities, </p>
+<p>they know too well his forgeries. </p>
+<p>Nor saints by imprecations move</p>
+<p> ‘tis but the idolatry of love. </p>
+
+<p></p>
+<p>
+<br>No saints by imprecations move</p>
+<p>to base idolatry of love. 
+</p>
+                    </td>
+                    <td>
+                        <p>N13 (p. 114): This song follows on from the previous one (N12) and is part of the same masque. In this case, an ‘olde sheapheard’, who has been listening to the young seafarer of N12, responds to the young man’s plaintive song: he sings ‘with a rare Voice’ (114). </p> 
+<p><b>Love but a fantasy</b>: the old shepherd counters the power of love claimed in the preceding song by positing it as a fleeting and unimportant fantasy. Could also imply fancy. </p>
+<p><b>a thought thing</b>: i.e. a figment of the imagination. </p>
+<p><b>idolatry of love</b>: a slur directed at Catholic worship of idols by the firmly Protestant Wroth. </p>
+                </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg50v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg50v_o2-lowres.jpg" alt="manuscript" /></a><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg51_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg51_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N14</p>
+<p>
+Was I to blame to trust</p> 		
+<p>thy love like teares when t’is most Just</p> 		
+<p>to Judg of others by our owne while mine</p>	 
+<p>from heads of love <strike>yet faiṱh ḓos̭ flowe</strike> and faith did [‘and faith did’ inserted above] flow</p> 	
+<p><strike>could I ʃuspect that thine</strike></p>	
+<p>yett fruictles ran, could I ʃuspect that thine</p>	
+<p>when in my hart each teare did write a line</p>
+<p>showld have noe spring butt outward showe, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>2; </p>
+My love O never went</p>	
+<p>in maske, w<sup>ch</sup> made mee confident</p>	
+<p>that thine had bin̅ love to , and noe disguiʃe, </p>	
+<p>nott love put on, butt taken in, </p>	
+<p>nor like a ʃcarfe to bee putt of w<sup>ch</sup> lies, </p>
+<p>att choiʃe to weare ore leave, butt when thine eyes</p>
+<p>did weepe thy hart had bled w<sup>t</sup> in, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>3. </p>
+Butt as the guilfull raine</p>
+<p>the sky that weeps itt doth nott paine</p>	
+<p>butt weares the place where in the drops do fall</p>
+<p>ʃoe when thy Clowdy lids imparte</p>	
+<p>thos showers of ʃubtill teares; and ʃeem to call</p>	
+<p>compaʃsion when you doe not grieve att all</p>	
+<p>you weepe them, butt they fret my hart, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>4. </p>
+Deere eyes I wrong’d nott you	</p>
+<p>to thinke you were as faire, ʃoe true</p>	
+<p>why wowld you then your ʃelves in griefe attire</p>
+<p>w<sup>t</sup> pitty to inlarge my ʃmart</p>
+<p>when beauty had enough inflam’d deʃire</p>
+<p>and when you were even cumber’d w<sup>t</sup> my fire</p>
+<p>why would you blowe the coals w<sup>t</sup> art, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>5. </p>
+<p>Itt was leʃs fault to leave </p>	
+<p>then having left mee to deceave</p>
+<p>for well you might have my unworthe refuʃed</p>  
+<p>nor cowld I have of wronge complaind</p>		
+<p>butt ʃince your ʃcorne, you [two words crossed out] w<sup>t</sup> deceipt [‘w<sup>t</sup> deceipt’ inserted above] confus’d</p>
+<p>my undeʃert you have w<sup>t</sup> teares excuʃd, </p>
+<p>and w<sup>t</sup> the guilt your ʃelf have staind, 
+</p>
+                    </td>
+                    <td>
+                        <p>
+N14</p>
+<p>
+Was I to blame to trust</p>
+<p>thy love-like tears, when ‘tis most just</p>
+<p>to judge of others’ by our own, while mine</p>
+<p>from heads of love and faith did flow, </p>
+<p>yet fruitless ran, could I suspect that thine, </p>
+<p>when in my heart each tear did write a line, </p>
+<p>should have no spring but outward show? </p>
+
+<p></p>
+<p>
+<br>2. </p>
+My love [I] never went</p>
+<p>in mask, which made me confident</p>
+<p>that thine had been love too, and no disguise, </p>
+<p>not love put on, but taken in. </p>
+<p>Nor like a scarf to be put off, which lies</p>
+<p>at choice to wear or leave, but when thine eyes</p>
+<p>did weep, thy heart had bled within. </p>
+
+<p></p>
+<p>
+<br>3. </p>
+<p>But as the guileful rain</p>
+<p>the sky that weeps it doth not pain, </p>
+<p>but wears the place wherein the drops do fall, </p>
+<p>so when thy cloudy lids impart</p>
+<p>those showers of subtle tears, and seem to call</p>
+<p>compassion when you do not grieve at all, </p>
+<p>you weep them, but they fret my heart. </p>
+
+<p></p>
+<p>
+<br> 4. </p>
+Dear eyes I wronged not you</p>
+<p>to think you were as fair, so true; </p>
+<p>why would you then your selves in grief attire</p>
+<p>with pity to enlarge my smart, </p>
+<p>when beauty had enough inflamed desire, </p> 
+<p>and when you were even cumbered with my fire, </p>
+<p>why would you blow the coals with art? </p>
+
+<p></p>
+<p>
+<br>5. </p>
+<p>It was less fault to leave</p>
+<p>than, having left me, to deceive, </p>
+<p>for well you might have my unworth refused, </p>
+<p>nor could I have of wrong complained. </p>
+<p>But since your scorn you with deceit confused, </p>
+<p>my undesert you have with tears excused, </p>
+<p>and with the guilt your self have stained. </p>
+
+
+                    </td>
+                    <td>
+                        <p>N14 (p. 137): This is a poem recited by Amphilanthus. (Unlike N2, there is no evidence that this was written by William Herbert and it did not circulate as widely as N2.) Amphilanthus is stricken because, believing that Pamphilia is betrothed, he is persuaded to marry the princess of Slavonia, but immediately regrets abandoning his vows to Pamphilia. This poem is a product of his melancholy and guilt: ‘I ame the shameless creature, the monster of sacred Vowes’ (138). </p>
+<p>Gavin Alexander has noted that the first stanza is used as the lyric in a song ascribed to Alfonso Ferrabosco, which exists in a manuscript held at the Fitzwilliam Museum in Cambridge. (See Gavin Alexander, ‘The Musical Sidneys’, <i>John Donne Journal</i> 25 (2006): 96-102). Alexander reproduces the musical setting keyed to Wroth’s version of the lyric. Katherine R. Larson has discussed the song at some length in her study <i>The Matter of Song in Early Modern England</i> (OUP, 2019), and a recording of the song is available on the companion website to Larson’s book: <a href="https://c21ch.newcastle.edu.au/emwrn/%E2%80%9Chttps://global.oup.com/booksites/content/9780198843788/%E2%80%9D">https://global.oup.com/booksites/content/9780198843788/</a>.  </p>
+<p>A version of the poem with a number of variants is transcribed in an anthology that forms part of the Conway papers: see Daniel Starza-Smith, <i>John Donne and the Conway papers</i> (OUP, 2014), p. 241; like N2 this poems will be fully edited in Mary Ellen lamb and Katherine R Larson’s forthcoming edition of Herbert’s poems (MRTS, 2020).</p>
+<p>The first stanza is about Pamphilia’s purported (but misrepresented) betrayal. Again we have an image of Love connected to tears, but in this case the tears are divided intro true (Amphilanthus’s) and false (Pamphilia’s, which are only love-like not truly signs of love): he has been betrayed by an ‘outward show’. </p> 
+<p><b> [I]</b>: the manuscript does seem to read O rather than I although it is just possible that the curl at the top is makes it I. Roberts silently emends to I and I does make much more sense than O. </p>
+<p><b>in mask</b>: this image continues the theme of the disconnect between outward show and truth, which is a common image in Wroth’s poetry, but usually from the perspective of the female victim of male duplicity. Amphilanthus himself is, generally, the guilty party, as his symbolic name (lover of many) implies. </p>
+<p><b>guileful rain</b>: possibly linked to the Niobe image in N10, the idea here is that tears are false guides to sincerity, and that they do not show the grief of the person shedding them, but rather wear away the person (Amphilanthus) who witnesses them. </p>
+<p><b>and seem to call</b>: Gosset Mueller edition of Urania Part Two and Roberts have ‘which’ seem to call. Manuscript looks more like ‘and’ but with extensive bleeding through from the other side of the page there is a possibility that it could be ‘which’, though ‘and’ seems more likely. </p>
+<p><b>cumbered</b>: encumbered. </p>
+<p><b>blow the coals</b>: again the fire/water imagery is used to show Amphilanthus’s despair as his flames are fanned. </p>
+<p>The final stanza turns on the paradox of the speaker being undeserving, yet nevertheless being deceived by the apparent grief displayed by Pamphilia. </p>
+<p><b>It was less fault</b>: Roberts has ‘For ‘for ‘Itt’. </p>
+<p><b>unworthy</b>: i.e. less worth, he is not worthy. 
+</p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg54_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg54_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N15</p>
+<p>
+Lying vpon the beach,</p>
+<p class="indent">below mee on the ʃands, </p>
+<p>I ʃaw w<sup>t</sup> in ʃmall reach</p>	
+<p class="indent">A lady ly in bands, </p>
+ <p class="indent">w<sup>th</sup> armes acroʃs, and hands</p>	
+<p class="indent">infolded in thos twines, </p>		
+<p class="indent">wherby a true love shines</p>
+<p>and for loves triumph stands, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>2</p>
+Alas, cride she, can love? </p>	
+<p class="indent">bequeath mee noe ʃmall space</p>
+<p>wher I may live, and love</p>
+<p class="indent">butt run in ruins race? </p>
+<p class="indent">nor yet to gaine deaths trace</p>
+<p>you locks of his owne haire, </p>
+<p>wittnes I still you beare</p>
+<p class="indent">in my harts dearest place, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>3</p>
+Butt O faulse is his hart,	</p>
+<p class="indent">yett faithfull is his haire, </p>
+<p>dead is his love, a pretty art</p>
+<p class="indent">if wee these tvo compare </p>	
+<p>haire [crossed out word] once cutt of hath share</p>
+<p>w<sup>t</sup> death, loves lyfe beeing fled, </p>
+<p>to shadow haire is fled, </p>			
+<p>ʃoe are my joys to care. </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>4</p>
+Vnconstant man, yett deere</p>
+<p class="indent">beehold thy haire outlive	</p>	
+<p>thy faith, thy worthe, and cleere</p>	
+<p class="indent">as thine eys, w<sup>th</sup> did drive</p>	
+<p>wrack to my hart, take back</p>		
+<p><strike>thes</strike> thes [‘thes’ inserted above] reliques, lay the rack</p> 
+<p>on shriveld harts, and cry</p>
+<p>haire outlives constancy;/ 
+</p>
+
+                    </td>
+                    <td>
+                        <p>
+N15</p>
+<p>
+Lying upon the beach, </p>
+<p class="indent">below me on the sands, </p>
+<p>I saw within small reach</p>
+<p class="indent">a lady lie in bands, </p>
+<p class="indent">with arms across and hands</p>
+<p class="indent">enfolded in those twines, </p>
+<p class="indent">whereby a true love shines</p>
+<p>and for loves triumph stands. </p>
+
+<p></p>
+<p>
+<br>2. </p>
+‘Alas,' cried she, ‘can love</p>
+<p class="indent">bequeath me no small space, </p>
+<p>where I may live and love, </p>
+<p class="indent">but run in ruins race? </p>
+<p class="indent">Nor yet to gain death’s trace. </p>
+<p>You locks of his own hair, </p>
+<p>witness I still you bear, </p>
+<p class="indent">in my heart’s dearest place. </p>
+
+<p></p>
+<p>
+<br>3. </p>
+‘But oh false is his heart, </p>
+<p class="indent">yet faithful is his hair, </p>
+<p>dead is his love, a pretty art</p>
+<p class="indent">if we these two compare. </p>
+<p>Hair once cut off has share</p>
+<p>with death: love’s life being fled, </p>
+<p>to shadow hair is fled, </p>
+<p>so are my joys to care. </p>
+
+<p></p>
+<p>
+<br>4. </p>
+‘Inconstant man, yet dear, </p>
+<p class="indent">behold thy hair outlive</p>
+<p>thy faith, thy worth, and clear</p>
+<p class="indent">as thine eyes, which did drive</p>
+<p>wrack to my heart, take back, </p>
+<p>these relics, lay the rack</p>
+<p>on shrivelled hearts and cry: </p>
+<p> ‘hair outlives constancy!’ 
+</p>
+                    </td>
+                    <td>
+                        <p>N15 (p. 144): This poem is part of a poetic exchange but the poems presented to Urania and Selarina do not exist: the manuscript has blank spaces for them, but Wroth has not inserted them (p. 142). This poem is presented by a shepherd to Amphilanthus as a kind of poetic tonic intended to cheer him up. The poem itself is a narrative which Josephine Roberts notes as being related to a song from the Portuguese romance <i>Diana</i>, by Montemayor (1559, English translation by Batholemew Yong, 1598). The song from <i>Diana</i> was loosely translated by Philip Sidney, and the first stanza was translated by Wroth’s father Robert Sidney (Philip’s brother). </p>
+<p>Philip Sidney’s version: </p>
+<p><p class="indent"> What changes here, O hair, </p>
+	<p><p class="indent"><p class="indent"> I see since I saw you: </p>
+<p><p class="indent"> How ill fits you this green to wear, </p>
+<p><p class="indent"> For hope the colour due. </p>
+<p><p class="indent"> Indeed I well did hope, </p>
+<p><p class="indent"> Though hope were mixed with fear, </p>
+<p><p class="indent"> No other shepherd should have scope</p>
+<p><p class="indent"> Once to approach this here, </p>
+
+<p><br><p class="indent"> Ah hair, how many days</p>
+	<p><p class="indent"><p class="indent"> My Dian made me show</p>
+	<p><p class="indent"><p class="indent"> With thousand pretty childish plays, </p>
+<p><p class="indent"> If I ware you or no, </p>
+<p><p class="indent"> Alas how oft with tears, </p>
+<p><p class="indent"> O tears of guileful breast</p>
+<p><p class="indent"> She seemed full of jealous fears</p>
+<p><p class="indent"> Whereat I did but jest. </p>
+
+<p><br><p class="indent"> Tell me, O hair of gold, </p>
+<p><p class="indent"> If I then faulty be</p>
+<p><p class="indent"> That trust those killing eyes, I would, </p>
+<p><p class="indent"> Since they did warrant me. </p>
+<p><p class="indent"> Have you not seen her mood, </p>
+<p><p class="indent"> What streams of tears she spent, </p>
+<p><p class="indent"> Till that I swore my faith so stood</p>
+<p><p class="indent"> As her words had it bent. </p>
+
+<p><br><p class="indent"> Who hath such beauty seen</p>
+<p><p class="indent"> In one that changeth so? </p>
+<p><p class="indent"> Or where one’s love so constant been? </p>
+<p><p class="indent"> Whoever saw such woe? </p>
+<p><p class="indent"> Ah hair, are you not grieved</p>
+<p><p class="indent"> To come from whence you be, </p>
+<p><p class="indent"> Seeing how once you saw I lived, </p>
+<p><p class="indent"> To see me as you see. </p>
+
+<p><br><p class="indent"> On sandy bank of late</p>
+<p><p class="indent"> I saw this woman sit, </p>
+<p><p class="indent"> Where sooner die than change my state, </p>
+<p><p class="indent"> She with her finger writ: </p>
+<p><p class="indent"> Thus my belief was stayed, </p>
+<p><p class="indent"> Behold Love’s mighty hand</p>
+<p><p class="indent"> On things were by a woman said, </p>
+<p><p class="indent"> And written in the sand. (Philip Sidney, <i>The Countess of Pembroke’s Arcadia</i>, 1598, pp. 487-88, modernised by Paul Salzman). </p>
+<p>Robert Sidney’s single stanza: </p>
+<p><p class="indent"> She whom I loved, and love shall still, </p>
+<p><p class="indent"> Sitting on this then blessed sand, </p>
+<p><p class="indent"> Wrote with to me heaven-opening hand, </p>
+<p><p class="indent"> ‘First will I die ere change I will’. </p>
+<p><p class="indent"> Oh unjust force of love unjust</p>
+<p><p class="indent"> That thus a man’s belief should rest</p>
+<p><p class="indent"> On words conceived in woman’s breast</p>
+<p><p class="indent"> And vows enrolled in dust. (from ‘Poems of Robert Sidney’, ed. Katherine Duncan-Jones, <i>English</i> 30 (1981): 54, modernised by Paul Salzman. </p>
+<p><b>bands</b>: i.e. bonds. </p>
+<p><b>shines</b>: Roberts has ‘shines’, <i>Urania</i> edition has ‘climbs’: it is hard to decide between these but shines seems to make more sense in the context of the stanza and the overall poem’s treatment of the lock of hair. </p>
+<p><b>to shadow hair is fled</b>: in this image, the hair cut from the lover is dead, like the love they once shared. </p>
+<p><b>behold thy hair</b>: the tradition of a lock of hair signifying love and faithfulness is longstanding: the most commonly cited early modern example is Donne’s ‘The Relic’. </p> 
+<p><b>wrack to my heart…lay the rack on shrivelled hearts,</b>: in the first half of this image the faithless eyes are sees as shipwrecking the heart, and then the ‘shriveled’ heart is laid on a rack to be punished like a victim of torture who is stretched on the rack. </p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg55v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg55v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N16</p>
+<p>
+Come deere lett’s waulke into this spring</p>
+<p>wher wee may heere the ʃweet birds ʃing</p>
+<p>and lett us leave this darckʃum place</p>
+<p>wher Cupid never yett had grace</p>
+<p class="indent">For loves bright light</p>
+<p class="indent">must us delight, </p>
+<div class="indent"><p class="indent">and Cupids fire</p></div>
+<div class="indent"><p class="indent">must still respire,</p></div>
+<p>and brightest showe in darckest night</p>
+
+<p></p>
+<p style="text-align: center;">
+<br>2 </p>
+‘T’is nott the shades can harbour love</p>
+<p>hee lives in highest spheares above, </p>
+<p>and from his beames gives worlds ther light, </p>
+<p>hee raigning Cround w<sup>t</sup> ʃweets delight, </p>		
+<p class="indent">In darknes spite</p>
+<p class="indent">hee rules in light, </p>
+<div class="indent"><p class="indent">for Cupids fire</p></div>	
+<div class="indent"><p class="indent">must still reʃpire</p></div>
+<p>And brightest show in dullest night, </p>
+
+<p></p>
+<p style="text-align: center;">
+<br>3 </p>		
+Love doth nott dwell in colde fainte shade, </p>
+<p>nor <strike>lurks</strike> lurcks wher <strike>tr̭ue</strike> warme [‘warme’ inserted above] love grows to Vade,</p>	
+<p>hee’s perfect heat, and strives to moue</p>
+<p>wher equall flames w<sup>t</sup> him showes love</p>
+<p class="indent">In Coldes despite</p>
+<p class="indent">hee rules in might</p>
+<div class="indent"><p class="indent">For Cupids fire</p></div>		
+<div class="indent"><p class="indent">must still aspire</p></div>
+<p>And pow’rfulst show in darckest night;/ 
+</p>
+
+                    </td>
+                    <td>
+                        <p>
+N16</p>
+<p>
+Come dear let’s walk into this Spring</p>
+<p>where we may hear the sweet birds sing, </p>
+<p>and let us leave this darksome place</p>
+<p>where Cupid never yet had grace. </p>
+<p class="indent">For love’s bright light</p>
+<p class="indent">must us delight, </p>
+<div class="indent"><p class="indent">and Cupid’s fire</p></div>
+<div class="indent"><p class="indent">must still respire,</p></div>
+<p>and brightest show in darkest night. </p>
+
+<p></p>
+<p>
+<br>2 </p>
+‘Tis not the shades can harbour love, </p>
+<p>he lives in highest spheres above, </p>
+<p>and from his beams gives worlds their light, </p>
+<p>he reigning crowned with sweet’s delight. </p>
+<p class="indent">In darkness’ spite</p>
+<p class="indent">he rules in light, </p>
+<div class="indent"><p class="indent">for Cupid’s fire</p></div>
+<div class="indent"><p class="indent">must still respire,</p></div>
+<p>and brightest show in dullest night. </p>
+
+<p></p>
+<p>
+<br>3 </p>
+Love doth not dwell in cold, faint shade, </p>
+<p>nor lurks where warm love grows to fade</p>
+<p>he’s perfect heat, and strives to move</p>
+<p>where equal flames with him shows love. </p>
+<p class="indent">In cold’s despite</p>
+<p class="indent">he rules in might, </p>
+<div class="indent"><p class="indent">for Cupid’s fire</p></div>
+<div class="indent"><p class="indent"><p class="indent">must still aspire,</p></div>
+<p>and powerful’st show in darkest night. 
+</p>
+
+                    </td>
+                    <td>
+                        <p>N16 (p. 149): This is a song sung to the lute by Steriamus, King of Albania, addressing his wife Urania (one of the main characters in the romance). </p>
+<p><b>Cupid’s fire</b>: unlike previous poems, in this instance fire has positive associations: fire and Cupid are associated with Steriamus’s fulfilled love for his wife. </p> 
+<p><b>In darkness spite</b>: i.e. in spite of darkness which Cupid/Love dispels. 
+</p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg56v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol1pg56v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N17</p>
+<p>
+Most hapy memory bee euer blest</p> 	
+<p>W<sup>ch</sup> thus brings into my most weary minde</p>	
+<p>Joys past though others would them tortures finde,</p>
+<p>butt I delighted was in them, though rest</p>
+
+<p></p>
+<p>
+<br>I never felt ʃoe was my ʃoule distrest</p>
+<p>Yett lou’d the fetters did mee slave like binde, </p>
+<p>O love, what is thy force? ʃome ʃay thou’rt blind,	</p>
+<p>noe thou canst ʃee best, and can give [crossed out word] eaʃe best,</p>
+
+<p></p>
+<p>
+<br>Then grant my memery may w<sup>t</sup> mee live, </p>
+<p>and darken nott my first, and deerest choiʃe, </p>
+<p>from w<sup>ch</sup> though ʃwerved, I in itt still reioyʃe,	</p>
+<p>nor lett the fates from mee thoʃe phantʃies drive, </p>
+
+<p></p>
+<p>
+<br>For though a ʃecound love doth mee infolde, </p>
+<p>non must the former from my ʃoule unfolde;/ </p>
+
+                    </td>
+                    <td>
+                        <p>
+N17</p>
+<p>
+Most happy memory, be ever blessed, </p>
+<p>which thus brings into my most weary mind</p>
+<p>joys past, though others would them tortures find, </p>
+<p>but I delighted was in them, though rest</p>
+
+<p></p>
+<p>
+<br>I never felt, so was my soul distressed,</p>
+<p>yet loved the fetters did me slave-like bind. </p>
+<p>Oh love, what is thy force? Some say thou art blind. </p>
+<p>No, thou canst see best, and give ease best. </p>
+
+<p></p>
+<p>
+<br>Then grant my memory may with me live, </p>
+<p>and darken not my first and dearest choice, </p>
+<p>from which though swerved, I in it still rejoice, </p>
+<p>nor let the fates from me those fancies drive. </p>
+
+<p></p>
+<p>
+<br>For though a second love doth me enfold, </p>
+<p>none must the former from my soul unfold. 
+</p>
+
+                    </td>
+                    <td>
+                        <p>N17 (p. 152): This poem, in the sonnet form of ABBA, ABBA, CDDC, EE, follows on shortly after the previous one: Steriamus recalls how (as depicted in the published Part One of the romance) he was at first in love with Pamphilia, until he was magically cured of this passion, and was able to return to his true love for Urania. This poem recollects the earlier love, and the idea that the memory remains even though he is loyal to his wife Urania. The memory (as evoked in the poem) does raise a quite powerful set of emotions in Steriamus, as he recalls his first love, ‘as hee was allmost like to have fallen into a dangerous passion. But Melissea had a careful hand over him, and soe he fell onely into a pretty little frenzy for the time of olde love and memory’ (152). The entire poem is like a re-evocation of first love. </p>
+<p><b>enfold</b>: the final couplet with its enfold/unfold end words, which are almost but not quite homonyms, evokes the paradox of love as a palimpsest where the second love overwrites but does not erase the first. 
+</p>
+
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol2pg59v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol2pg59v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol2pg60_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol2pg60_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N18</p>
+<p>
+Returne my thoughts, why fly you ʃoe</p>	
+<p class="indent">ʃorrows may my good outgoe, </p>
+<p>Phantʃie’s butt phantasticks skill</p>	
+<p class="indent">the ʃoule alone hath onely will, </p>
+
+<p></p>
+<p>
+<br>Heathen people had their Gods</p>
+<p class="indent">whom they implor’d to have the odds</p>	
+<p>of mortalls all, butt ‘t’would nott bee</p>
+<p class="indent">for love was high’st inthron’d to ʃee, </p>
+
+<p></p>
+<p>
+<br>Soe love of all things hath most ʃight, </p>	
+<p class="indent">and noe thing more then love is light, </p>
+<p>then Cupid take thy honor right</p>
+<p class="indent">thou’rt neither God, nor Earthly sprite;/ 
+</p>
+
+                    </td>
+                    <td>
+                        <p>
+N18</p>
+<p>
+Return my thoughts, why fly you so? </p>
+<p class="indent">Sorrows may my good outgo, </p>
+<p>fancy’s but fantastic’s skill</p>
+<p class="indent">the soul alone has only will. </p>
+
+<p></p>
+<p>
+<br>Heathen people had their Gods</p>
+<p class="indent">whom they implored to have the odds, </p>
+<p>of mortals all, but ‘twould not be</p>
+<p class="indent">for love was highest enthroned to see. </p>
+
+<p></p>
+<p>
+<br>So love of all things has most sight</p>
+<p class="indent">and nothing more than love is light, </p>
+<p>then Cupid take thy honour right</p>
+<p class="indent">thou art neither God, nor earthly sprite. 
+</p>
+
+                    </td>
+                    <td>
+                        <p>N18 (pp. 411-12): As noted in the Introduction, there are only two poems in Book Two of the manuscript, and in fact they are two variations of what is essentially  the same poem. In the first instance, this poem is recited by a so-called ‘Cyprian lady’. She is the daughter of the Duke of Sabro, and during a description to Pamphilia and Amphilanthus of how she fell in love with Andromarko, she explains that she composed this poem while wandering in a wood. The poem is blown by the wind into the hands of Andromarko, and while running to retrieve it, the lady sees him and is smitten. Andromarko is equally smitten (and it turns out that they had previously fallen in love with each other’s pictures). </p>
+<p><b>fantastic’s skill</b>: in early modern usage, a fantastic was an illusion, so the idea expressed here is that fancy is a skilfully-created illusion. </p>
+<p><b>neither God not earthly sprite</b>: in this image Cupid is seen as transitional: not a God (as Venus is) but still a spirit, not an earthly being. 
+</p>
+                    </td>
+                </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol2pg61v_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol2pg61v_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"><a href="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol2pg62_o2.jpg"><img src="wroth/img/wroth_uraniapoems/CaseMsfY1565W95vol2pg62_o2-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+                        <p>
+N19</p>
+<p>
+Returne my thoughts, why fly you ʃoe</p>
+<p class="indent">ʃorrow will my good outgoe</p>
+<p>Phant’ʃie’s butt phantastique’s skill</p>
+<p class="indent">the ʃoule above powrs hath the will, </p>
+
+<p></p>
+<p>
+<br>Heathen people had their Gods, </p>
+<p class="indent">whom they implor’d to have the ods</p>
+<p>of mortals, all, butt ‘t’wowld nott bee</p>
+<p class="indent">for love from highest heigth did ʃee,</p>
+
+<p></p>
+<p>
+<br>Soe love of all things hath most ʃight</p>	
+<p class="indent">nott Venus darling that is light, </p>
+<p>then Cupid take thy honor right, </p>
+<p class="indent">thou’rt neither God, nor Earthly spright;/ 
+</p>
+
+                    </td>
+                    <td>
+                        <p>
+N19</p>
+<p>
+Return my thoughts, why fly you so? </p>
+<p class="indent">Sorrow will my good outgo, </p>
+<p>fancy’s but fantastic’s skill, </p>
+<p class="indent">the soul above powers has the will. </p>
+
+<p></p>
+<p>
+<br>Heathen people had their Gods, </p>
+<p class="indent">whom they implored to have the odds, </p>
+<p>of mortals all, but ‘twould not be</p>
+<p class="indent">for love from highest height did see. </p>
+
+<p></p>
+<p>
+<br>So love of all things has most sight, </p>
+<p class="indent">not Venus’ darling that is light, </p>
+<p>then Cupid take thy honour right, </p>
+<p class="indent">thou art neither God, nor earthly sprite. 
+</p>
+                    </td>
+                    <td>
+                        <p>N19 (p. 418): This variation on N18 is not included as a separate poem in Roberts’s edition. Here Andromarko is overheard by Amphilanthus and Pamphilia reciting this poem, which it would seem is intended by Wroth to be a variation on the previous poem: while this is not stated, one can perhaps assume that Andromarko, having obtained the previous poem, is reciting a slightly altered version of it. It is at this point that the manuscript breaks off, so we learn nothing more of this particular pair of lovers. </p>
+<p><b>highest height</b>: changed from highest enthroned in N18. </p>
+<p><b>Venus darling</b>: this alteration from N18, which does not explicitly mention Venus, stresses that Cupid is we might say a creature who mediates between humans and the Goddess Venus. </p> 
+<p>While overall N19 is almost the same as N18, the mention of Venus coming from Andromarko’s mouth, rather than the lady’s, indicates how powerful desire is in this narrative, as we see it constantly undoing women and men equally. 
+</p>
+
+                    </td>
+                </tr>
+
+<tr>
+                    <td> <p><b>APPENDIX:</b></p>
+<p> <b>Images of manuscript versions of ‘Had I loved’ (ascribed to William Herbert) in four British Library manuscripts.</b> </p> </td>
+                    <td>
+<p> <br>
+<br>
+<b>Shelfmark reference </b> </p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/Add10309a.jpg"><img src="wroth/img/wroth_uraniapoems/Add10309a-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+<p> BL Additional MS 10309, fol. 125 </p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/Add10309c.jpg"><img src="wroth/img/wroth_uraniapoems/Add10309c-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+<p>BL Additional MS 10309, fol. 125v </p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/Add21433a.jpg"><img src="wroth/img/wroth_uraniapoems/Add21433a-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+<p>BL Additional MS 21433, fol. 119v</p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/Add21433c.jpg"><img src="wroth/img/wroth_uraniapoems/Add21433c-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+<p>BL Additional MS 21433, fol. 120 </p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/Add21433d.jpg"><img src="wroth/img/wroth_uraniapoems/Add21433d-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+<p> BL Additional MS 21433, fol. 120v </p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/Add25303b.jpg"><img src="wroth/img/wroth_uraniapoems/Add25303b-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+<p>BL Additional MS 25303, fol. 130v</p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/harley6917a.jpg"><img src="wroth/img/wroth_uraniapoems/harley6917a-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+<p> BL Harley MS 6917, fol. 33v</p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+<tr>
+                    <td style="display: none;"><a href="wroth/img/wroth_uraniapoems/harley6917b.jpg"><img src="wroth/img/wroth_uraniapoems/harley6917b-lowres.jpg" alt="manuscript" /></a><img src="index.php%3Fcontent=uraniapoems.html"></td>
+                    <td>
+<p> BL Harley MS 6917, fol. 34</p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+
+<tr>
+                    <td> IMAGE </td>
+                    <td>
+<p> </p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+
+<tr>
+                    <td> IMAGE </td>
+                    <td>
+<p> </p>
+                    </td>
+             <td>
+<p> </p>
+             </td> 
+                     <td>
+<p> </p>
+                     </td>
+                                  </tr>
+
+
+
+
+
+	
+
+
+                           </table>
+		</div>
+
+
+
+    <!--
+    Key:
+
+    <tipped> - signifying the content from tipped in sections - preceded by  [tipped in text]
+    /v [w]  - where the handwriting has made a w look like a v, where it isn't a deliberate substitution
+    / [crossed out]  - one or more words have been crossed out in the text. Should be shown with strike through omitted word.
+    / [(x) crossed out]  - where only one letter from a word has been crossed out - letter specified if legible]
+    / <inserted> - section of text that has been inserted above the line (often accompanied by a mark underneath ^)
+    /  [circumflex]  - where the letter preceding the designation has a circumflex above it: Ô.
+    /  [line above (x)]  - where (x) is a letter that has a line drawn above it
+    / {(x)?} - where (x) is a query about ambiguous content
+    /  [slash s]  - designating a symbol that resembles an s with a slash through it: ƒ
+    / $ = long s: ∫
+
+
+
+    also
+
+
+
+    /tipped
+    /poem
+    /indent
+    -->
+
+
+    <script type="text/javascript" src="../vconcertina.js"></script>
+
+    <!-- APMS: Begin Footer End Content -->
+    </div>
+</div>
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

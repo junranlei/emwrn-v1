@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../tweetie/tweetie.js%3F1747311468"></script>
+	<script src="../scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=bradstreethistory&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="../index.html"><img src="../img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li class="has-child"><a href="../digitalarchive.html">Digital Archive</a><ul><li><a href="../bradstreet.html">Anne Bradstreet</a></li><li><a href="../elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="../maryjacob.html">Mary Jacob</a></li><li><a href="../elizabethmelville.html">Elizabeth Melville</a></li><li><a href="../lucyrussell.html">Lucy Russell</a></li><li><a href="../marystuart.html">Mary Stuart</a></li><li><a href="../marywroth.html">Mary Wroth</a></li><li><a href="../techno.html">Technical Note</a></li></ul></li><li><a href="../conferences.html">Conferences</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../grants.html">Grants, Linkages & Fellowships</a></li><li><a href="../resources.html">Resources</a></li><li><a href="../networkaffiliates.html">Network Affiliates</a></li><li><a href="../contacts.html">Contacts</a></li><li><a href="../help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="../digitalarchive.html">Digital Archive</a></li><li><a href="../bradstreet.html">Anne Bradstreet</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="8" class="authorheading">Anne Bradstreet</h2><h3>Textual History</h3><p><strong>Contributor:</strong> <a href="http://www.newcastle.edu.au/profile/patricia-j-pender">Associate Professor Patricia Pender</a></p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 8 da bradstreethistory">
+                                          <p>
+               For a writer who occupies such a crucial position in early American literary history, Anne Bradstreet’s textual history has received surprisingly little attention.  The “pirated” London publication of her first volume of poetry, <i>The Tenth Muse Lately Sprung Up in America</i> in 1650, her expressed shock and dismay at seeing her poems in print, and her written response to this “theft” in her second edition, <i>Several Poems</i>, published posthumously in Boston in 1678, have become the stuff of literary legend.  But while the broad brushstrokes of Bradstreet’s literary history are generally well known, crucial questions remain about the roles various figures played in the publication of her work, her purported attitudes toward print, and the process of revision and correction that she continued throughout her long writing life. 
+          </p><p>
+               “Anne Bradstreet’s Paratexts: A Selection” is designed to provide students and scholars with a variety of digital materials through which to explore and imaginatively reconstruct various episodes in Bradstreet’s book history.  It does so, in this present incarnation, by presenting the paratexts that accompanied Bradstreet’s poetry into print in the seventeenth century.  It provides visual images of the paratexts to her two original seventeenth-century printed works, <i>The Tenth Muse, Lately Sprung Up in America</i> (1650), and the posthumously published <i>Several Poems</i> (1678), allowing readers to focus – to literally zoom in – on the ways her writing was presented to its first audiences.  No comprehensive transmission history of America’s first published female poet yet exists; it is hoped the materials assembled here might provide the first stage in assembling more materials for further exploration of this field.
+          </p><h3>
+               Why Paratexts?
+          </h3><p>
+               Helen Smith and Louise Wilson’s recent collection, <i>Renaissance Paratexts</i>, provides a useful starting point in understanding the importance of these crucial textual elements.  They describe the material object of the book, along with its accompanying supplements and information, as working “both outwards, altering the contexts and possibilities of the book’s reception, and inwards, transforming not only the appearance but the priorities and tone of the text.”<a href="index.php%3Fcontent=bradstreethistory.html#f1" class="foot">1</a> Like texts, paratexts prove inextricably linked to the contexts surrounding their production, and early modern examples provide insights into the collaborative and competitive world of Renaissance publishing, often frustrating post Romantic author-centric expectations.<a href="index.php%3Fcontent=bradstreethistory.html#f2" class="foot">2</a> Instead of fresh fields for the gleaning of authorial intent, these paratexts appear as muddy sites “of contestation and negotiation among authors, publishers/printers, and readership(s).”<a href="index.php%3Fcontent=bradstreethistory.html#f3" class="foot">3</a> As Smith and Wilson note, the paratext is the locus of the transformation from text to book; growing presentational conventions and framing devices of the period contrived the means for this metamorphosis.<a href="index.php%3Fcontent=bradstreethistory.html#f4" class="foot">4</a>
+          </p><h3>
+               Why Bradstreet’s Paratexts in Particular?
+          </h3><p>
+               There are additional reasons why studying the materials usually jettisoned by prior editors provide, in Bradstreet’s case, the basis for a fresh evaluation of the poet and her oeuvre.  
+          </p><p>
+               This archive’s focus on the materiality of women’s writing means that as a group we are particularly interested in tracking histories of production, transmission and reception, especially when these histories diverge from, or provide alternatives to, dominant narratives of the history of the book or of women’s writing in the period.  In an essay exploring how a new feminist editorial strategy might emerge in response to early modern women’s writing, Ramona Wray questions whether men’s and women’s texts from the period require the same treatment: “Are we all engaged in the same game, grappling with identical issues and confronting similar problematics regardless of the gender of our authors?”<a href="index.php%3Fcontent=bradstreethistory.html#f5" class="foot">5</a>  Answering with an emphatic “no,” Wray argues that:  “many of the major debates in textual studies are of limited relevance to the study of female-authored texts. The myriad discussions around texts which exist in more than one version constitute,” for Wray, “a case in point: where male-authored texts arrive with an arsenal of manuscript, folio and quarto variations, women’s texts are normally confined to a single leaf, thus rendering discussions of substantive differences between multiple printings and versions inapplicable.”<a href="index.php%3Fcontent=bradstreethistory.html#f6" class="foot">6</a>  While this is manifestly true for the majority of women writers from the period, Anne Bradstreet provides an intriguing counter-example.  A critical analysis of her editorial paratexts is thus worth undertaking, in the first instance, because the materials necessary for this enterprise actually exist – she is unusual for a woman writer of the period in having two editions of her poems printed in the seventeenth century. In this respect Bradstreet deviates from, and in doing so alters, our understanding of women’s exclusion from the mainstream currents of Anglo-American textual history.  
+          </p><p>
+               Anne Bradstreet moreover provides a good example of the utility of this approach, because her critical reception is demonstrably and profoundly tied, at various historical junctures, to the editorial paratexts that accompanied her printed publication. In a sense, of course, this is true of all publications that contain paratexts (and what publication does not?), but in Bradstreet’s case, this influence can seem particularly significant, not least to those concerned with women’s literary history, because the epistles and commendatory verse (and later introductions and forewords) that have framed Bradstreet’s poetry have so fundamentally influenced the critical reception of her work.  Interestingly, this is not always the result of editorial hostility or the unintended consequence of critical disinterest – in fact, quite the reverse.  Indeed the investment that Bradstreet’s early modern and late modern editors have had in her work – and the literary credentials they bring to their editions – are impressive and have been correspondingly authoritative.  
+          </p><p>
+               In 1967, for instance, Adrienne Rich’s paratexts to Jeannine Hensley’s <i>Works of Anne Bradstreet</i> offered a newly inspirational Bradstreet to an emerging second wave feminist audience. For Rich, Bradstreet “was one of the few women writers I knew anything about who had also been a mother.”<a href="index.php%3Fcontent=bradstreethistory.html#f7" class="foot">7</a> Rich’s paratexts themselves gave birth to a strong tradition of Bradstreet scholarship that continues to flourish today.  More problematically, Rich expressed a decided preference for the second edition of Bradstreet’s poems – particularly those that deal with motherhood and the family – over the first edition, which she deems amateurish and derivative.  As a consequence, and until surprisingly recently, Bradstreet’s early political poetry has been dismissed, perhaps especially by feminist scholars, as rote-like imitations of male models.
+          </p><p>
+               Another example of the influence of Bradstreet’s paratexts comes from John Woodbridge, the brother-in-law who took her manuscripts to London in 1650 and published them without her permission.  In his epistle to the “Kind Reader,” Woodbridge describes the author in terms that have been repeated almost verbatim through centuries of subsequent criticism.  When he described Bradstreet as “a woman, honoured, and esteemed where she lives, for her . . .  exact diligence in her place, and her discrete managing of her family occasions” and her poems as “the fruit but of some few hours, curtailed from her sleep and other refreshments,”<a href="index.php%3Fcontent=bradstreethistory.html#f8" class="foot">8</a> he presented a presumably unintentionally patronizing picture of a woman poet which might have been expected to appeal to her contemporary audience.  But this sense of Bradstreet as a decorous dilettante has persisted to the extent that even as late as 1981, McElrath and Robb, in the introduction to their <i>Complete Works</i>, felt the need to assure the reader that despite Bradstreet being a poet, “No scandal attached itself to her life.”<a href="index.php%3Fcontent=bradstreethistory.html#f9" class="foot">9</a> 
+          </p><p>
+               Finally, Bradstreet’s seventeenth-century paratexts are worth looking at in their original material versions because they have been treated quite casually by various editors.  McElrath and Robb, for instance, remove the paratexts to both the 1650 <i>Tenth Muse</i> and the 1678 <i>Several Poems</i> and place them in an appendix of Commendatory Writings.  Jeanine Hensley’s teaching edition for Harvard places the dedicatory and commendatory texts written by Bradstreet and others at the beginning of her collection, but combines paratexts from the <i>Tenth Muse</i> and <i>Several Poems</i>, thus conflating accolades to the poet from two separate periods – the pre and post publication periods – of her writing life. Both editorial decisions disturb the integrity of the early modern book as material artefact, and homogenize the history of Bradstreet’s works in transmission.
+          </p><p>
+               Both the 1650 <i>Tenth Muse</i> and the 1678 <i>Several Poems</i> contain an elaborate paratextual apparatus that is routinely omitted or truncated in modern editions of Bradstreet’s work.  This apparatus provides valuable clues about the ways that Bradstreet’s poetry was imagined, promoted, denigrated, and defended in its immediate historical context. Taken together, the paratexts to Bradstreet’s 1650 and 1678 printed editions are complex and contradictory.  The image of the poet that is offered by the commendatory verse assembled to introduce <i>The Tenth Muse</i> in 1650, for instance, is at odds with Bradstreet’s own self-representation in the same volume.  Her contemporary supporters present her as reticent, reluctant, and preternaturally gifted. She presents herself as truculent, determined, and studied. In her much anthologised poem, “The Prologue,” for instance, Bradstreet castigates her muse as “foolish, broken, [and] blemished,” yet boldly states: “I am obnoxious to each carping tongue/ Who says my hand a needle better fits.”<a href="index.php%3Fcontent=bradstreethistory.html#f10" class="foot">10</a> As Eileen Margerum argues, “Both the classical tradition of public poetry, which she learned reading the works of her predecessors, and the Puritan narrative tradition contain formulae for humility which writers were obliged to include in their works, regardless of personal feelings.”<a href="index.php%3Fcontent=bradstreethistory.html#f11" class="foot">11</a> Bradstreet certainly traffics in modesty rhetoric, yet she mobilizes discourses of feminine inadequacy and anomaly with paradoxical ease and agility. This facility suggests not, as tradition has it, that she was cowed by a potentially hostile patriarchal culture, but that she knew her well-read way around a literary disavowal.<a href="index.php%3Fcontent=bradstreethistory.html#f12" class="foot">12</a> Conventional modesty formulae are part of a literary lexicon that Bradstreet inherits, portions of which she selects to replicate in her own negotiations with literary tradition. 
+          </p><p>
+               Presenting the paratexts that accompanied Bradstreet’s poetry into print in their subtly distinct 1650 and 1678 versions is motivated by the belief that insufficient attention to the differences between <i>The Tenth Muse</i> and <i>Several Poems</i> has resulted in an unfortunate flattening of Bradstreet’s varied and energetic responses to the cultural challenges confronting the early modern woman writer. Being able to view the paratexts to these volumes side-by-side, accompanied by annotated transcriptions, will hopefully provide opportunities to redress this problem.  As a relatively canonical author, images of Bradstreet’s original seventeenth-century volumes are elsewhere accessible on the web, unlike some of the other writers included in this archive.  As curator of the archive’s Bradstreet component, I wanted to facilitate future research on the paratexts to both of Bradstreet’s seventeenth-century volumes, rather than produce a composite critical edition.  This approach has the benefit of preserving the distinctive visual features of each text, and might be followed through in presenting selected paratexts to Bradstreet’s later publications.
+          </p><h3>
+               Rationale for text selection, transcription, and annotation
+          </h3><p>
+               Providing complete editions of Bradstreet’s 1650 and 1678 volumes of poetry is a job whose size and scale obviously exceeds that of this digital archive in its present incarnation.  Databases such as Early English Books Online and Women Writers Online provide digital copies of these texts, although access to these generally requires a subscription.  Focusing on presenting the paratexts to the seventeenth-century printed editions made sense given restrictions of size, time, and funding, as well as for the more critical reasons outlined above. Images and transcriptions have been made from the Boston Public Library’s editions of these texts.  Where the original text or photographed image is obscured, we have followed Hensley’s edition.  Annotations are light, and only the most significant differences between editions have been noted.
+          </p><p>
+               
+          </p><h3>
+               Conclusion
+          </h3><p>
+               The broader rationale behind this selection stems from an understanding that each edition of Anne Bradstreet makes a different claim to represent the poet – claims that reflect their own cultural and literary moment. Editorial choices, introductions, tone and format inevitably shape and “stage” Bradstreet’s poetry, but also construct the identity of Anne Bradstreet herself. New studies of the transmission of Anne Bradstreet’s works can tell us much about the ways in which her texts were produced in their specific literary-historical milieu and the ways in which they subsequently circulated as material objects.  Our understanding of Bradstreet’s position in American literature and the history of the book can be significantly enhanced by scholarship of this sort.  Detailed analysis of the material books that constitute her corpus and the specific cultural contexts in which they were produced will help to refine and in some cases challenge the general understanding of her publication history that exists today.  Fleshing out – or making material – the broad brushstrokes of Bradstreet’s transmission from a retiring literary dilettante to the granddame of American letters provides an opportunity to strengthen and solidify her illuminating, anomalous position in American literary history. It sheds new light not only on the colonial New England publishing context, but also on the nineteenth-century movement to build a national literary canon and the twentieth-century recovery of early women writers.
+          </p>
+          <div class="bibliography"></div>
+          <h3>
+               Selected Bibliography
+          </h3><p>
+               Bradstreet, Anne. <i>The Andover Manuscript</i>. Harvard MS 1007.1.
+          </p><p>
+               Bradstreet, Anne. <i>The tenth muse lately sprung up in America or severall poems, compiled with great variety of vvit and learning, full of delight. Wherein especially is contained a compleat discourse and description of the four elements, constitutions, ages of man, seasons of the year. Together with an exact epitomie of the four monarchies, viz. The Assyrian, Persian, Grecian, Roman. Also a dialogue between Old England and New, concerning the late troubles. With divers other pleasant and serious poems. By a gentlewoman in those parts.</i> London: Stephen Bowtell at the signe of the Bible in Popes Head-Alley, 1650.
+          </p><p>
+               Bradstreet, Anne. <i>Several poems compiled with great variety of wit and learning, full of delight wherein especially is contained a compleat discourse, and description of the four elements, constitutions, ages of man, seasons of the year, together with an exact epitome of the three by a gentlewoman in New-England.</i> Boston: Printed by John Foster, 1678.
+          </p><p>
+               Bradstreet, Anne. <i>The Works of Anne Bradstreet in Prose and Verse</i>, ed. John Harvard Ellis. Charlestown: Abram E. Cutter, 1867. Available on-line through Google Books, <a href="https://books.google.com.au/books?id=GGdBAQAAMAAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false">https://books.google.com.au/books?id=GGdBAQAAMAAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false</a>. Accessed 27 May, 2015.
+          </p><p>
+               Bradstreet, Anne. <i>The Poems of Mrs Anne Bradstreet (1612-1672). Together with Her Prose Remains with an Introduction by Charles Eliot Norton</i>. The Duodecimos, 1897. Available on-line through Hathi Trust Digital Library,  <a href="http://babel.hathitrust.org/cgi/pt?id=hvd.32044018883025;view=1up;seq=15">http://babel.hathitrust.org/cgi/pt?id=hvd.32044018883025;view=1up;seq=15</a>. Accessed 27 May 2015.
+          </p><p>
+               Bradstreet, Anne. <i>The Tenth Muse (1650) and, From the Manuscripts, Meditations Divine and Morall Together with Letters and Occasional Pieces by Anne Bradstreet</i>, ed. Josephine K. Piercy. Gainesville, Florida: Scholars Facsimiles & Reprints, 1965.
+          </p><p>
+               Bradstreet, Anne. <i>The Works of Anne Bradstreet</i>, ed. Jeannine Hensley. Cambridge, Massachusetts: The Belknap Press of Harvard University, 1967.
+          </p><p>
+               Bradstreet, Anne. <i>The Complete Works of Anne Bradstreet</i>, ed. Joseph R. McElrath, Jr and Allan P. Robb. Boston: Twayne Publishers, 1981.
+          </p><p>
+               Cowell, Pattie and Ann Stanford. <i>Critical Essays on Anne Bradstreet</i>. Boston: G.K. Hall, 1983.
+          </p><p>
+               Craig, Raymond A., and Anne Bradstreet. <i>A concordance to the complete works of Anne Bradstreet</i>. Vol. 2. Edwin Mellen Pr, 2000.
+          </p><p>
+               Derounian-Stodola, Kathryn Zabelle. “The excellency of the inferior sex”: the commendatory writings on Anne Bradstreet’, <i>Studies in American Spirituality</i> 1 (1990): 129-47.
+          </p><p>
+               Dolle, Raymond F. <i>Anne Bradstreet: A Reference Guide</i>. Boston: G.K. Hall, 1990.
+          </p><p>
+               Engberg, Kathryn Seidler. <i>The Right to Write: The Literary Politics of Anne Bradstreet and Phillis Wheatley</i>. Lanham, MD: University Press of America, 2010.
+          </p><p>
+               Gordon, Charlotte. <i>Mistress Bradstreet: The Untold Life of America’s First Poet</i>. New York & Boston: Little, Brown and Company, 2005.
+          </p><p>
+               Hammond, Jeffrey. <i>Sinful Self, Saintly Self: The Puritan Experience of Poetry</i>. Athens: University of Georgia Press, 1993.
+          </p><p>
+               N. H. Keeble, “Bradstreet, Anne (1612/13–1672),” <i>Oxford Dictionary of National Biography</i>. Oxford University Press, 2004; online edn, May 2014. [<a href="http://www.oxforddnb.com/view/article/3209">http://www.oxforddnb.com/view/article/3209</a>, accessed 20 May 2015]
+          </p><p>
+               Lincolne, Countesse of. <i>The Countesse of Lincolnes Nurserie</i> (Oxford: John Lichfield and James Short, Printers to the famous University, 1622).
+          </p><p>
+               Margerum, Eileen. “Anne Bradstreet’s Public Poetry and the Tradition of Humility,” <i>Early American Literature</i> 17.2 (1982): 152-60.
+          </p><p>
+               Mather, Cotton. <i>Magnalia Christi Americana</i>, ed. Kenneth B. Murdock. Cambridge, Massachusetts and London: The Belknap Press of Harvard University Press, 1977.
+          </p><p>
+               Paul C.-H. Lim, “Woodbridge, Benjamin (1622–1684),” <i>Oxford Dictionary of National Biography</i>, Oxford University Press, 2004; online edn., Jan 2008 [<a href="http://www.oxforddnb.com/view/article/29904">http://www.oxforddnb.com/view/article/29904</a>, accessed 6 May 2015] 
+          </p><p>
+               Pender, Patricia. “Rethinking authorial reluctance in the paratexts to Anne Bradstreet’s poetry” in <i>Early Modern Women and the Poem</i>, ed. Susan Wiseman. Manchester and New York: Manchester University Press, 2013, 165-180.
+          </p><p>
+               Rich, Adrienne. “Anne Bradstreet and her poetry,” <i>The Works of Anne Bradstreet</i>, ed. Jeannine Hensley. Cambridge, Massachusetts: Belknap, 1967, ix-xx. 
+          </p><p>
+               Rich, Adrienne. “Postscript,” <i>The Works of Anne Bradstreet</i>, ed. Jeannine Hensley. Cambridge, Massachusetts: Belknap, 1967, xx-xi.
+          </p><p>
+               Rosenmeier, Rosamund R. “The wounds upon Bathsheba: Anne Bradstreet’s Prophetic Art,” in <i>Puritan Poets and Poetics: Seventeenth Century American Poetry in Theory and Practice</i>, ed. Peter White. University Park, PA: Pennsylvania State University Press, 1985, 129-46.
+          </p><p>
+               Schweizer, Ivy. “Anne Bradstreet Wrestles with the Renaissance,” <i>Early American Literature</i> 23.3 (1988): 291-312.
+          </p><p>
+               Showalter, Elaine. <i>A Jury of Her Peers: American Women Writers from Anne Bradstreet to Annie Proulx</i>. New York: Knopf, 2009.
+          </p><p>
+               Smith, Helen and Louise Wilson, “Introduction,” <i>Renaissance Paratexts</i>, Cambridge and New York: Cambridge University Press, 2011, 1-14.
+          </p><p>
+               Stanford, Ann. <i>Ann Bradstreet: The Worldly Puritan</i>. New York: Burt Franklin & Co., 1974.
+          </p><p>
+               White, Elizabeth Wade. <i>Anne Bradstreet: The Tenth Muse</i>. Oxford and New York: Oxford University Press, 1971.
+          </p><p>
+               Wiseman, Sue. <i>Conspiracy and Virtue</i>. Oxford and New York: Oxford University Press, 2006.
+          </p><p>
+               Wray, Ramona. “Anthologizing the Early Modern Female Voice,” <i>The Renaissance Text: Theory, Editing, Textuality</i>, ed. A. Murphy. Manchester and New York: Manchester University Press, 2000, 55-72.
+          </p>
+          <div class="footnotes">
+               <ol>
+                    <li><a id="f1"></a>
+                         Helen Smith and Louise Wilson, “Introduction,” <i>Renaissance Paratexts</i>, New York: Cambridge University Press, 2011, 6.
+                    </li><li><a id="f2"></a>
+                         Smith and Wilson, 8.  
+                    </li><li><a id="f3"></a>
+                         Arthur Marotti, <i>Manuscript, Print, and the English Renaissance Lyric</i>, Ithaca and London: Cornell University Press, 1995, p. 222, quoted in Smith and Wilson, 8.
+                    </li><li><a id="f4"></a>
+                         Smith and Wilson, 4.
+                    </li><li><a id="f5"></a>
+                         Ramona Wray, “Anthologizing the Early Modern Female Voice,” <i>The Renaissance Text: Theory, Editing, Textuality</i>, ed. A. Murphy. Manchester and New York: Manchester University Press, 2000, 56. 
+                    </li><li><a id="f6"></a>
+                         Wray, 56.
+                    </li><li><a id="f7"></a>
+                         Adrienne Rich, “Postscript,” <i>The Works of Anne Bradstreet</i>, ed. Jeannine Hensley. Cambridge, Massachusetts: Belknap, 1967, xx-xi. 
+                    </li><li><a id="f8"></a>
+                         John Woodbridge, “Kind Reader,” <i>The tenth muse lately sprung up in America</i>. London: Stephen Bowtell at the signe of the Bible in Popes Head-Alley, 1650.  
+                    </li><li><a id="f9"></a>
+                         Joseph R. McElrath, Jr and Allan P. Robb, <i>The Complete Works of Anne Bradstreet</i>. Boston: Twayne Publishers, 1981, xi.
+                    </li><li><a id="f10"></a>
+                         Anne Bradstreet, “The Prologue” in <i>The tenth muse lately sprung up in America</i>. London: Stephen Bowtell at the signe of the Bible in Popes Head-Alley, 1650.
+                    </li><li><a id="f11"></a>
+                         Eileen Margerum, “Anne Bradstreet’s Public Poetry and the Tradition of Humility.” <i>Early American Literature</i>, vol. XVII, 1982: 152-60, 152.
+                    </li><li><a id="f12"></a>
+                         Patricia Pender, “Rethinking authorial reluctance in the paratexts to Anne Bradstreet’s poetry” in <i>Early Modern Women and the Poem</i>, ed. Susan Wiseman. Manchester and New York: Manchester University Press, 2013, 165-180, 166.
+                    </li>
+               </ol>
+          </div>
+          
+          
+                                      </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
