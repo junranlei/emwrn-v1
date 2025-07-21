@@ -90,7 +90,7 @@
         };
 
         // Set loading
-       	this.html('<span>'+settings.loadingText+'</span>');
+       	//this.html('<span>'+settings.loadingText+'</span>');
 
         var that = this;
 
