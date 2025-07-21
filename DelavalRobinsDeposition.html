@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=DelavalRobinsDeposition&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="38" class="authorheading">Elizabeth Delaval</h2><h3>Deposition of Richard Robins</h3><p><strong>Contributor:</strong> <a href="http://www.bbk.ac.uk/english/our-staff/full-time-academic-staff/wiseman">Professor Susan Wiseman</a></p><p><strong>Date:</strong> October 6 1713 </p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 38 da DelavalRobinsDeposition">
+                                <p>
+Richard Robins seems to have been used by Elizabeth Delaval as a servant, probably to carry letters but seems to have worked for Lady Anne Newburgh, Elizabeth Delaval’s father’s widow. We know from this deposition that Delaval writes to him, and Richard Robins appears in secret service payments regarding Newburgh.<a href="DelavalRobinsDeposition.html#f1" class="foot">1</a> The entries suggest that it may have been via Robins that Delaval’s letters find their way into the State Papers.
+</p><p>
+    The context in which the deposition was taken was that of  Delaval’s attempts to return to England. After the death of James II Delaval petitioned three times to return to Britain – in 1702 when she was allowed back to visit; in 1707 when she was given licence to live in France, and in 1713. In 1713, the last time we have a note about her in the British State Papers (as opposed to those of the Stuart court in Europe), Robins was asked about her.
+    </p><p>
+   Robins’ deposition gives us a snapshot of what the authorities wanted to know about Lady Elizabeth Hatcher in 1713. Robins has clearly been asked how long her has known her, how old she is and whether she is a Roman Catholic or a Protestant. The importance of Protestantism in Delaval’s life after her flight to France is made very clear here where its centrality to the possibility of her return seems to be assumed by all.
+</p><p>
+
+<i>Secretaries of State: SPD Anne 1702-1714</i>
+</p><p>
+‘Deposition of Richard Robins of St James Westminster [Middx] with information about the religion, estate, etc., of Lady Elizabeth Hatcher, and her residence in France 1713 Oct 6’
+</p><p>
+Richard Robins of S<sup>t</sup> James in the Liberty of Westmin<sup>r</sup> Gent maketh oath that he hath known the Lady Elizabeth Hatcher Widow above thirty years and that she always was a Protestant of the Church of England and is very well assured that she is so now And that by Virtue of her M aj.<sup>ties</sup> Royal Licence the said Lady Hatcher did come into England from France in the year One Thousand seavn hundred and two, upon the Peticion of S<sup>r</sup> John Delavall, in order to ennable him to suffer a Com[m]on Recovery upon two Mannors in the County of Northumberland, which the said Lady had in Joyntures; which after she had done. This Depon<sup>t</sup> verily beleeives that the said Lady Elizabeth Hatcher did returne againe into France (being by the said Licence appointed so to do, and this Depon<sup>t</sup> hath the greater reason so to believe because he has since that time received severall letters from
+her directed to this Depon<sup>t</sup> from thence And this Depon<sup>t</sup> verily believes the said Lady Hatcher  hath not returned into England since and that she is now between sixty and seventy yeares of age but the exact yeares of age this Depon<sup>t</sup> knoweth not And this Depon<sup>t</sup> further saith that he believes the Copy of the above mentioned Lycense hereunto annexed is a true Copy of the Original Lycence remaining in the signet office for that the Name William Cook thereto subscribed and attesting the same to be a true copy is the proper hand writing of M<sup>r</sup> William Cook one of the foure Clarks of the signett as he acknowledged to this Depon<sup>t</sup>.
+</p><p>
+<span class="left">&nbsp;</span> Jurat facto die Octobr 1713<a href="DelavalRobinsDeposition.html#f2" class="foot">2</a>
+</p><p>
+<span class="left">Ric: Robins</span>		            coram me   Ja: [Medgiott]<a href="DelavalRobinsDeposition.html#f3" class="foot">3</a>
+</p>
+
+          <div class="footnotes">
+               <ol>
+                    <li><a id="f1"></a>Richard Robins appears in the State Papers 6 July 1690 Daniel Finch, Earl of Nottingham to Lord Lucas re Lady Newburgh CSPD 1689-1702 (HMSO, 1898), 69; “Secret Service Payments” by William Jephson: May 19 t Xmas last…£75”; Oct 10 1690 again “by [the hands of] Ri.Robins” “£25” “paid the Countess of Newburgh for rent of Bagshot for 3 quarters,”  April 11 1691“receiving the rent of Bagshot for Lady Newburgh £50,” <i>Calendar of Treasury Books</i> (HMSO, 1939) vol 17, 567  567, 586, 591, 615; July 1690 HMC <i>Report on the Manuscripts of the Late Allen George Finch</i> (London: HMSO, 1922), vol 2,374-5. In this letter Hatcher also asks Mr Robson to pay “Mr Robins.”  Finch’s papers include a list of intercepted letters including “Mr. Robins, next door to the Hand and Glove in Germain Street.” Lord Nottingham may gloss this as “?Mr. Robinson.” It is possible that from this time Robins had his correspondence with Hatcher checked. HMC <i>Finch</i>,374, 377
+               </li><li><a id="f2"></a>‘Jurat facto’ plus date.  Legal formulation of proof that an oath was taken before an officer and therefore indicating before whom the deposition was sworn.
+               </li><li><a id="f3"></a>‘coram’ : in the presence of.
+               </li>
+               </ol>
+          </div>
+                                      </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=wrothhistory&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="marywroth.html">Mary Wroth</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="15" class="authorheading">Mary Wroth</h2><h3>Lady Mary Wroth, <i>Love's Victory</i></h3>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 15  wrothhistory">
+                                <p>
+Edited by Paul Salzman
+</p>
+<ol>
+<li>Textual Introduction
+</li><li>Introduction to the play
+</li><li>Bibliography
+</li>
+</ol>
+
+<h3>Textual Introduction</h3>
+<p>Mary Wroth's play <i><i>Love's Victory</i></i> has as its source two authorial manuscripts: the Penshurst Manuscript, currently housed at Penshurst Place, and the Huntington Manuscript, HM 600, held at the Huntington Library. In this textual introduction, I want to argue that the two manuscripts, plus a nineteenth-century partial transcript of one of them, are better understood as mutually interdependent texts, rather than texts arranged through editorial intervention into a hierarchy. The ideal on line version of the play would be, as was the case with my on-line edition of Wroth's poetry, a a curated presentation of all the source material, as well as edited versions that can allow for scholarship as well as pedagogical use. However, because Lord De L'Isle, the current owner of the Penshurst manuscript, has not granted permission for its use, this edition will be somewhat more conventional, albeit through the collation column it is possible to trace and analyse the relationship between the two manuscript sources.
+</p><p>
+Despite the wonderful contextual material we now have to hand in Margaret Hannay's biography of Wroth, the exact dating of Wroth's work remains difficult, and <i>Love's Victory</i> has been particularly hard to pin down. Thanks to Hannay's identification of the paper link between the Folger manuscript of 'Pamphilia to Amphilanthus' and the Penshurst manuscript of <i>Love's Victory</i>, which seems to indicate that the transcript of the play followed closely from the transcript of the poems, we can speculate, as Hannay suggests, that the Penshurst <i>Love's Victory</i> dates from around 1619 or 1620.<a href="index.php%3Fcontent=wrothhistory.html#f1" class="foot">1</a>  The two presentation manuscripts may well, as Hannay and Gavin Alexander have both argued, been intended by Wroth for William Herbert, given the interlinking of the names 'Amphilanthus' and  'Pamphilia' (ie Wroth) in a cipher decoded by Josephine Roberts, and the slashed S repeated eight times, on the elaborate contemporary binding of the Penshurst <i>Love's Victory</i>.<a href="index.php%3Fcontent=wrothhistory.html#f2" class="foot">2</a>  The manuscript is written in Wroth's careful, formal italic hand, neatly spaced, similarly set out to the 'Pamphilia to Amphilanthus' poems. I would argue, though, that this manuscript looks more like a reading text than a performance text, though it may have served its turn as a template for the kind of material a performance would demand. From this perspective it is interesting to compare the manuscript to Ben Jonson's holograph presentation manuscript of <i>The Masque of Queens</i>, which was performed in 1609 with a cast that included Susan de Vere, Countess of Montgomery. Jonson as usual heavily annotated the page with instructions as to how what was portrayed should be interpreted, so that this is a reading text, not a performance text.<a href="index.php%3Fcontent=wrothhistory.html#f3" class="foot">3</a>  However, it gives us a far clearer sense of the masque's performance history and status than Wroth's manuscript, which really only has marked exits as the trace of performance. 
+</p><p>
+But I think the real mystery is what is now called the Huntington manuscript of the play. Thanks to Michael Brennan's edition of the Penshurst manuscript and his collation, it seems, on the surface at least, that this manuscript, written in a rough mixture of Wroth's careful italic hand and something more casual, containing corrections, with spaces for songs that were inserted in Penshurst, without the frame of Venus and Cupid and without the final act, was something like a working draft that may have formed the basis for the corrected Penshurst manuscript.<a href="index.php%3Fcontent=wrothhistory.html#f4" class="foot">4</a>  But I want to interrogate that idea just a little, not necessarily to dispute it, but to place the nature of the Huntington manuscript into a more complicated context. So the biggest mystery is why this manuscript of <i>Love's Victory</i> was in the possession of Sir Edward Dering, first baronet of Surrenden Dering. The Surrenden estate was in Pluckley, although unfortunately the house which Edward Dering built burnt down in 1952. Edward Dering had a number of personal connections to Mary Wroth. Edward's sister Margaret married Robert Wroth's cousin Peter Wroth in the early 1620s, and as Hannay notes, Dering had connections with Mary Wroth's sister Barbara's husband, with her sister Philippa's husband John Hobart, and with her brother Robert.<a href="index.php%3Fcontent=wrothhistory.html#f5" class="foot">5</a>  Dering married Elizabeth Tufton, daughter of Nicholas Tufton Earl of Thanet, in November 1619, giving him a connection to a notable Kentish family, and also to Anne Clifford through Elizabeth's brother John, who married Clifford's daughter Margaret. Dering took up sole residence with his wife at Surrenden on the second of October, 1620. Dering was, one can say without exaggeration, obsessed by the theatre at this stage of his life. His attendance at the theatre and his purchases of plays are set out in his meticulous account book, which survives for the years 1617 to 1628 and which can be consulted in a convenient transcript made by Laetitia Yeandle.<a href="index.php%3Fcontent=wrothhistory.html#f6" class="foot">6</a> Dering's intermittent visits to the theatre grew much more frequent after his wife died in June 1622, and he also purchased large numbers of plays and then had them bound, including two copies of Shakespeare's first folio bought within a month of its publication. The purchases of plays decreased from around 1625.
+</p><p>
+Dering also put on amateur performances at Surrenden, the most famous of which was a version of Shakespeare's two <i><i>Henry IV</i></i> plays, involving a careful abridgement of the two parts into a single play, which exists in a scribal manuscript with Dering's own corrections that can be dated to late 1622 or early 1623.<a href="index.php%3Fcontent=wrothhistory.html#f7" class="foot">7</a> Tipped into that manuscript is a cast list for John Fletcher and Philip Massinger's <i><i>The Spanish Curate</i></i>, which was performed in 1622, though not published until the 1647 Beaumont and Fletcher folio.<a href="index.php%3Fcontent=wrothhistory.html#f8" class="foot">8</a>  The names of those taking part in Dering's production are crossed through, and the two columns may indicate separate performances, or possible performances, and they include Dering (who cast himself as Bartolus, at least at first), and a number of friends and relatives. It is intriguing that only the male characters are listed: <i>The Spanish Curate</i>, typically for a public theatre play, has four female parts, but because the list is torn off and turned around in order to provide additional material for the opening speech of <i>Henry IV</i>, the names of the female characters are missing, and so are the names of those who might have played them. In the case of Dering's version of <i>Henry IV</i>, Dering removes Lady Mortimer from Part One, reducing three female roles to two (Lady Percy and the Hostess):  a sensible move considering that Lady Mortimer is meant to speak Welsh which needs to be translated by her father Glendower, though in fairness to Dering, Shakespeare neglects to write any actual Welsh speeches for her. 
+</p><p>
+I am trying here to set up a context for the manuscript of <i>Love's Victory</i> that was in Dering's possession at Surrenden until the middle of the nineteenth century. What I have of course are mostly questions, rather than answers. I think the most likely explanation is that Dering, with his definite if distant connections to Mary Wroth's family, his love of the theatre, and his penchant for amateur performance, put on a performance of <i>Love's Victory</i> at Surrenden, and the Huntington/Surrenden manuscript is evidence of this. But here are the problems. If this occurred at the time most scholars now want to place the composition of <i>Love's Victory</i>, that is, around 1619, then it is less likely that Dering was involved in a performance that early, because he didn't take over Surrenden until October 1620, which seems to have coincided with his increasing interest in the theatre, plays, and performing. Similarly, that seems to me to rule out the idea that Wroth may have written her draft at Surrenden. Wroth was resident at Loughton in Essex at this time, and while it is certainly possible she wrote some of the play while visiting Penshurst, which is not too far from Surrenden (about thirty miles), it seems odd that the draft was located there. I also want just to note at this point that Wroth must have been writing furiously from 1619 to early in 1621, given that <i>Urania</i> was entered into the Stationers' Register in July 1621, and I don't say that she could not be writing the romance and the play at the same time, but it seems slightly less likely - and of course the clearest connections between the two works are with part two of <i>Urania</i>, not part one.<a href="index.php%3Fcontent=wrothhistory.html#f9" class="foot">9</a> Given what I have been saying about evidence of Dering's plans for <i>Henry IV</i> and <i>The Spanish Curate</i>, it seems clear that <i>Love's Victory</i> would have stretched his resources as far as female performers were concerned, given the eight female parts in the play. But if that wasn't a problem, perhaps because, we might imagine, Dering held a house party for the performance and experienced masquers like Wroth and her sisters were present, we still have the puzzle of how far the Huntington manuscript is from a performable script. I don't think there is an issue with the beginning, as the Venus and Cupid frame is not essential, but the truncated ending, with what would seem to be missing pages following on from Philisses and Musella's exchange, would not have worked very well. So could this draft have been with Dering as a partial script, to be cut up for parts: it does have paste-ins at several places? Was it once complete? It was almost certainly <b>in</b>complete in the mid nineteenth century. How many scripts were really required for performance? : we know from the public theatre that companies could get by with a single script and a series of individual parts. Or in an amateur setting, we might have been looking at a read through, rather than a full performance, with people looking onto a single script, though if that script was the Huntington manuscript it would have been pretty hard to read.
+</p><p>
+It seems to me, and here I enter the realm of speculation, that Dering must have been looking at a possible performance and that the partial manuscript must have been at Surrenden as some sort of contribution towards a performance - Wroth would hardly have seen it as suitable to pass on for someone to read. I would also want to say that if Huntington is a working manuscript, it is rather different to our other example of a Wroth working manuscript: the continuation of <i>Urania</i>, now in the Newberry Library. If you look at a typical page from the <i>Urania</i> manuscript you can see that, however scruffy the Huntington <i>Love's Victory</i> might be, it is far more accessible.
+</p><p>
+With these mysteries in mind, I think it is most rewarding to consider the two manuscripts of <i>Love's Victory</i> as in some ways complementary, or at the very least to see them as both offering information about the play and Wroth's evolving approach to it. I just want to trace the movement of Wroth's manuscripts through to the nineteenth century and mention briefly the third version of <i>Love's Victory</i> that was created then.
+</p><p>
+I want to start by noting how the Huntington manuscript begins with what must have been Wroth's notion of how the entire play might begin, perhaps before she considered the addition of Venus and Cupid. We have the play's title, which is repeated in the Penshurst manuscript after the Venus and Cupid exchange, but unlike Penshurst, Huntington follows the title with the slashed S, suggesting to me a stable beginning, a true title page, even if that might have later been altered by the addition of the mythological frame. (Wroth also uses the slashed S to mark the end of act 1, and act 2.) It is I think possible to read the Huntington <i>Love's Victory</i> as containing, at least potentially or in embryo, a somewhat different play to the one embodied in the Penshurst manuscript. I think it is at the very least <b>productive</b> to set aside the question of whether Huntington represents an abandoned draft, and while comparisons with Penshurst are inevitable, they can be counter-productive. I have for example argued elsewhere that some of the emendations from Huntington to Penshurst do not read as improvements.<a href="index.php%3Fcontent=wrothhistory.html#f10" class="foot">10</a> More generally, it is interesting at least to consider a version of <i>Love's Victory</i> that is less mythologised, or more human if you like, with a suspended ending. This sense is strongest at the beginning of the play, where the opening scene, with Philisses bemoaning the supposed loss of Musella, is a powerful and apt initiation of the thematic appraisal of desire and its effects. This version also emphasises the <i><i>questioni d'amore</i></i> and fortune-telling sequences, which not only broaden the scope of the analysis of desire but also, I think, exemplify the kind of communal and social dialogue that works quite well in extracts, even in more limited readings than a fully-staged play, especially given the songs that form part of the exchange. The masque-like elements that may well have been an issue for a staging somewhere like Surrenden (or even at Penshurst), such as Venus and Cupid appearing 'in glory' at the end of Act Two and being sung to by Venus's priests, are still there in the Huntington manuscript in a truncated form, made a bit more difficult by the fact that this section of the manuscript is pasted in. I think it is clear that Wroth was working towards the folding in of the Venus and Cupid material, as evidenced by the blank page ready one presumes for the exchange between Venus and Cupid at the end of Act Three, with the Act heading struck through and Musella's speech prefix half erased. Again there is no clear explanation: perhaps this is because Huntington reflects a performance with fewer resources or with less possibility for the depiction of Venus and Cupid, though they are there at the end of Act Four together with the song of the priests, or just that this was never intended to be a completed manuscript, but rather a template for the play as it evolved, which of course still doesn't quite explain what it was doing preserved at Surrenden.
+</p><p>
+But there it was at Surrenden, sitting with Dering's collection of dozens and dozens of plays and his manuscript adaptation of the <i>Henry IV</i> plays, and there it sat unnoticed until in 1845 it was transcribed by Henrietta Halliwell-Phillipps. I have discussed Henrietta's transcript at length elsewhere; here I just want to note the crossing paths of Wroth's manuscripts in the mid nineteenth century.<a href="index.php%3Fcontent=wrothhistory.html#f11" class="foot">11</a> The Dering material was trawled through by a Reverend Larking, who handed the manuscript of the <i>Henry IV</i> adaptation over to James Orchard Halliwell-Phillipps in 1844, and James, a young man on the make, edited it for the Shakespeare Society. During 1845 and 1846 James's wife Henrietta, a skilled copyist, having been trained by her father, the bibliophile and great book collector Sir Thomas Phillipps, transcribed <i>Love's Victory</i>. After attempting in vain to solve the mystery of who wrote the play, James deposited Henrietta's transcription in the Plymouth Library, where it sat until 1853, when he retrieved it and printed a series of extracts from it, comprising about one fifth of the play, as part of a compilation of material from a variety of sources. The Dering manuscript remained at Surrenden until 1899, when it was sold by Quaritch to Augustus White and then inherited by the Huntington Library some time in the 1920s. The Penshurst manuscript of 'Pamphilia to Amphilanthus' had been acquired by Isaac Reed, probably in the late eighteenth century, was sold to Richard Heber in 1807, sold by Heber to Thomas Thorpe in 1836, and bought from Thorpe in the same year by Thomas Phillipps. So Henrietta might well have been exposed to that manuscript in her father's library, but neither she nor James were able to make the connection with the <i>Love's Victory</i> manuscript at Surrenden, understandably given the differences in appearance I have outlined. At the same time, the Penshurt <i>Love's Victory</i> manuscript was also peripatetic, put up for sale by Puttick and Simpson in 1850, who understandably misinterpreted the binding as indicating that it was an autograph manuscript by Mary Sidney Countess of Pembroke. It was sold to Thorpe, and then re-acquired by Penshurst some time later.
+</p><p>
+As these manuscripts crossed and almost crossed paths during the nineteenth century, not much interest was paid to their contents except by the Halliwell-Phillippses, with Henrietta painstakingly transcribing a fairly difficult manuscript, and then James, despite giving the play itself something of a thumbs down, compiling a version of it for publication. Making the most of what they had, James and Henrietta produced a set of extracts that emphasised the middle section of the play, with its witty <i>questioni d'amore</i> passages. Given the truncated ending of the manuscript, they provided a rather neat conclusion by using the cancelled speech by Cupid from the end of Act Four.
+</p><p>
+In this edition for the archive, it is possible, using the collation, to follow the way that the two <i>Love's Victory</i> manuscripts converge and diverge. Users can create a text to suit their purpose, including the possibility of a performance script, given the new understanding of just how performable Worth's play might be, as discussed in the general introduction below.
+</p>
+<h3>
+The Play
+</h3>
+<p>
+As Mary Wroth has moved towards something approaching canonical status within early modern writing, <i>Love's Victory</i> remains comparatively neglected in comparison with her poetry and her prose romance, <i>The Countess of Montgomery's Urania</i>. Until recently, more effort has perhaps gone into dating the play (see my account in the Textual Introduction) and exploring biographical contexts, than in analysing it from a purely critical perspective. This is beginning to change. I offer here a brief summary of some of the main critical approaches. Recent Wroth criticism in general has become increasingly sophisticated and responsive both to important theoretical developments in the discipline such as queer theory, as well as to the move towards a materialist criticism. Wroth scholars owe a great debt to Margaret A McLaren who wrote a PhD on <i>Urania</i> at the University of Auckland in 1978, alongside, of course, Wroth's distinguished editor Josephine A Roberts, who was able to publish editions of Wroth's poetry and of <i>Urania</i> before her untimely death, which meant that the <i>Urania</i> edition had to be completed posthumously.<a href="index.php%3Fcontent=wrothhistory.html#f12" class="foot">12</a>
+</p><p>
+Fittingly, McLaren and Roberts both published pioneering essays on <i>Love's Victory</i>. In 1983 Roberts published an analysis of the Huntington manuscript of <i>Love's Victory</i>, making a brief comparison with the recently identified Penshurst manuscript, which was not published until Michael Brennan's facsimile edition in 1985.<a href="index.php%3Fcontent=wrothhistory.html#f13" class="foot">13</a>  As well as analysing the manuscript itself, Roberts places it in the context of the fashion for pastoral tragicomedy, notes its echoing of some of Wroth's family history, and calls attention to its genuine dramatic quality. Margaret McLaren's essay on the play was written without any direct access to the Penshurst manuscript, but in her analysis based on the Huntington manuscript McLaren sets up some interesting and still somewhat neglected questions on the play's political resonances, noting some connections with the unpublished second part of <i>Urania</i>.<a href="index.php%3Fcontent=wrothhistory.html#f14" class="foot">14</a> Following the publication of Brennan's edition, Barbara Lewalski published an important essay, included in the important 1991 collection <i>Reading Mary Wroth</i>, which was a significant event in the securing of Wroth's place in early modern writing. Lewalski specifically addresses the representation of gender in the play, arguing that it 'encodes an implicit feminist politics emphasizing the values of female agency, egalitarianism, female friendship, and community, a politics which subverts both the norms of the genre and of Jacobean society'.<a href="index.php%3Fcontent=wrothhistory.html#f15" class="foot">15</a> Lewalski presciently counters what was to become a perhaps excessive emphasis on the biographical context for <i>Love's Victory</i> through her concentration on Wroth's 'implicit feminist politics', anticipating some of the approaches to the play exemplified by Marion Wynne-Davies.<a href="index.php%3Fcontent=wrothhistory.html#f16" class="foot">16</a> This is especially evident in Wynne-Davies's 2008 essay on what she terms the 'liminal woman', taking Musella's 'death' and return from death as having psychological and also political resonances (through a comparison with the political position of Elizabeth of Bohemia, as well as with Wroth's own social position).<a href="index.php%3Fcontent=wrothhistory.html#f17" class="foot">17</a> Similarly, Alison Findlay, in her book on playing spaces in early modern women's drama, links the play to specific locations at Penshurst, but at the same time interprets it as being more generally concerned with female agency within the generic context of Romance.<a href="index.php%3Fcontent=wrothhistory.html#f18" class="foot">18</a> Sophie Tomlinson, in her influential study of women and performance in the Stuart period, notes along with Gary Waller that Wroth anticipates some aspects of the fashionable pastoral plays associated with Queen Henrietta Maria in the 1630s. Tomlinson in particular calls attention to Wroth's subtle depiction of female sexuality and desire.<a href="index.php%3Fcontent=wrothhistory.html#f19" class="foot">19</a> Links to wider political contexts remain a fruitful area of investigation, following on perhaps from Heidi Towers' analysis of the play in terms of Wroth and the Herbert/Sidney family position on the Spanish Match, and its relationship to Wroth's experiences in Queen Anne's Court.<a href="index.php%3Fcontent=wrothhistory.html#f20" class="foot">20</a> In terms of more literary contexts, <i>Love's Victory</i> has been the subject of some interesting essays comparing Wroth's plays with various plays by Shakespeare, including an important account by Katherine Larson which looks at connections between depictions of female desire, courtly conversation games, and intersections between <i>Love's Victory</i> and <i>Love's Labour's Lost</i>.<a href="index.php%3Fcontent=wrothhistory.html#f21" class="foot">21</a> 
+</p><p>
+Finally, I have discussed the possible performance of the play at Surrenden in the textual introduction. Two modern performances have underlined the dramatic viability of <i>Love's Victory</i>, offering concrete evidence that the play is dramatically effective even without direct evidence of an original production. The first of these performances, for which unfortunately little recorded evidence is extant, was a student production directed by Stephanie Hodgson Wright at the University of Sunderland in 1999, as part of a conference centred on the play.<a href="index.php%3Fcontent=wrothhistory.html#f22" class="foot">22</a> The second performance was a staged reading in the Great Hall at Penshurst Place performed in 2014 by the Globe Shakespeare's <i>Read Not Dead</i> Company, as part of the 'Dramatizing Penshurst' conference co-ordinated by Professor Alison Findlay. Again this production underlined how effective the play is in performance, notably bringing out the comic elements, but also demonstrating a greater depth of characterisation than is perhaps apparent when the play is read, rather than watched. As the performance aspects of the play are now able to be explored, it will I am certain attract more critical attention in general, and this on line edition is intended to facilitate that process. Within the context of the Archive, <i>Love's Victory</i> might be seen as the most conventional text given the most conventional treatment. However, when seen alongside the other works in the archive and when treated as a text that can be seen in all its mutations through digital editing, Wroth's play becomes part of the complex web of early modern women's writing with histories that projects such as this one are only now beginning to uncover.
+</p>
+<div class="bibliography">
+<h3>Select Bibliography
+</h3>
+
+<p>Editions
+</p><p>
+The most important edition of <i>Love's Victory</i> was edited by Michael Brennan for the Roxburghe Club; it contains facsimile images of the Penshurst manuscript with a transcript and a collation with the Huntington manuscript. It was published in a limited and expensive format and is held by a relatively limited number of libraries: <i>Lady Mary Wroth's Love's Victory</i>, Ed. Michael G. Brennan (London: The Roxburghe Club, 1988).
+</p><p>
+Modernised editions:
+</p><p>
+A composite modernised edition is available as part of S. P. Cerasano and Marion Wynne-Davies, eds., <i>Renaissance Drama by Women</i> (London: Routledge,1996).
+</p><p>
+A modernised text based on Huntington is in Paul Salzman, ed. <i>Early Modern Women's Writing: An Anthology 1560-1700</i> (Oxford: World's Classics, 2008).
+</p><p>
+A modernised text based on Huntington will also be available in Sara Mueller and Marta Straznicky, eds., <i>Women's Household Drama 1550-1650</i> (Toronto: Centre for Reformation and Renaissance Studies, The Other Voice series, forthcoming).
+</p><p>
+Selected Criticism
+</p><p>
+Josephine A Roberts, 'The Huntington Manuscript of Lady Mary Wroth's Play, <i>Loves Victorie', Huntington Library Quarterly</i> 46 (1983): 156-174.
+</p><p>
+Carolyn Ruth Swift, 'Feminine Self-Definition in <i>Lady Mary Wroth's Love's Victorie</i> (c. 1621)', <i>ELR</i> 19 (1989), 171-88.
+</p><p>
+Margaret Anne McLaren, 'An Unknown Continent: Lady Mary Wroth's Forgotten Pastoral Drama "Loves  Victorie" ', Anne M Haselkorn and Betty S Travitsky, eds., <i>The Renaissance Englishwoman in Print: Counterbalancing the canon</i> (Amherst: University of Massachusetts Press, 1990), 276-94
+</p><p>
+Barbara K Lewalski, 'Mary Wroth's <i>Love's Victory</i> and Pastoral Tragicomedy', Naomi J Miller and Gary Waller, eds., <i>Reading Mary Wroth</i> (Knoxville: University of Tennessee Press, 1991), 88-108.
+</p><p>
+Julie D Campbell, '<i>Love's Victory</i> and <i>La Mirtilla</i> in the Canon of renaissance Tragicomedy: an examination of the influence of salon and social debates', <i>Women's Writing</i> 4 (1997), 103-125.
+</p><p>
+Marion Wynne-Davies, ' "Here is sport will well befit this time and place": allusion and delusion in Mary Wroth's <i>Love's Victory</i>', <i>Women's Writing</i> 6 (1999), 47-64.
+</p><p>
+Alexandra G. Bennett, 'Playing By and With the Rules: Genre, Politics, and Perception in Mary Wroth's <i>Love's Victorie</i>', in Clare McManus, ed., <i>Women and Culture at the Courts of the Stuart Queens</i> (Houndmills: Palgrave Macmillan, 2003)
+</p><p>
+Heidi Towers, 'Politics and Female Agency in Lady Mary Wroth's <i>Love's Victorie</i>', <i>Women's Writing</i> 13 (2006), 432-47.
+</p><p>
+Marion Wynne-Davies, 'The Liminal Woman in Mary Wroth's <i>Love's Victory</i>', <i>Sidney Journal</i> 26 (2008), 65-81.
+</p><p>
+Katherine R Larson, 'Conversational games and the Articulation of Desire in Shakespeare's <i>Love's Labour's Lost</i> and Mary Wroth's <i>Love's Victory</i>', <i>ELR</i> 40 (2010), 165-190.
+</p><p>
+Paul Salzman, '<i>Love's Victory</i>, Pastoral, Gender, and <i>As You Like It</i>, in Paul Salzman and Marion Wynne-Davies, eds., <i>Mary Wroth and Shakespeare</i> (New York: Routledge, 2014).
+</p>
+</div>
+
+<div class="footnotes">
+<ol>
+<li><a id="f1"></a>
+Margaret P Hannay, Mary Sidney, Lady Wroth (Farnham: Ashgate, 2010), pp. 218-9. Hannay explains that the two manuscripts not only share paper stock, but the margin rules on the last pages of 'Pamphilia to Amphilanthus' match those on the paper of <i>Love's Victory</i>.
+</li><li><a id="f2"></a>
+  Josephine A Roberts, 'Deciphering Women's Pastoral: Coded language in Wroth's <i>Love's Victory</i>', in Claude J Sunmers and Ted Larry Pebworth, eds., Representing Women in Renaissance England (Columbia: University of Missouri Press, 1997), 163-74. ; Hannay, p. 219; Gavin Alexander, Writing After Sidney (Oxford: Oxford University Press, 2006), p. 307.
+</li><li><a id="f3"></a>
+  For a page from The Masque of Queens see http://universitypublishingonline.org/cambridge/benjonson/k/essays/Sejanus_textual_essay/2/
+</li><li><a id="f4"></a>
+  Michael Brennan, ed., Lady Mary Wroth's <i>Love's Victory</i>: The Penshurst Manuscript (London: Roxburgh Club, 1988).
+</li><li><a id="f5"></a>
+  Hannay p. 304.
+</li><li><a id="f6"></a>
+  Laetitia Yeandle, Sir Edward Dering, 1st bart, of Surrendedn Dering and his 'Book of Expenses' 1617-1628 (Kent Archaeological Society, Paper 120, nd).
+</li><li><a id="f7"></a>
+  See Laetitia Yeandle, 'The Dating of Sir Edward Dering's Copy of "The History of King Henry the Fourth" ', SQ 37 (1986), 224-6; and see the facsimile edition ed. George Walton Williams and Gwynne Blakemore Evans, The History of King Henry the Fourth as revised by Sir Edward Dering, Bart. (Charlottesville: Folger Shakespeare Library), 1974).
+</li><li><a id="f8"></a>
+  The Dramatic Works in the Beaumont and Fletcher Canon, Vol. X ed. Fredson Bowers et al. (Cambridge: Cambridge university Press, 1996), p. 295.
+</li><li><a id="f9"></a>
+  See Josephine A Roberts, 'The Huntington manuscript of Lady Mary Wroth's Play "<i>Love's Victory</i>" ', HLQ 46 (1983), p. 166. 
+</li><li><a id="f10"></a>
+  Paul Salzman, Reading Early Modern Women's Writing (Oxford: Oxford University Press, 2006), pp. 83-4.
+</li><li><a id="f11"></a>
+  Paul Salzman, 'Henrietta's Version: Mary Wroth's <i>Love's Victory</i> in the Nineteenth Century', in Patricia Pender and Rosalind Smith, eds., Material Culture of Early Modern Women's Writing (Houndmills: Palgrave) 2014).
+</li><li><a id="f12"></a>
+  The Poems of Lady Mary Wroth, ed. Josephine A. Roberts, 2nd edition (Baton Rouge: Louisiana State University Press, 1992); The First Part of The Countess of Montgomery's <i>Urania</i>, ed. Josephine A. Roberts, Medieval and Renaissance Texts and Studies, 140/ Renaissance English Text Society, 17 (Binghamton, N.Y.: Medieval and Renaissance Texts and Studies, 1995); The Second Part of The Countess of Montgomery's <i>Urania</i>, ed. Josephine A. Roberts, completed by Suzanne Gossett and Janel Mueller. Medieval and Renaissance Texts and Studies, 211/ Renaissance English Text Society, 24 (Tempe, Arizona: Renaissance English Text Society in conjunction with Arizona Center for Medieval and Renaissance Studies, 1999). 
+</li><li><a id="f13"></a>
+  'The Huntington Manuscript of Lady Mary Wroth's Play, Loves Victorie', Huntington Library Quarterly 46 (1983): 156-174; Lady Mary Wroth's <i>Love's Victory</i>, Ed. Michael G. Brennan (London: The Roxburghe Club, 1988); as well as the account of the relation ship between the two manuscripts in the textual introduction, see my Reading Early Modern Women's Writing (Oxford: Oxford University Press, 2006), pp. 77-84.
+</li><li><a id="f14"></a>
+  Margaret Anne McLaren, 'An Unknown Continent: Lady Mary Wroth's Forgotten Pastoral Drama "Loves  Victorie" ', Anne M Haselkorn and Betty S Travitsky, eds., The Renaissance Englishwoman in Print: Counterbalancing the canon (Amherst: University of Massachusetts Press, 1990), 276-94.
+</li><li><a id="f15"></a>
+  Barbara K Lewalski, 'Mary Wroth's <i>Love's Victory</i> and Pastoral Tragicomedy', Naomi J Miller and Gary Waller, eds., Reading Mary Wroth (Knoxville: University of Tennessee Press, 1991), p. 89.
+</li><li><a id="f16"></a>
+  Ibid., p. 104.
+</li><li><a id="f17"></a>
+  Marion Wynne-Davies, 'The Liminal Woman in Mary Wroth's <i>Love's Victory</i>', Sidney Journal 26 (2008), 65-81.
+</li><li><a id="f18"></a>
+  Alison Findlay, Playing Spaces in Early Modern Women's Drama (Cambridge: Cambridge University Press, 2006), pp. 83-94.
+</li><li><a id="f19"></a>
+  Sophie Tomlinson, Women on Stage in Stuart Drama (Cambridge: Cambridge University Press, 2005), p. 62.
+</li><li><a id="f20"></a>
+  Heidi Towers, 'Politics and Female Agency in Lady Mary Wroth's Love's Victorie', Women's Writing 13 (2006), 432-47.
+</li><li><a id="f21"></a>
+  Katherine R Larson, 'Conversational games and the Articulation of Desire in Shakespeare's Love's Labour's Lost and Mary Wroth's <i>Love's Victory</i>', ELR 40 (2010), 165-190; see also my essay '<i>Love's Victory</i>, Pastoral, Gender, and As You Like It, in Paul Salzman and Marion Wynne-Davies, eds., Mary Wroth and Shakespeare (New York: Routledge, 2014).
+</li><li><a id="f22"></a>
+  I was privileged to attend this performance, which was lively and well received, despite being performed by drama students, rather than professionals.
+</li>
+</ol>
+</div>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

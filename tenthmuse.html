@@ -1,0 +1,3192 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=tenthmuse&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="bradstreet.html">Anne Bradstreet</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="8" class="authorheading">Anne Bradstreet</h2><p><strong>Contributor:</strong> <a href="http://www.newcastle.edu.au/profile/patricia-j-pender">Associate Professor Patricia Pender</a></p><p><strong>Date:</strong> 1650 and 1678 </p><p><strong>Material:</strong> Print</p><p><strong>Source:</strong> Bradstreet, Anne. <i>The tenth muse lately sprung up in America or severall poems, compiled with great variety of vvit and learning, full of delight. Wherein especially is contained a compleat discourse and description of the four elements, constitutions, ages of man, seasons of the year. Together with an exact epitomie of the four monarchies, viz. The Assyrian, Persian, Grecian, Roman. Also a dialogue between Old England and New, concerning the late troubles. With divers other pleasant and serious poems. By a gentlewoman in those parts.</i> London: Stephen Bowtell at the signe of the Bible in Popes Head-Alley, 1650.
+<br />
+Bradstreet, Anne. <i>Several poems compiled with great variety of wit and learning, full of delight wherein especially is contained a compleat discourse, and description of the four elements, constitutions, ages of man, seasons of the year, together with an exact epitome of the three by a gentlewoman in New-England.</i> Boston: Printed by John Foster, 1678.
+        </p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 8 da tenthmuse">
+                                <script type="text/javascript">
+         $(document).ready(function () {
+ 		// set the main content to full width
+ 			$(".BodyText").css("width","100%");
+ 		// text image concertina
+		$("div.bradstreetseg tr").not(".firstline").hide();
+         //    $("tr").find('img').hide();
+		//	 $("tr").find('p:not(.firstline)').hide();
+             $("div.bradstreetseg tr.firstline").click(function () {
+				$(this).siblings().toggle();
+                // $(this).find('img').toggle();
+				// $(this).find('p:not(.firstline)').toggle();
+             });
+ 	});
+ </script>
+
+
+<div class="bradstreethead">
+	
+	<table>
+		<tr class="shade"><th>Tenth Muse</th><th>Several Poems</th></tr>
+	</table>
+</div>
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				<p>
+                             Frontispiece - The Tenth Muse
+				</p>
+                         
+			</td>
+			<td>
+				<p>
+                             Frontispiece - Several Poems
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+                             <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0217.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0217-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+			<td>
+				<p>
+				              <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0230.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0230-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="center">
+        <p>
+        THE
+</p><p>
+TENTH MUSE
+</p><p>
+Lately sprung up in AMERICA.
+</p><p>
+OR
+</p><p>
+Severall Poems, compiled
+</p><p>
+with great variety of VVit
+</p><p>
+and Learning, full of delight.
+</p><p>
+Wherein especially is contained a com-
+</p><p>
+pleat discourse and description of
+</p>
+            <div class="clearfix">
+                <div style="width: 48%; float: left; text-align: right; padding: 1em;">
+                <p> </p>
+            <p>
+The Four
+</p>
+                </div>
+                <div style="width: auto; float: left; text-align: left; border-left: 1px solid #000000; padding: 1em; font-style: italic;">
+<p>
+Elements,
+</p><p>
+    Constitutions,
+</p><p>
+	Ages of Man,
+</p><p>
+    Seasons of the Year.<a href="tenthmuse.html#ftm1" class="foot">1</a> 
+</p>
+                    
+                </div>         
+            </div>
+                    
+                    <p>
+                        Together with an Exact Epitomie<a href="tenthmuse.html#ftm2" class="foot">2</a> of
+</p><p>
+the Four Monarchies<i>, viz.</i>
+</p>
+            
+            <div class="clearfix">
+                <div style="width: 48%; float: left; text-align: right; padding: 1em;">
+               <p> </p>
+                    <p>The 	</p>
+                </div>
+                <div style="width: auto; float: left; text-align: left; border-left: 1px solid #000000; padding: 1em; font-style: italic;">
+            <p>
+	Assyrian,
+</p><p>
+Persian,
+</p><p>
+	Grecian,
+</p><p>
+    Roman.<a href="tenthmuse.html#ftm3" class="foot">3</a> 
+</p>
+                    
+                </div>
+            </div>
+            
+                    <p>
+Also a Dialogue between Old England and
+</p><p>
+New, concerning the late troubles.
+</p><p>
+With divers other pleasant and serious Poems.
+</p><p>
+ 
+</p><p>
+By a Gentlewoman in those parts.
+</p><p>
+ 
+</p><p>
+Printed at <i>London</i> for <i>Stephen Bowtell</i> at the signe of the
+</p><p>
+Bible in Popes Head Alley. 1650.
+</p>
+        </div>
+
+			</td>
+			<td>
+				<div class="center">
+				<p>
+          SEVERAL
+          </p><p>
+POEMS
+</p><p>
+Compiled with great variety of Wit and
+</p><p>
+Learning, full of Delight;
+</p><p>
+Wherein especially is contained a compleat
+</p><p>
+Discourse, and Description of
+</p>
+               <div class="clearfix">
+               <div style="width: 48%; float: left; text-align: right; padding: 1em;">
+               <p> </p>
+               <p>
+The Four
+</p>
+               </div>
+               <div style="width: auto; float: left; text-align: left; border-left: 1px solid #000000; padding: 1em;">
+                    <p>
+ELEMENTS
+</p><p>
+CONSTITUTIONS,
+</p><p>
+AGES of Man,
+</p><p>
+     SEASONS of the Year.<a href="tenthmuse.html#fsp1" class="foot">1</a> 
+</p>
+               </div>         
+               </div>
+<p>
+     Together with an exact Epitome<a href="tenthmuse.html#fsp2" class="foot">2</a>  of
+</p><p>
+the three first <i>Monarchyes</i>
+</p><p>
+
+</p>
+               <div class="clearfix">
+               <div style="width: 48%; float: left; text-align: right; padding: 1em;">
+               <p> </p>
+                    <p>
+Viz. The
+</p>
+                    </div>
+               <div style="width: auto; float: left; text-align: left; border-left: 1px solid #000000; padding: 1em; font-style: italic;">
+               <p>
+ASSYRIAN,
+</p><p>
+PERSIAN,
+</p><p>
+     GRECIAN.<a href="tenthmuse.html#fsp3" class="foot">3</a> 
+</p>
+               </div>
+               </div>
+                    <p>
+<i>And beginning of the</i> Romane Common-wealth
+</p><p>
+<i>to the end of their last King:</i>
+</p><p>
+With diverse other pleasant and serious <i>Poems</i>,
+</p><p>
+ 
+</p><p>
+By a Gentlewoman in <i>New England</i>.
+</p><p>
+ 
+</p>
+               <div style="font-style: italic;"><p>
+                    The second Edition, Corrected by the Author’
+</p><p>
+and enlarged by an Addition of several other
+</p><p>
+Poems found amongst her Papers
+</p><p>
+after her Death.
+</p></div>
+               <p>
+ 
+</p><p>
+<i>Boston</i>, Printed by <i>John Foster</i>, 1678.
+</p>
+          </div>
+				
+				
+			</td>
+
+		</tr>
+	</table>
+</div>
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				<p>Kind Reader</p>
+			</td>
+			<td>
+				<p>
+                             Kind Reader
+                         </p>
+                         <p>
+                             [John Woodbridge]
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0189.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0189-lowres.jpg" alt="text"></a>
+                             <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0190.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0190-lowres.jpg" alt="text"></a></p>
+			</td>
+			<td>
+				                        <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0232.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0232-lowres.jpg" alt="text"></a>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0233_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0233_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+					 <p>
+    Kind Reader:<a href="tenthmuse.html#ftm4" class="foot">4</a> 
+</p>
+        <div class="italic">
+        <p>
+Had I opportunity but to borrow
+</p><p>
+some of the Authors wit, ‘tis pos-
+</p><p>
+sible I might so trim this curious
+</p><p>
+work with such quaint expressions, as that
+</p><p>
+the Preface might bespeak thy further peru-
+</p><p>
+sall; but I feare ‘twil be a shame for a man
+</p><p>
+that can speak so little; to be seene in the title
+</p><p>
+page of this Womans Book, lest by comparing
+</p><p>
+the one with the other, the Reader should
+</p><p>
+passe his sentence, that it is the gift of wo-
+</p><p>
+men, not only to speak most, but to speake best;
+</p><p>
+I shall leave therefore to commend that,
+</p><p>
+which with any ingenious Reader will too 
+</p><p>
+much commend the Author, unlesse men
+</p><p>
+turne more peevish then women, to envie
+</p><p>
+the excellency of the inferiour Sex. I doubt
+</p><p>
+not but the Reader will quickly finde more 
+</p><p>
+then I can say, and the worst effect of his rea-
+</p><p>
+ding will be unbeleif, which will make him 
+</p><p>
+question whether it be a womans Work, and 
+</p><p>
+aske, Is it possible? If any doe, take this as 
+</p><p>
+an answer from him that dares avow it; It 
+</p><p>
+is the VVork of a VVoman, honoured, and e-
+</p><p>
+steemed where she lives, for her gracious de-
+</p><p>
+meanour, her eminent parts, her pious con-
+</p><p>
+versation, her courteous disposition, her exact 
+</p><p>
+diligence in her place, and discreet mannag-
+</p><p>
+    ing of her family occasions;<a href="tenthmuse.html#ftm5" class="foot">5</a>  and more then 
+</p><p>
+so, these Poems are the fruit but of some few 
+</p><p>
+houres, curtailed from her sleep, and other re-
+</p><p>
+freshments. I dare adde little, lest I keepe 
+</p><p>
+thee too long, if thou wilt not beleeve the 
+</p><p>
+worth of these things (in their kind) when 
+</p><p>
+a man sayes it, yet beleeve it from a woman 
+</p><p>
+when thou seest it. This only I shall annex, 
+</p><p>
+I feare the displeasure of no person in the pub-
+</p><p>
+    lishing of these Poems but the Authors<a href="tenthmuse.html#ftm6" class="foot">6</a>, without 
+</p><p>
+whose knowledge, and contrary to her expe-
+</p><p>
+ctation I have presumed to bring to publick 
+</p><p>
+view what she resolved should never in such 
+</p><p>
+    a manner see the Sun;<a href="tenthmuse.html#ftm7" class="foot">7</a> but I found that di-
+</p><p>
+vers had gotten some scattered papers, affe-
+</p><p>
+cted them wel, were likely to have sent forth 
+</p><p>
+broken peices to the Authors prejudice, which 
+</p><p>
+I thought to prevent, as well as to pleasure 
+</p><p>
+those that earnestly desired the view of the 
+</p><p>
+whole.
+</p>
+        </div>
+					 
+			</td>
+			<td>
+				  
+          <p>
+     Kind Reader:<a href="tenthmuse.html#fsp4" class="foot">4</a>  
+</p><p>
+Had I opportunity but to borrow some 
+</p><p>
+of the Authors wit, ‘tis possible I might 
+</p><p>
+so trim this curious work with such 
+</p><p>
+quaint expressions, as that the Preface 
+</p><p>
+might bespeak thy further Perusal; but I fear 
+</p><p>
+‘twill be a shame for a Man that can speak so little, 
+</p><p>
+To be seen in the title-page of this Womans Book, 
+</p><p>
+lest by comparing the one with the other, the Rea-
+</p><p>
+der should pass his sentence that it is the gift of wo-
+</p><p>
+men not only to speak most but to speak best; I shal 
+</p><p>
+leave therefore to commend that, which with any 
+</p><p>
+ingenious Reader will too much commend the Au-
+</p><p>
+thor, unless men turn more peevish then women, 
+</p><p>
+to envy the excellency of the inferiour Sex. I doubt 
+</p><p>
+not but the Reader will quickly find more then I 
+</p><p>
+can say, and the worst effect of his reading will be 
+</p><p>
+unbelief, which will make him question whether it 
+</p><p>
+be a womans work, and aske, Is is possible? If 
+</p><p>
+any do, take this as an answer from him that dares 
+</p><p>
+avow it; It is the Work of a Woman, honoured, 
+</p><p>
+and esteemed where she lives, for her gracious de-
+</p><p>
+meanour, her eminent parts, her pious conversa-
+</p><p>
+tion, her courteous disposition, her exact diligence 
+</p><p>
+in her place, and discreet managing of her Family 
+</p><p>
+     occasions,<a href="tenthmuse.html#fsp5" class="foot">5</a>  and more then so, these Poems are the 
+</p><p>
+fruit but of some few houres, curtailed from her 
+</p><p>
+sleep and other refreshments. I dare adde little lest 
+</p><p>
+I keep thee too long; if thou wilt not believe the 
+</p><p>
+worth of these things (in their kind) when a man 
+</p><p>
+sayes it, yet believe it from a woman when thou 
+</p><p>
+seest it. This only I shall annex, I fear the dis-
+</p><p>
+pleasure of no person in the publishing of these 
+</p><p>
+     Poems but the Author<a href="tenthmuse.html#fsp6" class="foot">6</a> , without whose knowledg, 
+</p><p>
+and contrary to her expectation, I have presumed 
+</p><p>
+to bring to publick view, what she resolved in 
+</p><p>
+     such a manner should never see the Sun;<a href="tenthmuse.html#fsp7" class="foot">7</a>  but I 
+</p><p>
+found that diverse had gotten some scattered Pa-
+</p><p>
+pers, affected them well, were likely to have sent 
+</p><p>
+forth broken pieces, to the Authors prejudice, 
+</p><p>
+which I thought to prevent, as well as to pleasure 
+</p><p>
+those that earnestly desired the view of the whole.
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				<p>"Mercury shew'd <i>Apollo, Bartas</i> book"</p>
+                         <p>
+                             N. Ward
+						 </p>
+			</td>
+			<td>
+				                         <p>
+                             "<i>Mercury</i> shew'd <i>Apollo, Bartas</i> book"
+                         </p>
+                         <p>
+                             N.Ward</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+                         <p>
+                             <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0191.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0191-lowres.jpg" alt="text">
+							 </a>
+						 </p>
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0234_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0234_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+<p>
+    <i>Mercury</i> shew’d <i>Apollo</i>, <i>Bartas<a href="tenthmuse.html#ftm8" class="foot">8</a></i>  Book,
+</p><p>
+<i>Minerva</i> this, and wisht him well to look,
+</p><p>
+And tell uprightly, which, did which excell;
+</p><p>
+He view’d, and view’d, and vow’d he could not tell.
+</p><p>
+    They bid him Hemisphear<a href="tenthmuse.html#ftm9" class="foot">9</a> his mouldy nose,
+</p><p>
+With’s crackt leering-glasses, for it would pose
+</p><p>
+The best brains he had in’s old pudding-pan,
+</p><p>
+Sex weigh’d, which best, the Woman, or the Man?
+</p><p>
+He peer’d, and por’d, and glar’d, and said for wore,
+</p><p>
+I’me even as wise now, as I was before:
+</p><p>
+    They both ‘gan<a href="tenthmuse.html#ftm10" class="foot">10</a> laugh, and said, it was no mar’l<a href="tenthmuse.html#ftm11" class="foot">11</a> 
+</p><p>
+The Auth’resse was a right <i>Du Bartas</i> Girle.
+</p><p>
+    Good sooth<a href="tenthmuse.html#ftm12" class="foot">12</a> quoth the old <i>Don</i>,<a href="tenthmuse.html#ftm13" class="foot">13</a> tel ye me so,
+</p><p>
+I muse whither at length these Girls wil go;
+</p><p>
+It half revives my chil frost-bitten blood,
+</p><p>
+To see a woman, once, do ought that’s good;
+</p><p>
+    And chode buy<a href="tenthmuse.html#ftm14" class="foot">14</a> <i>Chaucers</i> Boots, and <i>Homers</i> Furrs,
+</p><p>
+Let men look to’t, least women weare the Spurs.
+</p><p class="alignright italic">
+    N. Ward<a href="tenthmuse.html#ftm15" class="foot">15</a>
+</p>
+			</td>
+			<td>
+				<p>
+     <i>Mercury</i> shew’d <i>Apollo, Bartas</i><a href="tenthmuse.html#fsp8" class="foot">8</a>  Book,
+</p><p>
+<i>Minerva</i> this, and wisht him well to look,
+</p><p>
+And tell uprightly, which did which excell,
+</p><p>
+He view’d, and view’d, and vow d he could not tel.
+</p><p>
+     They bid him Hemisphear<a href="tenthmuse.html#fsp9" class="foot">9</a> his mouldy nose,
+</p><p>
+With’s crackt leering glasses, for it would pose
+</p><p>
+The best brains he had in’s old pudding-pan,
+</p><p>
+Sex weigh’d, which best, the Woman, or the Man?
+</p><p>
+He peer’d, and por’d, & glar’d, & said for wore,
+</p><p>
+I’me even as wise now, as I was before:
+</p><p>
+     They both ‘gan<a href="tenthmuse.html#fsp10" class="foot">10</a> laugh, and said, it was no mar’l<a href="tenthmuse.html#fsp11" class="foot">11</a> 
+</p><p>
+The Auth’ress was a right <i>Du Bartas</i> Girle.
+</p><p>
+     Good sooth<a href="tenthmuse.html#fsp11" class="foot">11</a> quoth the old <i>Don</i>,<a href="tenthmuse.html#fsp12" class="foot">12</a> tell ye me so,
+</p><p>
+I muse whither at length these Girls will go;
+</p><p>
+It half revives my chil frost-bitten blood,
+</p><p>
+To see a Woman once, do ought that’s good;
+</p><p>
+     And chode by<a href="tenthmuse.html#fsp14" class="foot">14</a> <i>Chaucers</i> Boots, and <i>Homers</i> Furrs,
+</p><p>
+Let Men look to’t, least women weare the Spurrs.
+</p><p class="alignright">
+     <i>N. Ward</i><a href="tenthmuse.html#fsp15" class="foot">15</a>
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                        <p>
+                             To my deare Sister, the Author of these Poems.</p>
+                         <p>
+                             [John Woodbridge]</p>
+			</td>
+			<td>
+				                         <p>
+                             To my deare Sister, the Author of these Poems.
+                         </p>                         <p>
+                             I.W. [John Woodbridge]</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+                             <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0192.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0192-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0194.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0194-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0195.jpg">
+                                         <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0195-lowres.jpg" alt="text"></a>
+				</p>
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0235_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0235_crop-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0236_crop.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0236_crop-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0237_crop.jpg">
+                                         <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0237_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+                        <div class="center">
+				<p>
+To my deare Sister, the Author
+</p><p>
+of these Poems.
+</p>
+</div>
+<p>
+ 
+</p><p>
+Though most that know me dare (I think) affirm
+</p><p>
+I ne’re was borne to doe a Poet harm,
+</p><p>
+Yet when I read your pleasant witty strains,
+</p><p>
+    It wrought so strongly on my addle<a href="tenthmuse.html#ftm16" class="foot">16</a> braines;
+</p><p>
+That though my verse be not so finely spun,
+</p><p>
+And so (like yours) cannot so neatly run,
+</p><p>
+Yet am I willing, with upright intent,
+</p><p>
+To shew my love without a complement.
+</p><p>
+There needs no painting to that comely face,
+</p><p>
+That in its native beauty hath such grace;
+</p><p>
+    Whit<a href="tenthmuse.html#ftm17" class="foot">17</a> I (poore silly I) prefix therefore,
+</p><p>
+Can but doe this, make yours admir’d the more;
+</p><p>
+And if but only this, I doe attaine
+</p><p>
+Content, that my disgrace may be your gaine.
+</p><p class="indent">
+If women, I with women, may compare,
+</p><p>
+Your Works are solid, others weake as aire;
+</p><p>
+Some books of Women I have heard of late,
+</p><p>
+Perused some, so witlesse, intricate,
+</p><p>
+So void of sense, and truth, as if to erre
+</p><p>
+Were only wisht (acting above their sphear)
+</p><p>
+And all to get, what (silly soules) they lack,
+</p><p>
+Esteeme to be the wisest of the pack;
+</p><p>
+Though (for your sake) to some this be permitted,
+</p><p>
+To print, yet wish I many better witted;
+</p><p>
+Their vanity make this to be inquired,
+</p><p>
+If women are with wit, and sence inspired:
+</p><p>
+Yet when your Works shall come to publick view,
+</p><p>
+‘Twill be affirm’d, ‘twill be confirm’d by you:
+</p><p>
+And I, when seriously I had revolved
+</p><p>
+What you had done, I presently resolved,
+</p><p>
+Theirs was the Persons, not the Sexes failing,
+</p><p>
+    And therefore did be-speak a modest vailing.<a href="tenthmuse.html#ftm18" class="foot">18</a> 
+</p><p>
+    You have acutely<a href="tenthmuse.html#ftm19" class="foot">19</a> in <i>Eliza</i>’s ditty<a href="tenthmuse.html#ftm20" class="foot">20</a>
+</p><p>
+Acquitted women, else I might with pitty,
+</p><p>
+Have wisht them all to womens Works to look,
+</p><p>
+And never more to meddle with their book.
+</p><p>
+What you have done, the Sun shall witnesse beare,
+</p><p>
+That for a womans Worke ‘tis very rare;
+</p><p>
+    And if the Nine<a href="tenthmuse.html#ftm21" class="foot">21</a> vouchsafe the Tenth a place,
+</p><p>
+I think they rightly may yeeld you that grace.
+</p><p class="indent">
+    But least<a href="tenthmuse.html#ftm22" class="foot">22</a> I should exceed, and too much love,
+</p><p>
+    Should too too much endear’d affect on<a href="tenthmuse.html#ftm23" class="foot">23</a> move,
+</p><p>
+To super-adde in praises I shall cease,
+</p><p>
+Least while I please my selfe I should displease
+</p><p>
+The longing Reader, who may chance complaine,
+</p><p>
+And so requite my love with deep disdaine;
+</p><p>
+That I your silly Servant, stand i’ th’ porch,
+</p><p>
+Lighting your Sun-light with my blinking torch;
+</p><p>
+Hindring his minds content, his sweet repose,
+</p><p>
+Which your delightfull Poems doe disclose,
+</p><p>
+When once the Caskets op’ned; yet to you
+</p><p>
+Let this be added, then i’le bid adieu.
+</p><p>
+If you shall think, it will be to your shame
+</p><p>
+To be in print, then I must beare the blame:
+</p><p>
+If’t be a fault, ‘tis mine, ‘tis shame that might
+</p><p>
+Deny so faire an infant of its right,
+</p><p>
+To looke abroad; I know your modest minde,
+</p><p>
+How you will blush, complaine, ‘tis too unkinde,
+</p><p>
+To force a womans birth, provoke her paine,
+</p><p>
+Expose her Labours to the world’s disdaine:
+</p><p>
+I know you’l say, you doe defie that mint,
+</p><p>
+That stampt you thus, to be a foole in print.
+</p><p class="indent">
+‘Tis true, it doth not now so neatly stand,
+</p><p>
+As ift ‘twere pollisht with your owne sweet hand;
+</p><p>
+    ‘Tis not so richly deckt, so trimly tir’d,<a href="tenthmuse.html#ftm24" class="foot">24</a>
+</p><p>
+Yet it is such as justly is admir’d.
+</p><p>
+If it be folly, ‘tis of both, or neither,
+</p><p>
+Both you and I, we’l both be fools together;
+</p><p>
+And he that sayes, ‘tis foolish (if my word
+</p><p>
+May sway) by my consent shall make the third.
+</p><p>
+I dare out-face the worlds disdaine for both,
+</p><p>
+If you alone professe you are not wroth;
+</p><p>
+Yet if you are, a womans wrath is little,
+</p><p>
+    When thousands else admire you in each tittle.<a href="tenthmuse.html#ftm25" class="foot">25</a>
+</p><p class="alignright italic">
+    I.W.<a href="tenthmuse.html#ftm26" class="foot">26</a> 
+</p>
+			</td>
+			<td>
+				<div class="center"><p>
+To my deare Sister, the Author of
+</p><p>
+these Poems.
+</p></div>
+<p>
+ 
+</p><p>
+Though most that know me, dare (I think) affirm
+</p><p>
+I ne’re was born to do a Poet harm,
+</p><p>
+Yet when I read your pleasant witty strains,
+</p><p>
+     It wrought so strongly on my addle<a href="tenthmuse.html#fsp16" class="foot">16</a> brains;
+</p><p>
+That though my verse be not so finely spun,
+</p><p>
+And so (like yours) cannot so neatly run,
+</p><p>
+Yet am I willing, with upright intent,
+</p><p>
+To shew my love without a complement.
+</p><p>
+There needs no painting to that comely face,
+</p><p>
+That in its native beauty hath such grace;
+</p><p>
+     What<a href="tenthmuse.html#fsp17" class="foot">17</a> I (poore silly I) prefix therefore,
+</p><p>
+Can but do this, make yours admir’d the more;
+</p><p>
+And if but only this, I do attain
+</p><p>
+Content, that my disgrace may be your gain.
+</p><p class="indent">
+If women, I with women, may compare,
+</p><p>
+Your works are solid, others weak as Air;
+</p><p>
+Some Books of Women I have heard of late,
+</p><p>
+Perused some, so witless, intricate,
+</p><p>
+So void of sense, and truth, as if to erre
+</p><p>
+Were only wisht (acting above their sphear)
+</p><p>
+And all to get, what (silly Souls) they lack,
+</p><p>
+Esteem to be the wisest of the pack;
+</p><p>
+Though (for your sake) to some this be permitted,
+</p><p>
+To print, yet wish I many better witted;
+</p><p>
+Their vanity make this to be enquired,
+</p><p>
+If Women are with wit, and sence inspired:
+</p><p>
+Yet when your Works shall come to publick view,
+</p><p>
+‘Twill be affirm’d, ‘twill be confirm’d by you:
+</p><p>
+And I, when seriously I had revolved
+</p><p>
+What you had done I presently resolved,
+</p><p>
+Theirs was the Persons, not the Sexes failing,
+</p><p>
+     And therefore did be-speak a modest vailing.<a href="tenthmuse.html#fsp18" class="foot">18</a> 
+</p><p>
+     You have acutely<a href="tenthmuse.html#fsp20" class="foot">20</a> in <i>Eliza</i>’s ditty,<a href="tenthmuse.html#fsp10" class="foot">20</a> 
+</p><p>
+Acquitted women, else I might with pitty,
+</p><p>
+Have wisht them all to womens Works to look,
+</p><p>
+And never more to meddle with their book.
+</p><p>
+What you have done, the Sun shall witness bear,
+</p><p>
+That for a womans Work ‘tis very rare;
+</p><p>
+     And if the Nine,<a href="tenthmuse.html#fsp21" class="foot">21</a> vouchsafe the Tenth a place,
+</p><p>
+I think they rightly may yield you that grace.
+</p><p class="indent">
+     But least<a href="tenthmuse.html#fsp22" class="foot">22</a> I should exceed, and too much love,
+</p><p>
+     Should too too much endear’d affection<a href="tenthmuse.html#fsp23" class="foot">23</a> move,
+</p><p>
+To super-adde in praises I shall cease,
+</p><p>
+Least while I please my selfe I should displease
+</p><p>
+The longing Reader, who may chance complain,
+</p><p>
+And so requite my love with deep disdain;
+</p><p>
+That I your silly Servant, stand i’ th’ Porch,
+</p><p>
+Lighting your Sun-light, with my blinking Torch;
+</p><p>
+Hindring his minds content, his sweet repose,
+</p><p>
+Which your delightful Poems doe disclose,
+</p><p>
+When once the Caskets op’ned, yet to you
+</p><p>
+Let this be added, then I’le bid adieu,
+</p><p>
+If you shall think, it will be to your shame
+</p><p>
+To be in print, then I must bear the blame:
+</p><p>
+If’t be a fault, ‘tis mine, ‘tis shame that might
+</p><p>
+Deny so faire an Infant of its right,
+</p><p>
+To look abroad; I know your modest mind,
+</p><p>
+How you will blush, complain, ‘tis too unkind:
+</p><p>
+To force a womans birth, provoke her paine,
+</p><p>
+Expose her labours to the Worlds disdaine.
+</p><p>
+I know you l say, you do defie that mint,
+</p><p>
+That stampt you thus, to be a foole in print.
+</p><p>
+‘Tis true, it doth not now so neatly stand,
+</p><p>
+As if ‘twere pollisht with your own sweet hand;
+</p><p>
+     ‘Tis not so richly deckt, so trimly tir’d,<a href="tenthmuse.html#fsp24" class="foot">24</a> 
+</p><p>
+Yet it is such as justly is admir’d.
+</p><p>
+If it be folly, ‘tis of both, or neither,
+</p><p>
+Both you and I, we’l both be fools together;
+</p><p>
+And he that sayes, ‘tis foolish, (if my word
+</p><p>
+May sway) by my consent shall make the third,
+</p><p>
+I dare out-face the worlds disdain for both,
+</p><p>
+If you alone profess you are not wroth;
+</p><p>
+Yet if you are, a Womans wrath is little,
+</p><p>
+     When thousands else admire you in each tittle.<a href="tenthmuse.html#fsp25" class="foot">25</a> 
+</p><p>
+ 
+</p><p class="alignright">
+     I.W.<a href="tenthmuse.html#fsp26" class="foot">26</a> 
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             Upon the Author, by a knowne Friend/<i>I cannot wonder at</i> Apollo <i>now</i></p>
+                         <p>
+                             C.B.</p>
+			</td>
+			<td>
+				                         <p>
+                             Upon the Author; by a known Friend./ <i>I cannot wonder at</i> Apollo <i>now</i>
+                         </p>
+                         <p>
+                             B.W., C.B</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+                             <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0198.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0198-lowres.jpg" alt="text"></a>
+				</p>
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0238_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0238_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+        <div class="center"><p>
+Upon the Author, by a
+</p><p>
+    knowne Friende.<a href="tenthmuse.html#ftm27" class="foot">27</a> 
+</p></div>
+        <p>
+ 
+</p><div class="italic"><p>
+Now I beleeve Tradition, which doth call
+</p><p>
+The Muses, Vertues, Graces, Females all;
+</p><p>
+Only they are not nine, eleaven, nor three,
+</p><p>
+Our Authresse proves them but one unity.
+</p><p>
+Mankind take up some blushes on the score,
+</p><p>
+Menopolize perfection no more:
+</p><p>
+In your owne Arts, confesse your selves out-done,
+</p><p>
+The Moone hath totally ecclips’d the Sun,
+</p><p>
+Not with her sable mantle mufling him,
+</p><p>
+But her bright silver makes his gold looke dim:
+</p><p>
+Just as his beams force our pale Lamps to winke,
+</p><p>
+And earthly Fires within their ashes shrinke.
+</p></div><p>
+ 
+</p>
+        <hr />
+        <p>
+ 
+</p><div class="italic">
+    <p>
+I cannot wonder at Apollo now,
+</p><p>
+That he with Female Lawrell crown’d his brow,
+</p><p>
+That made him witty: had I leave to chuse,
+</p><p>
+My Verse should be a Page unto your Muse.
+</p></div><p>
+ 
+</p><p class="alignright">
+    C.B.<a href="tenthmuse.html#ftm28" class="foot">28</a>
+</p>
+			</td>
+			<td>
+				
+ <div class="center"><p>
+Upon the Author; by
+</p><p>
+a known Friend.
+</p></div><p>
+ 
+</p><div class="italic"><p>
+Now I believe Tradition, which doth call
+</p><p>
+The Muses, Virtues, Graces, Females all;
+</p><p>
+Only they are not nine, eleven nor three;
+</p><p>
+Our Auth’ress proves them but one unity.
+</p><p>
+Mankind take up some blushes on the score;
+</p><p>
+Monopolize perfection no more;
+</p><p>
+In your own Arts, confess your selves out-done,
+</p><p>
+The Moon hath totally eclips’d the Sun,
+</p><p>
+Not with her sable Mantle muffling him;
+</p><p>
+But her bright silver makes his gold look dim:
+</p><p>
+Just as his beams force our pale lamps to wink,
+</p><p>
+And earthly Fires, within their ashes shrink.
+</p></div>
+          <p class="alignright">
+               B.W.<a href="tenthmuse.html#fsp27" class="foot">27</a>
+</p><p>
+ 
+</p>
+          <hr />
+          <div class="italic"><p>
+I cannot wonder at Apollo now,
+</p><p>
+That he with Female Laurel crown’d his brow,
+</p><p>
+That made him witty: had I leave to chose,
+</p><p>
+My Verse should be a page unto your Muse
+</p></div><p class="alignright">
+     C.B.<a href="tenthmuse.html#fsp28" class="foot">28</a>
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             Arme, arme Soldado's arme, Horse</p>
+                         <p>
+                             R.</p>
+			</td>
+			<td>
+				<p>
+                             no page
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+                             <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0199.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0199-lowres.jpg" alt="text"></a>
+                     
+			</td>
+			<td>
+				<p>
+                             no page
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				        <p>
+     Arme, arme, Soldado’s<a href="tenthmuse.html#ftm29" class="foot">29</a> arme, Horse, Horse, speed to your Horses,
+</p><p>
+Gentle-women, make head, they vent their plots in Verses;
+</p><p>
+They write of Monarchies, a most seditious word,
+</p><p>
+It signifies Oppression, Tyranny, and Sword:
+</p><p>
+     March amain<a href="tenthmuse.html#ftm30" class="foot">30</a> to <i>London</i>, they’l rise, for there they flock,
+</p><p>
+But stay a while, they seldome rise til ten a clock.
+</p><p>
+     R.Q.<a href="tenthmuse.html#ftm31" class="foot">31</a> 
+</p>
+			</td>
+			<td>
+				                         <p>
+                             no page
+                         </p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             In praise of the Author/What Golden splendid STAR is this, so bright"
+                             <p>
+                                 N.H</p>
+			</td>
+			<td>
+				                         <p>
+                             In praise of the Author, Mistres Anne Bradstreet/<i>What golden splendid STAR is this,
+                                 so bright</i>"
+                         </p>
+                         <p>
+                             N.H.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				   <p>
+                                 <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0200.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0200-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0201.jpg">
+                                         <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0201-lowres.jpg" alt="text"></a>
+				   </p>
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0239_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0239_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+        <div class="center"><p>
+In praise of the Author,
+</p><p>
+Mistris <i>Anne Bradstreet</i>, Vertue’s
+</p><p>
+true and lively Patterne, Wife of
+</p><p>
+the Worshipfull <i>Simon Brad-</i>
+</p><p>
+    <i>street</i> Esquire.<a href="tenthmuse.html#ftm29" class="foot">29</a> 
+</p><p>
+ 
+</p><p>
+At present residing in the Occi-
+</p><p>
+dentall parts of the World, in
+</p><p>
+<i>America</i>, alias
+</p><p>
+ 
+</p><p>
+<i>N O V – A N G L I A.</i>
+</p></div>
+        <p>
+ 
+</p><div class="italic"><p>
+    What Golden splendent<a href="tenthmuse.html#ftm30" class="foot">30</a> STAR is this, so bright,
+</p><p>
+One thousand miles thrice told, both day and night,
+</p><p>
+(From th’ Orient first sprung) now from the West
+</p><p>
+That shines; swift-winged <span style="font-style: none;">Phoebus</span>, and the rest,
+</p><p>
+    Of all <span style="font-style: none;">Joves</span> fiery flames surmounting far,
+</p><p>
+As doth each Planet, every falling Star;
+</p><p>
+By whose divine, and lucid light most cleare,
+</p><p>
+Natures darke secret Mysteries appeare;
+</p><p>
+Heaven’s, Earths, admired wonders, noble acts
+</p><p>
+    Of Kings, and Princes most heroyick<a href="tenthmuse.html#ftm31" class="foot">31</a> facts,
+</p><p>
+    And what e’re else in darkness seem’d to dye,<a href="tenthmuse.html#ftm32" class="foot">32</a>
+</p><p>
+Revives all things so obvious now to th’eye;
+</p><p>
+That he who these, its glittering Rayes views o’re,
+</p><p>
+Shall see what’s done, in all the world before.
+</p></div><p>
+ 
+</p><p class="alignright">
+    N.H.<a href="tenthmuse.html#ftm33" class="foot">33</a>
+</p>
+			</td>
+			<td>
+				<div class="center"><p>
+In praise of the Author, Mistris <i>Anne Bradstreet</i>,
+</p><p>
+Virtues true and lively Pattern, Wife of the
+</p><p>
+     Worshipfull <i>Simon Bradstreet</i> Esq;<a href="tenthmuse.html#fsp26" class="foot">32</a> 
+</p><p>
+ 
+</p><p>
+<i>At present residing in the Occidental parts of the</i>
+</p><p>
+<i>World in America</i>, Alias
+</p><p>
+N O V – A N G L I A.
+</p></div><p>
+ 
+</p>
+          <div class="italic"><p>
+               What Golden splendent<a href="tenthmuse.html#fsp33" class="foot">33</a> STAR is this so bright,
+</p><p>
+One thousand Miles thrice told, both day and night,
+</p><p>
+(From th’ Orient first sprung) now from the West
+</p><p>
+That shines; swift-winged <span style="font-style: none;">Phoebus</span>, and the rest
+</p><p>
+Of all Jove’s fiery flames surmounting far
+</p><p>
+As doth each Planet, every falling Star;
+</p><p>
+By whose divine, and lucid light most clear
+</p><p>
+Natures dark secret mysteryes appear;
+</p><p>
+Heavens, Earths, admired wonders, noble acts
+</p><p>
+     Of Kings and Princes most heroick<a href="tenthmuse.html#fsp34" class="foot">34</a> facts,
+</p><p>
+     And what e’re else in darkness seem’d to dye, <a href="tenthmuse.html#fsp35" class="foot">35</a>
+</p><p>
+Revives all things so obvious now to th’eye,
+</p><p>
+That he who these its glittering rayes views o’re,
+</p><p>
+Shall see what’s done, in all the world before.
+</p></div>
+          <p class="alignright">
+               N.H.<a href="tenthmuse.html#fsp36" class="foot">36</a> 
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             Upon the Author./Another to Mris Anne Bradstreet, Author of this Poem./An anagram./Another.
+                             <p>
+                                 C.B., H.S.</p>
+			</td>
+			<td>
+				                         <p>
+                             Upon the Author/Another to Mrs Anne Bradstreet, author of this Poem./An Anagram/Another.
+                         </p>
+                         <p>
+                             C.B., H.S.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+                                 <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0202.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0202-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0203.jpg">
+                                         <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0203-lowres.jpg" alt="text"></a>
+                     
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0240_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0240_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="center">
+Upon the Author
+</p><p>
+ 
+</p><p>
+Twere extreame folly should I dare attempt,
+</p><p>
+To praise this Authors worth with complement;
+</p><p>
+None but her self must dare commend her parts,
+</p><p>
+Whose sublime brain’s the Synopsis of Arts:
+</p><p>
+Nature and Skil, here both in one agree,
+</p><p>
+To frame this Master-peice of Poetry:
+</p><p>
+False Fame, belye their Sex, no more, it can,
+</p><p>
+Surpasse, or parallel, the best of man.
+</p><p class="alignright">
+    C.B.<a href="tenthmuse.html#ftm34" class="foot">34</a> 
+</p><p>
+ 
+</p>
+        <hr />
+        <p>
+ 
+</p><div class="center"><p>
+Another to M<sup>ris</sup>. <i>Anne Bradstreet</i>,
+</p><p>
+Author of this Poem.
+</p></div><p>
+ 
+</p><p>
+I’ve read your Poem (Lady) and admire,
+</p><p>
+Your Sex, to such a pitch should e’re aspire;
+</p><p>
+Goe on to write, continue to relate,
+</p><p>
+New Histories, of Monarchy and State:
+</p><p>
+And what the Romans to their Poets gave,
+</p><p>
+Be sure such honour, and esteeme you’l have.
+</p><p class="alignright">
+    H.S.<a href="tenthmuse.html#ftm35" class="foot">35</a>
+</p><p>
+ 
+</p>
+        <hr />
+        <p>
+ 
+</p>
+        <div class="center"><p>
+            An Anagram.<a href="tenthmuse.html#ftm36" class="foot">36</a>
+</p><p>
+ 
+</p><p>
+<i>Anna Bradestreate.</i>
+</p><p>
+ 
+</p><p>
+    Deer Neat <i>An Bartas.</i><a href="tenthmuse.html#ftm37" class="foot">37</a> 
+</p></div>
+        <p>
+ 
+</p><p>
+So <i>Bartas</i> like thy fine spun Poems been,
+</p><p>
+    That <i>Bartas</i> name will prove an Epicene.<a href="tenthmuse.html#ftm38" class="foot">38</a> 
+</p><p>
+ 
+</p>
+        <hr />
+        <p>
+ 
+</p>
+        <div class="center"><p>
+Another.
+</p><p>
+ 
+</p><p>
+<i>Anne Bradstreate.</i>
+</p><p>
+ 
+</p><p>
+Artes bred neat <i>An</i>.
+</p></div>
+        
+			</td>
+			<td>
+				<p class="center">
+Upon the Author.
+</p><p>
+ 
+</p><p>
+‘Twere extream folly should I dare attempt,
+</p><p>
+To praise this Authors worth with complement;
+</p><p>
+None but her self must dare commend her parts,
+</p><p>
+Whose sublime brain’s the Synopsis of Arts.
+</p><p>
+Nature and skill, here both in one agree,
+</p><p>
+To frame this Master-piece of Poetry:
+</p><p>
+False Fame, belye their Sex no more, it can
+</p><p>
+Surpass, or parallel, the best of man.
+</p><p class="alignright">
+     C.B.<a href="tenthmuse.html#fsp37" class="foot">37</a> 
+</p><p>
+ 
+</p>
+          <div class="center"><p>
+Another to Mrs. <i>Anne Bradstreet</i>,
+</p><p>
+Author of this Poem.
+</p></div>
+          <p>
+ 
+</p><p>
+I’ve read your Poem (Lady) and admire,
+</p><p>
+Your Sex to such a pitch should e’re aspire;
+</p><p>
+Go on to write, continue to relate,
+</p><p>
+New Historyes, of Monarchy and State:
+</p><p>
+And what the Romans to their Poets gave,
+</p><p>
+Be sure such honour, and esteem you’l have.
+</p><p class="alignright">
+     H.S.<a href="tenthmuse.html#fsp26" class="foot">38</a> 
+</p><p>
+ 
+</p><p class="center">
+     An Anagram.<a href="tenthmuse.html#fsp39" class="foot">39</a> 
+</p><p>
+      
+</p><p>
+     <i>Anna Bradestreate</i>     Deer neat <i>An Bartas</i>.<a href="tenthmuse.html#fsp40" class="foot">40</a> 
+</p><p>
+      
+</p><p>
+So <i>Bartas</i> like thy fine spun Poems been,
+</p><p>
+     That <i>Bartas</i> name will prove an Epicene.<a href="tenthmuse.html#fsp41" class="foot">41</a> 
+</p><p>
+      
+</p><div class="center"><p>
+Another.
+</p><p>
+      
+</p><p>
+<i>Anne Bradstreate</i>     Artes bred neat <i>An</i>.
+</p></div>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             no page</p>
+			</td>
+			<td>
+				                        <p>
+                             Upon Mrs Anne Bradstreet, Her Poems, &c.
+                         </p>
+                         <p>
+                             J.Rogers</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>no page</p>
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0241_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0241_crop-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0242_crop.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0242_crop-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0243_crop.jpg">
+                                         <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0243_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+			</td>
+			<td>
+				<div class="center"><p>
+UPON
+</p><p>
+<i>Mrs. Anne Bradstreet</i>
+</p><p>
+Her Poems,   c.
+</p></div>
+          <p>
+MADAM, twice through the Muses Grove I walkt,
+</p><p>
+     Under your blissfull bowres, I shrowding<a href="tenthmuse.html#fsp42" class="foot">42</a> there,
+</p><p>
+     It seem’d with Nymphs of <i>Helicon</i><a href="tenthmuse.html#fsp43" class="foot">43</a> I talkt.
+</p><p>
+     For there those sweet-lip’d Sifters<a href="tenthmuse.html#fsp44" class="foot">44</a> sporting were,
+</p><p>
+<i>Apollo</i> with his sacred Lute sate by,
+</p><p>
+On high they made their heavenly Sonnets flye,
+</p><p>
+     Posies around they strow’d,<a href="tenthmuse.html#fsp45" class="foot">45</a> of sweetest Poesie.
+</p><p>
+ 
+</p><p class="center">
+2
+</p><p>
+Twice have I drunk the Nectar of your lines,
+</p><p>
+Which high sublim’d my mean born phantasie.
+</p><p>
+     Flusht with these streams of your <i>Maronean</i> wines<a href="tenthmuse.html#fsp46" class="foot">46</a> 
+</p><p>
+Above my self rapt to an extasie:
+</p><p>
+     Methought I was upon mount <i>Hiblas</i><a href="tenthmuse.html#fsp47" class="foot">47</a> top,
+</p><p>
+There where I might those fragrant flowers lop,
+</p><p>
+     Whence did sweet odors flow, and honey spangles<a href="tenthmuse.html#fsp48" class="foot">48</a> drop.
+</p><p>
+ 
+</p><p class="center">
+3
+</p><p>
+To <i>Venus</i> shrine no Altars raised are,
+</p><p>
+Nor venom’d shafts from painted quiver fly,
+</p><p>
+     Nor wanton Doves of <i>Aphrodites</i> Carr,<a href="tenthmuse.html#fsp49" class="foot">49</a> 
+</p><p>
+     Of<a href="tenthmuse.html#fsp50" class="foot">50</a> fluttering there, nor here forlornly lie,
+</p><p>
+     Lorne<a href="tenthmuse.html#fsp51" class="foot">51</a> Paramours<a href="tenthmuse.html#fsp52" class="foot">52</a>, not chatting birds tell news
+</p><p>
+How sage <i>Apollo, Daphne</i> hot pursues,
+</p><p>
+     Or stately <i>Jove</i> himself is wont to haunt the stews.<a href="tenthmuse.html#fsp53" class="foot">53</a> 
+</p><p>
+ 
+</p><p>
+4
+</p><p>
+Nor barking Satyrs breath, nor driery clouds
+</p><p>
+Exhal’d from <i>Styx</i>, their dismal drops distil
+</p><p>
+Within these <i>Fairy</i>, flowry fields, nor shrouds
+</p><p>
+The screeching night Raven, with his shady quill:
+</p><p>
+But Lyrick strings here <i>Orpheus</i> nimbly hitts,
+</p><p>
+     <i>Arion</i> on his sadled Dolphin sits,<a href="tenthmuse.html#fsp54" class="foot">54</a> 
+</p><p>
+Chanting as every humour, age & season fits.
+</p><p>
+      
+</p><p>
+5
+</p><p>
+Here silver swans, with Nightingales set spells,
+</p><p>
+Which sweetly charm the Traveller, and raise
+</p><p>
+Earths earthed Monarchs, from their hidden Cells;
+</p><p>
+And to appearance summons lapsed dayes,
+</p><p>
+     There heav’nly air, becalms the swelling frayes,<a href="tenthmuse.html#fsp55" class="foot">55</a> 
+</p><p>
+And fury fell of Elements allayes,
+</p><p>
+By paying every one due tribute of his praise.
+</p><p>
+      
+</p><p>
+6
+</p><p>
+     This seem’d the Scite<a href="tenthmuse.html#fsp56" class="foot">56</a> of all those verdant vales,
+</p><p>
+And purled springs, whereat the Nymphs do play,
+</p><p>
+With lofty hills, where Poets rear their tales,
+</p><p>
+To heavenly vaults, which heav’nly sound repay
+</p><p>
+By ecchoes sweet rebound, here Ladyes kiss,
+</p><p>
+Circling nor songs, nor dances circle miss;
+</p><p>
+But whilst those Syrens sung, I sunk in sea of bliss.
+</p><p>
+      
+</p><p>
+7
+</p><p>
+     Thus weltring<a href="tenthmuse.html#fsp57" class="foot">57</a> in delight, my virgin mind
+</p><p>
+Admits a rape; truth still lyes undiscri’d,
+</p><p>
+Its singular, that plural seem’d, I find,
+</p><p>
+     ‘Twas<a href="tenthmuse.html#fsp58" class="foot">58</a> Fancies glass<a href="tenthmuse.html#fsp59" class="foot">59</a> alone that multipli’d;
+</p><p>
+Nature with Art, so closely did combine,
+</p><p>
+     I thought I saw the Muses trebble trine,<a href="tenthmuse.html#fsp60" class="foot">60</a> 
+</p><p>
+Which prov’d your lonely Muse, superiour to the nine.
+</p><p>
+      
+</p><p>
+8
+</p><p>
+Your only hand those Poesies did compose,
+</p><p>
+Your head the source, whence all those springs did flow,
+</p><p>
+Your voice, whence changes sweetest notes arose,
+</p><p>
+     Your feet that kept the dance alone, I trow:<a href="tenthmuse.html#fsp61" class="foot">61</a> 
+</p><p>
+     Then vail your bonnets, Poetasters<a href="tenthmuse.html#fsp62" class="foot">62</a> all,
+</p><p>
+     Strike, lower amain,<a href="tenthmuse.html#fsp63" class="foot">63</a> and at these humbly fall,
+</p><p>
+And deem your selves advanc’d to be her Pedestal.
+</p><p>
+      
+</p><p>
+9
+</p><p>
+     Should all with lowly Congies Laurels<a href="tenthmuse.html#fsp64" class="foot">64</a> bring,
+</p><p>
+     Waste <i>Flora’s</i><a href="tenthmuse.html#fsp65" class="foot">26</a> Magazine<a href="tenthmuse.html#fsp26" class="foot">66</a> to find a wreathe;
+</p><p>
+Or <i>Pineus</i> Banks ‘twere too mean offering,
+</p><p>
+Your Muse a fairer Garland doth bequeath
+</p><p>
+To guard your fairer front; here ‘tis your name
+</p><p>
+Shall stand immarbled; this your little frame
+</p><p>
+Shall great Colossus be, to your eternal fame.
+</p><p>
+      
+</p><p>
+I’le please my self, though I my self disgrace,
+</p><p>
+What errors here be found, are in <i>Errataes</i> place.
+</p><p>
+      
+</p><p class="alignright">
+     J. Rogers.<a href="tenthmuse.html#fsp67" class="foot">67</a>
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             To her most Honoured Father <i>Thomas Dudley</i> Esq. <i>These humbly presented.</i>
+                             <p>
+                                 Anne Bradstreet</p>
+			</td>
+			<td>
+				                         <p>
+                             To her most Honoured Father <i>Thomas Dudley</i> Esq; <i>these humbly presented</i>.
+                         </p>
+                         <p>
+                             Anne Bradstreet March 20.1642</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+                                 <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0205.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0205-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0206.jpg">
+                                         <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0206-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0207.jpg">
+                                             <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0207-lowres.jpg" alt="text"></a>
+                     
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0244_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0244_crop-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0246_crop.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0246_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+        <div class="center"><p>
+To her most Honoured Fa-
+</p><p>
+    ther <i>Thomas Dudley</i> Esq;<a href="tenthmuse.html#ftm39" class="foot">39</a> 
+</p><p>
+<i>these humbly presented.</i>
+</p><p>
+ 
+</p></div>
+        <p>
+ 
+</p>
+        <div style="float: right; border-left: #000000 solid 1px; padding: 0 1em 0 1em;">
+            <p>T D on the
+            </p><p>four parts
+            </p><p>of the
+            </p><p>world<a href="tenthmuse.html#ftm41" class="foot">41</a></p></div>
+        <p>
+Deare Sir, of late delighted with the sight,
+</p><p>
+Of your* four sisters, deckt in black & white
+</p><p>
+    Of fairer Dames, the sun near<a href="tenthmuse.html#ftm40" class="foot">40</a> saw the face,
+</p><p>
+(though made a pedestal for <i>Adams</i> Race)	 
+</p><p>
+Their worth so shines, in those rich lines you show.
+</p><p>
+Their paralells to find I scarcely know,
+</p><p>
+To climbe their Climes, I have nor strength, nor skill,
+</p><p>
+To mount so high, requires an Eagles quill:
+</p><p>
+Yet view thereof, did cause my thoughts to soare,
+</p><p>
+My lowly pen, might wait upon those four,
+</p><p>
+    I bring my four; and four,<a href="tenthmuse.html#ftm42" class="foot">42</a> now meanly clad,
+</p><p>
+To do their homage unto yours most glad,
+</p><p>
+Who for their age, their worth, and quality,
+</p><p>
+Might seem of yours to claime precedency;
+</p><p>
+But by my humble hand thus rudely pen’d
+</p><p>
+They are your bounden handmaids to attend.
+</p><p>
+These same are they, of whom we being have,
+</p><p>
+These are of all, the life, the nurse, the grave,
+</p><p>
+These are, the hot, the cold, the moist, the dry,
+</p><p>
+That sinke, that swim, that fill, that upwards flye,
+</p><p>
+Of these consists, our bodyes, cloathes, and food,
+</p><p>
+The world, the usefull, hurtfull, and the good:
+</p><p>
+Sweet harmony they keep, yet jar oft times,
+</p><p>
+Their discord may appear, by these harsh rimes.
+</p><p>
+Yours did contest, for Wealth, for Arts, for Age,
+</p><p>
+My first do shew, their good, and then their rage,
+</p><p>
+My other four, do intermixed tell
+</p><p>
+Each others faults, and where themselves excell.
+</p><p>
+How hot, and dry, contend with moist, and cold,
+</p><p>
+How Aire, and Earth, no correspondence hold,
+</p><p>
+And yet in equall tempers, how they gree,
+</p><p>
+How divers natures, make one unity.
+</p><p>
+Some thing of all (though mean) I did intend,
+</p><p>
+    But fear’d you’ld judge, one <i>Bartas</i><a href="tenthmuse.html#ftm43" class="foot">43</a> was my friend,
+</p><p>
+I honour him, but dare not wear his wealth,
+</p><p>
+My goods are true (though poor) I love no stealth,
+</p><p>
+But if I did, I durst not send them you;
+</p><p>
+Who must reward a theife, but with his due.
+</p><p>
+I shall not need my innocence to clear,
+</p><p>
+These ragged lines, will do’t, when they appear.
+</p><p>
+On what they are, your mild aspect I crave,
+</p><p>
+Accept my best, my worst vouchsafe a grave.
+</p><p>
+ 
+</p><p>
+From her, that to your selfe more duty owes,
+</p><p>
+    Then waters, in the boundlesse Ocean flowes.<a href="tenthmuse.html#ftm44" class="foot">44</a> 
+</p>
+			</td>
+			<td>
+				<p>
+To her most Honoured Fa-
+</p><p>
+     ther <span class="italic">Thomas Dudley</span> Esq;<a href="tenthmuse.html#fsp68" class="foot">68</a> 
+</p><p class="italic">
+these humbly presented.
+</p><p>
+      
+</p>
+
+
+<div style="float: right; border-left: #000000 solid 1px; padding: 0 1em 0 1em;">
+          <p>
+               T.D. <span class="italic">On</span>
+          </p>
+          <p class="italic">
+the four
+</p><p class="italic">
+parts of
+</p><p class="italic">
+     the world.<a href="tenthmuse.html#fsp69" class="foot">69</a>
+</p>
+</div>
+
+
+          <p>
+Deare Sir of late delighted with 
+</p><p class="indent">
+      the sight
+</p><p>
+Of your four Sisters cloth’d in black 
+</p><p class="indent">
+      and white, 
+</p>
+
+          
+
+     
+     
+     
+          <p>
+               Of fairer Dames the Sun, ne’r<a href="tenthmuse.html#fsp70" class="foot">70</a> saw the face;
+</p><p>
+Though made a pedestal for <i>Adams</i> Race;
+</p><p>
+Their worth so shines, in those rich lines you show
+</p><p>
+Their paralels to finde I scarcely know
+</p><p>
+     To climbe their Climes, I have nor strength, nor skill.<a href="tenthmuse.html#fsp71" class="foot">71</a>
+</p><p>
+To mount so high requires an Eagles quill;
+</p><p>
+     Yet view thereof did cause my thoughts to soare,<a href="tenthmuse.html#fsp72" class="foot">72</a> 
+</p><p>
+My lowly pen might wait upon those four
+</p><p>
+     I bring my four times four,<a href="tenthmuse.html#fsp73" class="foot">73</a> now meanly clad
+</p><p>
+To do their homage, unto yours, full glad:
+</p><p>
+Who for their Age, their worth, and quality
+</p><p>
+     Might seem of yours to claim precedency;<a href="tenthmuse.html#fsp74" class="foot">74</a> 
+</p><p>
+     But by my humble hand, thus rudely penned,<a href="tenthmuse.html#fsp75" class="foot">75</a> 
+</p><p>
+     They are, your bounden handmaids to attend,<a href="tenthmuse.html#fsp76" class="foot">76</a> 
+</p><p>
+These same are they, from whom we being have
+</p><p>
+These are of all, the Life, the Nurse, the Grave,
+</p><p>
+These are the hot, the cold, the moist, the dry,
+</p><p>
+That sink, that swim, that fill, that upwards fly,
+</p><p>
+Of these consists our bodies, Cloathes, and Food,
+</p><p>
+The World, the useful, hurtful, and the good,
+</p><p>
+Sweet harmony they keep, yet jar oft times
+</p><p>
+Their discord doth appear, by these harsh rimes
+</p><p>
+Yours did contest for wealth, for Arts, for Age,
+</p><p>
+My first do shew their good, and then their rage.
+</p><p>
+My other foures do intermixed tell
+</p><p>
+Each others faults, and where themselves excell,
+</p><p>
+How hot and dry contend with moist and cold,
+</p><p>
+How Air and Earth no correspondence hold,
+</p><p>
+And yet in equal tempers, how they ‘gree
+</p><p>
+How divers natures, make one Unity
+</p><p>
+Something of all (though mean) I did intend
+</p><p>
+     But fear’d you’ld judge <i>Du Bartas</i><a href="tenthmuse.html#fsp77" class="foot">77</a> was my friend,
+</p><p>
+I honour him, but dare not wear his wealth
+</p><p>
+     My<a href="tenthmuse.html#fsp78" class="foot">78</a> goods are true (though poor) I love no stealth
+</p><p>
+But if I did, I durst not send them you
+</p><p>
+Who must reward a Thief, but with his due.
+</p><p>
+I shall not need, mine innocence to clear
+</p><p>
+These ragged lines, will do’t, when they appear:
+</p><p>
+On what they are, your mild aspect I crave
+</p><p>
+Accept my best, my worst vouchsafe a Grave.
+</p><p>
+      
+</p><p>
+From her, that to your self, more duty owes
+</p><p>
+     Than water in the boundesse<a href="tenthmuse.html#fsp79" class="foot">79</a> Ocean flows.
+</p><p>
+      
+</p><p>
+<i>March 20, 1642.</i>
+</p><p>
+      
+</p><p class="alignright">
+ANNE BRADSTREET.
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             The Prologue
+                             <p>
+                                 A.B.
+                             </p>
+			</td>
+			<td>
+				                         <p>
+                             The Prologue
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+                                 <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0208.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0208-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_tenthmuse/IMG_0209.jpg">
+                                         <img src="da/bradstreet/img/bradstreet_tenthmuse/IMG_0209-lowres.jpg" alt="text"></a>
+				</p>
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0248_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0248_crop-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0250_crop.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0250_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="alignright">
+ANNE BRADSTREET
+</p><p>
+ 
+</p>
+        <div class="center"><p>
+THE
+</p><p>
+PROLOGUE.
+</p></div>
+        <p>
+ 
+</p><p class="center">
+1.
+</p><p>
+To sing of Wars, of Captaines, and of Kings,
+</p><p>
+Of Cities founded, Common-wealths begun,
+</p><p>
+For my mean Pen, are too superiour things,
+</p><p>
+And how they all, or each, their dates have run:
+</p><p>
+Let Poets, and Historians set these forth,
+</p><p>
+My obscure Verse, shal not so dim their worth.
+</p><p class="center">
+2.
+</p><p>
+But when my wondring eyes, and envious heart,
+</p><p>
+    Great <i>Bartas</i><a href="tenthmuse.html#ftm45" class="foot">45</a> sugar’d lines doe but read o’re;
+</p><p>
+Foole, I doe grudge, the Muses did not part
+</p><p>
+‘Twixt him and me, that over-fluent store;
+</p><p>
+A <i>Bartas</i> can, doe what a <i>Bartas</i> wil,
+</p><p>
+But simple I, according to my skill.
+</p><p class="center">
+3.
+</p><p>
+From School-boyes tongue, no Rhethorick we expect,
+</p><p>
+    Nor yet a sweet Consort,<a href="tenthmuse.html#ftm46" class="foot">46</a> from broken strings,
+</p><p>
+Nor perfect beauty, where’s a maine defect,
+</p><p>
+My foolish, broken, blemish’d Muse so sings;
+</p><p>
+And this to mend, alas, no Art is able,
+</p><p>
+‘Cause Nature made it so irreparable.
+</p><p class="center">
+4.
+</p><p>
+Nor can I, like that fluent sweet tongu’d <i>Greek</i>
+</p><p>
+    Who lisp’d at first, speake afterwards<a href="tenthmuse.html#ftm47" class="foot">47</a> more plaine
+</p><p>
+By Art, he gladly found what he did seeke,
+</p><p>
+A full requitall of his striving paine:
+</p><p>
+Art can doe much, but this maxime’s most sure,
+</p><p>
+A weake or wounded braine admits no cure.
+</p><p class="center">
+5.
+</p><p>
+I am obnoxious to each carping tongue,
+</p><p>
+Who sayes, my hand a needle better fits,
+</p><p>
+A Poets Pen, all scorne, I should thus wrong;
+</p><p>
+    For such despight<a href="tenthmuse.html#ftm48" class="foot">48</a> they cast on female wits:
+</p><p>
+If what I doe prove well, it wo’nt advance,
+</p><p>
+They’l say its stolne, or else, it was by chance.
+</p><p class="center">
+6.
+</p><p>
+    But sure the antick<a href="tenthmuse.html#ftm49" class="foot">49</a> <i>Greeks</i> were far more milde,
+</p><p>
+Else of our Sex, why feigned they those nine,
+</p><p>
+And poesy made, <i>Calliope’s</i> owne childe,
+</p><p>
+So ‘mongst the rest, they plac’d the Arts divine:
+</p><p>
+But this weake knot they will full soone untye,
+</p><p>
+    The Greeks did nought, but play the foole<a href="tenthmuse.html#ftm50" class="foot">50</a> and lye.
+</p><p>
+ 
+</p><p class="center">
+7.
+</p><p>
+Let <i>Greeks</i> be <i>Greeks</i>, and Women what they are,
+</p><p>
+Men have precedency, and still excell,
+</p><p>
+It is but vaine, unjustly to wage war,
+</p><p>
+Men can doe best, and Women know it well;
+</p><p>
+Preheminence in each, and all is yours,
+</p><p>
+Yet grant some small acknowledgement of ours.
+</p><p class="center">
+8.
+</p><p>
+And oh, ye high flown quils, that soare the skies,
+</p><p>
+And ever with your prey, still catch your praise,
+</p><p>
+If e’re you daigne these lowly lines, your eyes
+</p><p>
+    Give wholsome Parsley wreath,<a href="tenthmuse.html#ftm51" class="foot">51</a> I aske no Bayes:
+</p><p>
+    This meane and unrefined stuffe<a href="tenthmuse.html#ftm52" class="foot">52</a> of mine,
+</p><p>
+    Will make your glistering gold but more to shine.
+</p><p>
+ 
+</p><p class="alignright italic">
+    A.B.<a href="tenthmuse.html#ftm53" class="foot">53</a> 
+</p>
+			</td>
+			<td>
+				<p>
+      
+</p><div class="center"><p>
+THE
+</p><p>
+PROLOGUE.
+</p></div><p>
+      
+</p><p class="center">
+1.
+</p><p>
+To sing of Wars, of Captains and of Kings,
+</p><p>
+Of Cities founded, Common-wealths begun,
+</p><p>
+For my mean pen are too superiour things:
+</p><p>
+Or how they all, or each their dates have run
+</p><p>
+Let Poets and Historians set these forth,
+</p><p>
+My obscure Lines shall not so dim their worth.
+</p><p class="center">
+2.
+</p><p>
+But when my wondring eyes, and envious heart
+</p><p>
+     Great <i>Bartas</i><a href="tenthmuse.html#fsp80" class="foot">80</a> sugar’d lines, do but read o’re
+</p><p>
+Fool I do grudg the Muses did not part
+</p><p>
+‘Twixt him and me that overfluent store;
+</p><p>
+A <i>Bartas</i> can, do what a <i>Bartas</i> will
+</p><p>
+But simple I according to my skill.
+</p><p class="center">
+3.
+</p><p>
+From school-boyes tongue no rhet’rick we expect,
+</p><p>
+     Nor yet a sweet Consort<a href="tenthmuse.html#fsp81" class="foot">81</a> from broken strings,
+</p><p>
+Nor perfect beauty, where’s a main defect:
+</p><p>
+My foolish, broken, blemish’d Muse so sings
+</p><p>
+And this to mend, alas, no Art is able;
+</p><p>
+‘Cause Nature, made it so irreparable.
+</p><p class="center">
+4.
+</p><p>
+     Nor can I, like that fluent sweet tongu’d <i>Greek</i><a href="tenthmuse.html#fsp82" class="foot">82</a>
+</p><p>
+     Who lisp’d at first, in future times<a href="tenthmuse.html#fsp83" class="foot">83</a> speak plain.
+</p><p>
+By Art he gladly found what he did seeke,
+</p><p>
+A full requital of his striving pain:
+</p><p>
+Art can do much, but this maxime’s most sure
+</p><p>
+A weak or wounded brain admits no cure.
+</p><p class="center">
+5.
+</p><p>
+I am obnoxious to each carping tongue
+</p><p>
+Who says, my hand a needle better fits,
+</p><p>
+A Poets pen all scorne I should thus wrong,
+</p><p>
+     For such despite<a href="tenthmuse.html#fsp84" class="foot">84</a> they cast on Female wits:
+</p><p>
+If what I do prove well, it won’t advance,
+</p><p>
+They’l say it’s stoln, or else, it was by chance.
+</p><p class="center">
+6.
+</p><p>
+     But sure the Antique<a href="tenthmuse.html#fsp85" class="foot">85</a> Greeks were far more milde
+</p><p>
+Else of our Sexe, why feigned they those Nine
+</p><p>
+And poesy made, <i>Calliope</i>’s own Child;
+</p><p>
+So ‘mongst the rest, they placed the Arts Divine
+</p><p>
+But this weak knot, they will full soon untie,
+</p><p>
+     The Greeks did nought, but play the fools<a href="tenthmuse.html#fsp86" class="foot">86</a> & lye.
+</p><p class="center">
+7.
+</p><p>
+Let Greeks be Greeks, and Women what they are
+</p><p>
+Men have precedency, and still excell,
+</p><p>
+It is but vain unjustly to wage warre;
+</p><p>
+Men can do best, and women know it well
+</p><p>
+Preheminence in all and each is yours;
+</p><p>
+Yet grant some small acknowledgement of ours.
+</p><p class="center">
+8.
+</p><p>
+     And<a href="tenthmuse.html#fsp87" class="foot">87</a> oh ye high flown quills that soar the Skies,
+</p><p>
+And ever with your prey, still catch your praise,
+</p><p>
+If e’re you daigne these lowly lines your eyes
+</p><p>
+     Give Thyme or Parsley wreath,<a href="tenthmuse.html#fsp88" class="foot">88</a> I ask no bayes,
+</p><p>
+     This mean and unrefined ure<a href="tenthmuse.html#fsp89" class="foot">89</a> of mine
+</p><p>
+Will make your glistring gold but more to shine.
+</p><p>
+      
+</p><p class="alignright">
+     A.B.<a href="tenthmuse.html#fsp90" class="foot">90</a> 
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             no page
+                         </p>
+			</td>
+			<td>
+				                         <p>
+                             A Funeral Elogy
+                         </p>
+                         <p>
+                             John Norton
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>no page</p>
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0253_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0253_crop-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0254_crop.jpg">
+                                     <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0254_crop-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0255_crop.jpg">
+                                         <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0255_crop-lowres.jpg" alt="text"></a> <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0256_crop.jpg">
+                                             <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0256_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				no page
+			</td>
+			<td>
+				<div class="center italic"><p>
+     <span style="font-style: normal;">A Funeral Elogy,</span>
+</p><p>
+Vpon that Pattern and Patron of Virtue, the 
+</p><p>
+truely pious, peerless & matchless Gentlewoman
+</p><p>
+Mrs Anne Bradstreet,
+</p><p>
+     right <span style="font-style: normal;">Panaretes</span>,<a href="tenthmuse.html#fsp91" class="foot">91</a> 
+</p><p>
+Mirror of Her Age, Glory of her Sex, whose 
+</p><p>
+Heaven-born-Soul leaving its earthly Shrine,
+</p><p>
+chose its native home, and was taken to its 
+</p><p>
+     Rest, upon <span style="font-style: normal;">16th. Sept. 1672</span>.
+</p></div><p>
+      
+</p><p>
+     Ask not why hearts turn Magazines<a href="tenthmuse.html#fsp92" class="foot">92</a> of passions,
+</p><p>
+And why that grief is clad in sev’ral fashions;
+</p><p>
+Why She on progress goes, and doth not borrow
+</p><p>
+The smallest respite from th’extreams of sorrow,
+</p><p>
+Her misery is got to such an height,
+</p><p>
+As makes the earth groan to support its weight,
+</p><p>
+Such storms of woe, so strongly have beset her,
+</p><p>
+She hath no place for worse, nor hope for better;
+</p><p>
+Her comfort is, if any for her be,
+</p><p>
+That none can shew more cause of grief then she.
+</p><p>
+Ask not why some in mournfull black are clad;
+</p><p>
+The Sun is set, there needs must be a shade.
+</p><p>
+Ask not why every face a sadness shrowdes;
+</p><p>
+The setting Sun ore-cast us hath with Clouds.
+</p><p>
+Ask not why the great glory of the Skye
+</p><p>
+That gilds the starrs with heavenly Alchamy,
+</p><p>
+Which all the world doth lighten with his rayes,
+</p><p>
+The <i>Persian</i> God, the Monarch of the dayes;
+</p><p>
+Ask not the reason of his extasie,
+</p><p>
+Paleness of late, in midnoon Majesty,
+</p><p>
+Why that the palefac’d Empress of the night
+</p><p>
+Disrob’d her brother of his glorious light.
+</p><p>
+Did not the language of the starrs foretel
+</p><p>
+A mournfull Scœne when they with tears did swell?
+</p><p>
+Did not the glorious people of the Skye
+</p><p>
+Seem sensible of future misery?
+</p><p>
+     Did not the lowring<a href="tenthmuse.html#fsp93" class="foot">93</a> heavens seem to express
+</p><p>
+The worlds great lose, and their unhappiness?
+</p><p>
+Behold how tears flow from the learned hill,
+</p><p>
+How the bereaved Nine do daily fill
+</p><p>
+The bosome of the fleeting Air with groans,
+</p><p>
+And wofull Accents, which witness their moanes.
+</p><p>
+     How doe the Goddesses of verse the learned quire<a href="tenthmuse.html#fsp94" class="foot">94</a> 
+</p><p>
+Lament their rival Quill, which all admire?
+</p><p>
+     Could <i>Maro</i>’s<a href="tenthmuse.html#fsp95" class="foot">95</a> Muse but hear her lively strain,
+</p><p>
+He would condemn his works to fire again.
+</p><p>
+Methinks I hear the Patron of the Spring,
+</p><p>
+The unshorn Diety abruptly sing.
+</p><p>
+Some doe for anguish weep, for anger I
+</p><p>
+That Ignorance should live, and Art should die.
+</p><p>
+Black, fatal, dismal, inauspicious day,
+</p><p>
+Unblest for ever by <i>Sol</i>’s precious Ray,
+</p><p>
+Be it the first of Miseries to all;
+</p><p>
+Or last of Life, defam’d for Funeral.
+</p><p>
+When this day yearly comes, let every one,
+</p><p>
+Cast in their urne, the black and dismal stone.
+</p><p>
+Succeeding years as they their circuit goe,
+</p><p>
+Leap o’re this day, as a sad time of woe.
+</p><p>
+Farewell my Muse, since thou hast left thy shrine,
+</p><p>
+I am unblest in one, but blest in nine.
+</p><p>
+Fair <i>Thespian</i> Ladyes, light your torches all,
+</p><p>
+Attend your glory to its Funeral,
+</p><p>
+To court her ashes with a learned tear,
+</p><p>
+A briny sacrifice, let not a smile appear.
+</p><p>
+Grave Matron, whoso seeks to blazon thee,
+</p><p>
+Needs not make use of witts false Heraldry;
+</p><p>
+Whoso should give thee all thy worth would swell
+</p><p>
+So high, as ‘twould turn the world infidel.
+</p><p>
+     Had he great <i>Maro</i>’s Muse, or <i>Tully</i>’s<a href="tenthmuse.html#fsp96" class="foot">96</a> tongue,
+</p><p>
+Or raping numbers like the <i>Thracian</i> Song,
+</p><p>
+In crowning of her merits he would be
+</p><p>
+sumptuously poor, low in Hyperbole.
+</p><p>
+To write is easie: but to write on thee,
+</p><p>
+Truth would be thought to forfeit modesty.
+</p><p>
+He’l seem a Poet that shall speak but true;
+</p><p>
+Hyperbole’s in others, are thy due.
+</p><p>
+Like a most servile flatterer he will show
+</p><p>
+Though he write truth, and make the subject, You.
+</p><p>
+Virtue ne’re dies, time will a Poet raise
+</p><p>
+Born under better Starrs, shall sing thy praise.
+</p><p>
+Praise her who list, yet shall be a debtor
+</p><p>
+For Art ne’re feign’d, nor Nature fram’d a better.
+</p><p>
+Her virtues were so great, that they do raise
+</p><p>
+A work to trouble fame, astonish praise.
+</p><p>
+When as her Name doth but salute the ear,
+</p><p>
+Men think that they perfections abstract hear.
+</p><p>
+     Her breast was a brave Pallace a <i>Broad-Street</i><a href="tenthmuse.html#fsp97" class="foot">97</a>,
+</p><p>
+Where all heroic ample thoughts did meet,
+</p><p>
+     Where nature such a Tenement had tane,<a href="tenthmuse.html#fsp98" class="foot">98</a> 
+</p><p>
+That others souls, to hers, dwelt in a lane.
+</p><p>
+Beneath her feet, pale envy bites her chain,
+</p><p>
+And poison Malice whetts her sting in vain.
+</p><p>
+Let every Laurel, every Myrtel bough
+</p><p>
+Be stript for leaves t’adorn and load her brow.
+</p><p>
+Victorious wreathes, which ‘cause they never fade
+</p><p>
+Wise elder times for Kings and Poets made.
+</p><p>
+Let not her happy memory e’re lack
+</p><p>
+Its worth in Fames eternal Almanack,
+</p><p>
+Which none shall read, but straight their loss deplore,
+</p><p>
+And blame their Fates they were not born before.
+</p><p>
+Do not old men rejoyce their Fates did last;
+</p><p>
+And infants too, that theirs did make such hast,
+</p><p>
+In such a welcome time to bring them forth,
+</p><p>
+That they might be a witness to her worth.
+</p><p>
+Who undertakes this subject to commend
+</p><p>
+Shall nothing find so hard as how to end.
+</p><p>
+      
+</p><p class="alignright">
+     <span class="italic">Finish & non.</span>	John Norton.<a href="tenthmuse.html#fsp99" class="foot">99</a>
+</p><p>
+      
+</p><p>
+<span class="italic">Omnia</span> Romanæ <span class="italic">fileant Miracula Gentis.</span>
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+<div class="bradstreetseg">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             no page
+                         </p>
+			</td>
+			<td>
+				                         <p>
+                             The Author to her Book.
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				                         <p>
+                             no page
+                         </p>
+			</td>
+			<td>
+				                         <p>
+                             <a href="da/bradstreet/img/bradstreet_severalpoems/IMG_0251_crop.jpg">
+                                 <img src="da/bradstreet/img/bradstreet_severalpoems/IMG_0251_crop-lowres.jpg" alt="text"></a>
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				no page
+			</td>
+			<td>
+				<p class="center italic">
+     The Author to her Book.<a href="tenthmuse.html#fsp100" class="foot">100</a> 
+</p>
+<p>
+      
+</p><p>
+Thou ill-form’d offspring of my feeble brain,
+</p><p>
+Who after birth did’st by my side remain,
+</p><p>
+Till snatcht from thence by friends, less wise then true
+</p><p>
+Who thee abroad, expos’d to publick view,
+</p><p>
+Made thee in raggs, halting to th’press to trudg,
+</p><p>
+Where errors were not lessened (all may judg)
+</p><p>
+At thy return my blushing was not small,
+</p><p>
+My rambling brat (in print) should mother call,
+</p><p>
+I cast thee by as one unfit for light,
+</p><p>
+Thy Visage was so irksome in my sight;
+</p><p>
+Yet being mine own, at length affection would
+</p><p>
+Thy blemishes amend, if so I could:
+</p><p>
+I wash’d thy face, but more defects I saw,
+</p><p>
+And rubbing off a spot, still made a flaw.
+</p><p>
+I stretcht thy joynts to make thee even feet,
+</p><p>
+Yet still thou run’st more hobling then is meet;
+</p><p>
+In better dress to trim thee was my mind,
+</p><p>
+But nought save home-spun Cloth, i’th’ house I find
+</p><p>
+In this array, ‘mongst Vulgars mayst thou roam
+</p><p>
+In Criticks hands, beware thou dost not come;
+</p><p>
+And take thy way where yet thou art not known,
+</p><p>
+If for thy Father askt, say, thou hadst none:
+</p><p>
+And for thy Mother, she alas is poor,
+</p><p>
+Which caus’d her thus to send thee out of door.
+</p>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+<div class="bradstreetfoot">
+	
+	<table>
+		<tr class="firstline">
+			<td>
+				                         <p>
+                             <i>Tenth Muse</i> Footnotes
+                         </p>
+			</td>
+			<td>
+				                         <p>
+                             <i>Several Poems</i> Footnotes
+                         </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="footnotes">
+            <ol>
+        
+                <li><a id="ftm1"></a>
+        In the original these four are joined by braces rather than a line.
+        </li><li><a id="ftm2"></a>
+            Epitomie: a brief statement of the chief points in a literary work; a summary or condensed account of anything; something that forms a condensed record or representation ‘in miniature’ (OED).
+        </li><li><a id="ftm3"></a>
+            As above, in the original these four are joined by braces.
+        </li><li><a id="ftm4"></a>
+            The author is Anne Bradstreet’s brother-in-law, John Woodbridge. Woodbridge (1613-1695) was born in England, where he began his religious training at Oxford University. His Puritan convictions preventing him from completing his degree, he emigrated to New England in 1634. There he married Anne’s sister Mercy (1621-1691) in 1639. Woodbridge worked as a local politician as well as a minister. He returned to England between 1647 and 1663 where he was chaplain to the parliamentary leaders who treated with Charles I in the Isle of Wight, and then rector of Barford St Martin, Wiltshire. Following the political changes of 1662 Woodbridge once again left for New England, where he lived the remainder of his life (Paul C.-H. Lim, ODNB).
+        </li><li><a id="ftm5"></a>
+            Bradstreet maintained a household on the American frontier; she and her husband, Simon Bradstreet, had eight children (McElrath and Robb xviii, xv).
+        </li><li><a id="ftm6"></a>
+            Several Poems has “Author”.
+        </li><li><a id="ftm7"></a>
+            In 1647 Woodridge travelled to England, taking a collection of Bradstreet’s poetry, which until then had only circulated amongst family and friends, along with him. In London, ostensibly unknown to Bradstreet, he had the poems published (Hensley xv; McElrath and Robb xx, xxv). 
+        </li><li><a id="ftm8"></a>
+            Sixteenth century French poet Guillaume Du Bartas was one of Bradstreet’s literary role models. His “long verse description of the creation of the world” was translated into English by Joshua Sylvester in 1605, and “gained an immediate popularity that sent it through edition after edition until almost the middle of the century” (White 56). 
+        </li><li><a id="ftm9"></a>
+            Hemisphear: either of the halves of the terrestrial globe (OED). Used here as a verb.
+        </li><li><a id="ftm10"></a>
+            began to
+        </li><li><a id="ftm11"></a>
+            marvel
+        </li><li><a id="ftm12"></a>
+            sooth: truly; truthfully; in truth. Used interjectionally (OED).
+        </li><li><a id="ftm13"></a>
+            Don: name given to an older man of rank; a bit humorous (OED).
+        </li><li><a id="ftm14"></a>
+            chode buy: shod by (Hensley, 4). Several Poems has “chode by”.
+        </li><li><a id="ftm15"></a>
+            Nathaniel Ward (1578-1653) emigrated to New England in 1634 after being excommunicated from the Church of England. He became the first minister of the frontier community of Ipswich, where he came to know the Bradstreets well (Derounian-Stodola 134-5). Ward and his family returned to England in 1646, and his book The Simple Cobler of Aggawam in America was published a year later (ODNB). Ward’s publisher was also Stephen Bowtell, and “it is generally accepted that Ward used his influence as a successful author to secure an appropriate publisher on his friend’s behalf” (Derounian-Stodola 135).
+        </li><li><a id="ftm16"></a>
+            addle: confused, unable to think clearly, muddled (OED)
+        </li><li><a id="ftm17"></a>
+            Whit: amended to “What” in Several Poems
+        </li><li><a id="ftm18"></a>
+            vailing: to be worth in respect of means or wealth (OED)
+        </li><li><a id="ftm19"></a>
+            acutely: with ready or clear apprehension, sharp wittedly, shrewdly (OED)
+        </li><li><a id="ftm20"></a>
+            Bradstreet’s poem “In honour of that High and Mighty Princess, Queen ELIZABETH, of most happy memory”. 
+        </li><li><a id="ftm21"></a>
+            i.e. nine Muses
+        </li><li><a id="ftm22"></a>
+            lest
+        </li><li><a id="ftm23"></a>
+            Several Poems has “affection”.
+        </li><li><a id="ftm24"></a>
+            attired
+        </li><li><a id="ftm25"></a>
+            tittle: a small stroke in writing or printing (OED) 
+        </li><li><a id="ftm26"></a>
+            John Woodbridge (Derounian-Stodola 134). See footnote 5 above.
+        </li><li><a id="ftm27"></a>
+            This poem has been attributed to Benjamin Woodbridge (1622-84), rector of Newbury, Berkshire, and John Woodbridge’s younger brother. John Woodbridge’s proximity to his brother Benjamin when he returned to England “must have made editorial collaboration almost certain” (Derounian-Stodola 134). Though his initials do not appear in The Tenth Muse, which has led Joseph McElrath and Allan Robb to wrongly attribute it to C.B. (Clement Barksdale, probable author of “I cannot wonder at Apollo now”), the initials do appear in Several Poems. Woodbridge was renowned as a non-conformist minister. Woodbridge undertook part of his studies at Harvard, but lived most of his life in England (ODNB).
+        </li><li><a id="ftm28"></a>
+            Kathryn Derounian-Stodola speculates that this may be Clement Barksdale (1609-87), Anglican clergyman, and publisher of “an anthology of verse tributes to his friends called Nympha Libethris (1651)”. Because of the very different style of the later poem “Upon the Author”, also attributed to CB, she suggests they are two different people (135).
+        </li><li><a id="ftm29"></a>
+            Anne married Simon Bradstreet, son of a Puritan clergyman, in 1628. At the time he was steward to the dowager countess of Warwick. They moved to New England in 1630, where he served in various official capacities, including, in his later life, five years as governor of the Massachusetts Bay colony (White 89-90; ODNB).
+        </li><li><a id="ftm30"></a>
+            splendent: shining brightly by virtue of inherent light (OED)
+        </li><li><a id="ftm31"></a>
+            heroic
+        </li><li><a id="ftm32"></a>
+            a pun on dye/die
+        </li><li><a id="ftm33"></a>
+            There seems to be broad consensus that N.H. is probably Nathaniel Homes (or Holmes) (1599-1678) (see Derounian-Stodola 136; Wiseman 205; McElrath and Robb 525). Together with Henry Burton, Homes “founded one of the first Independent gathered churches” (ODNB). Derounian-Stodola echoes Elizabeth Wade White (264) in thinking “both must have been interested in a New England success story such as the publication of The Tenth Muse” (Derounian-Stodola 136).
+        </li><li><a id="ftm34"></a>
+            McElrath and Robb (525) and Derounian-Stodola (135) propose C.B. might be Cassibelan Burton, classicist, translator, barrister and historian (1609-82) (ODNB).
+        </li><li><a id="ftm35"></a>
+            White believes H.S. may be Henry Stubbe (1632-76), “though he would only have been sixteen or seventeen when they were written” (265). He was, however, noted for his scholarly aptitude from an early age. He went on to become an author and physician (ODNB). McElrath and Robb (525), and Derounian-Stodola’s (136) research confirms this. 
+        </li><li><a id="ftm36"></a>
+            The author(s) of the two anagrams are unknown, however White notes that Harold Jantz (1944) suggests they could be by John Wilson (White 266).
+        </li><li><a id="ftm37"></a>
+            A reference to the popular and influential sixteenth century French poet, Guillaume Du Bartas (1544-90), who was particularly admired by Anne Bradstreet.
+        </li><li><a id="ftm38"></a>
+            Epicene: In humorous uses of the phrase epicene gender; also of persons, their employments, characters, etc.: Partaking of the characteristics of both sexes (OED). Also the name of Ben Jonson’s comedy (Epicœne, Or the Silent Woman), first performed in 1609.
+        </li><li><a id="ftm39"></a>
+            Thomas Dudley (1576-1653), Anne Bradstreet’s father, was a committed Puritan. He emigrated to the New World in 1630, with his family, including Anne and Simon Bradstreet. He was an influential founder of the Massachusetts Bay colony, occupying official positions throughout his life. White writes that Dudley was “beloved and revered” by Bradstreet (293).
+        </li><li><a id="ftm40"></a>
+            Several Poems has “n’er saw the face”.
+        </li><li><a id="ftm41"></a>
+            Thomas Dudley wrote a poem “On the four parts of the world”. Jeannine Hensley writes: “One can assume that Thomas Dudley’s poem… was in a form similar to his daughter’s Quaternions” (300). 
+        </li><li><a id="ftm42"></a>
+            Several Poems has “I bring my four times four”.
+        </li><li><a id="ftm43"></a>
+            i.e. Guillaume Du Bartas. 
+        </li><li><a id="ftm44"></a>
+            Several Poems includes date: “March 20, 1642.”
+        </li><li><a id="ftm45"></a>
+            i.e. Guillaume Du Bartas
+        </li><li><a id="ftm46"></a>
+            Consort: partner, companion, mate (OED). With pun on concert.
+        </li><li><a id="ftm47"></a>
+            Several Poems has “in future times”.
+        </li><li><a id="ftm48"></a>
+            despight: the feeling or mental attitude of looking down upon or despising anything; the display of this feeling; contempt, scorn, disdain (OED). 
+        </li><li><a id="ftm49"></a>
+            antick: of, belonging to, or after the manner of the ancients (OED 4). Spelled “Antique” in Several Poems.
+        </li><li><a id="ftm50"></a>
+            Several Poems has “fools”.
+        </li><li><a id="ftm51"></a>
+            Several Poems has “Give Thyme or Parsley wreath”.
+        </li><li><a id="ftm52"></a>
+            Several Poems has “ure”.
+        </li><li><a id="ftm53"></a>
+            Anne Bradstreet
+        </li>
+            
+        
+            </ol>
+        </div>
+			</td>
+			<td>
+				<div class="footnotes">
+               <ol>
+                    <li><a id="fsp1"></a>
+                         In the original these four are joined by braces rather than a line.
+                    </li><li><a id="fsp2"></a>
+                         Epitome: A brief statement of the chief points in a literary work; a summary or condensed account of anything; something that forms a condensed record or representation ‘in miniature’ (OED).
+                    </li><li><a id="fsp3"></a>
+                         As above, in the original these three are joined by braces.
+                    </li><li><a id="fsp4"></a>
+                         The author is Anne Bradstreet’s brother-in-law, John Woodbridge. Woodbridge (1613-1695) was born in England, where he began his religious training at Oxford University. His Puritan convictions preventing him from completing his degree, he emigrated to New England in 1634. There he married Anne’s sister Mercy (1621-1691) in 1639. Woodbridge worked as a local politician as well as a minister. He returned to England between 1647 and 1663 where he was chaplain to the parliamentary leaders who treated with Charles I in the Isle of Wight, and then rector of Barford St Martin, Wiltshire. Following the political changes of 1662 Woodbridge once again left for New England, where he lived the remainder of his life (Paul C.-H. Lim, ODNB).
+                    </li><li><a id="fsp5"></a>
+                         Bradstreet maintained a household on the American frontier; she and her husband, Simon Bradstreet, had eight children (McElrath and Robb xviii, xv).
+                    </li><li><a id="fsp6"></a>
+                         <i>Tenth Muse</i> has “Authors”
+                    </li><li><a id="fsp7"></a>
+                         In 1647 Woodridge travelled to England, taking a collection of Bradstreet’s poetry, which until then had only circulated amongst family and friends, along with him. In London, ostensibly unknown to Bradstreet, he had the poems published. (Hensley xv; McElrath and Robb xx, xxv).
+                    </li><li><a id="fsp8"></a>
+                         Sixteenth century French poet Guillaume Du Bartas was one of Bradstreet’s literary role models. His “long verse description of the creation of the world” was translated into English by Joshua Sylvester in 1605, and “gained an immediate popularity that sent it through edition after edition until almost the middle of the century” (White 56).
+                    </li><li><a id="fsp9"></a>
+                         Hemisphear: Either of the halves of the terrestrial globe (OED). Used here as a verb.
+                    </li><li><a id="fsp10"></a>
+                         began to
+                    </li><li><a id="fsp11"></a>
+                         marvel
+                    </li><li><a id="fsp12"></a>
+                         sooth: truly; truthfully; in truth. Used interjectionally (OED).
+                    </li><li><a id="fsp13"></a>
+                         <i>Don</i>: name given to an older man of rank; a bit humorous (OED).
+                    </li><li><a id="fsp14"></a>
+                         chode by: shod by (Hensley 4). <i>Tenth Muse</i> has “chode buy”.
+                    </li><li><a id="fsp15"></a>
+                         Nathaniel Ward (1578-1653) emigrated to New England in 1634 after being excommunicated from the Church of England. He became the first minister of the frontier community of Ipswich, where he came to know the Bradstreets well (Derounian-Stodola 134-5). Ward and his family returned to England in 1646, and his book <i>The Simple Cobler of Aggawam in America</i> was published a year later (ODNB). Ward’s publisher was also Stephen Bowtell, and “it is generally accepted that Ward used his influence as a successful author to secure an appropriate publisher on his friend’s behalf” (Derounian-Stodola 135).
+                    </li><li><a id="fsp16"></a>
+                         addle: confused, unable to think clearly, muddled (OED)
+                    </li><li><a id="fsp17"></a>
+                         In <i>Tenth Muse</i> the word is “Whit.”
+                    </li><li><a id="fsp18"></a>
+                         vailing: to be worth in respect of means or wealth (OED)
+                    </li><li><a id="fsp19"></a>
+                         acutely: with ready or clear apprehension, sharp wittedly, shrewdly (OED)
+                    </li><li><a id="fsp20"></a>
+                         Bradstreet’s poem “In honour of that High and Mighty Princess, Queen ELIZABETH, of most happy memory”.
+                    </li><li><a id="fsp21"></a>
+                         i.e. nine Muses
+                    </li><li><a id="fsp22"></a>
+                         lest
+                    </li><li><a id="fsp23"></a>
+                         <i>Tenth Muse</i> has “affect on”.
+                    </li><li><a id="fsp24"></a>
+                         attired
+                    </li><li><a id="fsp25"></a>
+                         tittle: a small stroke in writing or printing (OED)
+                    </li><li><a id="fsp26"></a>
+                         John Woodbridge (Derounian-Stodola 134). See footnote 5 above.
+                    </li><li><a id="fsp27"></a>
+                         This poem is probably by Benjamin Woodbridge (1622-84), rector of Newbury, Berkshire, and John Woodbridge’s younger brother (Hensley 299; Derounian-Stodola 134). John Woodbridge’s proximity to his brother Benjamin when he returned to England “must have made editorial collaboration almost certain” (Derounian-Stodola 134). His initials do not appear in <i>The Tenth Muse</i>, which has led Joseph McElrath and Allan Robb (525, 529) to wrongly attribute it to C.B. (Clement Barksdale, probable author of “I cannot wonder at Apollo now”). Woodbridge was renowned as a non-conformist minister. He undertook part of his studies at Harvard, but lived most of his life in England (ODNB).
+                    </li><li><a id="fsp28"></a>
+                         Kathryn Derounian-Stodola speculates that this may be Clement Barksdale (1609-87), Anglican clergyman, and publisher of “an anthology of verse tributes to his friends called <i>Nympha Libethris</i> (1651).” Because of the very different style of the later poem “Upon the Author”, also attributed to CB, she suggests they are two different people (135).
+                    </li><li><a id="fsp29"></a>
+                         Soldado: soldier (OED)
+                    </li><li><a id="fsp30"></a>
+                         amain: In, or with, full force; in full force of numbers. But also: hence, with reference to motion; at full speed; without delay, in all haste; at once (OED). 
+                    </li><li><a id="fsp31"></a>
+                         At least three possible candidates exist for this poem. McElrath and Robb name Robert Quarles (525); Derounian-Stodola proposes, though is unable to confirm, Roger Quartermayne, a “seventeenth century English Puritan” whose history of charges of treason may be alluded to in this poem (135); Susan Wiseman asks whether R.Q. might be Richard Quelch, a clockmaker from Oxford (205). 
+                    </li><li><a id="fsp32"></a>
+                         Anne married Simon Bradstreet, son of a Puritan clergyman, in 1628. At the time he was steward to the dowager countess of Warwick. They moved to New England in 1630, where he served in various official capacities, including, in his later life, five years as governor of the Massachusetts Bay colony (White 89-90; ODNB).
+                    </li><li><a id="fsp33"></a>
+                         splendent: shining brightly by virtue of inherent light (OED)
+                    </li><li><a id="fsp34"></a>
+                         heroic
+                    </li><li><a id="fsp35"></a>
+                         a pun on dye/die 
+                    </li><li><a id="fsp36"></a>
+                         There seems to be broad consensus that N.H. is probably Nathaniel Homes (or Holmes) (1599-1678) (see Derounian-Stodola 136; Wiseman 205; McElrath and Robb 525). Together with Henry Burton, Homes “founded one of the first Independent gathered churches” (ODNB). Derounian-Stodola echoes Elizabeth Wade White (264) in thinking “both must have been interested in a New England success story such as the publication of <i>The Tenth Muse</i>” (Derounian-Stodola 136).
+                    </li><li><a id="fsp37"></a>
+                         McElrath and Robb (525) and Derounian-Stodola (135) propose C.B. might be Cassibelan Burton, classicist, translator, barrister and historian (1609-82) (ODNB).
+                    </li><li><a id="fsp38"></a>
+                         White believes H.S. may be Henry Stubbe (1632-76), “though he would only have been sixteen or seventeen when they were written” (265). He was, however, noted for his scholarly aptitude from an early age. He went on to become an author and physician (ODNB). McElrath and Robb (525), and Derounian-Stodola’s (136) research confirms this. 
+                    </li><li><a id="fsp39"></a>
+                         The author(s) of the two anagrams are unknown, however White notes that Harold Jantz (1944) suggests they could be by John Wilson (White 266).
+                    </li><li><a id="fsp40"></a>
+                         A reference to the popular and influential sixteenth century French poet, Guillaume Du Bartas (1544-90), who was particularly admired by Anne Bradstreet.
+                    </li><li><a id="fsp41"></a>
+                         Epicene: In humorous uses of the phrase epicene gender; also of persons, their employments, characters, etc.: Partaking of the characteristics of both sexes (OED). Also the name of Ben Jonson’s comedy (<i>Epicœne, Or the Silent Woman</i>), first performed in 1609.
+                    </li><li><a id="fsp42"></a>
+                         shrowding: to take shelter (OED definition 2b)
+                    </li><li><a id="fsp43"></a>
+                         in central Greece
+                    </li><li><a id="fsp44"></a>
+                         i.e. the Nymphs of Helicon
+                    </li><li><a id="fsp45"></a>
+                         strewed
+                    </li><li><a id="fsp46"></a>
+                         A dark and fragrant wine from Thrace, used by Odysseus to intoxicate the Cyclops.
+                    </li><li><a id="fsp47"></a>
+                         A likely reference to the ancient town of Hybla in Sicily, renowned for its honey and associated with the Hyblaean Mountains.
+                    </li><li><a id="fsp48"></a>
+                         spangle: a condensed particle reflecting light, as of hoar-frost, snow or dew (OED) 
+                    </li><li><a id="fsp49"></a>
+                         Carr: a pond or pool; a bog or fen (OED 2)
+                    </li><li><a id="fsp50"></a>
+                         This word appears to have been crossed out. Jeannine Hensley renders it “Are” (<i>The Works of Anne Bradstreet.</i>)
+                    </li><li><a id="fsp51"></a>
+                         lone?
+                    </li><li><a id="fsp52"></a>
+                         Paramour: a lover; the object of a person's love, esp. in an affair or romance; a person's sexual partner (OED 2a)
+                    </li><li><a id="fsp53"></a>
+                         stew: a brothel (OED 4a)
+                    </li><li><a id="fsp54"></a>
+                         The Ancient Greek poet Arion was rescued from the sea by a dolphin.
+                    </li><li><a id="fsp55"></a>
+                         fray: a disturbance, especially one caused by fighting (OED 3a)
+                    </li><li><a id="fsp56"></a>
+                         Scite: a decree or statute (OED)
+                    </li><li><a id="fsp57"></a>
+                         weltring: to revel, live at ease (OED 2a)
+                    </li><li><a id="fsp58"></a>
+                         This word is obscured due to page damage. I follow Hensley.
+                    </li><li><a id="fsp59"></a>
+                         mirror
+                    </li><li><a id="fsp60"></a>
+                         trine: threefold, triple (OED 1a)
+                    </li><li><a id="fsp61"></a>
+                         trow: faith as pledged, convenant (OED 3)
+                    </li><li><a id="fsp62"></a>
+                         Poetaster: an inferior poet; a writer of poor or trashy verse; a mere versifier (OED). Also <i>The Poetaster</i> – a satire by Ben Jonson, first performed in 1601, and published the following year.
+                    </li><li><a id="fsp63"></a>
+                         amain: without delay, in all haste; at once (OED 2b)
+                    </li><li><a id="fsp64"></a>
+                         Hensley suggests “Congies” might be “an allusion to Marcus Junius Congus, a friend of Gaius Lucilius (Roman satirist, second century B.C.) who addressed Congus as a reader whose appreciation he valued” (300).
+                    </li><li><a id="fsp65"></a>
+                         This word is blurred in the photograph, I follow Hensley.
+                    </li><li><a id="fsp66"></a>
+                         magazine: a store or repertoire (of resources, ideas, rhetorical weapons, etc.) (OED 5)
+                    </li><li><a id="fsp67"></a>
+                         John Rogers (1630-84) married Bradstreet’s niece (White 362). Jeannine Hensley argues that Rogers was also more than likely the editor of the second edition. She argues that the lines “twice through the Muses Grove” and “twice drunk the Nectar of your lines”… could refer to a second reading, but more probably refer to the second edition.” She goes on “His final couplet is less ambiguous, especially when one knows that one whole errata leaf and a fragment of another remain in copies of this edition.” In the last lines he is “referring to this errata leaf and assuming the responsibility for the state of the text. Only the editor could know the errors and assume the responsibility” (xxvii-xxviii notes). A physician and college head, Rogers moved to New England as a child, and lived most of his life in Ipswich. He became president of Cambridge College, Massachusetts, in 1683 (ODNB). Rogers would have been about 47 years old at the time <i>Several Poems</i> was published.
+                    </li><li><a id="fsp68"></a>
+                         Thomas Dudley (1576-1653), Anne Bradstreet’s father, was a committed Puritan. He emigrated to the New World in 1630 with his family, including and Anne and Simon Bradstreet (who married in 1628) (McElrath and Robb xv). He was an influential founder of the Massachusetts Bay colony, occupying official positions throughout his life. White writes that Dudley was “beloved and revered” by Bradstreet (293).
+                    </li><li><a id="fsp69"></a>
+                         Thomas Dudley wrote a poem “On the four parts of the world”. Jeannine Hensley writes: “One can assume that Thomas Dudley’s poem… was in a form similar to his daughter’s Quaternions” (300). 
+                    </li><li><a id="fsp70"></a>
+                         <i>Tenth Muse</i> has “near saw the face”.
+                    </li><li><a id="fsp71"></a>
+                         This word is obscured in photograph. I follow Hensley.
+                    </li><li><a id="fsp72"></a>
+                         This word is obscured in image. I follow Hensley.
+                    </li><li><a id="fsp73"></a>
+                         <i>Tenth Muse</i> has “I bring my four; and four”.
+                    </li><li><a id="fsp74"></a>
+                         Final punctuation obscured in image. I follow Hensley.
+                    </li><li><a id="fsp75"></a>
+                         Final letters obscured in image. I follow Hensley.
+                    </li><li><a id="fsp76"></a>
+                         Final punctuation obscured. I follow Hensley.
+                    </li><li><a id="fsp77"></a>
+                         i.e. Guillaume Du Bartas. 
+                    </li><li><a id="fsp78"></a>
+                         The beginnings of each of the following lines are obscured by page damage. I follow Hensley.
+                    </li><li><a id="fsp79"></a>
+                         <i>Tenth Muse</i> has “boundlesse”.
+                    </li><li><a id="fsp80"></a>
+                         i.e. Guillaume Du Bartas
+                    </li><li><a id="fsp81"></a>
+                         Consort: partner, companion, mate (OED). With pun on concert.
+                    </li><li><a id="fsp82"></a>
+                         The final words of this and the following three lines are obscured by page damage. I follow Hensley.
+                    </li><li><a id="fsp83"></a>
+                         <i>Tenth Muse</i> has “speake afterwards”.
+                    </li><li><a id="fsp84"></a>
+                         despite: the feeling or mental attitude of looking down upon or despising anything; the display of this feeling; contempt, scorn, disdain (OED) In <i>Tenth Muse</i> the word is spelled “despight”.
+                    </li><li><a id="fsp85"></a>
+                         Antique: of, belonging to, or after the manner of the ancients (OED). 
+                    </li><li><a id="fsp86"></a>
+                         <i>Tenth Muse</i> has “foole”.
+                    </li><li><a id="fsp87"></a>
+                         The first few words of this and each of the following first lines are obscured by page damage. I follow Hensley.
+                    </li><li><a id="fsp88"></a>
+                         <i>Tenth Muse</i> has “Give wholsome Parsley wreath”.
+                    </li><li><a id="fsp89"></a>
+                         <i>Tenth Muse</i> has “stuffe”.
+                    </li><li><a id="fsp90"></a>
+                         Anne Bradstreet
+                    </li><li><a id="fsp91"></a>
+                         Possibly a reference to the work of English poet Richard Braithwait (1588-1673). In 1635 he produced <i>Anniversaries upon his Panarete; continued: with her contemplations, penned in the languishing time of her sicknesse. The second yeeres annivers,</i> two years after his wife’s death.  This may also possibly be a reference to the work of ancient Greek writer Aristaenetus (5th or 6th C BC), who wrote a fictional letter to the female pantomime Panrete, whom he dubs ‘Proteus’ because of her versatility (EP.1.26).
+                    </li><li><a id="fsp92"></a>
+                         Magazine: a place where goods are kept in store; a storehouse for goods or merchandise; a warehouse or depot (OED 1a)
+                    </li><li><a id="fsp93"></a>
+                         lowring (lowering): frowning, scowling; angry-looking, gloomy, sullen (OED 1)
+                    </li><li><a id="fsp94"></a>
+                         quire (choir): each of the nine orders of angels in the heavenly hierarchy (OED 1, 4); but also quire: any gathering or set of sheets forming part of a complete manuscript or printed book (OED 3, 2 a)
+                    </li><li><a id="fsp95"></a>
+                         Virgil, whose full name was Publius Virgilius Maro.  It has been said that Virgil instructed his friends to burn the Aeneid upon his death.
+                    </li><li><a id="fsp96"></a>
+                         Marcus Tullius Cicero, anglicized as Tully.
+                    </li><li><a id="fsp97"></a>
+                         Possibly a play on Bradstreet.  In 1673, Mathsua Makin would write:  “How excellent a Poet Mrs. Broadſtreet is, (now in America) her Works do teſtifie” (<i>An Essay to Revive the Ancient Education of Gentlewomen</i>, C2v).
+                    </li><li><a id="fsp98"></a>
+                         taken?
+                    </li><li><a id="fsp99"></a>
+                         John Norton (1651-1713) was the pastor of Hingham in the Massachusetts Bay colony (ODNB). He was “technically related to Bradstreet through her husband’s second wife, Anne Gardner (but)… could not have known her well” (Derounian-Stodola 136).
+                    </li><li><a id="fsp100"></a>
+                         i.e. Anne Bradstreet
+                    </li>
+               </ol>
+          </div>
+			</td>
+		</tr>
+	</table>
+</div>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

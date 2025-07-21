@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=effectualcalling&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="13" class="authorheading">Elizabeth Melville</h2><h3>Observations On Effectual Calling</h3><p><strong>Contributor:</strong> <a href="http://www.victoria.ac.nz/seftms/about/staff/sarah-">Associate Professor Sarah Ross</a></p><p><strong>Material:</strong> MSS</p><p><strong>Description:</strong> From the manuscript miscellany of Elizabeth Bruce Boswell. </p><p><strong>Source:</strong> Beinecke Rare Book and Manuscript Library, Yale University, Boswell Collection, Gen MSS 89, Series XV, Box 105, Folder 1925, item 5</p><p><strong>Permissions:</strong> No permissions required.</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 13 da effectualcalling">
+                                 <script type="text/javascript" src="scripts/concertinaColumns.js"></script>
+ 
+ 
+ <div class="digarch">
+ 
+ <!-- C O N T E N T -->
+ <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+ <!-- APMS: End Header Start Content -->
+ 
+ <!-- Body inserted here. -->
+ 
+   <form action="https://c21ch.newcastle.edu.au/search.html" method="get">
+     <div id="search">
+       <p>Select versions to display:<br />
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription
+      	<br /><br />
+       <!-- <input name="checkbox" type="checkbox" value="checkbox"
+       	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+       	-->
+     </div>
+   </form>	
+ 
+ 
+ <div>
+ <table class="content" id="general">
+ <tr class="shade">
+ 	<th style="min-width: 200px;">Images</th>
+ 	<th style="min-width: 380px;">Transcription</th>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_effectual/melville_effectual_01.jpg">
+     <img src="da/melville/img/melville_effectual/melville_effectual_01-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+<p>Observations upon effectual Calling. 
+</p><p>
+i) That all Gods people are effectually called of God in time befor they beleive or that there is such a thing as the voice of God in his word calling the soul particularlie and earnestly to embrace the offer of Christ and all his benefits, for other ways no man could come to Christ being dead unless quickned by this call it wer presumption to come without this nor would ever any poor creature come without this Rom 8.30.i Cor i.2 Jer 3.22: (2) the immediat end of this call is to receive or beleive on or come to Christ for all things: the Lord at first and primarly doth press nothing but beleiving, and receiving of all things freely John 6.28. Isaiah 55.i nothing is required but to eat and drink freely: Math. ii.28. the Lord only requires that they come at first: it is true when they are come and gotten rest to their souls, he then calls them to take on his yoke, for the Saints be called to heaven, to holiness, to take on his yoke, yet not at first or immediatly or that they may be justified; but after they beleive and are justified: (3) this call is the very voice of God to a sinner; and hath the evidences of a divine power wisdom and goodness so that the poor soul who is called doth see that it is the Lord with whome it hath now ado: this is it which makes the soul,
+</p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_effectual/melville_effectual_02.jpg">
+     <img src="da/melville/img/melville_effectual/melville_effectual_02-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+     <p>
+regard, and without this we should never believe. i Pet 2.9. (4) this call of God to the soul to come to the Lord Jesus is no other then the voice of the Lord in his word commanding us to beleive: moving us to receive of the waters of life freely: it is not then any immediat call without the word of the Spirit of God in the heart: no but the very promulgation of the Gospel is the call of God which doth lay obligations upon us to beleive: let us not then say what warrand have we to beleive: we fear we shall presume: for if ever you have heard or read the word of God beseeching you to beleive; saying whosoever will let him come and take of the waters of life we have a warrand to beleive, and our endeavouring to complay with this warrand cannot be presumption / I confes unless the spirit inwardly to the heart applay the external call: we cannot beleive but yet whether the spirit do it or not we ought to beleive: It is the word that is near us in our hearts and mouths Rom 10.6.7 we need not then go up to heaven or desend to hell for faith, faith is a heartie closing with Gods word in the Gospel or a heartie beleiving of the glad tidings of the Gospel. (5) This call of God is inwardly applay’d to the heart by the spirit of God the spirit of God takes the external word: and gos to the heart of a sinner with it and ther calls for attention: holds furth the riches of the Gospel: saith to the poor soul to the is this word come; convinces the soul of the
+</p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_effectual/melville_effectual_03.jpg">
+     <img src="da/melville/img/melville_effectual/melville_effectual_03-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+<p>
+sinfullnes of its unbelieff: shews that it is the Lord comand and will that it should beleive gives motives thereunto: takes pains in answering all the souls objections: holds the soul closs to it never leavs it untill the soul hath consented, for tho the word externally heard or read doth indeed lay an obligation upon all to beleive yet unless the spirit deal with heart and solicit the busnes the soul will never ioine to Christ hos 2.14. Jer 31.32.2 Cor<sup>s</sup> 3.3 ther is then an inward call God speaks to and in the heart: (6) this call is particular: God singles out a poor soul from the rest: and saith its to thee I now speak and to non other its thee I am seeking to beleive give me thy consent what ever other do: it is not now a gennerall word all are bound to beleive: but the Lord applays this gennerall particularlie to the soul: there is non concerned in this transaction but God and the soul: he calleth is [sic] sheep by name John. i0.3.2 Tim 2.19. God knoweth who are his (7) altho the internal call be not always sensiblie found: yet the external call doth always continue it is constant there is not such a sensible stirring of the spirit of God upon the heart in citing it to beleive, after it hes fully closed with Christ, as ther was befor: yet in respect of the external word the spirit of God no less truely calls to beleive oblidges to come to Christ as at first: Indeed the spirit of God doth not always strive within a man gen 6.2: and so the inward call may not be heard, yea the spirit
+</p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_effectual/melville_effectual_04.jpg">
+     <img src="da/melville/img/melville_effectual/melville_effectual_04-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+<p>
+may leave the soul, yet the external call continues: and so is duty always to beleive and if we come we shall be wellcome be it any time of our life: therefore let us now say my time is past stretch not this truth to farr for our time is never past in regard of Gods word which is to be our rule: and therefore it is said that all the day long he stretches out his hands Rom 10.31: (8) all within the visible Church are externally called Math 22.5.6. ther is never one who hears the gospel but is called to beleive: so as he is bound therto as his duty and sin if he do not beleive John 6.28.29. what ever makes it duty to pray, to fear and love God, and that is Gods want reveal’d in his word, the same word makes duty to beleive: so as they are punished for not beleiving: (9) a great many externally called and truely oblidged to beleive are yet notwithstanding
+</p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ </table>
+ 
+ 	</div>
+ </div>
+
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

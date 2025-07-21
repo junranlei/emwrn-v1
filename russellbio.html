@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=russellbio&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="40" class="authorheading">Lucy Russell</h2><h3>Biography</h3>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 40  russellbio">
+                                <h3>Lucy Harington-Russell, Countess of Bedford</h3>
+<p>
+Lucy Harington, baptized on 25 January 1581, was the eldest daughter of Sir John Harington, first Baron Harington of Exton, and Anne, whose mother, Cecily, was the daughter of Edward Bulstrode. Her father, a courtier and landowner, was one of the leading knights in England and deputy lieutenant to Rutland and Warwick. Her mother was a lady-in-waiting to Elizabeth I. Her parents ensured that she was well-educated and her knowledge of Italian, French and Spanish was praised by John Florio when dedicating his English-Italian dictionary, <i>A Worlde of Wordes</i>, to her in 1598. 
+</p><p>
+Lucy's marriage to Edward Russell, Earl of Bedford, on 12 December 1594, was brokered by Anne Russell, like Anne Harington, a lady-in-waiting to the Queen. Both were young - Lucy was not yet fourteen and Edward was twenty-one years of age. Edward's father, Francis, was killed only hours before his own father, Francis Russell, the second Earl of Bedford, died, and so Edward inherited the title at age fourteen. His great-aunts were Margaret Clifford, Countess of Cumberland, and Anne Dudley, Countess of Warwick. The second Earl had died heavily in debt, and the new Earl and Countess of Bedford also ran up large debts while at Elizabeth's court. Their difficulties were compounded in 1601, when Edward was implicated in the Essex rebellion. He was imprisoned in the Tower, and on his release confined to his estate of Chenies and fined &#163;10,000.<a href="russellbio.html#f1" class="foot">1</a> 
+</p><p>
+The fortunes of the Bedfords at court improved under James. Edward was released from house arrest, although he preferred life on his country estates, rather than at court. Lady Bedford, by contrast, was a highly-skilled career courtier, and clearly had the confidence of her husband, who entrusted her with the business of improving their fortunes at court, while he remained at home, on their estates. At the accession, when James I and VI's queen consort, Anna, was making her way to England, an unofficial party of aristocratic women - Lady Bedford, her mother, Lady Anne Harington, her aunt, Lady Sarah Hastings, and the 'Ladie Cecil', probably her first cousin, Lady Theodosia Cecil (nee Noel) - stole a march on the official part of women to attend the new queen on her journey.    
+</p><p>
+This bold manoeuvre was successful and ensured that Lady Bedford was admitted to Anna's Privy Chamber before the Queen had arrived at Whitehall. It also worked to the advantage of the Harington family as a whole. Her father, Sir John, had also travelled to meet the King on his journey south and entertained him at one of his estates, Burley on the Hill. When Princess Elizabeth travelled to London she rested at the family home, Combe Abbey.  Father, mother and daughter worked together to ensure the family's continued prosperity under James. Sir John Harington was awarded the guardianship of Princess Elizabeth, and Lucy's brother, John, was admitted to the household of Prince Henry, becoming one of his close friends. Her cousins, Elizabeth and Anne Dudley, the step-daughter and daughter of her aunt, Theodosia Harington and Edward, Lord Dudley, were companions of Princess Elizabeth. They accompanied the Princess to Heidelburg after her wedding to Frederick, Elector Palatine, Anne marrying a German count, John Meinhardt de Schomberg in 1614/15.
+</p><p>
+Bedford was made one of Anna's chief gentlewomen, alongside Jane Drummond, and held the position of First Lady of the Bedchamber from 1604 to 1619. It allowed her to act as a patronage broker, although often dependent on her connections with powerful men, such as Sir Robert Cecil. Lady Bedford moved quickly to further the interests of kin. She placed kinswomen in the Queen's Privy Chamber and Bedchamber, including her maternal cousins, the two Bulstrode sisters, Dorothy and Cecilia, and her paternal cousin,  Lady Bridget Markham, daughter of her uncle, Sir James Harington.  She also seems to have placed her god-daughter, Lucy Goodere, daughter of Sir Henry Goodere, Donne's close friend, in the Queen's service.  Lady Bedford also acted on behalf of her husband's family, and passed on the letters to Queen Anne written by his great-aunt, Margaret Clifford, Countess of Cumberland, supporting the claim of her daughter, Anne, to her father's estate. Lady Anne Clifford wrote in her diary in 1603 that 'my Lady of <i>Bedford</i>... was so great a woman with the Queen as everybody much respected her, she having attended the Queen out of Scotland'.<a href="russellbio.html#f2" class="foot">2</a> By 1611, Chamberlain reported that she was 'now the Queenes only favourite'.
+</p><p>
+When only an infant, Claudius Holiband expressed high hopes for her learning under the careful guidance of her parents. Before her marriage, Michael Drayton addressed his <i>Matilda</i> (1594) to Lucy Harington, drawing on her connections with the Goodere family at Polesworth. The next year, after her marriage, he dedicated his <i>Endymion and Phoebe</i> (1595) to the Countess, then, the following year, his <i>Mortimeriados</i> (1596) and the first set of <i>Englands Heroicall Epistles</i> (1597). This was the last of his dedications to the Countess; there followed a conscious attempt on Drayton's part to renounce his earlier devotion to Lady Bedford: he removed all addresses to her from his <i>Mortimeriados</i> when republished as <i>The Barons Warres</i> (1603), and in <i>Idea, the Shepheard's Garland</i> (1606) he cursed the shepherdess Selena for her betrayal of the shepherd-poet Rowland for a new poet, the 'deceitefull <i>Cerberon</i>', often read as a figure for Ben Jonson. 
+</p><p>
+Jonson had been competing for the Countess's favour as early as 1599: in a verse epistle addressed to Elizabeth Manners, Countess of Rutland, he writes of the favour 'LUCY the bright' has bestowed on him, much to the envy of another poet, possibly Drayton. As a key player in Queen Anna's court, Lady Bedford worked with Jonson on court masques, performing in four of his masques - <i>The Masque of Blackness</i> (1605), Hymenaei (1606), <i>The Masque of Beauty</i> (1608), and <i>The Masque of Queens</i> (1609). However, for one of the first masques at Hampton Court, performed at Christmas in 1604, she recommended Samuel Daniel. When James broke his journey south at Burton on the Hill, Daniel had welcomed the new king with <i>A Panegyric Congratulatory</i>, a commission secured for him by Bedford. The Countess both directed and performed in Daniel's Christmas masque <i>The Vision of the Twelve Goddesses</i>, cementing her position at court as First Lady of the Queen's Bedchamber. 
+</p><p>
+Donne came to the attention of Lady Bedford sometime around 1607. His introduction to the Countess was probably made via their mutual friend, Sir Henry Goodere.  Jonson also helped to facilitate this relationship, presenting a manuscript booklet of Donne's satires to Bedford, with his own introductory epigram, addressed to 'Lucy, you brightness of our sphere'. The satires were seemingly requested by Bedford, since, as Jonson notes, the book was 'desir'd by you'. Between 1608 and 1612, Donne was a frequent guest at Bedford's London house and at her country estate, Twickenham; Bedford even acted as godmother to his daughter, Lucy, also named in her honour, who was baptized on 8 August, 1608. During this period, Donne and Bedford exchanged verse, however, aside from the paired elegies for Cecilia Bulstrode, none of Bedford's verse has survived.  
+</p><p>
+The coterie that gathered round Bedford overlapped with Queen Anna's court and this connection added to its prestige.  The new queen's court was known for its enthusiastic game playing. Lady Arbella Stuart wrote disparagingly on 8 December 1603 of 'certein childeplayes' popular at court that Christmas:
+</p>
+<div class="indent">
+<p>
+... I was by the mistresse of the Revelles not onely compelled to play at I knew not what for till that day I never heard of a play called Fier. but even perswaded by the princely example I saw to play the childe againe. This excercise  I most used from .10. of the clocke at night till .2. or.3. in the morning but that day I made one it beganne at twilight and ended at suppertime. Thear was an enterlude but not so ridiculous (as ridiculous as it was) as my letter...<a href="russellbio.html#f3" class="foot">3</a>
+</p>
+</div>
+<p>
+It is possible that the 'mistresse of the Revelles' was Bedford, given her status within the Bedchamber and her role in commissioning the early masques for Anna's court. Queen Anna's court seems to have fostered the formation of a circle of female wits, presided over by the Countess of Bedford. This circle seems to have been active in the last years of Elizabeth's reign before the formation of Anna's court.<a href="russellbio.html#f4" class="foot">4</a> Bedford's kinswoman, Cecilia Bulstrode, also appears to have been a key player. In 1602, she was the addressee of a love elegy attributed to Sir John Roe, and was praised for her wit. She was also the subject of Jonson's epigram on the 'Court Pucelle'; an epigram so nasty that he later appears to have regretted penning it - it remained unpublished during his lifetime and was printed posthumously in <i>Underwood</i> (<i>Works</i>, 1640). Subsequent readers of the epigram have tended to assume degree of truth to its accusations of sexual licence. Hence, with scant evidence, Bulstrode has been cast as the lover of Sir Thomas Roe.<a href="russellbio.html#f5" class="foot">5</a>  
+</p><p>
+The wider grouping that constellated around Lady Bedford was composed of both female and male wits, some of whom sought or enjoyed the patronage of Lady Bedford, or were her kinsmen, including Jonson, Donne, Francis Beaumont, Sir John Roe, Sir Thomas Overbury, Sir Edward Herbert, Lord Cherbury, William Herbert, Earl of Pembroke, and Sir Benjamin Rudyerd . The games of 'newes' and the 'characters' published by Laurence L'isle in <i>Sir Thomas Overbury, His Wife</i>, are subscribed by sets of initials that map onto a grouping of female and male wits; although these attributions have been questioned,<a href="russellbio.html#f6" class="foot">6</a> such literary games are in keeping with activities of this network. Writing to request copies of Bedford's verse, that she was keeping to herself because she repented their 'making', Donne's description of their subject matter suggests that they were satires: 'They must needs be an excellent exercise of your wit, which speake so well of so ill.'<a href="russellbio.html#f7" class="foot">7</a>  Jonson's epigram commending Donne's satires to the Countess, similarly praised her judgement as so discriminating precisely because it could appreciate satire. 
+</p><p>
+1609 marked the beginning of a difficult period for Bedford. Two of her kinswomen and companions at Queen Anna's court, Lady Bridget Markham and Cecilia Bulstrode, died. Bedford's cousin, Lady Markham, was thirty when she died at Twickenham on 4 May. Donne and Beaumont wrote elegies for Markham possibly to coincide with her funeral on 19 May. Exactly three months later, Cecilia Bulstrode died at Twickenham on 4 August after an illness which left her vomiting, with a high fever, and in a great deal of pain. Possibly because Bulstrode's death came so quickly after that of Markham, thus intensifying the Countess's grief, a comparatively large number of elegies and epitaphs were written in her memory. George Garrard seems to have taken on the role of soliciting verses from those within circle as is suggested by a letter written by Jonson that accompanied his epitaph, which notes that Garrard's servant is waiting for his verse as he writes. Lady Bedford's kinsman, Edward Herbert, Lord Cherbury, also composed an elegy. Donne produced three elegies for Bulstrode, including one of a set of paired elegies with Lady Bedford. 
+</p><p>
+A series of deaths and serious illnesses followed. Her daughter died soon after her birth in 1610, and Bedford's miscarriage in 1611 was followed by a serious illness, possibly a stroke, in 1612. She returned to court in August 1613 only to hear soon after of her father's death in Worms, on his return journey from escorting Princess Elizabeth to Heidelberg following her marriage. Just six months later, her brother, Sir John Harington, died of smallpox. Her father had died leaving the family estate encumbered by debts of around &#163;40,000, which her mother, Anne, settled, in part, by selling the family's main estate at Exton. 
+</p><p>
+Following the deaths of her father and brother, Lady Bedford formed alliances with powerful men at court, such as her kinsman, the Earl of Pembroke and Marquis of Hamilton, in order to help her defray the family debts. Queen Anna's death in 1619 released Bedford from service in the Queen's Bedchamber and the requirement of attendance at court. However, the 1620s were one of her most intense periods of political manoeuvring at court.  With the exile of Princess Elizabeth following the defeat of Frederick's forces at the Battle of the White Mountain in 1619, Lady Bedford became one of her most active supporters at court during the 1620s. She died on 26 March 1627, a few months after her husband. 
+</p>
+
+<div class="bibliography">
+
+<h3>
+Bibliography:
+</h3>
+<p>
+Nadine Akkerman, 'The Goddess of the Household: The Masquing Politics of Lucy Harington-Russell, Countess of Bedford', <i>The Politics of Female Households: Ladies-in-Waiting across Early Modern Europe</i>, edited by Nadine Akkerman and Birgit Houben. Leiden: Brill, 2013, pp. 287-309.
+</p><p>
+Barbara Lewalski, <i>Writing Women in Jacobean England.</i> Cambridge, MA: Harvard University Press, 1993.
+</p><p>
+Helen Payne, 'Aristocratic Women and the Jacobean Court, 1603-1625', Unpublished PhD thesis, Royal Holloway College, University of London, 2001.
+</p>
+</div>
+<div class="footnotes">
+<ol>
+<li>
+<a id="f1"></a> Helen Payne, 'Aristocratic Women and the Jacobean Court, 1603-1625', Unpublished PhD thesis, Royal Holloway College, University of London, 2001, pp. 25-6.
+</li><li>
+<a id="f2"></a>  Anne Clifford, <i>Diaries of Lady Anne Clifford</i>, ed. D.J.H. Clifford (Stroud: Alan Sutton, 1990), 23.
+</li><li>
+<a id="f3"></a> <i>The Letters of Lady Arbella Stuart</i>, edited by Sara Jayne Steen (New York and Oxford: Oxford University Press, 1994), p. 193
+</li><li>
+<a id="f4"></a> Melanie Faith notes Bedford's involvement in a court coterie as early as 1601, "Correcting the Date of the 'Conceited <i>Newes</i>'", Notes and Queries, 53 (2006): 505-8.
+</li><li>
+<a id="f5"></a> R.C. Bald, <i>John Donne, A Life</i> (Oxford: Clarendon Press), pp. 177-8.
+</li><li>
+<a id="f6"></a> John Considine, 'The Invention of the Literary Circle of Sir Thomas Overbury', in <i>Literary Circles and Cultural Communities in Renaissance England</i>, eds. Claude J. Summers and Ted-Larry Pebworth (Columbia: University of Missouri Press, 2000), 59-74. However, Considine's dismissal of the playing of games of news at Queen Anne's court is contradicted by the evidence provided by Louise Schleiner in her <i>Tudor and Stuart Woman Writers</i> (Bloomington and Indianapolis: Indiana University Press, 1994), 107-63.
+</li><li>
+<a id="f7"></a> John Donne, <i>Letters to Several Persons of Honour</i> (1651), pp. 67-68.
+</li>
+</ol>
+</div>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

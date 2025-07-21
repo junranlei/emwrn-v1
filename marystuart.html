@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=marystuart&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="writer-home-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="14" class="authorheading">Mary Stuart</h2><p><strong>Contributor:</strong> <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a></p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 2 da marystuart">
+                                <p>
+Mary Stuart, Queen of Scots (1542-1587) is the author of devotional and secular lyrics in the forms of the couplet, quatrain, sonnet and meditation. She circulated her own work in manuscript and print, as well as had multiple texts attributed to her and circulated under her name during her lifetime and beyond.
+</p>                     <ul class="nav">
+                                <li><a href="da/index.php%3Fcontent=stuartbio.html">Biography</a>
+                                </li>
+                                <li><a href="da/index.php%3Fcontent=stuarthistory.html">Textual History</a>
+                                </li>
+                            </ul>
+                    <h3>Poems Written By Mary Stuart</h3>
+                    
+                    
+                    <ul class="nav">
+                                            <li><a href="da/index.php%3Fcontent=lorrainequatrain.html">Quatrain in Anne of Lorraine's Book of Hours</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=hours.html">Quatrains in Mary Stuart's Book of Hours</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=horae.html">Marginalia</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=meditation.html">Meditation on the Inconstancy and Vanity of the World, Sonnet "L'ire de Dieu" and Sonnet to the Bishop of Ross</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=ronsard.html">Sonnets and Verse to Ronsard</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=fotheringay.html">Sonnet written at Fotheringay Castle</a>
+                    </li>
+                    </ul>
+                    <h3>Poems Of Uncertain Attribution</h3>
+                    <ul class="nav">
+                                            <li><a href="da/index.php%3Fcontent=francis.html">Ode on the Death of Francis II</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=diamond.html">Adamas Loquitur, The Diamond Speaks</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=casketsonnets.html">Casket Sonnets</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=toqueenelizabeth.html">Sonnet to Elizabeth I, in Italian and French</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=publicrecordoffice.html">Quatrains held at the Public Record Office</a>
+                    </li>
+                    </ul>
+
+
+                            </div>  
+                        </div>
+                        <div class="index">
+                            <h3>Index:</h3>
+                            <ul class=""><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="stuartbio.html">Biography</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="stuarthistory.html">Textual History</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="lorrainequatrain.html">Quatrain in Anne of Lorraine’s Book of Hours</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="hours.html">Quatrains in Mary Stuart’s Book of Hours</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="horae.html">Marginalia</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="meditation.html">Meditation on the Inconstancy and Vanity of the World, Sonnet “L’ire de Dieu” and Poem “A L’Evesque de Rosse”</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="ronsard.html">Sonnets and Verse to Ronsard</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="fotheringay.html">Sonnet written at Fotheringay Castle</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="francis.html">Ode on the Death of Francis II</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="diamond.html">Adamas Loquitur, The Diamond Speaks</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="casketsonnets.html">Casket Sonnets</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="toqueenelizabeth.html">Sonnet to Elizabeth I, in Italian and French</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="publicrecordoffice.html">Quatrains held at the Public Record Office</a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

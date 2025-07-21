@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=diamond&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="marystuart.html">Mary Stuart</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="14" class="authorheading">Mary Stuart</h2><h3>Adamas Loquitur, The Diamond Speaks</h3><p><strong>Contributor:</strong> <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a></p><p><strong>Date:</strong> 1579</p><p><strong>Material:</strong> Print</p><p><strong>Description:</strong> Latin text translated from Mary's French poem (lost).</p><p><strong>Source:</strong> Sir Thomas Chaloner, <i>De Republica Anglorum Instauranda</i> (London, 1579), p. 353. </p><p><strong>Permissions:</strong> © The British Library Board. All Rights Reserved. General Reference Collection 1070.m.31.(1.) p. 353.</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 14 da diamond">
+                                  <script type="text/javascript" src="scripts/concertinaColumns.js"></script>
+  
+
+  <div class="digarch">
+  
+  <!-- C O N T E N T -->
+  <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+  <!-- APMS: End Header Start Content -->
+  
+  <!-- Body inserted here. -->
+  
+
+      <div id="search">
+        <p>Select versions to display:<br />
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription
+		<input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 2);" /> Translation
+       	<br /><br />
+        <!-- <input name="checkbox" type="checkbox" value="checkbox"
+        	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+        	-->
+      </div>
+
+  
+  
+  <div>
+  
+  
+  
+  
+    <table class="content" id="general">
+  <tr class="shade">
+  	<th style="min-width: 200px;">Images</th>
+  	<th style="min-width: 380px;">Transcription</th>
+	<th style="min-width: 380px;">Translation</th>
+  </tr>
+
+<tr>
+<td>
+<a href="da/stuart/img/stuart_diamond/stuart_diamond_353.jpg"><img src="da/stuart/img/stuart_diamond/stuart_diamond_353-lowres.jpg" alt="text" /></a>
+</td><td>
+<div class="center">
+Translatio Qvorvndam Car-
+<p>
+minum quæ Gallico primum sermone conscri-
+</p><p>
+pta, à serenissima Scotiae Regina in mutuae
+</p><p>
+amicitiæ pignus, vnà cum excellentis
+</p><p>
+operis Annvlo, in quo insignis
+</p><p>
+adamas prominebat, ad Se-
+</p><p>
+reniss. Anglię Reginam
+</p><p>
+Elizabetham missa
+</p><p>
+fuerant.
+</p><p>
+Adamas loquitur.
+</p>
+</div>
+<p>
+Non quia duritie superem ferrúmque focúmque,
+</p><p class="indent">  Sculpta nec artificis glorior ipsa manu,
+</p><p>Nec quia gemma nitens operoso cingar ab auro
+</p><p class="indent">  Pura quidem, & Phœbi sydere candidior :
+</p><p>Sed potiùs cordi similis mea forma, quòd ipsum
+</p><p class="indent">  Cor Dominæ, excepta duritie, exhibeat.
+</p><p>Nam quod ab oppositis non vincitur, & sine næuis
+</p><p class="indent">  Candida quod tota est, his ego, & illa, pareis.
+</p><p>Credere quis possit ? postquàm me emiserat illa,
+</p><p class="indent">  Mi Dominam rursus posse placer nouam ?
+</p><p>Sed placet : hoc faustæ fælix en debeo sorti,
+</p><p class="indent">  Me Regina iterùm, nec minor ista, tenet.
+</p><p>O vtinam ambarum benè possem adamantina vincla,
+</p><p class="indent">   (Ore fauete omnes) cordibus inijcere.
+</p><p>Quæ neque liuor edax, neque falsis acta susurris
+</p><p class="indent">  Suspicio, aut caries temporis vlla, terant.
+</p><p>Tunc ego ab Eois dicar celeberrima gazis,
+</p><p class="indent">  Hic etiam gemmas vincere præcipuas.
+</p><p>Tunc ego perstringam tremulo fulgore coruscans,
+</p><p class="indent">  Adstantúm, immissis lumina seu radijs.
+</p><p>Tunc ego seu pretio, seu quæ me prouocet arte,
+</p><p class="indent">  Gemma, adamas firmo robore prima ferar.
+</p>
+</td><td>
+<p>
+A translation of certain verses first written in French that had been sent by the most Serene Queen of Scotland to the most Serene Queen Elizabeth of England as a pledge of mutual friendship, together with a ring of excellent workmanship that had a striking and extraordinary diamond.
+</p><p>
+The diamond speaks
+</p><p>
+It is not because of the hardness by which I overcame both fire and metal,
+</p><p>
+Or because of pride in the cut itself, produced by a craftsman’s hand;
+</p><p>
+Nor, indeed, is it because of the pure jewel, shining out of the circle of 
+</p><p>
+Artfully wrought gold, more dazzling than Phoebus’ light.
+</p><p>
+But rather because my shape is like that of a heart, which my Lady’s
+</p><p>
+Heart itself resembles, although without the hardness.
+</p><p>
+For no victory comes from contraries, and because so great a purity
+</p><p>
+Is without blemish, I and she in this are equals. 
+</p><p>
+Who could believe that after she sent me forth,
+</p><p>
+My new Lady would in turn find pleasure in me? 
+</p><p>
+But that’s pleasing! Look, for this I am happy and thankful for my fortunate fate: 
+</p><p>
+One queen possesses me, then does another, of no lesser worth. 
+</p><p>
+O that I might join both their hearts with adamantine bands
+</p><p>
+(although you all favour gold).
+</p><p>
+Neither consuming envy, nor mistrust created by deceitful whisperings,
+</p><p>
+Nor time-induced decay wears those away. 
+</p><p>
+Then shall I be called the most famous treasure from the East,
+</p><p>
+For this reason excelling extraordinary jewels.
+</p><p>
+Then shall I, glittering in flickering splendour,
+</p><p>
+Or with the light cast by my rays, dazzle those who are standing by.
+</p><p>
+Then shall I be considered, either on account of my worth, or the art which produced me,
+</p><p>
+The greatest jewel, a diamond of indestructible strength.
+</p>
+</td>
+
+</table>
+  
+
+  
+  	</div>
+  </div>
+  
+  
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

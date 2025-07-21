@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=russellhistory&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="40" class="authorheading">Lucy Russell</h2><h3>Lucy Russell-Harington, Countess of Bedford, 'Death be not proud'</h3>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 40  russellhistory">
+                                <h3>
+1.	Introduction:
+</h3>
+<p>
+The paired elegies, John Donne's 'Death I recant' and 'Death be not proud', attributed to Lucy Russell, Countess of Bedford, are unusual in that surviving examples of verse exchanges between patrons and their clients are comparatively rare in early modern England. These  elegies by Donne and  Lady Bedford were occasioned by the death of two of Bedford's friends, kinswomen and fellow members of Queen Anne's court, Lady Bridget Markham and Cecilia Bulstrode, who within a few months of each other, on 4 May and 4 August, in 1609. Rather than simply marking a personal tragedy, these elegies were part of a scribal publication project, which was at some level orchestrated by Bedford. At least eleven elegies and epitaphs were written for the two women and, given their survival rate in manuscript miscellanies, appear to have circulated widely. The authors of two, for Lady Markham, are unknown; the others were written by Donne, who composed three elegies for Bulstrode, and one for Markham; Jonson, who wrote an epitaph and an elegy for Bulstrode; Edward Herbert, Lord Cherbury, who produced an elegy for Bulstrode; and Francis Beaumont who penned an elegy for Lady Markham. Nicholas Hare's epitaph, 'Heere do repose, but in lamented waste', circulates without title and could have been written for either Bulstrode or Markham. 
+</p><p>
+There are, of course, other funeral elegies that were popular in manuscript miscellanies. What is unusual in this case is the composition of a range of elegies and epitaphs by a distinct group of poets. While obviously few in comparison with the number produced for Sidney or Elizabeth I, nonetheless, it is difficult to think of individuals of similar standing at court whose deaths occasioned this number of elegies. Because of this, this phenomenon can be understood in terms of a coterie publication event. There does seem to have been a degree of organisation to this process. Jonson's letter to George Garrard sketches out a scenario in which Garrard has requested verses on Bulstrode and his man waits while he writes an epitaph on Bulstrode, 'Stay, view this stone':
+</p>
+<div class="indent">
+<p>
+See what the obedience of freindship is, and the hazard it runnes. This I haue done, streightened w<sup>th</sup> time (as yo<sup>r</sup> Man knowes) to let you know yo<sup>r</sup> power in mee. If it be well, as I thinke it is, for my invention hath not cooled so much to iudge, show it, though the greater Witts haue gone before. It hath somewhat in <i>moris antiqui</i>, and suggesting the sodaynesse of it may passe, for till your Letter came, I was not so much acquainted w<sup>t</sup>h the sad argument, w<sup>c</sup>h both strooke me and keepes me a heauy man, Would God, I had seene her before the some y<sup>t</sup> liue might haue corrected some preiudices they haue had iniuriously of mee. By your next commodity, write me yo<sup>r</sup> liking of it, and some newes; I will answere it wth yo<sup>r</sup> other request if I can for my businesse, w<sup>c</sup>h is now very waighty to mee, by reason of some embarquings.<a href="index.php%3Fcontent=russellhistory.html#f1" class="foot">1</a> 
+</p>
+</div>
+<p>
+ It is possible that Garrard was not acting on his own behalf, but had been commissioned with this task. Jonson refers to 'the greater Witts that haue gone before', suggesting that his act of composition was part of a process which involved the production and gathering of other verses to mark the event - a supposition that is borne out by the grouping of elegies on Bulstrode, produced by poets closely associated with Bedford. 
+</p><p>
+What was Lady Bedford's part in this publication event? Arguably, the deaths of Bulstrode and Markham only prompted such a literary response because these women were valued by Bedford. She is the privileged recipient of these verse tributes, and their primary reader. Lady Bedford initiated this publication event, whether directly, by making it known such a poetic outpouring of grief would be welcome, or indirectly, through the prospect of favour. Moreover, she not only took up the position of privileged interpreter of the verse offered to her, but also claimed for herself an authoritative role in this publication event as the primary poetic mourner. She did so by composing her own elegy for Bulstrode, 'Death be not proud thy hand gave not this blow'. While it is part of a verse dialogue, it is more than a closed conversation between Lady Bedford and Donne. Rather, this deliberately corrective response has a wider purpose; it is a self-styled intervention that acknowledges and defines Lady Bedford's social, moral, religious, and literary authority as the principal mourner who presides over, and so speaks for and to the community assembled in the elegies.   
+</p><p>
+ 'Death be not proud' is the only known verse that can be attributed with any confidence to Lady Bedford. The letters and verse of John Donne allude to other verses composed by Bedford, but if they survive, they are buried in the mass of unascribed verses that populate manuscript miscellanies. When Donne promises in a letter to Bedford, written after he was shown some of her poems at Twickenham, 'that I will not show them' and 'nothing should be so used that comes from your brain or breast', he is describing a very restricted form of manuscript circulation, in which verses are only shown to a very select few, who in turn take great care not to circulate them.<a href="index.php%3Fcontent=russellhistory.html#f2" class="foot">2</a> In this case, such tightly closed circuit of coterie transmission is structured by the contract between patron and client. A significant feature of Bedford's elegy is that, unlike this other private 'coterie' poetry, it does appear to have been published in scribal channels, given its presence in a number of manuscript miscellanies. The comparative visibility of this elegy suggests that Bedford through this publication event was asserting her social and creative precedence as the chief mourner for her kinswomen within these literary exchanges.
+</p>
+<h3>
+2.	The Manuscript Transmission of 'Death be not proud'
+</h3>
+<p>
+From the surviving evidence, when Bedford's elegy enters into the channels of scribal publication, it is contextualized in two distinct ways. There are only two surviving copies, which attribute the poem in the headnote to 'C: L: of B:'. Although initials are used, they are identifiable, and Lucy, Countess of Bedford's authorship of 'Death be not proud' is acknowledged rather than occluded. It should be said, these two miscellanies - Harley 4064 and Rawlinson poetry 31 - share many poems and are closely related. Significantly, in both cases, the relationship with Donne's 'Death I recant' is severed; instead 'Death be not proud' circulates as an elegy by Lucy, Countess of Bedford in its own right. Interestingly, both headnotes also claim that the subject is Lady Markham rather than Bulstrode. The interchangeability of the dead suggests that the key figure is Bedford, and the dead women are only significant in relation to her. 
+</p><p>
+When 'Death be not proud' is copied into manuscript miscellanies of the 1620s and 1630s, which are consciously collecting Donne's verse, in that a very high percentage of the poetry in the miscellany is attributed to Donne by the compiler, Bedford's authorship is occluded. In three of these manuscript miscellanies - Norton, Stowe 962 and Phillips - 'Death be not proud' is copied after Donne's 'Death I recant' without any indication that it is a separate poem. With the two poems conjoined, as if one, Bedford's elegy becomes supplementary to Donne's poem, and it is his 'authorship' that determines its inclusion in the miscellany. This may, of course, also tell us something about how these poems were circulated, perhaps copied on the same sheet so that through the process of transmission the markers separating the two poems disappeared. Hence, it is not surprising that 'Death be not proud' is published as Donne's own composition, as his 'Elegie on Mistris Boulstred', in the 1635 posthumous volume of his poems. 
+</p>
+<h3>
+3.	Descriptive List of Manuscripts:
+</h3>
+<p>
+<strong>Bod. Eng.poet. f. 9.</strong> The Phillips MS, an octavo verse miscellany, 243 pages, dated 1623 on the first page, compiled by Henry Champernowne (1600-56), of Dartington, Devon in the 1620s. Of the 128 texts, 94 are poems by Donne, and the miscellany also includes some of his <i>Paradoxes and Problems</i>, alongside verse by Jonson, Wotton, Raleigh, Ayton, William Herbert, Earl of Pembroke and Sir Benjamin Rudyerd. Donne's 'An Elegie funerall on Mrs. /Boulstreds death', ('Death I recant; and say vnsayd by mee') (pp. 119-122) is followed 'Death bee not proud, thy hand giues not his blow' (pp. 122-124) without attribution to Lady Bedford or any typographical indication, such as a separate title or ruled line, that it is a separate poem. On the Phillips Manuscript, see Marotti, <i>Manuscript, Print, and the Renaissance Lyric</i>, p. 41.
+</p><p>
+<strong>Bod. Rawl. poet.31.</strong> A folio verse miscellany, 56 leaves, bound in limp vellum, produced in a professional scriptorium by the 'Feathery Scribe'. The paper stock used for Rawlinson bears the grape watermark, which has been dated to 1633/34. The miscellany collects poetry exclusively from the 1590s to around 1610 and is highly unusual for a verse compilation produced in the mid to late 1630s in that it does not include any verse from a younger, Caroline generation of poets. The collection includes a number of rare verses by Jonson and Edward Herbert, Lord Cherbury, alongside other poems by Donne, Francis Beaumont, Sir John Roe, William Herbert, Earl of Pembroke, and Sir Benjamin Rudyerd.  'Death bee not proud, thy hand gaue not this blowe' (ff. 39r-v) is given the headnote 'Elegie on the Ladye Marckham, by L: C: of : B:'. It is copied after Francis Beaumont's To the Countesse of Rutland ('Maddam: / Soe maye my verses pleasinge bee') (ff. 37v-9) and followed by Donne's 'Witchcraft by a picture', here given the title 'Songe' ('I ffix myne eye on thine, and their') and his verse epistle, given the headnote 'To the Countesse of Bedford', ('Maddam: / Reason is our soules best hand, ffaith in right') (ff. 39b-40). Donne's elegy on Bulstrode 'Death I recant', is not included in the collection, however, his other elegy on Bulstrode, 'Language thou art too narrow' (ff. 45-6v), and the epitaphs of Jonson, 'Stay, view this stone' (ff. 36r-v), and  Herbert, 'Methinks Death like one laughing lyes' (ff. 36v-7), are included in this section of the miscellany. See Peter Beal, <i>In Praise of Scribes: Manuscripts and their Makers in Seventeenth-Century England</i> (Oxford, 1998), pp. 91-2, 104, 277.
+</p><p>
+<strong>BL, Harley 4064.</strong> A quarto sammelb&auml;nde, 308 leaves, that includes a verse miscellany in two secretary hands, whose foliation runs from ff. 230r-99v, and was copied between around 1610-12. This section of verse shares not only a large number of the poems it collects, but also their order with Rawl. poet.31. Mark Bland argues that Harley and Rawlinson are related 'via an earlier state of the underlying papers', and that Harley is the earlier of the two. He surmises that, since it is the product of two copyists working closely together, the second of which was not a professional scribe, it is therefore likely that the miscellany was produced within a household, rather than within a scriptorium. Donne's elegy on Bulstrode, 'Death I recant' (ff. 260r-v), is copied into the miscellany at some distance from 'Death be not proud, thy hand gaue not this blow' (ff. 269r-v), which is given the headnote, 'Elegye on the Lady Markham / by C: L: of B.'. Epitaphs on Bulstrode by Jonson, 'Stay, view this stone' (f. 261v), and  Herbert, 'Methinks Death like one laughing lyes' (ff. 261v-2r),  and Donne's 'An Elegie on ye Lady Markhm , 'Man is the world, and death the' Ocean' (ff. 264v-5v), and his other elegy on Bulstrode, 'Language thou art too narrow' (ff. 284-5v), are also included in the collection. Unlike Rawl. poet.31, in the final section of the compilation (ff. 270-99v), the poetry copied is almost exclusively that of Donne. See Mark Bland, <i>A Guide to Early Printed Books and Manuscripts</i> (Oxford, 2010), p. 101.
+</p><p>
+<strong>BL, Stowe 962.</strong>  A quarto verse miscellany, 254 leaves, copied in one or more hands, with a first-line index (ff. 244r-54r). Poems copied near the beginning and end of the miscellany are dated 1637 (ff. 34v and 242v). It was once probably two distinct miscellanies, the first in a secretary hand (ff. 1-36), the second (ff. 37-243) mixes secretary and italic. Both miscellanies include a large number of poems by Donne, including his <i>Paradoxes and Problems</i>, as well as poems by Beaumont, Herbert, Pembroke, and Thomas Carew.  Donne's 'Death I recant & say vnsayd by me' (ff. 93-94) is untitled, and divided by hand drawn lines in the margin from the preceding poem, which is his other elegy on Bulstrode, 'Language thou art too narrow', here given the title An 'Elegie vppon the death of M<sup>rs</sup>: Boulstred'. There is no line or any other mark dividing 'Death I recant' from 'Death be not proud thy hand gaue not this blow' (ff. 94-95), which therefore becomes a continuation of Donne's elegy. It is followed in the miscellany by Donne's <i>Satyre II, Satyre I, Satyre III, Satyre IV</i> and <i>Satyre V</i>.  See Eckhardt, <i>Manuscript Verse Collectors</i>, pp. 33-6, 244-7.
+</p><p>
+<strong>Cambridge,  Add. MS. 8468.</strong> The Narcissus Luttrell MS, signed 'Nar. Luttrell His Book 1680' (f. 1) - Luttrell (1657-1732) was a book collector.  A quarto anthology, 125 leaves, in one hand, compiled around 1632, and bound in limp vellum. The majority of poems are by Donne, with a few poems by Jonson and others. The poems are copied in a section of epitaphs and elegies, including Donne's elegy on Lady Markham, 'Man is the World, and death th'Ocean'. Donne's Death I recant, & say vnsayd by me (ff. 47-48) is given the title 'Upon ye death of Mrs Boulstredd' and divided from 'Death bee not proude, thy hand gaue not this blowe' (ff. 48r-48v) by a broken hand drawn line. This poem is followed by Donne's other elegy on Bulstrode, 'Language thou art too narrow, and too weake' (ff. 48v-9v), given the heading 'Another upon the same', then Jonson's epitaph, 'Stay, view this stone' (f. 49v), with the heading 'Vpon the same', and Donne's elegy for Lady Bedford's brother, Sir John Harington, 'Faire soule, which wast, not onely, as all soules bee' (ff.50-4), and the accompanying prose epistle to Bedford. 
+</p><p>
+<strong>Harvard, MS. Eng. 966.1.</strong> The Norton MS. 4502 or the Carnaby MS. A folio volume, 99 pages, in a single hand, bound in limp vellum, compiled from the 1620s into the early 1630s. This anthology of predominantly Donne verse is thought to have been owned by a member of the family of Sir Henry Rainsford (1575-1622), who was the brother-in-law of Donne's close friend, Sir Henry Goodyer, on the basis of inscription inside the back cover, 'J. D. Dune Rainsford'. Donne's elegy on Bulstrode is preceded by his love elegy addressed to Bedford, 'You that are she and you, that's double shee' (pp. 84-5), which is given the title 'An Elegie to the Ladie Bedforde', and subscribed 'J. D.'. His 'Deathe I recant, and say vnsaide by me' (pp. 85-7) is given the title 'Another Elegie on the deathe / of M:<sup>rs</sup> Boulstred', and 'Deathe be not proud thy hand giues not this blowe' (pp. 87-8) is copied immediately after this elegy without any indication that it is a separate poem. It is followed by Donne's 'Man is the World, and death th' Ocean', which is given the headnote 'A Funerall Elegie vppon the Ladie Markeham' (pp. 89-90), and subscribed 'J. D'.
+</p><p>
+<strong>Huntington, EL 6893</strong>. The Bridgewater MS, once owned by John (1579-1649) and Frances (1583-1636) Egerton, the Earl and Countess of Bridgewater. A small quarto anthology, 185 leaves, bound in vellum. It is copied in a single hand, with corrections possibly in a second hand, and compiled from around 1622 to the early 1630s. John Egerton was a friend of Donne's, and the poems in the collection are predominantly his, as well as some of his <i>Paradoxes and Problems</i> and <i>Characters</i>.  Instead of 'Death I recant', 'Death be not proud' is preceded by Donne's 'Language, thou art to narrow & to weak' (ff. 26v-27v'), which is given the headnote 'An Elegie vpon ye death of M<sup>ris</sup> Bowlstred'. Donne's elegy is copied after Jonson's epitaph for Bulstrode, 'Stay, view this stone' (f. 26r-v), given the title, 'On the death of Mris Boulstred' and Nicholas Hare's epitaph, possibly written for Bulstrode, 'Heere do repose, but in lamented waste'. 'Death be not proud, thy hand gaue not this blow' (ff. 27v-28) is separated from Donne's elegy by a curlicue and subscribed 'I. B', presumably denoting Lady Bedford.
+</p><p>
+<strong>Yale, b 148.</strong> The Osborn MS. An octavo anthology, 150 pages, in a single neat hand, compiled from the 1620s to early 1630s. The compiler collects the verse of Donne, including some of his <i>Paradoxes and Problems</i>, many ascribed to 'J. D', and others, including Wotton, Harington, Jonson, John Hoskins, Drayton, and Pembroke. Donne's 'Death I recant & say vnsaid by mee' (pp. 117-18), given the headnote, 'An Eligie ffunerall one ye Death of Mrs Boulstred', is copied after Donne's 'The Curse', 'Who ever guesses, thinks, or dreames he knowes', here given the title, 'Dirae'. 'Death bee nott proude thy hand giues nott this blowe' (pp. 118-19) is copied immediately after Donne's elegy, with no indication that it is a separate poem, and subscribed 'I: D: ffinis', marking the two elegies as one. It is followed by Donne's 'Man is this world & death the Ocean' (pp. 119-21), which is given the title 'An Eligie ffunerall vppon y<sup>e</sup> Lady Markham'.
+</p>
+<div class="bibliography">
+<h3>Bibliography:</h3>
+<p>
+<i>CELM: Catalogue of English Literary Manuscripts, 1450-1700</i>, compiled by Peter Beal. <a href="http://www.celm-ms.org.uk/">http://www.celm-ms.org.uk/</a>
+</p><p>
+Joshua Eckhardt, Manuscript Verse Collectors and the Politics of Anti-Courtly Love Poetry. Oxford: Oxford University Press, 2009.
+</p><p>
+Arthur Marotti, <i>Manuscript, Print, and the English Renaissance Lyric.</i> Ithaca and London: Cornell University Press, 1995.
+</p>
+</div>
+<div class="footnotes">
+<ol>
+<li><a id="f1"></a>  Quoted in Percy Simpson, 'Ben Jonson and Cecilia Bulstrode', <i>TLS</i>, 6 March 1930, p. 187.
+</li><li><a id="f2"></a>  John Donne, <i>Letters to Several Persons of Honour</i>  (1651), pp. 67-8
+</li>
+</ol>
+</div>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

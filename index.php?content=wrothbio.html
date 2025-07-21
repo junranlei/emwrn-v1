@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=wrothbio&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="marywroth.html">Mary Wroth</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="15" class="authorheading">Mary Wroth</h2><h3>Biography</h3>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 15  wrothbio">
+                                <p>
+The standard biography is Margaret P Hannay, <i>Mary Sidney, Lady Wroth</i> (Farnham: Ashgate, 2010), to which what follows is greatly indebted. The following biography is abbreviated from the contextual biography that prefaces Paul Salzman's on line edition of Wroth's poetry: <a href="http://wroth.latrobe.edu.au/contextual-biography.html">http://wroth.latrobe.edu.au/contextual-biography.html</a>.
+</p><p>
+Mary Wroth was a remarkable member of a remarkable family. Wroth’s uncle, Sir Philip Sidney, who died the year before she was born, was a formidable writer, although his political fortunes did not match his abilities. The Sidney family were not unusual in being subject to the political vicissitudes of the sixteenth century, but they were perhaps entitled to feel that their talents were not rewarded as they might have expected them to be. Philip’s father, Henry Sidney, was a member of a gentry family, and his father, William, had been knighted by Henry VIII for bravery shown in the war against the French. William was also granted Penshurst, the family seat that was to be celebrated in Ben Jonson’s poem ‘To Penshurst’. In 1551 Henry Sidney married Mary Dudley, eldest daughter of the then powerful John Dudley, Earl of Warwick. The connection with the Dudley family was partially responsible for the ebb and flow of the Sidney family fortunes: they benefited from John Dudley’s increasingly powerful position late in the regency of Edward VI, but had to negotiate their way through the aftermath of Dudley’s failed attempt to place Jane Grey (who was married to his son) on the throne. The family managed to avoid disaster under the reign of Mary and their fortunes initially rose again with the accession of Elizabeth in 1558. Henry Sidney was made Lord Deputy of Ireland in 1565 and his wife was a lady-in-waiting to the queen, although she avoided the court after a disfiguring attack of smallpox in 1562, which she apparently caught while nursing the queen through the illness. When Elizabeth ascended the throne, Henry Sidney’s two Dudley brothers-in-law, Ambrose, Earl of Warwick and Robert, Earl of Leicester, were treated with great favour. As Henry Sidney’s eldest son, Philip Sidney was, in the early years of Elizabeth’s reign, heir to both his uncles, as they then had no sons. Even more enticing in this period was the possibility that Leicester might marry the queen, following the scandalous death of his wife Amy in a fall in 1560. But from this point on, Leicester managed his relationship with Elizabeth badly, culminating in his messy affair with Lady Sheffield and a secret marriage in 1578 (when he had given up on thoughts of Elizabeth) to the Countess of Essex. 
+</p><p>
+During this time, Philip Sidney was groomed for great things, and his talents were recognised by intellectuals across Europe as he undertook a three-year grand tour from 1572 until 1575.<a href="index.php%3Fcontent=wrothbio.html#f1" class="foot">1</a> In 1575, Philip’s sister Mary, who was fourteen, made her first appearance at court – a favour extended by the queen to the family following the death at the age of ten of Philip and Mary’s sister Ambrosia. Mary was immediately popular at court; at the same time, Philip and Mary’s eleven year old brother Robert, future father of Mary Wroth, was being prepared for his education at Oxford, with advice coming from his elder brother as well as from his parents. Philip’s fortunes were at their highest in 1577 when he led an embassy to Prince William of Orange -- a process which so impressed William that he suggested that Sidney should marry his eldest daughter and help to form a Protestant League to counter the European Catholic powers. But this honour backfired when the Queen became suspicious about the entire European situation, and also of Sidney’s ambitions. 
+</p><p>
+By 1578 Philip had lost favour at court, and spent a considerable amount of time at Wilton, the home of his sister Mary, who had married Henry Herbert, Earl of Pembroke, in 1577. There Sidney began to write his prose romance <i>Arcadia</i> and refined his skills as a poet. Philip’s father was also out of favour, as he bore the blame for failed English policies in Ireland. Philip’s fortunes may have continued to fluctuate, but he died in 1586, at the age of thirty-two, when he was wounded fighting at Zutphen against the Spanish. Sidney’s death led, gradually, to his elevation as an example of Elizabethan, Protestant values, just as he also came to typify the impressive array of talents that should be manifested by a Renaissance gentleman. 
+</p><p>
+After Philip died, his brother Robert took over his position as governor of Flushing. Nine years younger than Philip, Robert grew up in the shadow of his elder brother: not only was Robert placed in the usual, difficult position of the Elizabethan younger brother (someone who had to make his own way in the world, as under primogeniture he would not inherit anything substantial from his father), but he was perhaps regarded as being less talented than Philip.<a href="index.php%3Fcontent=wrothbio.html#f2" class="foot">2</a> Henry Sidney described his three sons (the third was Thomas, six years younger than Robert) this way: ‘one of excellent good proof, the second of great good hope, and the third not to be despaired of, but very well to be liked’ – which implies that Robert might possible reach the ‘good proof’ achieved already by Philip.<a href="index.php%3Fcontent=wrothbio.html#f3" class="foot">3</a> Robert followed in Philip’s footsteps to Oxford and then to the continent, where Philip arranged for him to meet with his important Protestant admirers, including Philip’s main intellectual mentor, Hubert Languet, and political figures such as William of Orange and his son Maurice. Robert and Thomas were both with Philip when he died, and as both Sidney parents had died shortly before that, Robert suddenly found himself the head of the family.
+</p><p>
+In 1584, Robert had married Barbara Gamage, a Welsh heiress.<a href="index.php%3Fcontent=wrothbio.html#f4" class="foot">4</a> However, Barbara’s dowry was offset by the large debts that Robert had to discharge on behalf of his deceased father and brother, so that the inheritance of Penshurst was not accompanied by an appropriate income. Similarly, the queen’s distrust of Philip and Leicester’s ambitions was transferred to Robert, so that ultimately the governorship of Flushing, which was awarded to Robert in 1589, became a kind of exile, with Robert constantly requesting a change of employment.<a href="index.php%3Fcontent=wrothbio.html#f5" class="foot">5</a> His fortunes did not improve until James succeeded Elizabeth in 1603, although in response to the threat of the Armada he was sent by the queen on a mission to Scotland to ensure that James VI would stay on England’s side during the crisis, which is an indication of some trust placed in Sidney by Elizabeth.<a href="index.php%3Fcontent=wrothbio.html#f6" class="foot">6</a> As his biographer points out, Robert Sidney acquitted himself well as an ambassador; that success didn’t really help his career under Elizabeth, but he had succeeded in endearing himself to James, which would produce some benefit after 1603.<a href="index.php%3Fcontent=wrothbio.html#f7" class="foot">7</a> 
+</p><p>
+When Robert Sidney went to Flushing in 1590 he was soon joined by his wife and their three-year-old daughter Mary; their son William was born that year in Flushing, whereupon Barbara returned to England.<a href="index.php%3Fcontent=wrothbio.html#f8" class="foot">8</a> While Sidney spent more time back in England than in Flushing during his time as governor, he was absent for many years, and also took part in diplomatic missions. This left his wife in sole charge of the family for long periods – not an unusual situation in early modern aristocratic households, but Barbara and Robert had, on the evidence of Robert’s letters to her, built up a strong and close relationship, and Barbara clearly missed her husband during his many absences.<a href="index.php%3Fcontent=wrothbio.html#f9" class="foot">9</a> We get only occasional glimpses of Robert and Barbara’s daughter Mary during her childhood, but they are revealing. The affection clearly directed at Mary might once have been considered unusual in an early modern aristocratic family, but it has become evident to scholars that parent/child bonds were not necessarily as ‘cool’ as earlier historians had posited.<a href="index.php%3Fcontent=wrothbio.html#f10" class="foot">10</a> While one of the reasons earlier historians posited for parental distance was the high rate of infant mortality, it seems to me that, certainly in some cases, this increased the love and attachment directed at children who survived. In the Sidney household, of Barbara’s eleven births, three babies died in infancy and two in early childhood, and the eldest son, William, died at the age of twenty-three. In Robert’s earliest surviving letter to Barbara, a telling sentence encapsulates both the affection he frequently expressed towards his wife and towards his daughter: ‘Farewell, sweet wench, and make much of little Mall’ (23).<a href="index.php%3Fcontent=wrothbio.html#f11" class="foot">11</a>  
+</p><p>
+During her childhood, Mary was close not just to her mother and father, but also to her aunt, Mary Sidney, who was her godmother and after whom she was named. The Countess of Pembroke and Mary’s mother Barbara also seem to have been close, despite that fact that Barbara was, in contrast to her sister-in-law, a relatively uneducated woman (she was apparently rebuked by her children’s tutor, one Mr Bird, for her ‘want of education’).<a href="index.php%3Fcontent=wrothbio.html#f12" class="foot">12</a> An especially affectionate letter from the Countess to Barbara, written in 1590 when Barbara and her children were in Flushing with Robert, testifies both to her concern for Barbara, who was about to give birth (the Countess says she is sending her own nurse over to her sister-in-law), and to her love for Mary, referred to as ‘my pretey Daughter’.<a href="index.php%3Fcontent=wrothbio.html#f13" class="foot">13</a> Mary grew up surrounded by powerful female influences, as well as being assured of her father’s affection. She was also given the kind of education that was accorded to her aunt and to other intelligent women whose families valued their abilities. The Mr Bird who so rudely tried to put his mistress in her place tutored the young Sidneys, male and female, but had an ongoing, fractious relationship with the household which culminated in the eldest son, William, stabbing him in 1604 because Bird threatened to whip him.<a href="index.php%3Fcontent=wrothbio.html#f14" class="foot">14</a> Whatever Mr Bird’s personal failings may have been, he clearly provided Mary with a good educational grounding, as evidenced particularly in the knowledge that went into <i>Urania</i>. This grounding must have been enhanced by Mary’s contacts with the lively intellectual and literary atmosphere of Wilton, described by John Aubrey as being ‘like a College, there were so many learned and ingeniose persons’.<a href="index.php%3Fcontent=wrothbio.html#f15" class="foot">15</a> It would also seem, on the evidence of the striking portrait of Mary standing with her arch-lute, probably painted around 1620, that she had a particular fondness for music.<a href="index.php%3Fcontent=wrothbio.html#f16" class="foot">16</a> In 1595 Rowland Whyte noted that Mary ‘is very forward in her learning, writing, and other exercises she is put to, as dawncing and the virginals’.<a href="index.php%3Fcontent=wrothbio.html#f17" class="foot">17</a> In 1602 the fifteen-year-old Mary had something of a triumph at the aging queen’s court, as reported again by Whyte: ‘Mistress Mary on St. Stevens day in the after noone dawnced before the Queen two galliards with one Mr. Palmer, the admirablest dawncer of this tyme: both were much commended by her Majestie’.<a href="index.php%3Fcontent=wrothbio.html#f18" class="foot">18</a>
+</p><p>
+While Barbara always wanted to spend as much time as possible with her husband, she disliked life in London and at the court, and much preferred to stay at Penshurst. When Barbara was persuaded to spend time in London in1595, Mary, who was then eight, apparently made a positive impression on the Lord Admiral, who suggested that she was ‘alredy a fitt mayd for the Queen’.<a href="index.php%3Fcontent=wrothbio.html#f19" class="foot">19</a> Three years later it was reported that the queen often spoke favourably of the three older children, and was by then especially taken with Mary’s younger sister Catherine.<a href="index.php%3Fcontent=wrothbio.html#f20" class="foot">20</a> Compared to Wilton, Penshurst was a comparatively simple house (as Jonson notes, ‘Thou art not, Penshurst, built to envious show/Of touch or marble’), and it certainly did not have the atmosphere of a literary salon that the Countess of Pembroke created at Wilton. However, when she was ten, in 1597, Mary demonstrated that her attachment to her mother was stronger than any allure held by her aunt’s house. Robert proposed that Barbara join him in Flushing and leave the children behind. According to Robert’s secretary, Rowland Whyte, this demand was fiercely resisted by Mary who, he said, ‘doth fall a weeping and my Lady when she perceives it doth bere her company’.<a href="index.php%3Fcontent=wrothbio.html#f21" class="foot">21</a> Robert gave way, but then offers a telling distinction between his attitude towards his daughters and his son: 
+</p><p class="indent">
+and for the girls, I will not much stick with you, yet for a year or two till they be bigger and therefore will leave it to your own discretion whether you bring them or not. But indeed I must begin now to look to the boy. For he is now almost seven year old and lieth still with his maid and doth not learn anything. As I write in my other, I would be content he were at Sir Charles Morison’s. For there I know he should be well looked unto and should lose no time.<a href="index.php%3Fcontent=wrothbio.html#f22" class="foot">22</a>
+</p><p>
+Although the evidence is uncertain, it seems that on this occasion Barbara did take all the children with her to Flushing, including William.<a href="index.php%3Fcontent=wrothbio.html#f23" class="foot">23</a> Upon the family’s return, Mary seems to have continued her lessons with Mr Bird until the unfortunate incident with William which finally led to Bird’s dismissal in 1604. It is possible to build up a detailed sense of the relationship between Mary’s parents from the letters Robert wrote to Barbara during his many absences from home; these often charming and affectionate letters have been published in a modern edition and paint a vivid picture of Robert’s activities, his keen interest in his children, and his reactions to news from home (although there are no letters from Barbara to Robert – possibly, the editors of the letters suggest, an indication that she either could not write or wrote poor English).<a href="index.php%3Fcontent=wrothbio.html#f24" class="foot">24</a> An even more detailed account of Robert’s affairs and the activities of the family in his absence is provided by the large number of letters written to Robert by Rowland Whyte, who acted as Robert’s agent in England and who had close ties to Robert and to the whole family.<a href="index.php%3Fcontent=wrothbio.html#f25" class="foot">25</a> From these two sources, as I have already noted, we can obtain occasional glimpses of Mary as she grew up. Robert’s letters to Barbara contain frequent expressions of affection for his daughter; he is, in Mary’s early years, always asking her mother to ‘kiss Mall’ (31).<a href="index.php%3Fcontent=wrothbio.html#f26" class="foot">26</a> In 1595, when Mary was eight, she impressed her father with a letter she wrote to him: ‘I thank Malkin for her letter and am exceedingly glad she writes so well: tell her from me I will give her a new gown for her letter’ (76). Given that Robert’s handwriting was so hard to read that he caused some annoyance at court, he may well be praising the clarity of Mary’s hand as much as the contents of her letter – and indeed Mary’s surviving letters are in general far easier to read than those written by her father.<a href="index.php%3Fcontent=wrothbio.html#f27" class="foot">27</a> Mary must have been a good correspondent, because in 1597 Robert notes ‘I will write to Mall, If I have any time, to thank her for her letters’ (100).<a href="index.php%3Fcontent=wrothbio.html#f28" class="foot">28</a> 
+</p><p>
+As noted above, Wilton was a centre for literary activity and Mary spent time there with her aunt when she was growing up. While she was at Wilton, as well as responding to the appeal of literary, intellectual and political activity, Mary apparently built up a close relationship with her cousin William Herbert, who was six years older – at some stage, this relationship became more than just a friendship. William was dashing, impetuous and exploitative in his relationship with women; he caused a scandal in 1601 when he made Mary Fitton, one of the queen’s maids of honour, pregnant and refused to marry her.<a href="index.php%3Fcontent=wrothbio.html#f29" class="foot">29</a>  In 1604 William arranged his marriage to Mary Talbot, having broken off relations with his mother possibly, Gary Waller speculates, because she had discovered something untoward about his relationship with his cousin.<a href="index.php%3Fcontent=wrothbio.html#f30" class="foot">30</a> Clarendon cruelly remarked that William ‘paid much too dear for his wife’s fortune by taking her person into the bargain’, and it was soon evident that William’s marriage was an unhappy one, just as his cousin’s proved to be when she married Robert Wroth in the same year, possibly pushed by her family because of their similar fears about her relationship with William.<a href="index.php%3Fcontent=wrothbio.html#f31" class="foot">31</a>
+</p><p>
+Mary had become an even more desirable wife after her father’s fortunes rose with the accession of James I in 1603.<a href="index.php%3Fcontent=wrothbio.html#f32" class="foot">32</a> James immediately appointed Robert to be Queen Anne’s Lord Chamberlain – an appointment that enabled Mary to move in the Queen’s circle and to participate, with other noblewomen, in the entertainments that the queen favoured. James awarded Robert the title of Viscount Lisle in 1605. In political and dynastic terms, Mary made a reasonably good marriage, especially as Robert Wroth was favoured by the King and shared James’s less intellectual interests, particularly hunting. But from a person point of view, the pair were incompatible, and Robert Wroth clearly shared none of his wife’s literary inclinations – while William Herbert wrote poetry, just as Wroth’s uncle, father, aunt, possibly her younger sister Catherine, and cousin (Philip Sidney’s daughter Elizabeth) all did.<a href="index.php%3Fcontent=wrothbio.html#f33" class="foot">33</a> While Robert Wroth had risen in status under James, he remained deeply in debt, and had considerable trouble raising Mary’s 3,000 pound dowry, and it seems a telling irony that 1,000 pounds was contributed to this sum by William Herbert.<a href="index.php%3Fcontent=wrothbio.html#f34" class="foot">34</a> 
+</p><p>
+Just as William Herbert’s marriage to Mary Talbot was unhappy, so Mary’s to Robert Wroth seems to have begun badly. Mary’s father wrote to his wife on 10 October 1604, just two weeks after Mary’s wedding:
+</p><p class="indent">
+Here I found my son Wroth, come up as he tells me to dispatch some business: and will be again at Penshurst on Friday. I find by him that there was somewhat that doth discontent him: but the particulars I could not get out from him: only that he protests that he cannot take any exceptions to his wife nor her carriage towards him. It were very soon for any unkindnesses to begin: and therefore whatsoever the matters be, I pray you let all things be carried in the best manner till we all do meet. For mine enemies would be very glad for such an occasion to make themselves merry at me.<a href="index.php%3Fcontent=wrothbio.html#f35" class="foot">35</a> 
+</p><p>
+This is slightly enigmatic and one can only speculate whether Robert Wroth had heard something about Mary and William’s feelings for each other. Ben Jonson, who had close ties to the Sidney family, and who was to dedicate <i>The Alchemist</i> (1612) to Mary and write a sonnet to her praising her skills as a poet, said in one of his conversations with William Drummond, ‘My Lady wroth is unworthily married on a Jealous husband’.<a href="index.php%3Fcontent=wrothbio.html#f36" class="foot">36</a> Jealousy is certainly an important theme in much of Wroth’s writing, and <i>Urania</i> in particular explores many forms of jealousy. While Wroth does offer the reader glimpses of members of her family shadowed as certain characters in <i>Urania</i>, it is important to note that the romance cannot be read as straightforward autobiography. However, as Josephine Roberts points out in her edition of Part One of <i>Urania</i>, a number of Wroth’s reworkings of narratives alluding to her marriage portray versions of her husband as boorish and jealous.<a href="index.php%3Fcontent=wrothbio.html#f37" class="foot">37</a> At the same time, Wroth’s most elaborate self-portrait, as the character Pamphilia, who shares Wroth’s literary skills, revolves around her love for the untrustworthy Amphilanthus, a similarly complex representation of William Herbert. In the second, unpublished part of <i>Urania</i>, Wroth goes further and depicts the two characters as having undertaking an exchange of vows termed a <i>de praesenti</i> marriage; it is not possible to determine if Mary and William actually did this, but even at the level of fictional projection, this event places Wroth within a marriage that was already, in some way, false.<a href="index.php%3Fcontent=wrothbio.html#f38" class="foot">38</a> 
+</p><p>
+There are few real insights available into Mary Wroth’s marriage, but, like all marriages, it seems to have been more complex than just a mismatch. It is true that most of our glimpses of the marriage are negative: Mary only had one child, born ten years after she married Robert Wroth, and a servant of Mary Wroth described a churlish husband as having ‘only one vertu that he seldom cometh sober to bedd; a true imitation of Sir Robert Wroth’.<a href="index.php%3Fcontent=wrothbio.html#f39" class="foot">39</a> On the other hand, Robert seemed to manifest genuine affection for his wife during the marriage. As a counter to the anxieties Robert Wroth expressed to Mary’s father, in 1608 when he was extremely ill, he had discussions with his father-in-law about his estate, and, as Robert Sidney notes, ‘if God calls him he deals extremely kindly with his wife’.<a href="index.php%3Fcontent=wrothbio.html#f40" class="foot">40</a> Robert Sidney then expresses considerable relief when Wroth recovers. When Wroth died in 1614, he expressed considerable affection for his wife in his will, made ten days before his death: ‘I hartelie desire my sayed deere and loving wife that she will accept hereof as a testimony of my entire love and affection towards her, albeyet her sincere love, loyaltie, virtuous conversation, and behavioure towards me, have deserved a farre better recompense, yf the care of satisfying of my debts and supporting my house would have permitted the same’.<a href="index.php%3Fcontent=wrothbio.html#f41" class="foot">41</a> It is true that Mary Wroth was left with crippling debts and lost her claim on her husband’s estates when her son James died eighteen months later, but Robert Wroth’s praise of her loyalty needs to be taken into account when considering the resumption of Mary’s relationship with William Herbert in later years.
+</p><p>
+In the early years of her marriage, Mary Wroth took some part in the lavish entertainments that featured in the Jacobean court. Apart from her own talents, Mary should have been favoured by her father’s position as Queen Ann’s Lord Chamberlain, given the queen’s interest, early in the century, in court masques. At the same time, William Herbert was also closely connected with the queen’s court and with her interest in masques (while the king was particularly drawn to William’s younger brother, Philip).<a href="index.php%3Fcontent=wrothbio.html#f42" class="foot">42</a> Leeds Barroll has argued that the queen’s court was in many ways a counter-weight to the king’s, culturally and politically, and that it was Ann’s interest in masques that precipitated a golden age for that form of court entertainment between 1604 and 1612.<a href="index.php%3Fcontent=wrothbio.html#f43" class="foot">43</a> While scholars have previously tended to associate the Jacobean masque as a genre with the king, Baroll offers a convincing case for viewing the first nine years of these court entertainments as being essentially the province of the queen, until they were relinquished by her and taken up (and altered in a number of ways) by the king.<a href="index.php%3Fcontent=wrothbio.html#f44" class="foot">44</a> Barroll explains how the queen’s masques contained a number of political ramifications, including the political allegiances of the women from her court chosen to dance in them – these women principally being members of the Essex circle (who had been out of favour under Elizabeth following the execution of Essex in 1601 for his rather clumsy uprising), and also women with Sidney/Herbert associations.<a href="index.php%3Fcontent=wrothbio.html#f45" class="foot">45</a> 
+</p><p>
+Mary Wroth was not one of the women who were part of the queen’s household, although various relations and members of the Sidney/Herbert circle were, including Philip Herbert’s wife Susan de Vere, dedicatee of the published <i>Urania</i>; Penelope Rich; and Lucy Russell, Countess of Bedford.<a href="index.php%3Fcontent=wrothbio.html#f46" class="foot">46</a> Similarly, despite her talents, while Wroth danced in one masque and was called up to participate in another, she was, as Barroll notes, not part of the queen’s ‘inner circle’ of regular masquers.<a href="index.php%3Fcontent=wrothbio.html#f47" class="foot">47</a> Indeed, as Wroth makes plain in her writing, she was really on the margins of the queen’s court, principally, it would seem, because of the queen’s interest in William Herbert and, perhaps, her jealousy of Wroth. Josephine Roberts tentatively suggests this possibility, noting Arthur Wilson’s 1652 comment that the queen ‘had her Favourites in one place, the King had his in another. She lov’d the elder Brother, the Earl of Pembroke’.<a href="index.php%3Fcontent=wrothbio.html#f48" class="foot">48</a> In her portrayal in the manuscript continuation of <i>Urania</i> of Queen Ann as the ‘furious, ill naturd Queen’ of Candia, Wroth depicts Amphilanthus (William Herbert) as being in the queen’s clutches, but the details of this part of the narrative are missing as the relevant page has been torn out – an indication that someone was made nervous by the nature of this rather daring account.<a href="index.php%3Fcontent=wrothbio.html#f49" class="foot">49</a>
+</p><p>
+The first masque in which Wroth took part was certainly a most significant one: Ben Jonson’s <i>Masque of Blackness</i>, which was performed on Twelfth Night (January 6), 1605.<a href="index.php%3Fcontent=wrothbio.html#f50" class="foot">50</a> As was usually the case with the masques that the queen arranged, there were twelve women who took part, including the queen herself. Wroth was placed in the last pair of dancers. The masque itself was certainly daring as well as spectacular. The queen and the noblewomen were disguised as ‘twelve nymphs, Negroes, and the daughters of Niger’ (49).<a href="index.php%3Fcontent=wrothbio.html#f51" class="foot">51</a> The masque plays with paradoxes of blackness and beauty; Niger, for example, noting of the women ‘That in their black the perfect’st beauty grows’ (52). The sheer spectacle of this masque is accompanied by Jonson’s rather intellectual symbolism, that includes a notion that the dancers are represented by Egyptian hieroglyphic symbols. Wroth was Baryte, literally ‘weight’, and together with Audrey Walsingham she carried an urn ‘sphered with wine’ as a symbol of fruitfulness (57). But Jonson’s conceit of blackening the court ladies, a notion clearly endorsed by the queen, caused some consternation, judging by the response of John Chamberlain, who wrote an account to Sir Ralph Winwood:
+</p><p class="indent">
+Their apparel was rich, but too light and courtesan-like for such great ones. Instead of vizards their faces and arms up to the elbows were painted black which was disguise sufficient, for they were hard to be known but it became them nothing so well as their red and white, and you cannot imagine a more ugly sight than a troop of lean-cheeked Moors… [The Spanish ambassador] took out the Queen and forgot not to kiss her hand, though there was danger it would have left a mark on his lips’.<a href="index.php%3Fcontent=wrothbio.html#f52" class="foot">52</a>
+</p><p>
+Jonson wrote a sequel to <i>The Masque of Blackness</i>, <i>The Masque of Beauty</i>, which was performed two years later. The daughters of Niger reappeared, and weren’t about to shock anybody this time because they have left their blackness in the waves and are now ‘washed white’ (64). This masque seems to have been particularly successful, with the king asking for a pair of dances to be repeated (72). Mary Wroth was noted for her grace and beauty by an Italian observer, Antimo Galli, who published a poem describing the masque and its participants.<a href="index.php%3Fcontent=wrothbio.html#f53" class="foot">53</a> However, this was Wroth’s last appearance in a masque and one must assume that from this point on she fell out of favour with the queen; this would also have been during the early years of her troubled marriage. In another inset story in <i>Urania</i>, this time in the published part, Wroth depicts herself as a character called Lindamira (an anagram for Lady Mary) whose father is named Bersindor (again an anagram for Robert Sidney). Her story is told by Pamphilia, who is herself another version of Mary Wroth within the romance, although Pamphilia is a complex character who, in Josephine Roberts’s terms, shadows, rather than directly represents, Wroth. Like Mary Wroth, Lindamira begins by being favoured by the queen (of France, in the story, rather than England), and she spends much time at court, ‘which indeed was the fittest place for her, being a Lady of great spirit, excellent qualities, and beautifull enough to make many in love with her’ (<i>Urania</i>, i.499) – not a modest self-assessment, perhaps, but an accurate one. Wroth circumspectly depicts Lindamira as in love with someone other than her jealous husband, and then also suggests that the Queen is attracted by the same person. Someone then seems to convey gossip about her to the queen and she suddenly finds herself completely out of favour: ‘all her favour was withdrawn as suddenly and directly, as if never had: Lindamira remaining like one in a gay Masque, the night pass’d, they are in their old clothes againe, and no appearance of what was’ (ibid., 500). The masque image is telling, given that Wroth’s exclusion from masques after <i>The Masque of Beauty </i>seems to exemplify her fall from favour. As Marion Wynne-Davies points out, Wroth incorporated three detailed masques into the narrative of the second (manuscript) part of <i>Urania</i>.<a href="index.php%3Fcontent=wrothbio.html#f54" class="foot">54</a> Wynne-Davies notes that the masques in <i>Urania</i> act ‘as a sign of personal pleasure and political success’; from this perspective, they form part of an aspect of <i>Urania</i> which might be said to involve a combination of revenge and wish-fulfilment on Wroth’s part.<a href="index.php%3Fcontent=wrothbio.html#f55" class="foot">55</a> 
+</p><p>
+It is probably around this time that Wroth began writing her poetry, given that there are references to it by 1613, and also given its subject matter, which not only describes a woman in thrall to cruel desire and a faithless lover, but many poems focus on painting a very negative image of the court world from which, one assumes, the author was now more distant.<a href="index.php%3Fcontent=wrothbio.html#f56" class="foot">56</a> From this period on, there is very little documentary evidence for Wroth’s activities, and while stories in <i>Urania</i> do shed some light on her marriage and its aftermath, they cannot be cited as if they are directly autobiographical. While I have already noted that Robert Wroth, on the evidence of his will, seems to have regarded his wife in a positive light, one wonders how far Mary Wroth was playing out a charade. On March 19, 1613, Wroth wrote a letter to her father asking for details of her jointure (under an arrangement that was usually part of the marriage negotiations, this is the portion left by a husband to his wife which is set aside from the usual male heir’s entitlements to inheritance).<a href="index.php%3Fcontent=wrothbio.html#f57" class="foot">57</a> While it would be rash to draw any conclusion from the letter, it may well be that Wroth was becoming anxious about her situation in the event of her husband’s death. She was right to be worried, because not only did Robert Wroth leave large debts behind, but upon the death of the Wroths’ son James, Mary Wroth lost her rights to much of the estate, which went to her husband’s uncle. 
+</p><p>
+As Wroth fell out of favour with the queen, William Herbert continued to have a highly successful career at court (as did his brother Philip, who continued to flourish even when the king’s attention was drawn to new favourites). By December 1615, as part of the realignment in the king’s court following the decline of Robert Carr as favourite and the rise of Buckingham, Herbert (now Earl of Pembroke) took the position of Lord Chamberlain. While their paths would have crossed many times, because all the immediate members of the family seem to have spent considerable time visiting at Penshurst and Wilton, we do not know what passed between Mary Wroth and William Herbert during this period. It seems clear, however, that William’s mother, the Countess of Pembroke, continued to play an important role in Mary Wroth’s life as both aunt and literary model.<a href="index.php%3Fcontent=wrothbio.html#f58" class="foot">58</a> At the same time, in part because of the favour that had been shown to her husband by the king, Mary Wroth herself had become a patron, not on the scale of her aunt, but certainly one to be courted by a number of writers.<a href="index.php%3Fcontent=wrothbio.html#f59" class="foot">59</a> As noted above, Jonson dedicated <i>The Alchemist</i> to Mary Wroth in 1612. While Jonson praised Robert Wroth for his hospitality, he acknowledges Mary Wroth as a writer, noting in a sonnet to her that copying out her poetry has made him a better lover and better poet.<a href="index.php%3Fcontent=wrothbio.html#f60" class="foot">60</a> <i>The Alchemist</i> dedication deftly acknowledges Wroth’s literary heritage, stating that the play will be ‘safe in your judgement, (which is a Sidney’s)’.<a href="index.php%3Fcontent=wrothbio.html#f61" class="foot">61</a> Mary Wroth was also praised in dedicatory poems by George Chapman (in his Homer translation of 1611); John Davies; George Wither; and Joshua Sylvester. These moves to flatter Wroth as patron are grouped around the period of 1610 to 1613; after the death of her husband and the loss of her estates, these dedications dry up, and it is clear that, once again, their absence reflects Wroth’s sudden decline in influence and favour, however much her father and cousin remained key figures at court. 
+</p><p>
+It is fascinating that when Wroth began writing poetry, she turned not just to the model of her famous (and ever more famous in the early seventeenth century) uncle, but also to the model of her father’s poetry, which was confined to private circulation within the Sidney family. By the early seventeenth century, Philip Sidney’s poetry was readily available in print in the editions supervised by the Countess of Pembroke. The Countess’s own translations had also been in print since the 1590s, and her poetry and continuation of her brother’s psalm translations circulated in manuscript and would certainly have been known to Mary Wroth. But in the mid 1590s, Mary’s father Robert also wrote a sequence of songs and sonnets, with some resemblances to those of his brother. Robert’s poems survive in a single, autograph manuscript that was rediscovered (or re-identified) in 1973, and the manuscript itself cannot be dated exactly, although it seems to represent a revised version of the poems compiled by Robert for a presentation manuscript prepared for his sister.<a href="index.php%3Fcontent=wrothbio.html#f62" class="foot">62</a> As indicated in the notes to this edition, Robert’s poems had a strong influence on Mary Wroth’s sonnets, and one can only speculate about her access to them perhaps fourteen years or so after they were first written. (One might also want to factor in the influence of the appearance in print of Shakespeare’s sonnets in 1609, although the ‘Sidneian’ sonnets are of course quite different in style and tone.) While it is possible that Robert’s poems were read by his precocious and literary daughter from an early age, they clearly had a powerful influence on her imagination when she began writing in earnest. After her husband’s death, Wroth may have drawn even closer to her family and to the protection of her father, although Wroth continued to live at Loughton, rather than at Penshurst.
+</p><p>
+<i>Urania</i>, which Wroth probably began writing some years later, may be seen as a depiction of the court from which Wroth was excluded, although it also includes complex political as well as personal references. There is little direct information available about Mary Wroth’s activities from the death of her husband to the publication of <i>Urania</i> in 1621. It is worth noting that Wroth’s aunt, the Countess of Pembroke, whose own husband had died in 1601, began to spend a lot of her time on the continent from 1614 onwards, particularly at Spa, a fashionable resort town in the Netherlands (now Belgium). Such a stay in the Netherlands had political implications for a member of the Sidney/Herbert family, given that this was still a key location for European Protestant resistance and the gradually increasing agitation in England for more active engagement against Catholicism – agitation which increased when the lead up to the Thirty Years’ War involved the defeat and exile of King James’s daughter Elizabeth and her husband Frederick Elector Palatine. During her time at Spa there were rumours of a romantic attachment between the Countess and her physician, Matthew Lister – while there is no proof that this was the case, Mary Wroth shadows such an attachment in the characters of Simena and Lissius in her pastoral play <i>Love’s Victory</i>.<a href="index.php%3Fcontent=wrothbio.html#f63" class="foot">63</a> The Countess returned to England in 1616 and built herself an elegant house at Houghton Park. The connections between Mary Wroth, her aunt, and the overseas interests of the Sidney/Herbert families are reflected in the narratives of <i>Urania</i>, and Wroth herself clearly took an interest in European politics. 
+</p><p>
+There is an intriguing remark in the diary of Anne Clifford, who in 1617, was married to Richard Sackville Earl of Dorset, was fighting to maintain her rights to her father’s Westmoreland estates, and who was, after her first husband’s death, later to marry Philip Herbert in 1630. Clifford was related to the Sidneys through her mother, Margaret Russell. Clifford writes in an entry on 19 August 1617 that she visited Penshurst, and ‘There was Lady Wroth who told me a great deal of news from beyond sea’.<a href="index.php%3Fcontent=wrothbio.html#f64" class="foot">64</a> It is impossible to know whether Wroth’s news was personally collected or (as is, I think, more likely) was being relayed from sources she was in touch with, such as Dudley Carleton, who was ambassador at The Hague.<a href="index.php%3Fcontent=wrothbio.html#f65" class="foot">65</a> Marion Wynne-Davis has explored in detail just how a house like Penshurst could, at this time, function as a place where groups of talented (and ambitious) women, like Mary Wroth, Anne Clifford, the Countess of Pembroke, and other members of the family such as Elizabeth Manners (Philip Sidney’s daughter, also a poet, though her poems have not survived), could meet safely outside of a court environment and exchange news and (perhaps) literary works.<a href="index.php%3Fcontent=wrothbio.html#f66" class="foot">66</a> 
+</p><p>
+Wroth seems to have resumed her relationship with William Herbert at some stage after her husband’s death; this relationship ceased some time before the publication of <i>Urania</i>, but then recommenced, perhaps following the death of Herbert’s baby son.<a href="index.php%3Fcontent=wrothbio.html#f67" class="foot">67</a> This time Wroth became pregnant, and gave birth to non-identical twins, probably born in the Spring of 1624, named William and Katherine.<a href="index.php%3Fcontent=wrothbio.html#f68" class="foot">68</a> There are oblique allusions to Mary Wroth’s illegitimate children by, for example, John Chamberlain, who referred in 1624 to ‘a Lady that hath been a widow above seven years, though she had lately two children at a birth. I must not name her though she is saide to be learned and in print’.<a href="index.php%3Fcontent=wrothbio.html#f69" class="foot">69</a> Within the Sidney/Herbert family there was some acknowledgement of the two children, including a rather daring and typically witty poem sent to Mary Wroth by Edward Herbert of Cherbury (brother of George Herbert, Edward was a talented, if neglected, poet and a cousin of William Herbert). I quote the poem in full, partly because it is a clever jeu d’esprit, but also because it offers a sense that, at least in some circles, Wroth’s relationship with her cousin was viewed as something that might be associated with her literary talent and treated in a quite light-hearted fashion:
+</p><p>
+‘A Merry Rhyme sent to Lady Mary Wroth upon the birth of My Lord of Pembroke’s Child, born in the Spring’
+</p><div class="indent">
+<p>
+Madam, though I am one of those
+</p><p>
+That every Spring use to compose,
+</p><p>
+That is, add feet unto round prose,
+</p><p>
+Yet you a further art disclose:
+</p><p>
+You can, as everybody knows,
+</p><p>
+Add to those feet fine, dainty toes.
+</p><p>
+Satyrs add nails, but they are shrews,
+</p><p>
+My muse therefore no further goes,
+</p><p>
+But for her feet craves shoes and hose;
+</p><p>
+Let a fair season add a rose,
+</p><p>
+While thus attired we’ll oppose
+</p><p>
+The tragic buskins of our foes.<a href="index.php%3Fcontent=wrothbio.html#f70" class="foot">70</a>
+</p>
+</div>
+<p>
+It is worth noting that Edward Denny, in his impassioned denunciation of Wroth for her publication of <i>Urania</i>, does not refer to the scandal of her association with Herbert – of course given Herbert’s powerful position, any negative reference might have been dangerous. Wroth offers a veiled depiction of the children in the manuscript continuation of <i>Urania</i> as part of a narrative which ‘explains’ why William Herbert (as Amphilanthus) married someone else. We have no evidence of how William Herbert reacted to this situation, other than the fact that provisions were not made for the children in the event of his death, and he certainly did not accord his illegitimate son any official recognition, even though he had no surviving child of his own.<a href="index.php%3Fcontent=wrothbio.html#f" class="foot"></a> Margaret Hannay’s meticulous research has uncovered new evidence about Wroth and Herbert’s children; the illegitimate William, according to a genealogical record by Thomas Herbert of Tintern, William Herbert’s cousin, became a Colonel during the Civil War under Prince Maurice of Nassau.<a href="index.php%3Fcontent=wrothbio.html#f71" class="foot">71</a> The same source states that Katherine married a ‘Mr Lovet’ and lived in Liscombe, near Oxford.<a href="index.php%3Fcontent=wrothbio.html#f72" class="foot">72</a> Following the death of her husband in 1643, Katherine remarried some time before 1651. Her second husband was James Parry whose family lived near the Pembroke Welsh Estates.<a href="index.php%3Fcontent=wrothbio.html#f73" class="foot">73</a> 
+</p><p>
+In what must have been a truly momentous few years, between 1619 and 1624, Wroth bore two illegitimate children and published the first work of prose fiction written by a woman in England, indeed the most ambitious work of prose fiction written by anyone between Sidney’s <i>Arcadia</i> (1590) and the eighteenth century novels of Defoe, Richardson and Fielding. As I noted at the beginning of this introduction, Wroth’s publication of <i>Urania</i> caused a scandal, but the very fact that she sent Buckingham a presentation copy indicates that she believed <i>Urania</i> might be a way of winning the favour of the most powerful man in the country. While Wroth defended herself vigorously against Edward Denny’s tirades about her immorality in daring to publish such a vicious work, it may be significant that she failed to publish the lengthy continuation of <i>Urania</i>, which remained in a single autograph manuscript until it was edited in the late twentieth century. The continuation is in some ways even more personal, in so far as it revisits Wroth’s relationship with William Herbert and introduces (albeit indirectly) their children. At the same time, Josephine Roberts has explained how one copy of <i>Urania</i> has corrections and alterations made by Wroth, which either indicates that she was revising for further publication, or that she was preparing a presentation copy for someone, or that she was perfecting her own copy of the romance.<a href="index.php%3Fcontent=wrothbio.html#f74" class="foot">74</a> Any one of these scenarios, together with the continuation, show how much Wroth still had invested in her most ambitious work. 
+</p><p>
+Wroth may not have published any more after <i>Urania</i>, but that is not to say that her work went out of circulation – although one might say that Wroth herself was almost hidden from view after 1621. <i>Urania</i> was read during the seventeenth century; at least two manuscripts of <i>Love’s Victory</i> were in circulation; and some of Wroth’s poetry was circulated as well.<a href="index.php%3Fcontent=wrothbio.html#f75" class="foot">75</a> There is also some startling evidence that Wroth’s quarrel with Denny remained in the public eye for some time and that it perhaps served to raise women’s anxiety about the prudence of venturing into print with a secular work. The prolific author Margaret Cavendish, who published her first works in 1653, quoted a warning from one of Denny’s poems in the preface to her <i>Poems and Fancies</i> (1653): ‘very like they will say to me, as to the Lady that wrote the Romancy: Work Lady, work, let writing Books alone,/For surely wiser women nere wrote one’.<a href="index.php%3Fcontent=wrothbio.html#f76" class="foot">76</a> Cavendish repeated the ‘warning’ ten years later in the dedication to <i>Sociable Letters</i> (1664). Of course, Cavendish cited the warning only to defy it by publishing a great many books during her life, and one can only assume that she paid heed to the precedent of <i>Urania</i>’s existence, rather than Denny’s denigration of the fact of publication. 
+</p><p>
+In 1640 George Manners, Earl of Rutland (whose brother Roger had married Philip Sidney’s daughter Elizabeth) wrote to Mary Wroth asking for a key to identify the characters in <i>Urania</i>:
+</p><p class="indent">
+Noble Cousin,
+</p><p class="indent">
+Calling to remembrance the favour you once did me in the sight of a Manuscript you showed me in your study at Baynard’s Castle, and here meeting with your <i>Urania</i>, I make bold to send this enclosed and beg a favour from you, that I may read with more delight. If you please to interpret unto me the names as here I have begun them, wherein you shall much oblige me.<a href="index.php%3Fcontent=wrothbio.html#f77" class="foot">77</a> 
+</p><p>
+This letter indicates that almost twenty years after <i>Urania</i>’s publication it was still being read with great attention – and that the way it glanced at the stories of real people remained a talking point. Wroth seems to have remained living at Loughton in relative obscurity until her death in March 1651.<a href="index.php%3Fcontent=wrothbio.html#f78" class="foot">78</a> William Herbert had died in 1630. The Sidney family flourished through to the present day, where the family remains in residence at Penshurst, while Mary Wroth’s houses in Loughton and Woodford have disappeared, and little trace of her descendants remains.
+</p>
+
+<div>
+<ol>
+<li><a id="f1"></a> The trip is discussed in great detail in Osborn and also in Duncan-Jones, chap. 4 and Stewart, chap. 5.
+</li><li><a id="f2"></a> On the position of younger brothers, see Anthony Esler, <i>The Aspiring Mind of the Elizabethan Younger Generation</i> (Durham NC: Duke University Press, 1966).
+</li><li><a id="f3"></a>
+ Quoted in, Margaret P. Hannay, Noel J, Kinnamon and Michael G. Brennan, eds., <i>Domestic Politics and Family Absence: the Correspondence (1588-1621) of Robert Sidney…and Barbara Gamage Sidney</i> (Aldershot: Ashgate, 2005), 6.
+</li><li><a id="f4"></a>
+ For Robert Sidney’s biographical details I rely in part on Millicent V. Hay, <i>The Life of Robert Sidney</i> (Washington: Folger Books, 1984), supplemented with detailed material on Barbara Gamage and her family in Hannay; there is also a great deal of useful information in the introduction to P.J. Croft, ed., <i>The Poems of Robert Sidney</i> (Oxford: Clarendon Press, 1984); and in <i>Domestic Politics</i>. 
+</li><li><a id="f5"></a>
+ Although Hay does point out that during his fourteen years as governor Sidney only spent just under six in residence at Flushing, 137.
+</li><li><a id="f6"></a>
+ See Hay, 60-69.
+</li><li><a id="f7"></a>
+ Ibid., 68.
+</li><li><a id="f8"></a>
+ While there is no documentary evidence for the exact year of Mary’s birth, she was almost certainly born on 18 October 1587; see Michael Brennan and Noel Kinnamon, <i>A Sidney Chronology 1554-1654</i> (Houndmills: Palgrave Macmillan, 2003), 111; Hannay, p. 20. 
+</li><li><a id="f9"></a>
+ See the letters collected together in <i>Domestic Politics</i>.
+</li><li><a id="f10"></a>
+ This supposed lack of affection between parents and children was famously posited by Lawrence Stone in <i>The Family, Sex and Marriage in England 1500-1800</i> (London: Weidenfekd and 0.Nicolson, 1977), but has been challenged by many later social historians, for example see Patricia Crawford and Sara Mendelson, <i>Women in Early Modern England 1550-1720</i> (Oxford: Clarendon Press, 1998).
+</li><li><a id="f11"></a>
+ Page references to <i>Domestic Politics</i>; Robert’s pet names for Mary (Mall, little Mall, Malkin) also testify to his affection for her.
+</li><li><a id="f12"></a>
+ <i>Domestic Politics</i>, 10; Hannay effectively counters the notion of Barbara Gamage as ‘untutored and nearly illiterate’ (13), but she was certainly not a literary woman as her sister-in-law was.
+</li><li><a id="f13"></a>
+ Hannay, <i>Philip’s Phoenix</i>,145, quotes the letter in full.
+</li><li><a id="f14"></a>
+ Hay, 183-4.
+</li><li><a id="f15"></a>
+ John Aubrey, <i>Brief Lives</i>, ed. Oliver Lawson Dick (1949: rpt. Harmondsworth, Penguin,1981) 220; for a fascinating and detailed study of the Herbert/Sidney family as patrons see Michael G. Brennan, <i>Literary Patronage in the English Renaissance: The Pembroke Family</i> (London: Routledge, 1988).
+</li><li><a id="f16"></a>
+ The portrait, housed at Penshurst, is reproduced in Poems ed. Roberts, frontispiece; there is some uncertainty as to whether it is indeed of Mary or possibly of one of her younger sisters, see Hannay p. 158; but Mary’s interest in music is attested to elsewhere; see also Gavin Alexander, ‘The Musical Sidneys’, <i>John Donne Journal</i> 25 (2006),esp. pp. 90-110.
+</li><li><a id="f17"></a>
+ <i>Historical Manuscripts Commission, De L’Isle and Dudley</i>, vol 2 (1934), 17.
+</li><li><a id="f18"></a>
+ Ibid., 618-9.
+</li><li><a id="f19"></a>
+ Ibid., 191.
+</li><li><a id="f20"></a>
+ Hay, 183.
+</li><li><a id="f21"></a>
+ Ibid., 182.
+</li><li><a id="f22"></a>
+ <i>Domestic Politics</i>, 101; Robert does later explain that he also believes it would be god for Mary and Katherine to spend time away from their mother and from Penshurst: ‘for here they cannot learn, what they may do in other places’ (103), but he is insistent that William ‘now no more to be in the nursery among women’ (104).
+</li><li><a id="f23"></a>
+ Hay,182.
+</li><li><a id="f24"></a>
+ See <i>Domestic Politics</i>, 12 and passim.
+</li><li><a id="f25"></a>
+ These letters are in the process of being edited by the Domestic Politics team, but until then can be consulted (although the transcripts are not always reliable) in Historical Manuscripts Commission Report, <i>De L’Isle and Dudley Preserved at Penshurst Place</i>, 6 vols. (1925-1966).
+</li><li><a id="f26"></a>
+ It is not that Robert neglects his other children as he also begins to ask Barbara to ‘kiss and bless all our little ones’ (34), and continues in this vein after 1592, not singling Mary out any more unless, for example, she is ill (see 68). However, in 1595 he begins to use a new nickname for the eight year old Mary: ‘Malkin’ (69).
+</li><li><a id="f27"></a>
+ See the reproduction of Mary’s letter to Buckingham in <i>Poems</i>, ed. Roberts, 77; Robert again expresses his pleasure in ‘Mall’ writing well in 1596 (88).
+</li><li><a id="f28"></a>
+ Barbara must have conveyed Robert’s promise to Mary, because by April 1597 Whyte writes to him: ‘I wold to God your lordship wold bestow a letter upon Mrs. Mary, yt wold gretly encourage her to doe well, for since you said you wold wryte, she by her speaches shewes a longing for yt’ (<i>HMC De L’Isle & Dudley</i>, ii.264).
+</li><li><a id="f29"></a>
+ See Hannay, <i>Philip’s Phoenix</i>, 169.
+</li><li><a id="f30"></a>
+ Waller, 79-80.
+</li><li><a id="f31"></a>
+ Clarendon, <i>History of the Rebellion</i>, ed. Macray (Oxford, 1888), i.72.
+</li><li><a id="f32"></a>
+ Mary was considered a good match even before this rise in her father’s fortunes: Rowland Whyte describes an approach on behalf of Sir Thomas Mansfield’s eldest son, who was just fifteen (HMC, ii.413).
+</li><li><a id="f33"></a>
+ Mary Ellen Lamb offers a fascinating albeit (as she suggests) speculative case for Catherine’s authorship of three manuscript poems, see <i>Gender and Authorship</i>, chap. 5. 
+</li><li><a id="f34"></a>
+  See <i>Domestic Politics</i>, 115 & 119.
+</li><li><a id="f35"></a>
+ Ibid., 123.
+</li><li><a id="f36"></a>
+ Ben Jonson, <i>Complete Poems</i>, ed. Georg Parfitt (Harmondsworth: Penguin, 1975), 470.
+</li><li><a id="f37"></a>
+ Josephine A. Roberts, ed., <i>The First Part of the Countess of Montgomery’s Urania</i> (Binghampton: MRTS, 1995), lxxxix-xci; Hannay argues that Robert Wroth was far from being the ‘boorish’ figure many modern scholars have made him out to be, and it is clear that it would be wrong to see him wholly in negative terms, Jonson’s comment is telling, and at the very least Mary Wroth keeps reverting in her fiction to an image of a less than wholly satisfactory marriage set against a truer love, but on the other hand, as Hannay notes, Robert Wroth refers very positively to his wife in his will: (p. 172), and see below.
+</li><li><a id="f38"></a>
+ Josephine Roberts also speculates that this may be Wroth’s attempt to legitimise the two children she had with William Herbert, see her detailed consideration in ‘ “The Knott Never to Bee Untied” : the Controversy Regarding Marriage in Mary Wroth’s <i>Urania</i>’, in Naomi Miller and Gary Waller, <i>Reading Mary Wroth</i> (Knoxville: University of Tennessee Press, 1991), 109-32.
+</li><li><a id="f39"></a>
+ <i>Urania</i>, xc-xci.
+</li><li><a id="f40"></a>
+ <i>Domestic Politics</i>, 140.
+</li><li><a id="f41"></a>
+ Roberts, ed., <i>Poems</i>, 22-3.
+</li><li><a id="f42"></a>
+ See Brennan, <i>Literary Patronage</i>, chap. 6.
+</li><li><a id="f43"></a>
+ See Barroll’s <i>Anna of Denmark, Queen of England: A Cultural Biography</i> (Philadelphia: University of Pennsylvania Press, 2001), esp. chap. 4; see also Barbara K. Lewalski, <i>Writing Women in Jacobean England</i> (Cambridge Mass., Harvard University Press, 1993), chap. 1.
+</li><li><a id="f44"></a>
+ Ibid. 97-99; see also Sophie Tomlinson, <i>Women on Stage in Stuart Drama</i> (Cambridge: Cambridge University Press, 2005), chap. 1..
+</li><li><a id="f45"></a>
+ Ibid., 47-8.
+</li><li><a id="f46"></a>
+ Ibid., 49.
+</li><li><a id="f47"></a>
+ Ibid., 90.
+</li><li><a id="f48"></a>
+ Roberts, ed., <i>Urania</i> I, liii; Wilson is not an objective witness as he was a strong critic of the Stuart court.
+</li><li><a id="f49"></a>
+ Ibid., lii-liii.
+</li><li><a id="f50"></a>
+ This is the modern dating; at the time, 6 January was still regarded as being 1604, as the year did not change until 25 March. 
+</li><li><a id="f51"></a>
+ References to Ben Jonson, <i>The Complete Masques</i>, ed Stephen Orgel (New Haven: Yale University Press, 1969).
+</li><li><a id="f52"></a>
+ Quoted in Barroll, 103.
+</li><li><a id="f53"></a>
+ Antimo Galli, <i>Rime</i> (1609), see 24, stanza 70; see also John Orrell, Antimo Galli’s Description of The Masque of Beauty, HLQ 43 (1979), 13-23.
+</li><li><a id="f54"></a>
+ Marion Wynne-Davies, ‘The Queen’s Masque: Renaissance Women and the Seventeenth-Century Court Masque’, in S.P. Cerasano and Marion Wynne-Davies, <i>Gloriana’s Face</i> (Hemel Hempstead: Harvester, 1992), 95-9. 
+</li><li><a id="f55"></a>
+ Ibid., 98.
+</li><li><a id="f56"></a>
+ See the more detailed account of the poems in the next section of this introduction, and see Roberts, ed., <i>Poems</i>, 62.
+</li><li><a id="f57"></a>
+ See the account and transcription of the recently discovered letter, Margaret J. Arnold, ‘An Unpublished Letter of Mary Wroth’, <i>ELR</i> 35 (2005), 454-8; also relevant, I think, is the fact that Mary kept using the Sidney family arms during her marriage and signed much of her work with an S fermé, ie. an S with a stroke through it, again maintaining her identity as a Sidney.
+</li><li><a id="f58"></a>
+ Margaret P. Hannay suggests the idea of the Countess as a mentor in ‘ “Your Vertuous and Learned Aunt””: the Countess of Pembroke as Mentor to Mary Wroth’, Miller and Waller, eds., <i>Reading Mary Wroth</i>, 15-34.
+</li><li><a id="f59"></a>
+ See Roberts, ed., <i>Poems</i>, 13.
+</li><li><a id="f60"></a>
+ See Jonsons’ ‘A Sonnet to the Noble Lady, the Lady Mary Wroth’ <i>Complete Poems</i>, 71.
+</li><li><a id="f61"></a>
+ Ben Jonson, <i>The Alchemist</i> (1612), A2v.
+</li><li><a id="f62"></a>
+ See Croft, ed., <i>Poems</i>, 1-16.
+</li><li><a id="f63"></a>
+ Hannay, <i>Philip’s Phoenix</i>, 201. 
+</li><li><a id="f64"></a>
+ Anne Clifford, <i>Diary</i>, ed. Katherine O. Acheson (New York: Garland 1995)
+</li><li><a id="f65"></a>
+ See Roberts, ed. Poems, 26.
+</li><li><a id="f66"></a>
+ See Marion Wynne-Davies, ‘ “So much worth”: Autobiographical Narratives in the Work of Lady Mary Wroth’, Henk Dragstra et al., eds., <i>Betraying Our Selves</i> (London: Routledge, 2000), 76-93; and also her earlier article ‘ “Here is sport will well befit this time and place”: Allusion and Delusion in Mary Wroth’s Love’s Victory’, <i>Women’s Writing</i> 6 (1999), 47-64.
+</li><li><a id="f67"></a>
+ Hannay, p. 251. 
+</li><li><a id="f68"></a>
+ Ibid., pp. 251-3.
+</li><li><a id="f69"></a>
+ Chamberlain, Letters, ii.575.
+</li><li><a id="f70"></a>
+ Quoted from Roberts, ed., <i>Poems</i>, 26.
+</li><li><a id="f71"></a>
+ See Hannay, <i>Philip’s Phoenix</i>, 210, and Hannay, <i>Mary Sidney Lady Wroth</i>, pp. 282-3..
+</li><li><a id="f72"></a>
+ Hannay, <i>Mary Sidney</i>, p. 295.
+</li><li><a id="f73"></a>
+ Ibid., p. 295; Hannay has also discovered that Katherine bore two children in this marriage, named James and ‘Phe’ (Philip, honouring Philip Sidney), p. 296.
+</li><li><a id="f74"></a>
+ Roberts, ed., <i>Urania</i> I, cxii-cxvii; a facsimile of this copy is available as part of the Ashgate Early Modern Englishwoman collection, ed. Josephine Roberts (Aldershot: Ashgate, 1996, series 1, part 1, vol. 10). 
+</li><li><a id="f75"></a>
+ I have traced the afterlife of Wroth’s writing in <i>Reading Early Modern Women’s Writing</i> (Oxford: Oxford University Press, 2006), chap. 3.
+</li><li><a id="f76"></a>
+ Margaret Cavendish, <i>Poems and Fancies</i> (1653), A3v; ‘work’ means needlework.
+</li><li><a id="f77"></a>
+ Roberts, ed., <i>Poems</i>, 244-5, I have modernized the text.
+</li><li><a id="f78"></a>
+ Hannay, pp. 302-3..
+</li>
+</ol>
+</div>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

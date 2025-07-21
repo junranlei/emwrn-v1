@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=help&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="meta">
+                            <h2 id="64" class="authorheading">Help</h2>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 0  help">
+                                
+<p>
+ This site contains high resolution images. Mobile device users should be aware this may impact on data usage.
+ </p><p>
+ The diversity of texts in this archive requires a diversity of user interfaces. Each scanned document in this archive is presented in the way most suited to it. All texts can also be viewed with the 'Facsimile Viewer'.
+ </p>
+
+<h3>Citing This Site</h3>
+<p>The persistent URL, or DOI, for the EMWRN digital archive to use in citations is <a href="http://hdl.handle.net/1959.13/1326860">http://hdl.handle.net/1959.13/1326860</a></p>
+ 
+ <h3>Recommended Browsers</h3>
+ <p>This site works best in Google Chrome or Mozilla Firefox. While Internet Explorer does work, it performs poorly and is not recommended.</p>
+ 
+ <h2>Facsimile Viewer</h2>
+ <p>
+ While the texts may be variously presented with transcriptions, translations and indexing, all facsimiles (scanned images of the texts) may be clicked for closer scrutiny in the Facsimile Viewer.
+ </p>
+ <h3>Thumbnails</h3>
+ <p>All scans of the text are shown in the scrollable row of thumbnails at the top. Click a thumbnail to view the scan in the viewing pane.
+ </p>
+ <h3>Zoom</h3>
+ <p>Move the zoom scroll bar right and left to change the magnification of the facsimile.
+ </p>
+ <h3>Low/High Resolution</h3>
+ <p>A low and high resolution facsimile is supplied for each scan. To change the resolution, simply click 'low' or 'high' at the top right. Low resolution may be preferable for faster loading of facsimiles when reading and browsing through manuscripts. High resolution is preferable for close scrutiny of an individual facsimile. In some cases the highest resolution of a facsimile available is the same as the low resolution due to limited availability of images.
+ </p>
+ <h3>Drag</h3>
+ <p>Click and drag the facsimile in the viewing pane for ease of viewing. This may be preferable to constant scrolling. Note that if the facsimile is moved up and to the right and then zoomed out, it may disappear outside the window. Simply zoom in again and drag the facsimile back down and to the right. Alternatively, just reload the page to restore the facsimile to its original position.
+ </p>
+ <h3>Known issues</h3>
+ <p>In some cases, the facsimile is of such high quality that the high resolution facsimiles may cause browsers to time out or other problems when loading, resulting in a browser error message. Usually, refreshing will continue and complete the load of the high resolution facsimile.
+ </p>
+ 
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

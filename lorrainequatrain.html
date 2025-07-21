@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=lorrainequatrain&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="marystuart.html">Mary Stuart</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="14" class="authorheading">Mary Stuart</h2><h3>Quatrain in Anne of Lorraine’s Book of Hours</h3><p><strong>Contributor:</strong> <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a></p><p><strong>Date:</strong> 1559-60</p><p><strong>Material:</strong> Print</p><p><strong>Source:</strong> Joseph-Balthazar Silvestre, <i>Paléographie Universelle</i>, Volume III, 1840 (Paris: Firmin Didot frères, 1841).  Note: Publication date of Vol III is 1840, while the publication date of the series is given as 1841.
+<br />
+J. B. Silvestre, ‘Plate CXCVIII Gothic Miniscule Writing XVth Century: Book of Prayers of Mary Stuart’, in <i>Universal Palæography</i>, Vol II, Trans. Sir Frederic Madden (London: Henry G. Bohn, 1849), p. 553.
+</p><p><strong>Permissions:</strong> The 1840 image is taken from Silvestre’s original in the Special Collections, Rare Books section of the State Library of NSW and is no longer in copyright. The image was purchased from the State Library of New South Wales, Sydney. 
+The 1849 English translated image is a public domain image from Archive.org  <a href="https://archive.org/stream/universalpalaeo00silvgoog#page/n194/mode/2up">https://archive.org/stream/universalpalaeo00silvgoog#page/n194/mode/2up</a>. The original book is held at Princeton University.
+</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 14 da lorrainequatrain">
+                                  <script type="text/javascript" src="scripts/concertinaColumns.js"></script>
+  
+
+  <div class="digarch">
+  
+
+  <a id="content"></a>
+      <div id="search">
+        <p>Select versions to display:<br />
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" />1840 Image
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" />1840 Transcription
+		<input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 2);" />1840 Translation
+       	<input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 3);" />1849 Image
+       	<input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 4);" />1849 Transcription
+       	<br /><br />
+
+      </div>
+
+  
+  
+  <div>
+  <table class="content" id="general">
+  <tr class="shade">
+  	<th style="min-width: 200px;">1840 Images</th>
+  	<th style="min-width: 380px;">1840 Transcription</th>
+	<th style="min-width: 380px;">1840 Translation</th>
+  	<th style="min-width: 200px;">1849 Images</th>
+  	<th style="min-width: 380px;">1849 Transcription</th>
+  </tr>
+  <tr>
+	<td><a href="da/stuart/img/stuart_lorraine1840/stuart_lorraine1840.jpg">
+      <img src="da/stuart/img/stuart_lorraine1840/stuart_lorraine1840-lowres.jpg" alt="Page of Mary Stuart manuscript." /></a>
+	</td><td>
+    <div style="padding: 0; margin: 720px 0 0 0;">
+	<p>Si ce lieu est pour ecrire ordonné
+</p><p>Ce quil vous plest auoir en souenance
+</p><p>Je vous requiers que lieu mi soit donné
+</p><p>Il que nul temps ne noste lordonance
+</p><p>Royne de Frāce (monogram MS) Marie
+</p>
+</div>
+	</td><td>
+        <div style="padding: 0; margin: 720px 0 0 0;">
+<p>If this place for writing is set aside,
+</p><p>Please remember;
+</p><p>I require that space be given to me
+</p><p>And that time does not erase the privilege. 
+</p><p class="indent">Queen of France M.S. Marie 
+</p>
+</div>
+  </td><td>
+  <p>
+      <a href="da/stuart/img/stuart_lorraine/universalpalaeo00silvgoog_0195.jpg">
+      <img src="da/stuart/img/stuart_lorraine/universalpalaeo00silvgoog_0195-lowres.jpg" alt="Page of Mary Stuart manuscript." /></a>
+  </p>
+  
+  </td>
+  <td>
+  <div style="padding: 0; margin: 220px 0 0 0;">
+	<p>
+Si ce lieu est pour écrire ordonné,
+	</p><p>Ce qu’il vous plest avoir en sovenance,
+</p><p>Je vous requiers, que lieu mi soit donné,
+</p><p>Et que nul temps ne’ n oste l’ordonance.       	
+</p><p class="indent">Royne de Frāce (monogram M.S.) Marie
+	</p>
+    </div>
+  </td>
+
+  </tr>
+  
+  </table>
+  
+
+  
+  	</div>
+  </div>
+  
+  
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

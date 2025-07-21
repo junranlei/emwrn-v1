@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=techno&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="86" class="authorheading">Technical Note</h2>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 2  techno">
+                                <p><a href="http://www.newcastle.edu.au/profile/bill-pascoe">William Pascoe</a>, 2016</p>
+<p>
+The EMWRN archive is a bespoke website built in a standard 'LAMP' web development environment: Linux, Apache, MySql and PHP. Beyond that the EMWRN archive was a challenge to conventional IT practices. One of the core requirements of the archive was to showcase the diversity of forms that early modern women's writing exists in. In the early years of print, the conventions of authorship and publishing had not been settled and women's role in the literary milieu was lively and crucial but also unsettled in a turbulent time of changing social, religious and political structures. This means texts of the time come in many forms, often not adhering to our now established assumptions and conventions about books and authorship. It's this focus on diversity of form, not merely quantity of content, which made this project most challenging, and most interesting from an IT perspective.
+</p>
+<h3>The Archive As IT And Research Experiment</h3>
+<p>
+Usually in IT projects, the first process is 'business analysis' where, through consultation with the client, patterns and commonalities in the information are identified, the aim being to identify and design the common forms into which all the information will be organised, stored and represented as content. We might expect an archive of books, for example, to have a database of titles, each with an author, publication date, and each with sequential pages presented as scans and as digitised transcriptions. Since most books neatly adhere to this form, if you build a process for storing and presenting books, it makes little difference to a developer if there are 10, 1000 or 1 million. Through these consistent forms the information can be stored effectively for re-use in a variety of ways, the data can be more simply added to and the information can be retrieved and processed for as much or as little data as is available. Consistent forms enable flexibility in handling large amounts of information. In this sense it might have been easier to build a vast archive for the entire Gutenberg corpus, than for EMWRN because the explicit requirement for the EMWRN archive was to store and display texts which don't necessarily fit into an established form.
+</p><p>
+From the earliest discussions, this 'boutique' archive was to be distinguished from the 'big archives' which by then had become common, but in which particular texts are lost in noise and in which the quantity of texts risks fetishization of data size at the expense of the experience and critique obtained through reading. It was to showcase selected texts, with detailed introductory material, guided not only by the idiosyncratic nature of the material but by the desires of the researcher of that section as to how they wanted it to be presented. The requirements would emerge as we progressed and it would only become clear over time what each item in the archive would have in common. This meant adopting a strategy of remaining always ready to adapt code to new forms, rather than identifying a form with which all content would comply. To add to the challenges, it was not clear at the outset what particular instances of this diversity we would encounter. As it turned out they included the following kinds of texts, in a variety of combinations such as, sometimes to be presented side by side for comparison:
+<ul>
+<li>scanned books
+</li><li>translations
+</li><li>transcriptions
+</li><li>multiple variations on an original
+</li><li>'simulacra' or multiple versions without an original
+</li><li>multilingual texts</li>
+</li><li>editions of the same text with differing content
+</li><li>collections of short texts
+</li><li>texts of dubious attribution
+</li><li>inscriptions on stone
+</li><li>marginalia
+</li>
+</ul>
+
+<p>
+Each text had differences making it rare that the same code could be re-applied for each, at least without some customisation. The clearest cases of commonality and re-use were the need to display content side by side, though what was to be displayed in how many columns varied, and the need to view scanned images. In retrospect, as with all projects, some things would have been done differently, and some already existing software might have been adopted, but at the commencement of the project, there was little software suitable (there are now many online manuscript viewing systems) and it was none the less necessary to retain full control of the code through bespoke development to ensure any potential requirement in this evolving project could be met. It was essential to the ethos of the project not to put IT constraints before research needs, but to adapt IT to meet research needs as they arose.
+</p><p>
+There is a paradox of flexibility in IT where the more strictly content adheres to form, which seems inflexible to humans, the more flexible the system becomes, as data can be re-purposed and presentation modified to handle large amounts of information quickly rather than having to deal with each on a case by case basis. On the other hand the strictness of form in IT is more flexible that it may seem. IT systems are typically flawed and buggy, easily broken by something as simple as a misplaced fullstop. The form itself is also relatively easily changed. Thus in development, a form is devised for one text and may then be applied to another for convenience and 'overloaded' or 'overridden' in software jargon, to adapt to a slightly different circumstance. Software development is a fluid process, always subject to economic limitations on time and energy, of adapting constraints to meet needs and fulfil visions of the usefulness of and access to information.
+</p><p>
+The heuristic approach of the EMWRN project, now recognised as fundamental to digital humanities, had the added benefit of potentially resulting in innovative IT solutions and ways of interacting with texts, particularly those that don't fit neatly into the conventions of the 'book' that have come to be accepted and assumed since the Early Modern era. Innovations in presentation and interaction techniques might not be recognised when we constrain ourselves to established IT conventions and off the shelf solutions (though those should still be used to save time and effort if that is all that is required). In this sense the EMWRN archive has been as much a research experiment in IT and online archives, as in the field of Early Modern Women's writing. The EMWRN archive has generated ideas and informed practice in other undertakings, from setting up exhibits for acquisitions in the GLAM sector to publishing online, multi-platform translations. It has also served as an impetus to equip research assistants and post graduate students with IT and digital humanities skills.
+</p><p>
+Digital humanities research requires an more flexible software development cycle and even closer client collaboration than contemporary development paradigms such as 'agile', 'rapid', 'scrum' and so on. Arguably it also requires greater flexibility than software development for STEM research where the problem domain is focused on regularity of form and already well structured data that is amenable to software development. The point of research is that the solution is not already understood so the usual process of business analysis can only ever be rudimentary. To fully scope and specify requirements at the beginning of a research project would be counter productive, potentially hindering research as new information comes to light and changes the direction of enquiry. In humanities, as it is accommodating of, often focuses on, and may be defined by in contrast to science, irregularity, marginality, idiosyncracy, historical contingency and unique instances, we often find IT systems cannot be simply applied but must be hacked, fiddled, customised, tweaked, overridden and cobbled together. While this sort of bricolage is not uncommon in IT, it characterises IT for humanities research. This necessitates a very close collaboration, or mix of skills, with ongoing discussion of problems arising, suggested solutions, quick feasibility assessments and recommendations, always ensuring some core value and outcomes are produced while the budget dwindles away.
+</p>
+<h3>Learning From An Ideal Past</h3>
+<p>
+All IT projects operate under tight economic constraints. A wide variety of things are possible, but not all within the budget and time available. Typically an IT project identifies early on a prioritised list of requirements from 'mission critical' to 'nice to have', particularly with a project developed on the fly such as this, we achieve what's necessary for success but are left with things we'd like to have but couldn't afford. Learning what you would have done if you could start again remains an important outcome of a development project, informing future projects. A boutique archive such as this would benefit from:
+</p>
+<ul>
+<li>More testing of multiplatform delivery, such as responsive design, ePub and print versions.
+</li><li>TEI-Lite versions to make it easier to process the texts through other DH systems.
+</li><li>More thinking around solutions to the problem of presenting and interacting with parallel texts (image, versions, transcriptions and translations) that don't correspond line by line, paragraph to paragraph or page to page.
+</li><li>A more abstract, multi-featured concertina system.
+</li><li>Improved architecture and database structure for injecting divergent archive content types.
+</li><li>Enhancements to the facsimile viewer.
+</li><li>Applying other software systems for scholarly editing which emerged during or after the project.
+</li><li>Enhanced admin user interface for ease of updating content.
+</li><li>Budget for ongoing maintenance and enhancements.
+</li>
+</ul>
+<h3>The Archive As Critique</h3>
+<p>
+Rather than simply being a vessel for the dissemination of texts as content, the conjunction of IT and early modern women's texts in their diverse, unconventional forms, was intended from the outset to function as a critique and as a practice that would raise critical questions. As an archive focusing on women, on marginalia, on divergent forms that resist assumptions and conventions with all the attendant politics, the EMWRN archive, by its very existence functions as critique, enacting its agenda, rather than merely stating and arguing about what is and what should be. Rather than, for example, arguing that women's writing is under represented and under recognised, it represents and makes it recognisable.
+</p><p>
+The intention of this project was not only to produce materials and tools for research but that the process itself would be research, teaching us something and generating ideas. This archive, like other contemporary archives, is historically significant at this turning point in textual production and in the materiality of text. There is a poetic resonance between these texts from the early era of print, and this project early in our emerging era of digital texts. In this archive there are documents from the early years of printing in Europe, from hand written manuscripts, such as the book of hours to early print editions and reruns, now copied in this still young digital medium. The act of doing this brings to the fore the process of technological change itself, the historical contingency of what is written and how and by who it is written, distributed and read. For example, the ideas of authorship, authenticity, purpose and ownership of texts were disrupted by a sudden change in speed of production and dissemination, then, as now. We can see many similarities in these early days of print to this early activity of digital editions - then, as now, the way things are to be done is not completely established, problems arise that different people solve in different ways, sometimes concurrently and convergently, in the evolution of formal conventions (and consequently marginalisation since any form excludes what isn't compliant), in production, presentation, interaction, authorship and reading.
+</p><p>
+Perhaps the most interesting facet of the project is 'hypermateriality'. The texts online are both less and more real that the manuscripts and books from which they are copied. The material presence of old books and manuscripts have an aura, a 'presence', contributed to by the difficulty of travelling to them (whether it be to your city's library, or across the world) and the weight of years that they have existed, the knowledge of the hands and eyes that have interacted with them over the centuries, and the knowledge of their rarity, that if this unique physical object were to be destroyed it would be once and for all. By contrast the texts online can be accessed casually because they can be called up and closed down at no expense and without damaging anything, from your office, at home or on your mobile. They can be accessed by anyone, anywhere in the world, rather than only the few who are aware of them and care enough and can afford to make the trip to see them. Their accessibility means people may discover the texts who would not have otherwise. Communities of interest and collaboration may form more easily around the texts but this ease may also diminish the gravitas of such communities, and of the experience of the texts themselves. The ability to compare the texts quickly, without the need to travel to various libraries around the world, may make noticeable what would have remained obscure.
+</p><p>
+The facsimile viewer, more than anything else, conveys the 'hypermateriality' of these texts. Cybernetic technology typically enhances our experience or faculties - seeing further, hearing clearer, moving faster, etc. These texts become realer than real because, while you cannot access some aspects of their materiality, their smell, sound, weight, in other ways the technology heightens our experience of them. While developing the facsimile viewer I was often distracted by the aesthetic pleasure of flipping through the pages to zoom in and out of the nuances of handwriting, print and illustration, the texture of the fibres of paper and tonal gradients of ink - their enhanced materiality in this medium of electricity and light. I was also distracted by reading the texts, made more profound by the ready-to-hand contextualising knowledge and interpretative apparatus of the translations, essays and biographies. Interacting with the scans and texts is rich aesthetic pleasure, not replacing, superior to or lesser than the pleasure of the 'presence' of the original, but a pleasure that is different to and augments the original, and is at least better than being unable to experience these texts at all due to the difficulty of accessing them. Ease of access, both by web presence and user interfaces, contributes to hypermateriality, because the texts exist more readily for you, and their probability of existing, memetically, for more people around the world is increased.
+</p>
+<h3>An Archive With Someone To Read It</h3>
+<p>
+The problematics of big versus boutique archives, of retrieving signal texts from the noise of vast archives, of discoverability, hypermateriality, technological change, dissemination and form, all come back to an important point for both IT and the study of literature - that without a reader, without a person spending time experiencing, perusing and thinking about a text, there is no text. There's only pigments and tree fibres, magnetic charges, electrical pulses and photons. Caught up in IT budgets, project methodology and ticking off institutional requirements for grant funded outcomes, our focus and purpose must always return to the reader, now and into the open ended future, accessing and appreciating texts, and that is what this online archive provides. The raison d'etre of an archive is after all, like writing, that someone might read the works at some future time because the value of what is written transcends the fleeting moments of our own lives. What I love most about this project is the thought of someone somewhere happening upon something they never knew existed, receiving this signal across the ages, wondering about the life behind the hand that wrote it, wondering at how close these words came to being lost forever and at how their own experience of reading is shared with lives both past and future:
+</p>
+<div class="indent">
+
+<p>
+Si ce lieu est pour ecrire ordonné
+</p><p>Ce quil vous plest auoir en souenance
+</p><p>Je vous requiers que lieu mi soit donné
+</p><p>Il que nul temps ne noste lordonance
+</p><p>&nbsp; &nbsp; <a href="da/index.php%3Fcontent=lorrainequatrain.html">Royne de Frāce, Marie</a>
+</p>
+</div>
+
+
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=sonnetsandrewmelville&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="13" class="authorheading">Elizabeth Melville</h2><h3>Two Sonnets to Andrew Melville</h3><p><strong>Contributor:</strong> <a href="http://www.victoria.ac.nz/seftms/about/staff/sarah-">Associate Professor Sarah Ross</a></p><p><strong>Material:</strong> MSS</p><p><strong>Description:</strong> Other MS contents: the sonnets occur alongside three unascribed sonnets (?by James Melville) and an unascribed Latin epigram (by Andrew Melville). </p><p><strong>Source:</strong> National Library of Scotland, Crawford Collections, Acc. 9769, Personal Papers 84/1/1, p. 174</p><p><strong>Permissions:</strong> By permission of the Earl of Crawford and Balcarres.</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 13 da sonnetsandrewmelville">
+                                 <script type="text/javascript" src="scripts/concertinaColumns.js"></script>
+ 
+ <div class="digarch">
+ 
+ <!-- C O N T E N T -->
+ <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+ <!-- APMS: End Header Start Content -->
+ 
+ <!-- Body inserted here. -->
+ 
+   <form action="https://c21ch.newcastle.edu.au/search.html" method="get">
+     <div id="search">
+       <p>Select versions to display:<br />
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription
+      	<br /><br />
+       <!-- <input name="checkbox" type="checkbox" value="checkbox"
+       	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+       	-->
+     </div>
+   </form>	
+ 
+ 
+ <div>
+ <table class="content" id="general">
+ <tr class="shade">
+ 	<th style="min-width: 200px;">Images</th>
+ 	<th style="min-width: 380px;">Transcription</th>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_crawford/melville_crawford_01.jpg">
+     <img src="da/melville/img/melville_crawford/melville_crawford_01-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+
+     <div class="indent">
+<p>
+     <strong>1.</strong>	
+</p>
+     </div>
+<p>
+     Now baalamis band ar blindit with balakis wadge*
+</p><p>
+     the ass is dumb becaus hir stripes ar small
+</p><p>
+     bot quhen that lord sall meit thame in his raige
+</p><p>
+     and schaik his sword than sall he teach thame all
+</p><p>
+     the ass sall speik and spur against the wall
+</p><p>
+     the propheit proud sall preis* to turne agane
+</p><p>
+     bot all to[o] lait a wecht* of wraith sall fall
+</p><p>
+     and balak w<sup>t</sup> the cursed king is slaine
+</p><p>
+     then turne in tyme curss not for greid of gaine
+</p><p>
+     leave af yo<sup>r</sup> lustis* and gaip not for sic glor
+</p><p>
+     Ye wishe to die the iust manis death in vaine
+</p><p>
+     except ye live as thy hev* lived befoir
+</p><p>
+      
+</p><p>
+     <strong>Balaam</strong>  the biblical prophet who ‘loved the wages of unrighteousness’, and his band are here a figures for the Scottish bishops. See 2 Peter 2:15; Numbers 22; Revelation 2:14.
+</p><p>
+     <strong>wadge</strong>  pledge, payment
+</p><p>
+     <strong>preis</strong>  beset or harass
+</p><p>
+     <strong>wecht</strong>  weight
+</p><p>
+     <strong>lustis</strong>  lusts, pleasures or enjoyments
+</p><p>
+     <strong>hev</strong>  have
+</p><p>
+      
+</p>
+     <div class="indent"><p>
+          <strong>2.</strong>	
+     </p></div>
+     
+     <table id="amelville2" style="border-style: none;"><tr>
+          <td>
+               <p> </p>
+               <p>My lady culros to  </p>
+               <p>m<sup>r</sup> andro Meluill</p>
+          </td>
+          <td>
+     <p>
+     Anagrame
+</p><p>
+       Meik* men ar wexed* Iust saullis ar taine avay
+</p><p>
+          And weill war myne to flit* among the rest
+</p><p>
+     Now lord mak haist and call me frome this clay
+</p><p>
+     Deir Iesus cum how long sall troubill lest
+</p><p>
+     Resave* my spreit w<sup>t</sup> paine it is opprest
+</p><p>
+     Evill is this aige the faithfull now dois faill
+</p><p>
+     Wp lord how long thy sancttis* ar soir distressed
+</p><p>
+     Mainteine thy trouth let not ye proud prevaill
+</p><p>
+     End out my fecht*, how can this hart be <span class="strike">har</span> haill
+</p><p>
+     Lord sall I leive to sie thy spous in paine
+</p><p>
+     Vuhy* sleipis thow so, thow seis thy secreit seill*
+</p><p>
+     In the[e] we trust althocht we sould be slaine
+</p><p>
+     Now soullis do schyne* quho luik vnto thy licht
+</p><p>
+     And weill var myne to sie yat blissed sicht.
+</p>
+          </td>
+     </tr></table>
+               <p>
+      
+</p><p>
+     <strong>Anagrame</strong>  <i>And weill war myne</i> is a loose anagram of <i>Andrew Mellwyn</i>; the poem also incorporates an acrostic on the same name, M ANDREW MELVIN.
+</p><p>
+     <strong>meik</strong>  meek; <strong>wexed</strong>  afflicted
+</p><p>
+     <strong>flit</strong>  to leave or move
+</p><p>
+     <strong>Resave</strong>  Receive
+</p><p>
+     <strong>sancttis</strong>  saints
+</p><p>
+     <strong>fecht</strong>  fight
+</p><p>
+     <strong>Vuhy</strong>  adjusted by the scribe from Quhy (Why), to serve the purposes of the acrostic
+</p><p>
+     <strong>seill</strong>  prosperity 
+</p><p>
+     <strong>schyne</strong>  shine
+</p><p>
+     
+</p><p>
+     
+</p>
+     <div class="indent">
+     <p>
+          <strong>3.</strong>	
+     </p></div>
+     <p>
+     Cast cair on chryst w<sup>t</sup> courage bair his cross
+</p><p>
+     And heir his woyce, quho* for thy sin was slaine
+</p><p>
+     pance* not for paine, defy this dunge and dross
+</p><p>
+     Licht is thy loss, quhen god sall be thy gaine
+</p><p>
+     frome feir refraine, his treuth sall still remaine
+</p><p>
+     do not complaine, to suffer heir a space
+</p><p>
+     A schour* of grace vnto thy saullis sall raine
+</p><p>
+     This vorld in vaine sall seik to spoill thy pace*
+</p><p>
+     blissed is thy caice*, sweit is that plesand place
+</p><p>
+     fair is that face yat schortlie thow sall sie
+</p><p>
+     Thy howp* is hie quho sall thy soull embrace
+</p><p>
+     end out thy raice and blissed sall thow be
+</p><p>
+     reioyce and sing thocht sathan sift ye <span class="strike">sor</span> soir
+</p><p>
+     fecht for thy king and gaine ane crowne of glor
+</p><p>
+      
+</p><p>
+     <strong>quho</strong>  who
+</p><p>
+     <strong>pance</strong>  consider, ponder 
+</p><p>
+     <strong>schour</strong>  shower
+</p><p>
+     <strong>pace</strong>  peace
+</p><p>
+     <strong>caice</strong>  case
+</p><p>
+     <strong>howp</strong>  hope
+</p><p>
+ 
+</p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="https://c21ch.newcastle.edu.au/emwrn/da/melville/img/melville_crawford/hres/melville_crawford_02.jpg">
+     <img src="da/melville/img/melville_crawford/melville_crawford_02-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+
+     <div class="indent"><p>
+     <strong>4.</strong>	
+     </p><div class="indent">
+     <p>
+          Ane Sonnet on [<i>illegible text crossed out</i>]
+</p></div></div>
+     <p>
+     
+</p><p>
+     Vill nocht godis vord the[e] frome thy courss recall.
+</p><p>
+     vill nocht thy bretherine, best adwyse the[e] move
+</p><p>
+     will nocht thy predecessouris pryde and fall
+</p><p>
+     mak the[e] to wy the best for thy behoue
+</p><p>
+     thoucht thow aspyre thy fallow meittis aboue
+</p><p>
+     thoucht smoithlie in thy sattaines nov thov schines
+</p><p>
+     thoucht princes thy supremasie approue
+</p>
+     <div class="indent">
+     <p>
+     Yit god in end sall lauche at thy ruwynes
+</p></div>
+     <p>
+     becaus thov dreims and foolischlie dewynes
+</p><p>
+     in wealth in rest and ease to dryue thy dayis
+</p><p>
+     and at Jeheuahis preceptis still repynis
+</p><p>
+     quahirfoir thy ass is wirie of thy vayis 
+</p><p>
+     quha did the[e] doun intill ane dung hill cast
+</p>
+     <div class="indent"><p>
+     Ane presage of ane filthie fall at last.
+</p></div>
+     <p>
+      
+</p><p>
+     <strong>Ane Sonnet on</strong>  The name of the subject and addressee of this bitterly political sonnet has been deliberately blacked out.
+</p><p>
+ 
+</p>
+     <div class="indent"><p>
+          <strong>5.</strong>	
+     </p></div>
+     <p>
+     Cum balamitarum sic tanta frequentia valum
+</p><p>
+     cur loquitur toto Nullus in orbe assinus
+</p><p>
+     Non yemus stat contra assinus non creditur ora
+</p><p>
+     quj rese<span class="strike">r</span>rat Muta non dedit ora deus
+</p><p>
+     
+</p><p>
+     <strong>For a translation, see the Textual Introduction.</strong>
+</p><p>
+      
+</p>
+     <div class="indent">
+     <p>
+          <strong>6.</strong>	
+     </p></div>
+     <p>
+     M
+</p><p>
+     I can not tell quhat all thir Muisis meinis
+</p><p>
+     parnasus pen I neuer tuik in hand
+</p><p>
+     sic practisse as to poesie pertenis
+</p><p>
+     I neuer learnd nor yit culd vndirstand
+</p><p>
+     I am nocht ane of bright appollos band
+</p><p>
+     for feir to fall I dar nocht clyme so hie
+</p><p>
+     in helicon I neuer fauour fand
+</p><p>
+     the sisteris Nymphes ar not acquent vith me
+</p><p>
+     in simpill songis of plainest poesie
+</p><p>
+     I loue my loue in waiknes as I can 
+</p><p>
+     my styll is bass my matter mair nor hie
+</p><p>
+     giue glore to god na praiss pertenis to man
+</p>
+     <div class="indent"><p>
+     he is my Muise my treasure strenth and stoir
+     </p></div>
+     <p>
+     giue him his dew and I desyre no moir [?R]
+</p>
+ </td>
+ </tr>
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ </table>
+
+ 
+ 	</div>
+ </div>
+ 
+ 
+ 
+ 
+ 
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

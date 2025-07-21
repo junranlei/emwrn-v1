@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=jacobbio&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="maryjacob.html">Mary Jacob</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="12" class="authorheading">Mary Jacob</h2><h3>Biography</h3>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 12  jacobbio">
+                                <p>
+Lady Mary Jacob circulated in texts of the early seventeenth century as a figure of scandal. The first surviving account of Jacob is in Barnaby Rich's 1612 'Remembrances of the State of Ireland' and one of the last is in the entry for 1621 in Arthur Wilson's <i>The History of Great Britain, Being the Life and Reign of King James I</i>, published a year after his death in 1653. In both of these tracts, Jacob is a symbol of the particular corruptions of the times. For Rich, she is 'Syr Robert Jacob's lusty wyf' whose excessive spending is symptomatic of malpractices within the administration in Ireland.<a href="jacobbio.html#f1" class="foot">1</a>  Lady Mary Jacob returned to London following Sir Robert's death in 1618, where her behaviour marked her out, according to Wilson, as 'a Widdow, and of no good Fame', a 'kind of <i>Spirit</i>' that symbolized the 'Vanity of this Age'.<a href="jacobbio.html#f2" class="foot">2</a>
+</p><p>
+There is little historical evidence for Mary Jacob's early life. Rich's 'Remembrances of the State of Ireland' - a confidential report on the administration of Ireland written for Sir Julius Caesar, Chancellor of the Exchequer - contains a section, 'Of Unworthy Persons p[re]ferred to office in Ireland', in which he writes frankly and probably slanderously of Sir Robert Jacob, the Solicitor General of Ireland, and more particularly of his wife, Lady Mary. Rich claimed that 'it is well knowne' that 'Robert Jacobe maryed a sailers wydowe of southampton called by the name of Mall Target, as famous of reporte in the towne of southampton as Mall Neubery in the cytty of London', who 'before she cam into Irelande had bydden defyance to modesty'. The scrabbling for office and corrupt practices that Rich attributes to Jacob were necessitated, he claims, by the need to fund his wife's roistering, her 'excessyve bravery, hyr pompe, hyr pryde, hyr prodygalyte, hyr roystynge, hyr rampynge, hyr revelynge, hyr feastynge, hyr gamyinge and other hyr idell & inordynat expendynge'.<a href="jacobbio.html#f3" class="foot">3</a>  
+</p><p>
+Before her marriage to Robert Jacob, Mary Targett appears to have been at the very least a propertied 'sailers wydowe of Southampton'. At her death in 1622, she owned a substantial amount of property and land in Southampton. She may have acquired these properties after her marriage, but it is just as likely that one of the attractions of this Southampton widow was her wealth. Mary Targett seems to have come from the prosperous middling classes of Southampton. Her 'cousin' was Francis Knowles, a merchant and alderman of Southampton.<a href="jacobbio.html#f4" class="foot">4</a>  Robert Jacob was the second son of a gentleman of Bockhampton, Dorset, and entered the Middle Temple in 1587. Among his contemporaries at this Inn were John Hoskins and Sir John Davies, whom he succeeded as Solicitor General in 1606, when Davies took the office of Attorney General. 
+</p><p>
+Lady Mary Jacob involved herself in the business of her first husband and then her second, Christopher Brooke, a lawyer and member of parliament. She appears to have been an active letter writer. Sir Robert Jacob's letters make reference to his wife's own letters petitioning members of the Privy Council on his behalf.  In February 1614, he wrote to a privy counsellor, probably Henry Howard, Earl of Northampton, in which he alluded to his wife's efforts on his behalf: 
+</p>
+<div class="indent">
+<p>
+My wife has long been a suitor for some reward of my long service here. She has propounded for a book of concealments, but I feel not the effect of her solicitation. If you would give me your furtherance, I doubt not but I should obtain it, and thereby be the better enabled to do his Majestys service.<a href="jacobbio.html#f5" class="foot">5</a> 
+</p>
+</div>
+<p>
+After Robert's death in early November 1618, she appears to have been involved, unsuccessfully, in trying to sell his office of Solicitor General. Sir Lawrence Parsons wrote to Sir Richard Boyle in late November, that 'one Garnon, a yong man of lincones Inn is to be solicitor here, & bought of my lady Jacob, as the greatest bidder for yt'.<a href="jacobbio.html#f6" class="foot">6</a>  It was not to be, instead Sir Richard Bolton was appointed Solicitor General at the end of December.	Lady Mary Jacob returned to London following Robert's death, and married Brooke in December 1619. Although her main residence had been in Dublin, it is likely that she accompanied Robert Jacob on his visits to London during their time in Ireland.  An epithalamium was written for their marriage, which survives in only two known manuscript copies: on a separate among the Conway papers and in a miscellany held in the Bradford Record Office. The epithalamium is accompanied by anagrams (Christopher Brooke / 'Richer for bookes'; Mary Brooke / 'A merrie booke') and explanatory verses. It is likely that the epithalamium was either read or sung at the wedding entertainments and, along with the anagrams, presented as a gift to the couple. The couple took a house on Drury Lane across the street from John Donne, Brooke's close friend since their Inns of Court days. The households seem to have been in close contact. Donne attended Lady Jacob during her last illness; he wrote to Sir Thomas Roe with news of her death in December 1622. 
+</p><p>
+Lady Jacob may well have hosted social gatherings at the house on Drury Lane, and, if so, it is likely that these events would have included some of her husband's friends, not only Donne, but also John Hoskins and Sir Lionel Cranfield. Eighteen months after the death of Lady Jacob, Chamberlain, writing of the impending impeachment of Cranfield in July 1624, surmised that 'though there be matter enough to presse him downe, yet yf he be guiltie of one thing wherof he is vehemently suspected I dare read his destinie (as well as the Lady Jacob) without looking in his hand'.<a href="jacobbio.html#f7" class="foot">7</a>  This suggests that one of Lady Jacob's 'party tricks' may have been to read the fortune of her guests. 
+</p><p>
+Just as Lady Mary took an active interest in her first husband's career, she also tried to act as a broker for Brooke in relation to parliamentary business. She corresponded with George Villiers, Duke of Buckingham, about helping him to manage her husband and his allies in the 1621 parliament. While none of her petitioning letters written on behalf of her first husband survive, there is a letter from Lady Mary to Buckingham, sent on 28 April 1621 from her house on Drury Lane. From her letter, it seems that Buckingham asked her to exert influence over, in her words, her 'friends the fathers of the Lower House'. She responded by asserting her 'forward disposition to do my Patria and his great Master my best and humblest seruice'.<a href="jacobbio.html#f8" class="foot">8</a> 
+</p><p>
+Lady Jacob was again 'news' in 1622, the year in which she died. Chamberlain wrote to Sir Dudley Carleton in July that there was 'a hot suit commenced in the Starchamber twixt Sir John Davies Lady and the Lady Jacob about womanish brabbes, and an uncivill scurrilous letter written by Kit Brooke in his wifes behalf'.<a href="jacobbio.html#f9" class="foot">9</a>   A copy of Brooke's letter survives in the Conway Papers. Lady Mary Jacob and Lady Eleanor Davies were acquainted with each other through their husbands - Sir Robert and Sir John - who had worked closely together in Ireland. Sir Robert visited Lady Davies when he was in London on business, and relations between the two seem to have been cordial.<a href="jacobbio.html#f10" class="foot">10</a>  From Brooke's letter, it appears that when the two women met in London in 1622, Lady Davies insulted not only Lady Jacob but also her child. This could have been her daughter, Mary, from her first marriage; however, it was probably her son John from her second marriage to Brooke. Given that John was 'eight yeares and more' on 8 December 1627, when Brooke wrote his will, he must have been born before their marriage on 18 December, 1619.<a href="jacobbio.html#f11" class="foot">11</a>  Lady Davies's insult therefore may be been directed at his paternity. There is no record of any proceedings in the Star Chamber between Davies, Brooke or Jacob; the case probably was not concluded because Lady Mary became ill later in the year and died in December.
+</p><p>
+Lady Mary Jacob was a comparatively well-known figure in early seventeenth-century London and Ireland and appears to have had a reputation for bold behaviour that was sometimes deemed brazen by her contemporaries. From the time of her marriage to Sir Robert Jacob in the late sixteenth century until her death in 1622, she had access to the vibrant social world of the Middle Temple and the wider Inns of Court, where she could have met John Hoskins through the friendships of either of her two lawyer husbands. Her marriage to Christopher Brooke led to her friendship with Donne, and it may have also introduced her to their old friend, Hoskins, or renewed their acquaintance. The attribution of the burlesque answer poems, first performed at the Middle Temple revels of 1597/98, at which Hoskins had a prominent role as the prince's orator, to Lady Mary Jacob and Hoskins in the Bowyer miscellany may therefore tell us much about the culture in which these poems were first composed and performed.
+</p>
+
+<div class="footnotes">
+<ol>
+<li><a id="f1"></a>C. Litton Falkiner, ed. 'Barnaby Rich's 'Remembrances of the State of Ireland, 1612', with notices of other manuscript reports, by the same writer, on Ireland under James the first', <i>Proceedings of the Irish Academy</i>, Vol. XXVI, Section C, No. 8 (1906), 133.
+</li><li><a id="f2"></a>Arthur Wilson, <i>The History of Great Britain Being the Life and Reign of King James I</i> (London, 1653), p. 146.
+</li><li><a id="f3"></a>'Barnaby Rich's 'Remembrances', p. 132
+</li><li><a id="f4"></a>See the transcript of Christopher Brooke's will in A. B. Grosart, 'Memorial-Introduction', <i>The Complete Works of Christopher Brooke, Miscellanies of the Fuller Worthies' Library</i> (1872), pp. 14-24.
+</li><li><a id="f5"></a><i>Historical Manuscripts Commission, 78: Report of the Manuscripts of the late Reginald Rawdon Hastings, Esq. of the Manor House, Ashby de la Zouch</i>, edited by Francis Bickley. (London: HM Stationery Office, 1947), IV, p. 8.
+</li><li><a id="f6"></a><i>The Lismore Papers: Selections from the Private and Public (or State) Correspondence of Sir Richard Boyle, first Earl of Cork</i>, ed. A.B. Grosart, 5 vols. (1887-88), II, 154.
+</li><li><a id="f7"></a>John Chamberlain, <i>The Letters of John Chamberlain</i>, ed. N. E. McClure, 2 vols (Philadelphia: The American Philosophical Society, 1939), II, p. 556.
+</li><li><a id="f8"></a>BL, Harleian. MS. 1581, 240r. 
+</li><li><a id="f9"></a>Chamberlain, <i>Letters</i>, II, p. 444.
+</li><li><a id="f10"></a>See Jacob's letter to Sir John Davies in 1617, <i>Hastings MSS</i>, pp. 16-17.
+</li><li><a id="f11"></a>Grosart, 'Memorial-Introduction', pp, 14, 24.
+</li>
+</ol>
+</div>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

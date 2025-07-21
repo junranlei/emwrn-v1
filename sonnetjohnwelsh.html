@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=sonnetjohnwelsh&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="13" class="authorheading">Elizabeth Melville</h2><h3>Sonnet to John Welsh</h3><p><strong>Contributor:</strong> <a href="http://www.victoria.ac.nz/seftms/about/staff/sarah-">Associate Professor Sarah Ross</a></p><p><strong>Material:</strong> MSS</p><p><strong>Description:</strong> Other MS contents: the manuscript is in the very extensive collection of Robert Wodrow, who gathered papers relating to the persecution of Scottish presbyterians and published <i>The History of the Sufferings of the Church of Scotland</i> in 1721-2. The poem is copied in Wodrow's hand and is identified as 'Lady Culross sonnet to Mr Welsh. At Blackness 1605 or 1606'.
+ </p><p><strong>Source:</strong> National Library of Scotland, MS Wod. Qu. XXIX (iv), fols 10-11</p><p><strong>Permissions:</strong> Reproduced by permission of the National Library of Scotland</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 13 da sonnetjohnwelsh">
+                                 <script type="text/javascript" src="scripts/concertinaColumns.js"></script>
+ 
+
+ <div class="digarch">
+ 
+ <!-- C O N T E N T -->
+ <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+ <!-- APMS: End Header - Start Content  -->
+ 
+ <!-- Body inserted here. -->
+ 
+   <form action="https://c21ch.newcastle.edu.au/search.html" method="get">
+     <div id="search">
+       <p>Select versions to display:<br />
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription
+      	<br /><br />
+       <!-- <input name="checkbox" type="checkbox" value="checkbox"
+       	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+       	-->
+     </div>
+   </form>	
+ 
+ 
+ <div>
+ <table class="content" id="general">
+ <tr class="shade">
+ 	<th style="min-width: 200px;">Images</th>
+ 	<th style="min-width: 380px;">Transcription</th>
+ </tr>
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_welsh/melville_welsh_10.jpg">
+     <img src="da/melville/img/melville_welsh/melville_welsh_10-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+ 
+<div class="center">
+     <p>numb 4</p>
+</div>
+     <div class="alignright">
+     <p>Lady Culross
+     </p><p>
+     sonnet to
+     </p><p>
+          M<sup>r</sup> Welsh. At
+     </p><p>
+     Blackness
+     </p><p>
+          1605 o<span class="underline">r 1606</span>
+     </p>
+     </div>
+
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_welsh/melville_welsh_11.jpg">
+     <img src="da/melville/img/melville_welsh/melville_welsh_11-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+<div class="indent">
+          <div class="indent">
+               <div class="indent">
+                    <p>A Sonnet sent To Blackness</p>
+               </div>
+               <p>To Mr John We[l]sh By y<sup>e</sup> Lady Culross</p>
+          </div>
+     </div>
+     <p>My Dear Brother wt courage Bear y<sup>e</sup> Crosse
+     </p>
+     <div class="indent">
+          <p>
+     Joy shall be joyned wt all thy sorrow here
+     </p></div>
+     <p>
+          High is thy Hope disdain this earthly Drosse
+     </p>
+     <div class="indent"><p>
+          once shall yow see the wished day appear
+     </p></div>
+     <p> 
+     </p><p>
+          Now it<span class="strike">s</span> is dark thy sky cannot be clear
+     </p>
+     <div class="indent">
+          <p>
+          after the clouds it shall be calm anone
+     </p></div>
+     <p>
+          wait on his will whoos Blood hath Bo’t* y<sup>e</sup> dear
+     </p>
+     <div class="indent">
+          <p>
+          extoll his name tho outward joyes be gone.
+     </p></div>
+     <p> 
+     </p><p>
+          Look to y<sup>e</sup> Lord thow art not left alone
+     </p>
+     <div class="indent">
+          <p>
+     since he is thine qt* pleasure canst thow take·
+     </p>
+          </div>
+     <p>
+     He is at hand and hears thy heavy groan
+     </p>
+     <div class="indent"><p>
+     End out thy faught and suffer for his sake.
+     </p>
+          </div>
+     <p> 
+     </p>
+     <div class="indent">
+          <p>
+     A sight most Bright thy soul shall shortly see
+     </p><p>
+     when store of C’s lore thy Rich Reward shall be:
+     </p>
+          </div>
+     <p>
+     </p>
+     <div class="indent"><p>
+     R J D B
+     </p>
+          </div>
+     <div class="indent"><div class="indent"><p>
+     I know not what News
+     </p>
+     </div></div>
+          <p>
+     are come with the post this evening but I 
+     </p><p>
+     know yow will have them to better purpose from 
+     </p><p>
+          other hands: M<sup>r</sup> T[?raill] is not yet come but
+     </p><p>
+     I still expect him: I hear noe news about 
+     </p><p>
+          the O except that of the M<sup>rs</sup> of the Colledge 
+     </p><p>
+          the most of them going to Ed<sup>en</sup> to take it: The 
+     </p><p>
+     Principall is all ready returned I expect to
+     </p><p>
+     hear more on this head afterwards. My re
+     </p><p>
+     =spects to your wife Mother in Law & all
+     </p><p>
+     the Children particularly Sandie: I am
+     </p><p>
+     in haste
+     </p>
+     <div class="indent"><div class="indent"><p>
+          Yours by many oblig <sup>ns</sup>
+     </p></div></div><p>
+        Gl: Novr 30
+     </p>
+     <div class="indent">
+          <p>
+               <span class="underline">i7i</span>5
+     </p></div>
+     <p> 
+     </p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_welsh/melville_welsh_back.jpg">
+     <img src="da/melville/img/melville_welsh/melville_welsh_back-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+<div class="indent"><p>
+     To
+     </p></div><p>
+     The Reverend
+     </p><p>
+     Mr Widdorow 
+     </p><p>
+          Minister of y<sup>e</sup> Gospell
+     </p><p>
+     <..>  Eastwood
+     </p><p> 
+     </p><p>
+          <strong>Bo’t</strong>  bought
+     </p><p>
+          <strong>qt</strong>  quhat, what
+     </p>
+          
+ </td>
+ </tr>
+ 
+ 
+ 
+ </table>
+ 
+ 
+ 
+ 	</div>
+ </div>
+ 
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

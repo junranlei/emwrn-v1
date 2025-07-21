@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=ronsard&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="marystuart.html">Mary Stuart</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="14" class="authorheading">Mary Stuart</h2><h3>Sonnets and Verse to Ronsard</h3><p><strong>Contributor:</strong> <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a></p><p><strong>Date:</strong> 1581?</p><p><strong>Material:</strong> MSS</p><p><strong>Source:</strong> The Bodleian Libraries, The University of Oxford, MS. Add c. 92, fol.22</p><p><strong>Permissions:</strong> The Bodleian Libraries, The University of Oxford..</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 14 da ronsard">
+                                <script type="text/javascript" src="scripts/concertinaColumns.js"></script>
+ <div class="digarch">
+ 
+  <!-- C O N T E N T -->
+  <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+  <!-- APMS: End Header Start Content -->
+  
+  <!-- Body inserted here. -->
+  
+
+      <div id="search">
+        <p>Select versions to display:<br />
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+        <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription
+		<input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 2);" /> Translation
+       	<br /><br />
+        <!-- <input name="checkbox" type="checkbox" value="checkbox"
+        	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+        	-->
+      </div>
+
+  <p><strong>NB: For clarity corrections made within the manuscript have been noted below the images and transcription.</strong></p>
+  
+  
+  
+ 
+ 
+ <table class="content doubleline" id="general">
+ <tr>
+ 	<th style="min-width: 200px;">Images</th>
+ 	<th style="min-width: 380px;">Transcription</th>
+    <th style="min-width: 380px;">Translation</th>
+ </tr>
+ 
+ <tr>
+ <td>
+ 
+   <p>
+     <a href="da/stuart/img/stuart_ronsard/bab0001.jpg">
+         <img src="da/stuart/img/stuart_ronsard/bab0001-lowres.jpg" alt="manuscript" /></a>
+ </p>   <p>
+
+     <a href="da/stuart/img/stuart_ronsard/bab0002.jpg">
+         <img src="da/stuart/img/stuart_ronsard/bab0002-lowres.jpg" alt="manuscript" /></a>
+ </p>
+ </td>
+ <td style="line-height:125%;">
+ 
+ 
+   <div class="padForLeftOutdent">
+   <p> </p>
+   <p> </p>
+
+ <p>		o signeur Dieu resceuez ma priere
+ </p><p>	Qui est selon ta sainte voulonte
+ </p><p>	Car si'il ne playt a ta grand mageste
+ </p><p>	Je defandray a la demi carriere
+ </p><p>	Elas signeur ie retourne en arriere
+ </p><p>	lasse desia si ta grande bonte
+ </p><p>	ne renforcit ma fraile voulonte
+ </p><p>	De ta vertu a franchir la barriere
+ </p><p>			Tu veusx Signeur estre maitre du cueur
+ </p><p><span class="outdentLeft">10</span>			Viens donc signeur & y fays ta demeure
+ </p><p>			pour en chasser l'amour & la rancueur
+ </p><p>			le bien le mal mostant tout soing & cure
+ </p><p>			fors seulement de paruenir a toy
+ </p><p>			penitament en constance & en foy
+ </p>
+ 
+    <p> </p>
+ 
+ <p>			    Donnes seigneur dones moy pasciance
+ </p><p>			& renforces ma trop debile foy
+ </p><p>			que ton esprit me condisuse en ta loy
+ </p><p>			& me guardes de choir par imprudance
+ </p><p>			Donee signeur donne moy la constance
+ 
+     <p> </p>
+     <p> </p>
+     <p> </p>
+     <p> </p>
+                 
+ <p><span class="outdentLeft">20</span>			en bien & mal & la perseuerance
+ </p><p>			reduis en toy toute mon esperance
+ </p><p>			& hors du cueur moste tout vaynes moy
+ </p><p>			Ne permets plus d'au monde remasuisi
+ </p><p>			mays tout plesir fors en toy ie refuse
+ </p><p>			Deliures moy de toutes passions
+ </p><p>			dire dereur & de tout autre vice
+ </p><p>			& prouois moy de doulceur & iustice
+ </p><p>			dun cueur deuot & sayntes actions
+ </p>
+ 
+      <p> </p>
+     <p> </p>
+ 
+ <p>		Ronsart. Si ton bon cueur de gentille nature
+ </p><p><span class="outdentLeft">30</span> 	te ment pour le respect dun peu de nouriture
+ </p><p>quen tes plus jeunes ans tu as resceu dun Roy
+ </p><p>De ton Rooy alie et de sa mesme loy
+ </p><p>Je diray non couart ni tasche dauarice
+ </p><p>Mays digne a mon aduis du nom de braue prince
+ </p><p>Elas ne scriues pas ses fayts ni ses grandeurs
+ </p><p>Mays quil a bien voulu empesche de mal heurs
+</p>
+ 
+ 
+ </div>
+ 
+ </td><td>
+ 
+     <p> </p>
+     <p> </p><p>
+O Lord God, receive my prayer
+</p><p>
+Which is according to your holy will,
+</p><p>
+For if it does not please your great majesty
+</p><p>
+I will be condemned to a half-life.
+</p><p>
+Alas Lord, I am going over old ground,
+</p><p>
+Weary already if your great goodness
+</p><p>
+Did not strengthen my frail will,
+</p><p>
+Through your virtue, to leap the barrier.
+</p><p>
+You wish, Lord, to be master of my heart;
+</p><p>
+Come, therefore, Lord, and make your home there.
+</p><p>
+For in banishing love and rancour
+</p><p>
+Good and evil, removing all concern and care
+</p><p>
+Leaves only me reaching out to you,
+</p><p>
+Penitently with constancy and faith.
+</p><p>
+ 
+</p><p>
+Give, O give me, Lord, patience,
+</p><p>
+And strengthen my too frail faith
+</p><p>
+So that your spirit leads me according to your law.
+</p><p>
+And safeguard me from falling through rashness.
+</p><p>
+Give, O give me, Lord, constancy,
+</p>
+
+     <p> </p>
+     <p> </p>
+     <p> </p>
+     <p> </p>
+     
+<p>
+In good and bad times, and perseverance,
+</p><p>
+All my hope concentrated in you,
+</p><p>
+And from my heart remove all vanity;
+</p><p>
+No longer acquiescing with the misguided world,
+</p><p>
+But all pleasure I reject except in you.
+</p><p>
+Deliver me from all passions,
+</p><p>
+From anger, from error and all other vices,
+</p><p>
+And provide me with gentleness and justice
+</p><p>
+Of a devout heart and saintly actions.
+</p><p>
+ 
+</p><p>
+ 
+</p><p>
+Ronsard, if your good and kind natured heart
+</p><p>
+Misleads you, out of consideration for the few benefits       
+</p><p>
+That in your younger years you received from the King,
+</p><p>
+From your King, bound to you by common law,
+</p><p>
+I do not call you coward or taint you as avaricious,
+</p><p>
+But, in my opinion, you are worthy of the name courageous prince.
+</p><p>
+Alas! Do not write of his deeds, nor his greatness,
+</p><p>
+But that he wished to prevent misery.
+</p>
+ 
+ </td>
+ 
+ 
+ </tr>
+ </table>
+ 
+ 
+  <div class="footnotes">
+<p>
+1. priere] prieres <i>MS corrected to</i> priere
+</p><p>
+2. est] sont <i>MS corrected to</i> est       voulonte] voulontay <i>MS corrected to</i> voulonte
+</p><p>
+3. majeste] majestay <i>MS corrected to</i> majeste
+</p><p>
+4. <i>line begins</i> demasis est] <i>deleted in MS</i>
+</p><p>
+7. <i>line begins</i> ne re] <i>deleted in MS</i>
+</p><p>
+10.
+<span class="indent">+ Mays sans toy ie ne puis ten randre le veinceur</span>
+</p><p><span class="indent">mais ie ne pous ten randre le veincur</span>
+</p><p><span class="indent">sil ne te plest pat ta douce clemance</span>
+</p><p><span class="indent">Le ramolir] <i>deleted in MS</i></span>
+</p><p>
+11. pour en chasser] <i>deleted in MS</i>
+</p><p>
+12. mostant] mostant sans <i>MS corrected to</i> mostant       soing] soin <i>MS corrected to</i> soing
+</p><p>
+14. en constance & en foy] et constant en ta foy…<i>MS corrected to</i> et constante en ma foy…<i>MS corrected to</i> en constance & en foy
+</p><p>
+21. + ne me priue iamays de ta sainte esperance <i>deleted in MS</i>
+</p><p>
+23. <i>line on fold of page and almost illegible</i>
+</p><p>
+25. + Ostes mon DIeu <i>deleted in MS</i>
+</p><p>
+26.
+<span class="indent">+ & abaorer toius especes devices</span>
+</p><p>
+	<span class="indent">de tous erreurs <i>deleted in MS</i></span>
+</p><p>
+34. + Ou bien si tu <span class="strike">auoys encore quelque desir</span> as en quelque foys le desir <i>deleted in MS</i>
+</p>
+</div>
+ 
+ 
+ 
+ 		</div>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

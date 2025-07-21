@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=melvillehistory&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="13" class="authorheading">Elizabeth Melville</h2><h3>Textual History</h3>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 13  melvillehistory">
+                                <h3>I. Introduction</h3>
+<p>Elizabeth Melville is a more prominent figure than many in early modern women's literary history, on account of her popular printed poem, <i>Ane Godlie Dreame</i>, first published in Scots in 1603. This 480-line dream vision poem of the soul's progress was much-loved in her own lifetime and after, its anglicised revision being reprinted at least 12 times before 1737. Melville's authorship of the <i>Dreame</i> has always been known: it was ascribed on its first title page to 'M. M. Gentelwoman in Culros', and in subsequent editions to 'Lady Culros yonger'. Melville has thus enjoyed a continuous reputation as the author of that poem, although its critical fortunes have varied over time.<a href="melvillehistory.html#f1" class="foot">1</a>
+</p><p>
+It is only very recently, however, that the much greater extent of her poetic activity has come to light, with the attribution to her of the manuscript poetry that is the focus of the collection in this archive. Alexander Hume, Rector of Logie referred to Melville's 'compositiones so copious, so pregnant, so spiritual' in the dedication to her of his <i>Hymnes, or Sacred Songs</i> (1599), and his description can now be corroborated by religious lyrics located in five separate manuscript contexts. Jamie Reid Baxter has attributed to Melville a large cache of poems preserved as a discrete section at the end of New College Library, University of Edinburgh, MS Bruce 2, a bound volume of sermons by Robert Bruce, the presbyterian minister who was banished from Edinburgh to France in 1600. There is, among the papers of the ecclesiastical historian Robert Wodrow, an acrostic sonnet written to John Welsh in 1605-6 that is already well known and anthologized; this is now complemented by a comparable pair of sonnets addressed to the leading presbyterian spokesman Andrew Melville, in the Crawford papers at the National Library of Scotland. A sacred parody of Christopher Marlowe's 'The Passionate Shepherd to His Love' is attributed to Melville in an early eighteenth-century miscellany at the Beinecke Library, Yale University. And Reid Baxter also believes Elizabeth Melville to be the author of a lengthy poem, 'Loves Lament for Christs Absence', preserved in another Wodrow manuscript in the National Library of Scotland and assigned by Wodrow to one 'Thomas Melville'. Over the last 10 years, over 3500 'new' lines of verse have been attributed to Melville, revealing her to be a prolific and accomplished early modern woman poet.<a href="melvillehistory.html#f2" class="foot">2</a> (For two further manuscript occurrences of Melville's verse listed in CELM, both post-dating printed versions, see section IV, below.)
+</p><p>
+Melville's newly-expanded poetic <i>oeuvre</i> in manuscript has implications for our understanding not only of her own work, but of early modern Scottish women's writing and Scottish Calvinist poetic culture more broadly. Jane Stevenson has drawn attention to the relative paucity of Scottish women writers in the sixteenth and seventeenth centuries, suggesting that the conditions for women's creative expression there were less promising than they were in England. She accurately describes Melville as early modern Scotland's 'one major published woman poet', and she notes that Melville also left poetry in manuscript.<a href="melvillehistory.html#f3" class="foot">3</a> The extent and reach of this manuscript poetry, however, is only now becoming clear. Melville may not exactly be the 'Scottish Katherine Philips' that Stevenson is looking for, but her manuscript poems and the contexts of their preservation do suggest that she may be relatively unique as a British woman writer before Philips in the extent to which she cultivated the circulation of her poetry in politicized manuscript networks, as well as in her publication in both print and manuscript modes. 
+</p><p>
+Melville's lyrics in manuscript are also suggestive of a Scottish Calvinist poetic culture that is very much richer than has previously been understood. David Parkinson has recently reflected:
+</p>
+<div class="indent">
+<p>
+The view that Scottish literary culture loses its way after 1603 may have remained current simply because scholars have yet to pay sustained attention to the manuscript production of that more widely diffused and precisely localised culture which had developed in the sixteenth century and which ensured that the departure of the court was not the mortal blow it has sometimes been depicted as being.<a href="melvillehistory.html#f4" class="foot">4</a>
+</p>
+</div>
+<p>
+Parkinson notes that much of the richest literary writing post-1603 is religious in cast, and he suggests that 'gentlewomen like Elizabeth Melville and Margaret Cunningham play[ed] leading roles' in these diffused, localised religious poetic cultures.<a href="melvillehistory.html#f5" class="foot">5</a> Certainly, Melville's manuscript lyrics associate her strongly with the religious works of her older contemporaries Alexander Hume and James Melville, and their antecedents in Alexander Montgomerie and James VI and I himself, as well as a number of more minor preacher-poets such as David Dickson. The excavation of Elizabeth Melville's religious lyrics and their manuscript contexts is only one strand in an increasingly sustained attention to early seventeenth-century Scottish manuscript culture, which offers a challenge to the long-standing idea that Calvinism blighted the literary arts in Renaissance Scotland.
+</p><p>
+The collection of texts in this archive is designed to foreground the address and transmission of Melville's lyrics in manuscript to central figures in the Scottish presbyterian movement. She is fond of anagrams and acrostics, basing two poems at the opening of the Bruce manuscript on a variant of her own name, and inscribing the names of John Welsh and Andrew Melville into sonnets addressed to them. Her address to each of these men, inscribed into the sonnets' forms, appears to have been born out in material terms: the sonnets are preserved in disparate contexts, indicating their individual circulation. The sonnet to Andrew Melville is preserved in a particularly acute political context, alongside a fiercely anti-episcopalian Latin epigram of Andrew Melville's own, and three other lyrics likely to be by his nephew James. The materials in and around the poems in this Crawford manuscript are all highly critical of Scottish episcopacy. 
+</p><p>
+Other material contexts illustrate a longer reading and reception history for Melville's lyrics in manuscript. The sonnet to John Welsh and 'Loves Lament for Christs Absence' are preserved in the papers of Robert Wodrow, who gathered extensive materials relating to the persecution of Scottish presbyterians and published <i>The History of the Sufferings of the Church of Scotland</i> in 1721-1722. 'A Call to Come to Christ' is preserved in an early eighteenth-century religious miscellany in the hand of Elizabeth Bruce Boswell. Boswell's religious miscellanies indicate an interest in religious texts across a wide denominational spectrum, and in religious texts by women; she also had connections to Culross and to Melville's family that may have heightened her interest in Melville's poems, and perhaps facilitated access to them. While this evidence of Melville's lyrics being read in manuscript by another woman is isolated, we can only assume &mdash; as for any manuscript text-that the extant artefacts of reading and reception are likely to be very partial. 
+</p><p>
+The synergies between the formal and material properties of Melville's lyrics are also of interest, and are illustrated in the images in this archive. Her inscription of names into the forms of her sonnets, via acrostics and anagrams, is matched by a lithic inscription that may also be hers: a text inscribed on the outward-facing wall of the Melville family tomb at Collessie, exhorting passers-by to 'pans [think] on your fall and your offences past'. This devout roadside hoarding is certainly in the imperious spirit of Melville's poetic addresses to her fellow presbyterian readers and interlocutors, including the final exhortative section of the <i>Dreame</i>. The Collessie inscription provides a material post-script to Elizabeth Melville's manuscript lyrics, the poetic forms and material manifestations of which enable us to explore the distinctive texture and culture of Scottish presbyterian religious poetry, and to trace the material conditions of its inscription, dissemination, and preservation.
+</p><h3>
+II. Descriptive List of Manuscripts
+</h3><p>
+<strong>New College Library, University of Edinburgh, MS Bru 2, fols 170v-184r.</strong> The <a href="da/index.php%3Fcontent=brucelyrics.html">Bruce manuscript</a> is a bound volume likely to have been compiled in the early seventeenth century. Its main contents are a series of unpublished sermons on Hebrews XI, preached by Robert Bruce at St Giles, Edinburgh, in late 1590 and spring 1591.<a href="melvillehistory.html#f6" class="foot">6</a> Folios 170v-184r contain a cache of 29 religious lyrics ranging from a dixain to very lengthy verse meditations, including three original religious sonnet sequences. The sermons and the poems are copied into the manuscript in the same clear secretary hand. Jamie Reid Baxter believes that the sermons are marked up for printing, with the appropriate signatures appearing on relevant folios.<a href="melvillehistory.html#f7" class="foot">7</a> The poems are not marked up in this way, but they are presented in neat double columns, in clear presentation form.
+</p><p>
+	The poems are unattributed, but the first two are based on an anagram and an acrostic that seem to identify Elizabeth Melville as the author. The opening sonnet uses the anagram SOB SILLE COR (or 'sob silly heart', with 'silly' meaning simple, ignorant, and lowly) in its opening and closing lines. Reid Baxter has pointed out that the anagram can be unscrambled as ISBEL COLROS, that is, Isobel Culross, and he  notes that Isobel was an attested variation on Elizabeth in Scottish texts.<a href="melvillehistory.html#f8" class="foot">8</a> The second poem, a dixain, also appears to inscribe Elizabeth Melville's name into its form: it is based on the acrostic ISABELLCOR. Presuming that the acrostic and anagram are indeed markers of authorial identity, Melville's inscription of herself into the devotional sonnet can be compared to the practices of Anne Vaughan Lock and, later, John Donne, both of whom punned on their own names in devotional poetic contexts.
+</p><p>
+	The preservation of poems in this manuscript indicates a readership shared with the sermons of Robert Bruce, one of the most famed presbyterian preachers of his generation. Bruce's theology was 'Calvinist in the extreme', in Reid Baxter's words; and David Mullan believes that 'none have a greater claim to be known as father to the [covenanting] movement than Robert Bruce'.<a href="melvillehistory.html#f9" class="foot">9</a> Bruce was banished from Edinburgh in 1600, and his sermons were 'prized and preserved' in manuscript and circulated widely among like-minded presbyterians.<a href="melvillehistory.html#f10" class="foot">10</a> Bruce was a close associate of Andrew and James Melville, having studied under them at St Andrews; he was also well known to John Livingstone and Elizabeth Melville later in his life, when he returned from exile and lived on his family estate at Kinnaird, near Culross. 
+</p><p>
+	On the basis of the sermons' dating, and the dense Scottish orthography of the poems, Reid Baxter believes the Bruce manuscript is likely to date from around the time of Bruce's removal from Edinburgh, in 1600.
+</p><p>
+<a href="da/index.php%3Fcontent=sonnetjohnwelsh.html">The Sonnet to John Welsh</a> is preserved in <strong>National Library of Scotland, MS Wod. Qu. XXIX (iv), fols 10-11</strong>. This volume is part of the extensive papers of the ecclesiastical historian Robert Wodrow, who collected materials relating to the persecution of Scottish presbyterians, and published <i>The History of the Sufferings of the Church of Scotland</i> in 1721-1722. 
+</p><p>
+	The sonnet is clearly addressed to Welsh during his imprisonment at Blackness Castle in 1605-1606, after he took part in the abortive General Assembly in Aberdeen, which was held without royal permission. It is based on an acrostic of his name: M JHONE WELSHE ('after' in line 6 is likely to have been the Scots 'efter' in the original poetic text). The sonnet addresses Welsh in his time of darkness, and exhorts him to 'bear the cross' with courage. 
+</p><p>
+	The sonnet is an eighteenth-century copy in Robert Wodrow's own hand, and is labelled as 'Lady Culross sonnet to Mr Welsh. At Blackness 1605 or 1606'. (The National Library of Scotland catalogue notes that it has been 'copied by Wodrow upon a blank leaf of an anonymous letter sent to him, dated 1715 and probably concerning the Abjuration Oath.') The poem's authorship and context are, then, clear, but the text is probably flawed. Editors and anthologisers have disputed the intended reading of the final couplet in particular: see versions in Germaine Greer et al (eds), <i>Kissing the Rod: An Anthology of Seventeenth-Century Women's Verse</i> (London: Virago, 1988), and David Laing, <i>Early Metrical Tales</i> (London, 1826). Reid Baxter believes the correct version to be 'when Store of Glore thy Rich Reward shall be'; see, for example, 'and gaine ane crowne of glor' at the end of the 'Cast cair on chryst' sonnet to Andrew Melville.
+</p><p>
+	The sonnet's preservation among the Wodrow papers is indicative of Melville's place in the early eighteenth-century records of those who suffered for the Scottish kirk.
+</p><p>
+The <a href="da/index.php%3Fcontent=sonnetsandrewmelville.html">Sonnets to Andrew Melville</a> are preserved in <strong>National Library of Scotland, Crawford Collections, Acc. 9769, Personal Papers 84/1/1, pp. 174-175</strong>. The manuscript volume consists primarily of one of at least sixteen extant manuscript copies of Robert Lindsay of Pitscottie's <i>History and Chronicles of Scotland</i>, a continuation of Hector Boece's chronicle that covers the reigns of James II through to the accession of the infant James VI.<a href="melvillehistory.html#f11" class="foot">11</a> The Crawford MS dates from about 1600 and it contains, after the Pitscottie text, a number of added miscellaneous items dating from about 1598-1623. These include a manuscript copy of Patrick Adamson, Archbishop of St Andrews' refutation of episcopacy. The overall tenor of the added items is criticism of the Scottish bishops, and among them, on pp. 174-175, is the single folio of five lyrics and one Latin epigram that is reproduced in this archive.
+</p><p>
+	The five lyrics and epigram on this folio appear to be of differing authorship (see below), and the poems on the recto (p. 174) are in a different hand from those on the verso (p. 175). The texts are all, however, linked by common themes, and a cluster of authors: Elizabeth Melville, Andrew Melville, and in all likelihood, James Melville. Items b), c), and e) can be dated with reasonable accuracy, suggesting that the lyrics date between about 1607 and 1610.
+</p><p>
+<strong>a)</strong> The first lyric on p. 174 is an unattributed 12-line poem that attacks 'baalamis band'. (The form of this poem suggests that it is a Scottish interlinked-rhyming sonnet with two lines missing.) The biblical Balaam was a prophet who 'loved the wages of unrighteousness' according to 2 Peter 2.15, and who was reproved by the ass on which he was riding (Numbers 22:28) when its path was blocked by an angel. Balaam was a standard figure for Scottish bishops, evoked in this way by presbyterians from John Davidson in 1573, lamenting the death of John Knox, through the early covenanting period, as Jamie Reid Baxter has shown.<a href="melvillehistory.html#f12" class="foot">12</a>
+</p><p>
+	This almost-sonnet is an expansion on the central trope of e), a Latin epigram by Andrew Melville in which no angels appear to block the path of the Balaam-prophets of the Scottish kirk, and so the asses fail to speak. James Melville, a prolific author of Scottish political and religious sonnets, frequently translated and expanded upon his uncle's texts in this way, and it seems likely that (a) and sonnets (d) and (f) in the Crawford manuscript are by him.
+</p><p>
+<strong>b) and c)</strong> The scribe has noted in the margin that the second poem is 'My lady culros to m<sup>r</sup> andro Meluill', and the poem itself allays any doubt about its authorship. Melville uses here her characteristic mode of an acrostic on the name of her addressee: M ANDREW MELVIN' (the 'Q' of 'Quhy' in the 11th line is a scribal alteration of the 'W' required by the acrostic). The sonnet also employs an anagram (and, like the opening sonnet in the Bruce manuscript, this is indicated in the poem's title). 'And weill war myne' is an anagram of 'Andrew Mellwyn', and it is used in lines 2 and 14, a technique comparable to the re-use of the anagram 'Sob sille cor' in lines 1 and 14 of the first Bruce manuscript sonnet. The poem can be read as being in the ventriloquised voice of its inscribed subject, as Andrew Melville cries out to be 'taine avay' in his time of trial.
+</p><p>
+In this case <strong>(c)</strong>, the following sonnet, can be read as a reply to the first, as its speaker exhorts Andrew Melville to 'Cast cair on chryst wt courage bair his cross'. It seems most likely, then, that 'Cast cair on chryst' is also Elizabeth Melville's. As a complementary pair of religious sonnets, tracing a turn from despair to hope, (b) and (c) can be compared to James Melville's 'The melancholious Christian' and 'The sanguinean Christian' sonnets, in <i>A Morning Vision</i> (1598). See discussion in Sarah C. E. Ross, 'Elizabeth Melville and the Religious Sonnet Sequence in Scotland and England', in Susan J. Wiseman (ed.), <i>Early Modern Women and the Poem</i> (Manchester: Manchester UP, 2013), pp. 42-59.
+</p><p>
+	The sonnets to Andrew Melville are likely to date from the years of Andrew Melville's arrest and imprisonment after the Second Hampton Court Conference in 1606; he remained in the Tower of London until 1611.
+</p><p>
+<strong>d)</strong> Elizabeth Melville's sonnets are followed by 'Ane Sonnet on Bischope &lt;........&gt;', with the remainder of the title impenetrably blacked out. The sonnet warns a bishop to heed 'thy predecessouris pryde and fall', and predicts for him 'ane filthie fall at last'. A likely contender for the sonnet's subject would be George Gledstanes, the Archbishop of St Andrews from 1604-1615, while his predecessors would be the sixteenth-century bishops of St Andrews, Patrick Adamson and John Hamilton, who are the subjects of other miscellaneous items included in the Crawford manuscript. Gledstanes' name, however, does not appear to match with the letter tails visible under the blacking out. 
+</p><p>
+<strong>e)</strong> This is a Latin epigram by Andrew Melville, later printed in the <i>Viri Clarissimi A. Melvini Mvsae</i> (1620). <i>Viri Clarissimi</i> is ordered chronologically, and this epigram appears among a number directed at the English Archbishop of Canterbury, Richard Bancroft, who died in 1610. It must therefore date from Andrew Melville's years in the Tower, confirming the likelihood that the collection of lyrics in the Crawford manuscript date from around 1607-1610.
+</p><p>
+The epigram is focused on the implicit analogy between Balaam and Scottish bishops on which the opening 12-line poem (a) is based:
+</p>
+<div class="indent">
+<p>
+Since there are so many Balaam-prophets around
+</p><p>
+Why does no ass in the whole world speak?
+</p><p>
+The angel is not blocking the road, the ass is not believed; 
+</p><p>
+God who opens dumb mouths has not granted speech.
+</p>
+</div>
+<p>
+(With thanks to Jamie Reid Baxter for the translation.) See further discussion of Andrew Melville's anti-episcopal poetry and the <i>Viri Clarissimi</i> in Steven J. Reid, 'Melville's Anti-Episcopal Poetry: <i>The Andreae Melvini Musae</i>', in Roger A. Mason and Steven J. Reid (eds), <i>Andrew Melville (1545-1622): Writings, Reception, and Reputation</i> (Farnham: Ashgate, 2014), pp. 127-154.
+</p><p>
+<strong>f)</strong> The final sonnet on the Crawford MS leaf also seems likely to be James Melville's. It denies the appeal of secular poetics and turns instead to sacred poetry and to God as his Muse; in doing so, it echoes a number of presbyterian pietest lyrics, including prefatory material to James Melville's <i>Spiritual Propine</i>  (1598). Jamie Reid Baxter suggests that this sonnet and the twelve-line poem (a) are expanded reworkings of Andrew Melville's 'Theocrene', which had been printed with a literal translation by James Melville in the prefatory material to the <i>Spiritual Propine</i>. 
+</p><p>
+<a href="da/index.php%3Fcontent=calltocometochrist.html">'A Call to Come to Christ'</a> is preserved in <strong>Beinecke Rare Book and Manuscript Library, Yale University, Boswell Collection, Gen MSS 89, Series XV, Box 107, Folder 1925</strong>. The miscellany is one of several early eighteenth-century religious manuscripts in the hand of Elizabeth Bruce Boswell (1673-1734), the grandmother of Samuel Johnson's biographer. The text of the poem is anglicized, either by Boswell or at an earlier point it its transmission.
+</p><p>
+	Boswell attributes the poem to Melville as 'a Poem by ye Lady Culross', and she may or may not have noticed its debt to Christopher Marlowe's 'A Passionate Shepherd to his Love'. Two words are omitted from the first line, which should read 'Come live with me and be my love': the poem is a sacred parody of Marlowe's lyric, which circulated widely from the 1590s and is the subject of answer poems by John Donne and Sir Walter Raleigh. Melville's version ventriloquises Christ, who invites the reader to 'loath this life and live with me'. The lyric is in fourteen and a half four-line stanzas, with the last line of each stanza interlinking with the first of the next in a kind of corona; for example, 'Sett not thy love on <strong>things below</strong>' and 'For <strong>things below</strong> will wear away' (8-9, my emphasis). Two lines appear to have been lost in the last two stanzas of the poem, where the corona breaks down.
+</p><p>
+	The context in which Boswell read 'A Call to Come to Christ' is suggested by the prose 'Observations upon effectual calling', which immediately precedes the poem in her miscellany. This prose piece explicates the doctrine of the 'call' on which the lyric revolves: 'That all Gods people are effectually called of God in time befor they believe'. The call, a crucial stage between election and justification in the godly life, is here being defined, and the prose passage goes on to describe that 'this call is the very voice of God to a sinner', a doctrine which clearly underpins Melville's ventriloquisation of Christ in her poem. While this prose piece has been placed alongside the poem not by Melville but by the Boswell manuscript's eighteenth-century compiler, it reveals a reading of the lyric as a poetic actualisation of Calvinist doctrine. See further discussion in Sarah C. E. Ross, '"Give me thy hairt and I desyre no more": The Song of Songs, Petrarchism and Elizabeth Melville's Puritan Poetics', in <i>The Intellectual Culture of Puritan Women</i>, ed. by Johanna Harris and Elizabeth Scott-Baumann (Basingstoke: Palgrave Macmillan, 2011), pp. 96-107.
+</p><p>
+	Elizabeth Bruce Boswell also includes in her miscellany material relating to two other godly women of their ages: she attributes a poem to Margaret More Roper, and she excerpts from the life of the mid-seventeenth-century millenarian Sarah Wight, written by Henry Jessey and published as <i>The Exceeding Riches of Grace Advanced</i> (1647). Elizabeth Melville was known to Boswell's father, so a family connection may also explain the presence of the poem in her miscellany. See further discussion in Sarah C. E. Ross, 'A Poem by Margaret More Roper?', <i>Notes and Queries</i>, 56.4 (December 2009): 502-507.
+</p><p>
+<a href="da/index.php%3Fcontent=loveslamentforchristsabsence.html">'Loves Lament for Christs Absence'</a> is preserved in <strong>National Library of Scotland, MS Wod. Qu. XXVII, fols 199v-206r</strong>. This volume is also part of the extensive papers of the ecclesiastical historian Robert Wodrow, who collected materials relating to the persecution of Scots, and published <i>The History of the Sufferings of the Church of Scotland</i> in 1721-1722.
+</p><p>
+	The poem is in a very poor text, in a late seventeenth-century hand. It is for the most part in 12-line stanzas, although some are short (e.g. stanza 1 is 9 lines long; stanza 11 is 10 lines long), and this seems most likely to be the result of copyist error. The poem is prefaced by a 12-line poem entitled 'The transcribere to the Reader his friends'.
+</p><p>
+	The National Library of Scotland catalogue ascribes the poem to Thomas Melville, probably the minister of Cadder, but acknowledges that he may well be the poem's transcriber, not its author. Reid Baxter believes it to be Elizabeth Melville's on the basis of commonalities with her other known work. The transcriber's prefatory stanza also suggests that readers will 'looke on't as adreame', a possible allusion to Melville's best-known poem. See Jamie Reid Baxter, <i>Poems of Elizabeth Melville, Lady Culross</i> (Edinburgh: Solsequium, 2010).
+</p><p>
+On the outward-facing wall of the <a href="da/index.php%3Fcontent=tombatcollessie.html">Melville family tomb at Collessie</a>, near Halhill, is an inscription that may or may not be Elizabeth Melville's. The tomb is positioned on the road through inland Fife to St Andrews, and the inscription on its road-ward wall addresses 'pilgrims passing langs this way'. It exhorts them to 'pans [think / dwell] on your fall', and it is emphatically didactic, insisting on the practice of burial in the kirkyard, not inside the kirk. The tomb has recently been restored, and Elizabeth Melville's authorship of the inscription is suggested on the <a href="http://www.scottishgraveyards.org.uk/downloads/16Collessie.pdf ">heritage information plaque</a> provided.
+</p>
+<h3>
+III. Melville's other textual artefacts
+</h3>
+<p>
+<strong><i>Ane Godlie Dreame</i></strong>, her dream vision poem of the soul's glimpse of heaven, was first published in Scots in Edinburgh in 1603. It was published in an Anglicized version in 1604, and it was reissued at least eleven more times up to 1737.<a href="melvillehistory.html#f13" class="foot">13</a>  This was, in other words, a much-loved poem in Scotland and in England, and its textual history deserves a close study of its own. An early eighteenth-century manuscript copy of the 1686 edition of the <i>Dreame</i> is listed on CELM: <a href="http://www.celm-ms.org.uk/authors/melvilleelizabeth.html"><i>Catalogue of English Literary Manuscripts, 1450-1700</i></a>
+</p><p>
+A five-stanza lyric, 'Away vaine warld', appears at the end of early editions of the <i>Dreame</i> (all editions to 1644). It is a sacred parody of Robert Jones's 1598 song 'Farewell Sweet Love', published in 1600, and has previously been attributed to Alexander Montgomerie, because it is present in the Drummond manuscript of Montgomerie's poems, Edinburgh University Library, MS De. 3. 70, fols 81r-v.<a href="melvillehistory.html#f14" class="foot">14</a> It is, however, almost certainly Melville's, not least because Montgomerie died in 1598; the opening lines of the poem also directly echo the <i>Dreame</i>. There is a second sacred parody of an English love lyric in the 1644 Aberdeen edition of the <i>Dreame</i> (and succeeding prints), which is also almost certainly hers.
+</p><p>
+<strong><i>Twelve letters</i></strong> are preserved in manuscript in University of Edinburgh Library, MS La. III. 347, a bound volume once owned by Charles Kirkpatrick Sharpe. Nine are to John Livingstone (eight in Melville's hand, one in a 19th-century transcription); one to the Countess of Wigtoun; and two to her son James. See Tweedie, <i>Select Biographies</i>, for eight of the letters to Livingstone; and for the two letters to James, see Jamie Reid Baxter, 'Elizabeth Melville, Lady Culross: Two Letters to her Son James', in Elizabeth Ewan and Janay Nugent (eds), <i>Children and Youth in Pre-Industrial Scotland</i> (forthcoming with Boydell and Brewer). 
+</p><p>
+<strong><i>Samuel Rutherford's four extant letters to Elizabeth Melville</i></strong> are printed in A. A. Bonar, ed., <i>Letters of the Rev. Samuel Rutherford</i> (Edinburgh: William Whyte, 1848), pp. 107-110, 130-132, 335-338, and 435-438. The tone of the letters indicates a longstanding friendship and spiritual empathy; two are clearly replies to letters from Melville. Melville's letters to him are presumed lost.
+</p>
+<h3>
+IV. Acknowledgement
+</h3>
+<p>
+Jamie Reid Baxter is also working on a complete edition of Melville's works. I am enormously grateful to him for sharing with me his work in progress, and for his assistance with the Crawford manuscript in particular (including his translation of Andrew Melville's epigram). All errors are of course my own.
+</p>
+
+
+<div class="footnotes">
+<ol>
+<li><a id="f1"></a>
+See a summary of the <i>Dreame</i>'s 18th- and 19th-century reception in Carolyn R. Swift, 'Elizabeth Melville, Lady Culross' in David A. Richards (ed.), <i>Sixteenth-Century British Nondramatic Writers, Dictionary of Literary Biography</i>, vol. 172 (London: Gale Research, 1996), pp. 168-172.
+</li><li><a id="f2"></a>
+  Jamie Reid Baxter, 'Elizabeth Melville, Lady Culross: 3500 New Lines of Verse', in S. M. Dunnigan, C. M. Harker and E. S. Newman (eds), <i>Women and the Feminine in Medieval and Early Modern Scottish Writing</i> (Basingstoke: Palgrave Macmillan, 2004), pp. 195-200.
+</li><li><a id="f3"></a>
+Jane Stevenson, 'Reading, Writing and Gender in Early Modern Scotland', <i>The Seventeenth Century</i>, 27.3 (2012): 335-374 (pp. 335-336).
+</li><li><a id="f4"></a>
+David J. Parkinson (ed.), <i>James VI and I, Literature and Scotland: Tides of Change, 1567-1625</i> (Leuven: Peeters, 2013).p. xiii.
+</li><li><a id="f5"></a>
+Parkinson, p. xiii.
+</li><li><a id="f6"></a>
+Jamie Reid Baxter, 'Elizabeth Melville, Calvinism and the Lyric Voice', in David J. Parkinson (ed.), <i>James VI and I, Literature and Scotland: Tides of Change, 1567-1625</i> (Leuven: Peeters, 2013), pp. 151-172.
+</li><li><a id="f7"></a>
+  Reid Baxter, 'Elizabeth Melville, Calvinism, and the Lyric Voice', p. 154 and n. 12.
+</li><li><a id="f8"></a>
+  Reid Baxter, <i>Elizabeth Melville: Complete Works</i> (in preparation).
+</li><li><a id="f9"></a>
+  Reid Baxter, 'Elizabeth Melville, Calvinism and the Lyric Voice', p. 154; David Mullan, <i>Scottish Puritanism</i> (Oxford: Oxford UP, 2000), p. 17.
+</li><li><a id="f10"></a>
+  Mullan, <i>Scottish Puritanism</i>, p. 14.
+</li><li><a id="f11"></a>
+  Janet Hadley Williams discusses Pitscottie's text in the Crawford manuscript in 'Verse in Pitscottie's <i>Historie and Cronicles of Scotland</i>, NLS, MS Acc. 9769, Personal Papers, 84/1/1', in Kevin J. McGinley and Nicola Royan (eds), <i>The Apparelling of Truth: Literature and Literary Culture in the Reign of James VI: A Festschrift for Roderick J. Lyall</i> (Newcastle-upon-Tyne: Cambridge Scholars Press, 2010), pp. 134-147.
+</li><li><a id="f12"></a>
+  Jamie Reid Baxter, 'James Anderson's Poem <i>The Winter Night</i>', in L. A. J. R. Houwen (ed.), <i>Literature and Religion in Late Medieval and Early Modern Scotland: Essays in Honour of Alasdair MacDonald</i> (Leuven: Peeters, 2012), pp. 145-165 (pp. 159-60).
+</li><li><a id="f13"></a>
+  Jamie Reid Baxter, <i>Poems of Elizabeth Melville, Lady Culross</i> (Edinburgh: Solsequium, 2010), p. 98. 
+</li><li><a id="f14"></a>
+  This manuscript is listed in CELM: <i>Catalogue of English Literary Manuscripts, 1450-1700</i> as a copy of <i>Ane Godlie Dreame</i> (<a href="http://www.celm-ms.org.uk/authors/melvilleelizabeth.html">http://www.celm-ms.org.uk/authors/melvilleelizabeth.html</a>). For the lyric as a sacred parody of Jones's song, see Jamie Reid Baxter, 'The Songs of Lady Culross', in Gordon Munro et al. (eds), <i>Notis musycall: Essays on Music and Scottish Culture in Honour of Kenneth Elliott</i> (Glasgow: Musica Scotica Trust, 2005), pp. 143-163.
+  </li>
+</ol>
+</div>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

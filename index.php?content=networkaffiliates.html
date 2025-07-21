@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=networkaffiliates&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="meta">
+                            <h2 id="7" class="authorheading">Network Affiliates</h2>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 0  networkaffiliates">
+                                <p>The following scholars are direct associates of EMWRN and active participants in current EMWRN projects:</p>
+
+<ul>
+    <li>
+        <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a>, Australian National University, Australia.
+    </li><li>
+        <a href="http://www.newcastle.edu.au/profile/patricia-j-pender">
+Associate Professor Patricia Pender</a>, University of Newcastle, Australia.
+    </li><li>
+        <a href="https://www.newcastle.edu.au/profile/paul-salzman">Professor Paul Salzman</a> La Trobe University and University of Newcastle, Australia.
+    </li><li>
+        <a href="http://sydney.edu.au/arts/english/staff/profiles/kate.lilley.php">Associate Professor Kate Lilley</a>, University of Sydney, Australia.
+    </li><li>
+        <a href="http://www.victoria.ac.nz/seftms/about/staff/sarah-ross">Associate Professor Sarah C. E. Ross</a>, Victoria University of Wellington, New Zealand.
+    </li><li>
+        <a href="https://www.reading.ac.uk/english-literature/aboutus/Staff/m-f-ocallaghan.aspx">Professor Michelle O'Callaghan</a>, University of Reading, UK.            
+    </li><li>
+        <a href="http://www.bbk.ac.uk/english/our-staff/full-time-academic-staff/wiseman/research-interests">Professor Susan Wiseman</a>, Birkbeck College, University of London, UK.
+    </li>
+</ul>
+
+<p>EMWRN has and continues to collaborate on various projects with early modern scholars worldwide:</p>
+
+<ul>
+    <li>
+        <a href="http://www.ucd.ie/research/people/englishdramafilm/professordanielleclarke/"> Professor Danielle Clarke</a>, Professor of English,
+University College Dublin.
+    </li><li>
+         <a href="http://www.nuigalway.ie/our-research/people/english-and-creative-arts/marielouisecoolahan/">Professor Marie-Louise Coolahan</a>,
+Professor of English,
+National University of Ireland, Galway.
+    </li><li>
+        <a href="http://sydney.edu.au/arts/english/staff/profiles/huw.griffiths.php">Dr Huw Griffiths</a>,
+University of Sydney, Australia.
+    </li><li>
+        Emeritus Professor Elizabeth Hageman, Independent Scholar, University of New Hampshire.
+    </li><li>
+        <a href="http://www.english.ox.ac.uk/people/professor-lorna-hutson">Professor Lorna Hutson</a>,
+Merton Professor of English Literature,
+Oxford University.
+    </li><li>
+        <a href="http://siucarbondale.academia.edu/MaryEllenLamb">Emeritus Professor Mary Ellen Lamb</a>,
+Professor of English,
+Southern Illinois University at Carbondale.
+    </li><li>
+        <a href="https://humanities.as.miami.edu/about-the-center/staff-bios/mihoko-suzuki/index.html">Professor Mihoko Suzuki</a>,
+Director of the Centre for the Humanities,
+University of Miami.
+    </li><li>
+        <a href="https://english.northwestern.edu/people/faculty/wall-wendy.html">Professor Wendy Wall</a>,
+Avalon Professor of the Humanities, 
+Northwestern University.
+President of the Shakespeare Association of America.
+     </li><li>
+        <a href="https://uwaterloo.ca/english/people-profiles/katherine-acheson">Professor Katherine Acheson</a>, 
+Professor of English at the University of Waterloo, Ontario, Canada.
+    </li>
+</ul>
+
+<h3>PhD Research  Affiliates</h3>
+
+<p><b>Alexandra Day, PhD Candidate: Early Modern Women’s Writing and Collaboration</b></p>
+<p><a href="mailto:Alexandra.Day@newcastle.edu.au">Alexandra</a> completed her BA (Hons) at the University of Newcastle in 2014 and commenced a PhD in early modern women's writing under the supervision of Rosalind Smith, Patricia Pender, and Paul Salzman the following year. She has presented early findings from her research at two conferences (Australian and New Zealand Association of Medieval and Early Modern Studies conference in 2015, and Renaissance Society of America conference in Boston, 2016). Her interest in early modern literature extends to performance, and in 2015 she directed a staged reading of Jane Lumley's sixteenth-century play ‘The Tragedie of Iphigeneia.’</p>
+<p>Alexandra completed her PhD Thesis titled “Collaboration and the Early Modern Woman Writer: Materiality, Authorship, Performance” in 2019 and was awarded the Faculty Prize for best thesis, with her supervisors winning the Research Supervision Excellence award. Her research explored how collaboratively-written early modern literary texts perform (or suppress) gendered authorship and their own processes of production. Attending to both literary and material performances of authorship across a series of five case studies, her project sought to better understand the ways sixteenth- and seventeenth-century women’s collaborations figure in manuscript and print.</p>
+
+<p><b>Kerry Plunkett, PhD Candidate: Early Modern Creativity and Aesthetics</b></p>
+<p><a href="mailto:kerry.plunkett@uon.edu.au">Kerry Plunkett</a> is a PhD candidate in English at the University of Newcastle. Her research is centred on early modern female creativity and aesthetics with a focus on the poets Lady Hester Pulter and Anne Bradstreet. Kerry is particularly interested in the diverse and creative ways that Pulter and Bradstreet interpreted and applied contemporary literary theory, specifically Sir Philip Sidney’s poetics, in the construction of their poetry. The title of her thesis is: ‘Paragons of Poetry: Lady Hester Pulter and Anne Bradstreet’s Creative Adaptations of Sir Philip Sidney’s Theory of Poetry.’</p>
+ 
+<p><b>Kelly Peihopa, PhD Student: Tudor Women's Prison Prison Literature: Reception, Circulation, Attribution</b></p>
+<p><a href="mailto:Kelly.A.Peihopa@uon.edu.au">Kelly Peihopa</a> graduated from the University of Newcastle with a Bachelor of Arts Distinction in 2016, with a double major in English and Writing and History, and completed her English Honours in 2017, graduating with First Class Honours. Her Honours thesis was titled "Rhetorical Heresy: Framing Modesty, Desire and Political Complaint in the More Women Circle," and was supervised by Rosalind Smith. Her research uncovered how the education of the More women during Reformation England and into the seventeenth century, was centered on rhetoric, which enabled them to be political agents in their own right by actively engaging with the Catholic cause. Her Honours thesis was later developed into an academic article with <i>Parergon</i>. Kelly has been working as a research assistant with EMWRN since 2015. Her interests are early modern women’s writing, poetry and creative nonfiction, in which she has published in <i>Meanjin</i> and <i>Sudo Journal</I>. She began her PhD with EMWRN in 2018 and is developing a thesis on a study of Tudor  women’s prison literature, with a focus on Anne Boleyn.</p>
+ 
+<p><b>Dr Raichel Le Goff, PhD Student: Online Representation of Italian Women Writers</b></p>
+<p><a href=mailto:raichel.legoff@uon.edu.au">Dr. Raichel Le Goff</a> first became interested in the Early Modern period as an undergraduate at London University's Courtauld Institute of Art, where she majored in Renaissance art history. This was followed by a thesis on Sir Philip Sidney and Veronese for a postgraduate degree in art history at Oxford University. Raichel then switched disciplines to obtain a PhD in Classics, with her doctoral thesis anchored in the Early Modern period, but exploring the transmission of an ancient Greek text by Philostratus.  Having lectured in the History of Art and Architecture for some years, Raichel now welcomes the chance to return to being a student and is excited about investigating how women writers of the Italian Renaissance are represented on the Internet. This research into figures like the humanist collector Isabella d'Este and the celebrated poet Vittoria Colonna, will build on extensive archival research Raichel carried out in Mantua, Ferrara and Florence. More broadly, the thesis ‘Literati of the Italian Renaissance: online histories,’ will look at patronage, production, transmission and consumption of Renaissance texts on the Internet and the emergence of early modern writers as cultural objects of the World Wide Web. </p>
+
+<p>When Raichel is not in Newcastle she calls the Greek island of Hydra home.</p>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

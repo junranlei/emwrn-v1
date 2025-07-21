@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=emwrn&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="top-page-image">
+                    <img src="img/background.png">
+                </div>
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+    // everything up to the first h3 gets added to the "intro" block
+    $($(".raw-content h3:first").prevAll("p").get().reverse()).insertAfter(".intro .raw-content-after");
+
+    var ul = $(".news ul");
+
+    // everything after the first h3 is a "news" item
+    $(".raw-content h3:first").nextAll("p").each(function () {
+
+        var p = $(this);
+
+        // we don't need the manicule
+        p.find("img").remove();
+
+        var li = $('<li><i class="fa fa-newspaper-o" aria-hidden="true"></i> ' + p.html() + '</li>');
+        li.appendTo(ul);
+
+    });
+
+    $(".raw-content").remove();
+
+});
+</script>
+                    <div class="home-boxes">
+                        <div class="raw-content" style="display:none;">
+                            <div class="inset">
+	<img src="img/frontwoman/YoungMaryStuart.jpg" style="width:100%;" alt="young Mary Stuart"/>
+<p style="margin: 1em;">To join the EMWRN mailing list contact us at <a href="mailto:21CHumanities@gmail.com">21CHumanities@gmail.com</a>
+</p>
+</div>
+ <p>
+The Early Modern Women Research Network (EMWRN) is an Australian-based network of scholars which aims to bring the often institutionally-isolated scholars of early modern women's writing into dialogue with others in the field, both within Australia and internationally. EMWRN regularly meets at major conferences, sponsoring panels and symposia, often in conjunction with other early modern networks. </p>
+<p>
+EMWRN represents and investigates the various material contexts which women’s writing was circulated during the early modern era in England, through manuscript, print and oral culture, exploring the production, transmission and circulation of texts from the originary moment of their production to later redactions. </p>
+ <h3>
+ News:</h3>
+
+<p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /> <b>ANZSA 2020 Biennial International Conference.</b> The University of Newcastle will be hosting the Australian and New Zealand Shakespeare Association’s (ANZSA) biennial international conference in the beautiful city of Newcastle in December 2020, and EMWRN is inviting everyone to come and visit us downunder! Keynote speakers are Professor Wendy Wall (Northwestern University), Professor Emma Smith (University of Oxford), Professor Ray Siemens (University of Victoria Canada), and Assistant Professor Emily Shortslef (University of Kentucky). Go to conference.anzsa.org/ to register.</p>
+
+  <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a href="https://tinyurl.com/y5ubxjbp"> PhD Scholarship: Study with EMWRN at the University of Newcastle, Australia </a> Exciting PhD scholarship opportunity to work with Professor Rosalind Smith and EMWRN on Ros's ARC Future Fellowship Grant, 'Marginalia and the Early Modern Woman Writer, 1530-1660'. Full scholarship plus funding for conferences and archival research. Go to <a href="https://tinyurl.com/y5ubxjbp">https://tinyurl.com/y5ubxjbp</a> for more details.</p> 
+
+  <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a href="https://www.slv.vic.gov.au/search-discover/explore-collections-theme/history-book/emmerson-collection"> Emerson Collection, State Library Victoria </a> From 2019 EMWRN associates will lead a team of researchers on a project that will examine the previously untapped resource of the Emmerson Collection at SLV with the support of an ARC Linkage Grant. The Emmerson collection is a recently acquired collection of 5,000 early modern rare books that have never been studied or made available to the public and is housed at the State Library Victoria. Research team includes EMWRN associates Ros Smith, Trisha Pender, Paul Salzman, Sarah Ross with ANU's Mitchell Whitelaw and SLV's Anna Welch.</p>
+
+  <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a RSA 2020 </a> EMWRN associates are oganising panels for the 2020 RSA Annual Meeting in Philadelphia, USA, on 2-4 April, 2020.</p>
+
+<p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a ARC Future Fellowship </a> Professor Rosalind Smith has been awarded a prestigous ARC Future Fellowship grant to research Marginalia and the Early Modern Woman Writer, 1530-1660. This five-year research project will provide an ambitious new literary history of how early modern women read and wrote in the margins of their books, uncovering new texts, practices, writers and readers across 150 years. It aims to change the ways in which we understand reading and writing practice in the English Renaissance.  </p>
+
+<p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a Complaint and Grievance: Literary Traditions Symposium:</a> EMWRN associates will be presenting papers at a two-day symposium on 14-15 February 2019, held at the National Library of New Zealand, Wellington, New Zealand.</p>
+
+ <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a href="https://anzamemsconference2019.wordpress.com/">ANZAMEMS Conference:</a> EMWRN associates are chairing panels on Complaint at the 12th Biennial Conference of the Australian and New Zealand Association for Medieval and Early Modern Studies (ANZAMEMS) which will be held in Sydney in February 2019.</p>
+
+ <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a href="http://www.shakespeareassociation.org/annual-meetings/future-meetings/">SAA Conference:</a> EMWRN associates attended and presented papers at the 46th annual meeting of the Shakespeare Association of America which was held in Los Angeles in March 2018.</p>
+
+ <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a href="http://www.rsa.org/general/custom.asp?page=2018NOLA">RSA Conference:</a> EMWRN associates chaired and organised panels on Complaint for the 64th annual meeting of the Renaissance Society of America which which was held in New Orleans in March 2018.</p>
+
+ <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a href="https://www.slv.vic.gov.au/search-discover/explore-collections-theme/history-book/emmerson-collection">Emmerson Collection, Linkage Pilot Grant:</a> EMWRN associates met at the State Library of Victoria in February 2018 to further investigate the research potential of the vast <a href="https://www.youtube.com/watch?v=g-fu7Twce8U&feature=youtu.be">Emmerson early modern book collection.</a> </p>
+ 
+ <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a href="https://www.newcastle.edu.au/events/faculty-of-education-and-arts/seminar-early-modern-literature-scholar,-emeritus-professor-paul-salzman/_nocache">Seminar: Early modern literature scholar, Emeritus Professor Paul Salzman:</a> Recently appointed School of Humanities and Social Science Professorial Fellow and acclaimed early modern literature scholar, Emeritus Professor Paul Salzman, presented a seminar at the University of Newcastle on Wednesday May 24th, 2017 titled, ‘Scrapbook Shakespeare: James Orchard Halliwell Phillipps and the preparation of a nineteenth-century Shakespeare edition.'</p>
+
+ <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a href="http://www.newcastle.edu.au/newsroom/faculty-of-education-and-arts/leading-shakespeare-scholar-wows-audience-in-public-lecture">Lorna Hutson, Merton Professor of English Literature, Oxford University, presents a public lecture at University of Newcastle:</a> EMWRN and the
+<a href="http://www.newcastle.edu.au/research-and-innovation/centre/centre-for-21st-century-humanities/about-us"> Centre for 21st Century Humanities</a> welcomed leading Shakespeare scholar Lorna Hutson in a public lecture titled ‘The Shakespearean Unscene: Sexual Phantasy in A Midsummer Night’s Dream,’ which was held at UoN’s Sydney City campus on 24th February, 2017. </p>
+
+ <p><img src="img/EMWRNiculeRedDexter.png" alt="Red manicule pointing right." /><a href="https://www.youtube.com/watch?v=AXIaMTbRQkA">YouTube clip: University of Newcastle, PVC FEDUA NeW Directions Video Blog 4 (June 19, 2014):</a> Professor Hugh Craig, from the <a href="http://www.newcastle.edu.au/research-and-innovation/centre/centre-for-21st-century-humanities/about-us"> Center of 21st Humanities</a>, Associate Professor Ros Smith and Dr Trisha Pender of the Early Modern Women Research Network (EMWRN), discuss how to launch a research network and the national and international success of EMWRN. </p>
+ 
+
+ 
+                        </div>
+                        <div class="BodyText">
+                        <div class="intro contentwrap 0  emwrn">
+                            <h2 class="raw-content-after">Early Modern Women Research Network</h2>
+                            <div class="external-links">
+                                <a target="_blank" href="https://www.newcastle.edu.au/research-and-innovation/centre/education-arts/emwrn/about-us"><i class="fa fa-caret-right" aria-hidden="true"></i>
+ About us</a>
+                                <a target="_blank" href="https://www.newcastle.edu.au/research-and-innovation/centre/education-arts/emwrn/people"><i class="fa fa-caret-right" aria-hidden="true"></i>
+ Our People</a>
+                            </div>
+                        </div>  
+                        <div class="twitter-feed">
+                            <div class="twitter">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="news">
+                            <h3>News:</h3>
+                            <ul>
+                            </ul>
+                            <div class="newsletter">
+                            <p>To join the EMWRN mailing list contact us at <a href="mailto:21CHumanities@gmail.com">21CHumanities@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="digital-archive">
+                        <div class="archive-boxes">
+                            <a href="bradstreet.html"><img src="img/bradstreet.jpg"></a>
+                            <a href="bradstreet.html"><i aria-hidden="true" class="fa fa-caret-right"></i> Anne Bradstreet</a>
+                        </div>
+                        <div class="archive-boxes">
+                            <a href="elizabethdelaval.html"><img src="img/elizabethdelaval.jpg"></a>
+                            <a href="elizabethdelaval.html"><i aria-hidden="true" class="fa fa-caret-right"></i> Elizabeth Delaval</a>
+                        </div>
+                        <div class="archive-boxes">
+                            <a href="maryjacob.html"><img src="img/maryjacob.jpg"></a>
+                            <a href="maryjacob.html"><i aria-hidden="true" class="fa fa-caret-right"></i> Mary Jacob</a>
+                        </div>
+                        <div class="archive-boxes">
+                            <a href="elizabethmelville.html"><img src="img/elizabethmelville.jpg"></a>
+                            <a href="elizabethmelville.html"><i aria-hidden="true" class="fa fa-caret-right"></i> Elizabeth Melville</a>
+                        </div>
+                        <div class="archive-boxes">
+                            <a href="lucyrussell.html"><img src="img/lucyrussell.jpg"></a>
+                            <a href="lucyrussell.html"><i aria-hidden="true" class="fa fa-caret-right"></i> Lucy Russell</a>
+                        </div>
+                        <div class="archive-boxes">
+                            <a href="marystuart.html"><img src="img/marystuart.jpg"></a>
+                            <a href="marystuart.html"><i aria-hidden="true" class="fa fa-caret-right"></i> Mary Stuart</a>
+                        </div>
+                        <div class="archive-boxes">
+                            <a href="marywroth.html"><img src="img/marywroth.jpg"></a>
+                            <a href="marywroth.html"><i aria-hidden="true" class="fa fa-caret-right"></i> Mary Wroth</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

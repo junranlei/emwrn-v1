@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=uraniahistory&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="marywroth.html">Mary Wroth</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="15" class="authorheading">Mary Wroth</h2><h3>Poems from the Urania Manuscript Introduction and Textual History</h3>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 15  uraniahistory">
+                                <p><b>Acknowledgements</b></p>
+
+<p>This edition, and especially the work of Kelly Peihopa, was made possible by the support of The Centre for 21st Century Humanities, The Early Modern Women Research Network, and the Early Modern Research Centre, all at the University of Newcastle, Australia. We are especially grateful to Professor Rosalind Smith for her support. Images of the poems were generously provided by the Newberry Library, which has also given us permission to reproduce them here: Newberry Library, Chicago, VAULT Case MS folio Y 1565.W95. Information and material associated with William Herbert’s poem ‘Had I loved but at that rate’ was generously provided to us by Professor Mary Ellen Lamb. Manuscript images of Herbert’s poem are reproduced with the permission of the British Library.
+
+</p>
+<p><b>Introduction</b></p>
+
+<p>In 1621, Mary Wroth published <i>The Countess of Montgomery’s Urania</i>. Wroth was already an accomplished poet, but this lengthy prose romance, with its title evoking Wroth’s uncle Philip Sidney’s iconic <i>Countess of Pembroke’s Arcadia</i>, was an extraordinarily ambitious work. The published first part consists of four books, although the fourth ends mid-sentence, followed by an appended, revised version of Wroth’s song and sonnet sequence ‘Pamphilia to Amphilanthus’. Wroth made numerous changes to the poems in the sequence, including taking some of them out, revising them, and giving them to characters in the romance.<a href="uraniahistory.html#f1" class="foot">1</a>  Many of the characters in <i>Urania</i>, like their parallel figures in real life, write poetry, and Wroth scatters poems throughout the romance. As noted in the general biographical introduction, Wroth met with some opposition to her publication, fuelled by her shadowed representation of people from the Jacobean court, and some of the scandalous or controversial incidents associated with them. This may have been why Wroth did not publish the continuation of <i>Urania</i>, which she seems to have been working on from around 1621 to 1627, and which exists in a single, authorial manuscript now held at the Newberry Library (Case MS fY 1565.W95).<a href="uraniahistory.html#f1" class="foot">2</a> 
+</p>
+
+<p>The manuscript continuation moves forward a generation, and outlines a complex web of stories, many involving the children of the main characters in the published part of the romance. Where the published part has fifty-six poems, not including the ‘Pamphilia to Amphilanthus’ sequence appended to the end of the volume, the manuscript continuation has only nineteen. It is difficult to determine exactly why Wroth reduced the amount of poetry in the manuscript continuation of <i>Urania</i>. The manuscript is best described as a working draft, which is how it is characterised by the editors of the authoritative edition.<a href="uraniahistory.html#f1" class="foot">3</a>  There are some spaces left in the manuscript for the insertion of poems, which were not supplied, which perhaps indicates that the composition of the new poems for this part of the romance extended beyond Wroth’s time, or patience, or inspiration. It certainly seems to be the case that Wroth either wrote nothing further after this still incomplete continuation (which ends, like the published romance, in mid-sentence), or at least that nothing survives, though Wroth did not die until 1651. 
+</p>
+
+<p>I have argued elsewhere that it is possible to read this diminution of poetry as conscious and thematic, in so far as it is especially connected to the changing nature of the two female characters in the romance who are most self-consciously poets: Pamphilia and Antissia.<a href="uraniahistory.html#f1" class="foot">4</a>  Pamphilia, who is a shadowed, semi-autobiographical version of Wroth in the romance, is depicted as a prolific poet in the printed <i>Urania</i>. However, in the manuscript continuation, Pamphilia is depicted as married, not to her true love, the wayward Amphilanthus, but to Rodomandro, King of Tartaria. While Pamphilia has achieved a certain political fulfilment, as she rules over her country of Pamphilia, she is often melancholy. This seems not so much to have reduced her creative powers as moved them from being visible to being hidden, so that while she still writes poetry, neither the characters nor the reader get to share it. Similarly, Antissia in the published romance was Pamphilia’s rival for the love of Amphilanthus, and she was, in a sense, also in competition with Pamphilia as a poet. Antissia and Pamphilia are eventually reconciled, but Antissia has been driven mad, partly through her rejection by Amphilanthus, partly, it would seem, through her own over-active imagination. In fact, Antissia’s poetry is itself seen as tainted: Rosindy describes her poetry as ‘olde, sickly stuff, as if poetry were fallen into a consumption’ (34). Antissia endeavours to improve her poetry by teaming up with a Tutor, who has himself gone mad ‘studying how to make a peece of poetrie to excel Ovid’ (40), and this <i>folie a deux</i> leads to the pair being described as ‘silly brainsick poets’ (49). Antissia is cured of her ‘madness’ by the enchantress Melissea, but this is at the cost of her poetry, so that she falls silent. So in Part Two, the two prominent women poets in the romance either stop writing, or in Pamphilia’s case keep the poetry produced hidden from sight―Pamphilia’s poems are ‘extreame sad and dolefull, and sertainly such as would have moved too farr in Amphilanthus, <i>had hee then seene them</i>’ (279, my emphasis).
+</p>
+
+<p>Not only does the manuscript contain far fewer poems than the published romance, but the number also diminishes from Book One, which has seventeen poems, to Book Two, which only has two, and those two are in a sense two versions of the one poem. On the other hand, as will be evident from this edition, the poems themselves are further demonstrations of Wroth’s poetic range. While Wroth favoured the sonnet form, she wrote poetry in a number of genres, including song, complaint, pastoral, and songs from the masques that often feature in the narrative. Songs are especially prominent, as has been examined in detail by Katherine R. Larson. In this second part in particular, Wroth ensures that the poems and songs are fitted to the character and circumstances of those who recite, write or sing them. The intersection between the fictional characters and their parallel figures in ‘real life’ is emphasised by the inclusion of a song attributed to William Herbert, which is composed in the romance by Amphilanthus, Herbert’s shadowed representation. Detailed analysis of the poems from the manuscript and their position in the narrative can be found in the annotation linked to each one. 
+</p>
+
+<p>
+<b>Textual Introduction</b>
+</p>
+
+<p>As explained in the general introduction, these poems are all part of the manuscript continuation of <i>Urania</i>, which was probably composed between 1621 and 1627. As the editors of the authoritative edition of the romance explain, each of the two parts of the narrative is bound separately, in binding that the editors date to the early nineteenth century, so there is no way of knowing how Wroth herself treated the manuscript, which as a working draft was likely to have been unbound during her lifetime.<a href="uraniahistory.html#f1" class="foot">5</a>  As a whole, the manuscript is roughly two-thirds the length of the printed <i>Urania</i>. It is in size rather like a truncated folio: that is, 18cm by 30cm. As will be evident from the images of the pages containing poetry, the manuscript’s pages are quite crowded, and have a number of crossings out and revisions pointing to its status as a working manuscript, possibly being reworked as Wroth wrote, or being revised by her at various later dates. 
+However, the individual poems are, even when crowded, set out clearly and exactly. The end of each poem is marked with a symbol virtually never used elsewhere by Wroth: a backward stroke with a straight or slightly curly left hand stroke at the top. Where Wroth makes extensive use of the S fermé in the ‘Pamphilia to Amphilanthus’ manuscript, either to set off individual poems or sequences of poems, or to mark the binding of the volume, as she does with the presentation (Penshurst) manuscript of <i>Love’s Victory</i>, the S fermé is not present in the <i>Urania</i> manuscript. But the marking of the end of each poem with a specific symbol seems to me to suggest that, while this is clearly a working manuscript in so far as it contains cancellations, corrections, and revisions, this kind of marking up of the poems points either to a reader or even perhaps to a printer. This is further endorsed by the way that Wroth signals each time a poem continues over to a following page by placing a series of dashes beneath the incomplete text. In this sense, one might say that the <i>Urania</i> manuscript is at some half way point between the clear and beautiful presentation manuscripts of <i>Love’s Victory</i> (Penshurst) and ‘Pamphilia to Amphilanthus’, and the much rougher manuscript of <i>Love’s Victory</i> (Huntington). The handwriting is mostly in Wroth’s clear albeit messy italic hand. 
+</p>
+
+<p>The manuscript was acquired by the Newberry Library in 1936. The Library bought the manuscript from a bookseller with Welsh associations and it is possible that, after Wroth’s death, the manuscript was located in Wales. Wroth had Welsh connections through both her mother Barbara Gamage, and also through the extensive Herbert family’s prominent position in Wales. Margaret Hannay offers a convincing argument that it seems likely, or at least possible, that the daughter Wroth had with William Herbert, Katherine Parry, took Wroth’s manuscripts back to Wales, where Katherine lived with her husband James Parry near the Pembroke estates in Breconshire.<a href="uraniahistory.html#f1" class="foot">6</a>  Hannay speculates that the manuscripts could easily have passed down then from the Parry family through marriage to the Morgan family of Tredgar in Wales, thus allowing for an eventual sale to the Welsh bookseller J. Kyrle Fletcher (each manuscript volume has the signature of Charles Morgan inside the cover).<a href="uraniahistory.html#f1" class="foot">7</a>
+</p>
+<p>This online edition follows the same principles as Paul Salzman’s online edition of the rest of Wroth’s poetry (wroth.latrobe.edu.au), and of her play <i>Love’s Victory</i>, which is part of this archive. Images of the pages of manuscript containing the poems are reproduced with permission of The Newberry Library, Chicago. Accompanying columns provide a transcript, a modernised text, and annotations keyed to the modernised text, for each poem. Numbering follows the scheme in the Roberts edition of Wroth’s poetry. Transcriptions are as accurate as possible; cancellations and rewriting are both indicted, although blotting in some of the poems is not especially noted, given that the images are available. In the same way some letters such as capital long S are modernised. 
+</p>
+</div>
+<div class="footnotes">
+<ol>
+<li><a id="f1"></a>The changes made by Wroth can be most easily assessed in my online edition of the poetry at wroth.latrobe.edu.au. The recent edition of the sonnet sequence edited by Ilona Bell and Steven W. May argues that many of the changes were due to Wroth’s ‘bowdlerisation’ of the earlier, more autobiographical poems depicting the sexual relationship Wroth had with her first cousin, William Herbert: <i>Pamphilia to Amphilanthus in Manuscript and Print</i> (Toronto/Tempe: Iter Press/Arizona Center for Medieval and Renaissance Studies, 2017). This thesis seems too blunt an instrument to understand the complex changes made by Wroth, many of which strike me as being aesthetic, and also driven by her interest in assimilating the poetry and the romance narrative. The pioneering, authoritative edition of the poetry is Josephine A. Roberts, ed., <i>The Poems of Lady Mary Wroth</i> (Baton Rouge: Louisiana University Press, 1983).</li><li><a id="f2"></a>
+ Biographical information is from the authoritative biography by Margaret P. Hannay, <i>Mary Sidney, Lady Wroth</i> (Farnham: Ashgate, 2010).
+</li><li><a id="f3"></a>
+Josephine A. Roberts, ed. (completed by Suzanne Gossett and Janel Mueller), <i>The Second part of the Countess of Montgomery’s Urania</i> (Tempe, MRTS, 1999), p. xxviii, further parenthetical references to this edition.
+</li><li><a id="f4"></a>
+See my forthcoming essay ‘The Politics of Complaint in Mary Wroth’s <i>Love’s Victory</i> and <i>Urania Part Two</i>.’
+</li><li><a id="f5"></a>
+I take information about the nature of the manuscript from Roberts et al., pp. xvii-xxviii.
+</li><li><a id="f6"></a>
+Hannay, pp. 295-96; 312-13.
+</li><li><a id="f7"></a>
+Ibid., pp. 312-13.
+</li>
+</div>
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

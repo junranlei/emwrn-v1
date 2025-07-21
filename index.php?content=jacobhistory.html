@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=jacobhistory&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="maryjacob.html">Mary Jacob</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="12" class="authorheading">Mary Jacob</h2><h3>Answer poems: John Hoskins, 'O love whose power and might' and Lady Mary Jacob, 'Your Letter I received'</h3>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 12  jacobhistory">
+                                <h3>
+Introduction
+</h3> 
+<p>
+Female-voiced verse answer poems circulated in manuscript and printed miscellanies throughout the sixteenth and seventeenth centuries. Earlier sixteenth-century examples of these poems are predominantly written in a courtly language. Bawdy female-voiced answer poems, like 'Your Letter I received', are very rare. Taken together, the male flout, 'O love whose power and might', and the female response are a very unusual example of a mock answer-poem. The male flout has a very distinctive style, notable in its use of non-sequiturs, which results in a pungent mix of nonsense and travesty. The female response is similarly written in a deliberately low style, with varying degrees of bawdy, which veers into obscenity in some versions. As one might expect, the flyting format of the exchange, gives some compilers the opportunity to make the tone of the female response more aggressive than the male flout. The mistress's answer may be prompted by the male speaker, but this is combat, and the female respondent aims to outwit her male opponent. She returns the dose of the clap he threatens her with in kind:
+<div class="indent">
+<p>If ever I return
+</p><p>Great Queen of Lightning flashes 
+</p><p>Send down thy fire and burn
+</p><p>His codpiece into ashes.
+</p>
+</div>
+<p>The exchange goes well beyond the 'pretie and pleasant taunts' permissible between the sexes in models of courtly behaviour. The female respondent makes no attempt to curb the scurrility of her wit to suit the dictates of her gender. Rather her response deliberately heightens the raillery of amorous flyting.
+</p>
+<h3>
+Variants
+</h3>
+<p>The answer poems appear to have been first performed at the 1597/98 Middle Temple revels where they were read as evidence in the arraignment of the discontented lover. The text of these revels was printed in <i>Prince d'Amour</i> (1660), where the poems are given the titles 'Passion' and 'Compassion', and the male-voiced poems lacks the first 4-5 stanzas present in the other extant versions of the poems, beginning instead with 'Cupid is blind men say'. Such variation characterises the circulation of this pair of answer poems, which survive in variant versions, from different numbers of stanzas to internal variations within lines. This level of variants suggests that part of the attraction of these verses was the possibility for improvising on the form and themes. Such malleability may also be a feature of the poems' place in oral cultures of performance; hence these verses are often identified as songs in miscellanies. 
+</p>
+<h3>
+Attribution
+</h3>
+<p>'O love whose power and might' and 'Your Letter I received' circulate under various names and titles, many of these generic, although some name individuals. The male flout, 'O love whose power and might', is anonymous and given generic titles in a number of miscellanies:
+<ul>
+<li>'Beast his sonnett': Rosenbach MS 1083/15, p. 46;  
+</li><li> 'A letter from a louer to his beloued':  BL Add MS 24665, f. 81v; 
+</li><li> 'Carelesse affection':  Bod. MS Rawl. poet. 172, f. 4v
+</li><li>'To his mistresse': Bod MS Eng.poet.f.9, p. 19, Yale Osborn MS b.148, p. 6; 
+</li><li>'A flout for his mistresse':  Rosenbach MSS 239/27, p. 93; 
+</li><li>'A mock-song': <i>Wit and Drollery, New Academy of Complements</i>; 
+</li><li> 'A Song': <i>Marrow of Complements, Folly in Print</i> ('To an old Tune');
+</li><li>'Drollery': Bod. MS Tanner 465, f. 84r;
+</li><li>no attribution or title: National Art Library MS Dyce 44, f. 84v, BL Add MS 22601, f. 107, Bod. MS Jones 58, f. 50v.  
+</li></ul>
+<p>
+However, the male flout is also attributed to individuals in a number of miscellanies: 
+</p>
+<ul>
+<li>'Mr. Poulden's delight of N: Coll: in Oxon' : Bod. MS. Ashmole 36-7, f. 145v;
+</li><li>'Mr Lawson of St John's Colledge his verses to his mistresse' : Bod. Rawl.poet.26, f. 5;
+</li><li>'Mr Dun [John Donne?] to his Mrs that scorn'd him': Folger MS V.a.124, f. 36.
+</li><li>'John Hoskins to the Lady Jacob': BL Add MS 25303, f. 70v.
+</li></ul>
+<p>
+Apart from one miscellany, the female response is anonymous in all other copies and similarly given generic titles, such as:
+</p>
+<ul>
+<li>'Her Answere': Bod MSS Eng.poet.f.9, p. 19, Rawl. poet.26, f. 5, BL Add MS 24665, f. 82, Folger MS V.a.124, f. 36, Rosenbach MSS 239/27, p. 95, and 1083/15, p. 47, Yale Osborn MS b.148, p. 6;
+</li><li>'The Answer': <i>Marrow of Complements, Wit and Drollery</i>;
+</li><li>'Response sequitur': Bod. MS Jones 58, f. 65v;
+</li><li>'Her ingenious answer so modestly delivered': <i>Folly in Print</i>;
+</li><li>'Mock-song, in answer': <i>New Academy of Complements</i>;
+</li><li>no attribution or title: National Art Library MS Dyce 44, f. 85r, BL Add MS 22601, f. 107v.
+</li></ul>
+<p>
+In only one manuscript miscellany, BL Add MS 25303, is the female response attributed to an individual, which results in the following pairing: 'John Hoskins to the Lady Jacob', and 'Lady Jacob's answer'.
+</p>
+<h3>
+3. Extant manuscripts
+</h3>
+<h3>i. A descriptive list of manuscripts that include the paired answer poems</h3> 
+<p>Bod. Eng. poet. f.9. The Phillips Manuscript, an octavo verse miscellany, 243 pages, dated 1623 on the first page, compiled by Henry Champernowne (1600-56), of Dartington, Devon in the 1620s. Of the 128 texts, 94 are poems by Donne, and the miscellany also includes his <i>Paradoxes and Problems</i>, alongside verse by Jonson, Wotton, Raleigh, Ayton, William Herbert, Earl of Pembroke and Sir Benjamin Rudyerd. See <i>Marotti, Manuscript, Print, and the Renaissance Lyric</i>, p. 41. 
+</p><p>
+Bod. Jones 58. A manuscript book, Francesco Petrarch's <i>Quatour Invectivarum Libri</i>, produced in Italy in the first half of the 15th century. A 'Roger Martin' practises his signature on a number of leaves in the book. Verses are written, along with other erotic verses in English, in the margins of the book. Part of a collection put together by Rev. Henry Jones (d. 1707), who matriculated at Christ Church, Oxford, in 1668, and was Rector of Sunningwell in Berkshire. He inherited many of the manuscripts of his uncle, Bishop John Fell.
+</p><p>
+Bod. Rawl. poet. 26: A folio composite volume, chiefly of English and Latin verse, in various hands, compiled between 1615 and 1660. It contains a number of different units - bifolia, folio booklet, quarto pages - bound together, and incorporates some broad generic headings. The early section contains a number of political poems relating to the late Elizabethan and Jacobean period, however, the majority of the political verse is concerned with the Caroline period and is royalist. See Marotti, <i>Manuscript, Print, and the Renaissance Lyric</i>, p. 12-3, 87-93, 122-23, 328-29.
+</p><p>
+BL, Add. MS 22601: A duodecimo miscellany of verse and some prose, 107 leaves, written soon after 1606, in one hand, varying secretary and italic scripts. It was probably compiled by someone connected with the Jacobean court around 1605, given the number of rare verses attributed to James I. Although the compiler has not been identified, there are similarities with the hand of Sir Thomas Erskine. The miscellany has connections with Sir Christopher Yelverton, whose own collections share many texts with Add. MS 22601. See Maria Reardon, 'The Manuscript Miscellany in Early Stuart England: A Study of British Library Manuscript Additional 22601 and Related Texts' (Unpublished PhD thesis, Queen Mary, University of London, 2007).
+</p><p>
+BL, Add. MS 24665: Giles Earle's Songbook. A long octavo book, signed 'Giles Earle his booke/ 1615', it is a compilation of songs that includes musical arrangements of songs by leading lutenists, such as, Dowland, Campion, and Byrd. The songbook is carefully presented. Three leaves separate the songs from a small collection of verse. See <i>British Library Manuscripts, Part I: Add. MS. 1551177, Egerton MS 2972, Add. MS 24665 (Giles Earle's Songbook), Add. MS. 29481,</i> edited with an introduction by Elise Bickford Jorgens (New York & London: Garland Publishing, 1986)
+</p><p>
+BL, Add. MS 25303: a small quarto volume, 191 leaves, which probably belonged to the Bowyer family in the late sixteenth and early seventeenth-centuries. Directions for binding are copied on the front waste-papers: 'in Calues leather/and fillets Nutmeg/Coulor', 'pricked with/blew & vermillion/in Calues Leather and filletts Nuttmeg/coullor for Mr John Bowyer', and underneath 'for for mr  Bowyer' (fol. 1). A John Bowyer, a Staffordshire gentleman, was admitted to Gray's Inn in 1578, practised as an attorney, and sat in James's first parliament. He married Katherine, the daughter of Sir Christopher Yelverton. His son, William, entered Gray's Inn in 1604; Yelverton became his guardian following John's death in 1605, and William sat in parliament for Staffordshire in the 1620s, and in 1640.  
+</p><p>
+Folger MS V.a.124. A sextodecimo pocket miscellany, ff. 3r-53r are in a single hand. It was once owned by Richard Archard, who dates his signature 1650 and 1657. The larger portion of the book was compiled around 1630, and includes poems by Donne, Ben Jonson and Richard Corbett.
+</p><p>
+National Art Library MS Dyce 44. A duodecimo verse miscellany, 117 leaves, that includes 63 sonnets by Henry Constable (ff. 12r-43r). The miscellany also includes a number of erotic and bawdy verse, including Thomas Nashe's 'Choice of Valentines', and verses by Sir John Davies and Sir John Harington. See Claire Bryony Williams, 'An Edition of National Art Library (Great Britain) MS. Dyce 44' (Unpublished PhD thesis, University of Sheffield, 2012).
+</p><p>
+Rosenbach MSS 239/27. An octavo verse miscellany, 425 pages (plus an eight-page index), in a single small mixed hand throughout, although Eckhardt argues there are two hands. Compiled around 1634, the miscellany includes 45 poems by Carew, 11 poems by Corbett, and 25 poems by Strode. Discussed in Scott Nixon, 'The Manuscript Sources of Thomas Carew's Poetry', EMS, 8 (2000), 186-224 (pp. 193-5); Eckhardt, <i>Manuscript Verse Collectors</i>, pp. 52-5, 123-5, 143-7.
+</p><p>
+Rosenbach MSS 1083/15. The Crawford manuscript, a quarto verse miscellany, 180 pages, in three secretary hands, bound in contemporary limp vellum. The first compiler appears to have connections with the Middle Temple, given the number of late Elizabethan verse by the Middle Templars, Sir John Davies and Sir Benjamin Rudyerd. Much of this early verse is erotic and bawdy. A second compiler adds early Stuart libels to the collection, and a later third compiler adds verse libels circulating in the 1630s. See James Sanderson, 'An Edition of an Early Seventeenth-Century Manuscript Collection of Poems (Rosenbach MS 186 [1083/15])', (Unpublished PhD thesis, University of Pennsylvania, 1960), Eckhardt, <i>Manuscript Verse Collectors</i>, pp. 23-7. 
+</p><p>
+Yale Osborn MS. b.148.  An octavo commonplace book, 209 pages. Owned and probably compiled (in part) by one John Hale. c.1650s-1725
+</p>
+<h3>
+ii. A list of manuscripts that include only the male flout:
+</h3>
+<ul>
+<li>BL, Add. MS 15227, f. 7v.
+</li><li>Bod. MS. Ashmole 36-7, f. 145v
+</li><li>Bod. MS. Eng. poet e. 97, pp. 164-5.
+</li><li>Bod. MS Eng. poet. f.27, pp. 216-7
+</li><li>Bod. MS. Malone 19, pp. 105-6
+</li><li>Bod. MS Rawl poet. 142, f. 39v.
+</li><li>Bod. MS Rawl. poet. 172, f. 4v
+</li><li>Bod. MS Rawl. Poet. 199, p. 74
+</li><li>Bod. MS Tanner 465, f. 84
+</li><li>Corpus Christi College, Oxford MS 328, f. 91v
+</li><li>Folger MS V.a.162, f. 39
+</li><li>Huntington MS HM 904, f. 185
+</li>
+</ul>
+<h3>
+4. A descriptive list of printed miscellanies that include the paired answer poems: 
+</h3>
+<p><i>The Marrow of Complements. Or, A most methodicall and accurate forme of instructions for all variety of love-letters, amorous discourses, and complementall entertainements. Fitted for the use of all sorts of persons from the noblemans palace to the artizans shop. With many delightfull songs, sonnetts, odes, dialogues, &c. Never before published</i> (1654), pp. 171-4. The anthology was published by Humphrey Moseley. The prefatory epistle, addressed 'To the unbiased Reader', is signed 'Philomusus'.  A descriptive list of its contents is provided at the start of the anthology:  'Amorous Epistles, or Love Letters', 'Complementall Entertainments', 'Facetious Dialogues', 'Presentations of Gifts',  'Instructions for Wooers', and 'Songs, and Sonnets'. The anthology includes a mix of courtly and mildly bawdy verse. 
+</p><p>
+<i>Le prince d'amour; or the prince of love. With a collection of several ingenious poems and songs by the wits of the age</i> (1660), pp. 70-2. Published by William Leake. The anthology, dedicated to the 'Honourable Society of the Middle Temple', begins with the account of the 1597/98 Middle Temple revels, which includes versions of the answer poems given the titles, 'A Passion' and 'Compassion'. The poems in the accompanying miscellany, which begins on page 91, date from the 1590s to the 1640s, and many have associations with the Middle Temple. 
+</p><p>
+<i>Wit and Drollery, joviall poems. Never before printed. By Sir J.M. Ja:S. Sir W.D. J.D. and other admirable wits.</i> (1656), pp. 21-5. Published by John Phillips, Milton's nephew, and Nathaniel Brook. Two further editions, adding new poems, were published in 1661 and 1682. Phillips dedicated the volume to Edward Pepys, brother to Samuel Pepys. The initials in the title belong to Sir John Mennes, James Smyth, Sir William Davenant, and John Donne. It is an important collection of burlesque and bawdy verse, much of which was circulating in manuscript miscellanies in the previous decades. 
+</p><p>
+<i>Folly in print, or, A book of rymes</i> (1667), pp. 86-9. The volume was licensed by Roger L'Estrange in 1667, however, there are no details of the publisher on the title page, and the unsigned prefatory epistle is addressed to the 'Courteous Reader'. The anthology consists of a number of ballads, songs and catches, hence, the headnote to the male flout states that it was sung 'To an old Tune'.
+</p><p>
+<i>The New academy of complements erected for ladies, gentlewomen, courtiers, gentlemen, scholars, souldiers, citizens, country-men, and all persons, of what degree soever, of both sex: stored with variety of courtly and civil complements, eloquent letters of love and friendship: with an exact collection of the newest and choicest songs &aacute; la mode, both amorous and jovial. Compiled by the most refined wits of this age</i> (1669), pp. 229-31. A popular anthology first published by Samuel Speed, that goes through four further editions in 1671, 1681, 1694, and 1698. It includes verse by William Davenant and Sir Charles Sackville, Earl of Dorset, a founding member of the Kit Kat Club.
+</p>
+<h3>Bibliography:</h3>
+<p>CELM: <i>Catalogue of English Literary Manuscripts, 1450-1700,</i> compiled by Peter Beal. <a href="http://www.celm-ms.org.uk/">http://www.celm-ms.org.uk/</a>
+</p><p>Joshua Eckhardt, Manuscript Verse Collectors and the Politics of Anti-Courtly Love Poetry. Oxford: Oxford University Press, 2009.
+</p><p>Arthur Marotti, <i>Manuscript, Print, and the English Renaissance Lyric</i>. Ithaca and London: Cornell University Press, 1995.
+</p><p>Michelle O'Callaghan, '"The 'great Queen of Lightninge flashes": the transmission of female-voiced Burlesque poetry in the early seventeenth century',  <i>Material Cultures of Early Modern Women's Writing</i>, edited by Patricia Pender and Rosalind Smith. Basingstoke and London: Palgrave, forthcoming.
+</p>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

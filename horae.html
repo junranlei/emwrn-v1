@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=horae&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="marystuart.html">Mary Stuart</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="14" class="authorheading">Mary Stuart</h2><h3>Marginalia</h3><p><strong>Contributor:</strong> <a href="https://researchers.anu.edu.au/researchers/smith-rl">Professor Rosalind Smith</a></p><p><strong>Date:</strong> Late 16thC (?)</p><p><strong>Material:</strong> MSS</p><p><strong>Source:</strong> University of Manchester Library, UK. Rylands Collection, Latin MS. 21, ff. 113r. and 124r. (digital page n233 and n255). Parent work title: <i>Horae, Mary Queen of Scots</i>. Translated parent work title: <i>Book of Hours (Mary Queen of Scots)</i>. <a href="https://luna.manchester.ac.uk/luna/servlet/s/x8ysch">https://luna.manchester.ac.uk/luna/servlet/s/x8ysch</a></p><p><strong>Permissions:</strong> Copyright of the University of Manchester. Permission granted for use of images under the University of Manchester <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Licence.</a></p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 14 da horae">
+                                  <script type="text/javascript" src="scripts/concertinaColumns.js"></script>
+   
+ 
+   <div class="digarch">
+   
+   <!-- C O N T E N T -->
+   <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+   <!-- APMS: End Header Start Content -->
+   
+   <!-- Body inserted here. -->
+   
+ 
+       <div id="search">
+         <p>Select versions to display:<br />
+         <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+         <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription 
+ 		<input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 2);" /> Translation
+ 		
+ 		<br /><br />
+ 
+       </div>
+ 
+   
+   
+   <div>
+   
+   
+   
+   
+     <table class="content" id="general">
+   <tr class="shade">
+   	<th style="min-width: 200px;">Images</th>
+   	<th style="min-width: 380px;">Transcription</th>
+ 	<th style="min-width: 380px;">Translation</th>
+   </tr>
+ 
+ <tr>
+ <td>
+ <a href="da/stuart/img/stuart_manchesterhorae/stuart_manchesterhorae_0235.jpg"><img src="da/stuart/img/stuart_manchesterhorae/stuart_manchesterhorae_0235-lowres.jpg" alt="Horae p113" /></a>
+ </td><td>
+ <p>
+ mon Dieu
+ </p><p>confondez mes
+ </p><p>ennemys
+ </p><p style="text-indent: 7em;">M[arie].</p>
+ 
+</td>
+<td>
+
+ <p>
+ my God
+ </p><p>confound my
+ </p><p>enemies
+ </p><p style="text-indent: 7em;">M[arie].</p>
+ 
+ </td>
+  </tr><tr>
+ <td><a href="da/stuart/img/stuart_manchesterhorae/stuart_manchesterhorae_0256.jpg"><img src="da/stuart/img/stuart_manchesterhorae/stuart_manchesterhorae_0256-lowres.jpg" alt="Horae p124" /></a>
+ </td><td>f. 123v.
+ </td><td>
+ </td>
+ </tr><tr>
+ <td><a href="da/stuart/img/stuart_manchesterhorae/stuart_manchesterhorae_0257.jpg"><img src="da/stuart/img/stuart_manchesterhorae/stuart_manchesterhorae_0257-lowres.jpg" alt="Horae p124" /></a>
+ </td><td>
+
+ <!--
+ 
+ 
+ -->
+ <p>Dieu viuant
+ </p><p>mon seul Juge
+ </p><p>olyez. mes plainctes
+ </p><p>& mes
+ </p><p>gemissementz
+ </p>
+ </td>
+<td>
+	<p>living God</p>
+ <p>my sole judge</p>
+ <p>hear my cries</p>
+ <p>& my</p>
+ <p>lamentations</p>
+ </div>
+ </td><td>
+ </td>
+ </tr>
+ 
+ 
+ </table>
+   
+ 
+   
+   	</div>
+   </div>
+   
+   
+                             </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

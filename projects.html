@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=projects&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="meta">
+                            <h2 id="9" class="authorheading">Projects</h2>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 0  projects">
+                                <h3>
+The Palgrave Encyclopedia of Early Modern Women’s Writing 
+ </h3>
+ <p>Professor Rosalind Smith and Associate Professor Patricia Pender have been appointed the general editors of the forthcoming <i/>Palgrave Encyclopedia of Early Modern Women’s Writing</i>. This large scale (1-1.5 million word) digital encyclopedia on early modern women’s writing from the English Reformation to the Restoration will focus on writing by or attributed to women, written in or translated into English, in England, Ireland, Scotland, Wales, Europe, and the Americas. In addition, the <i>Encyclopedia</i> will provide an overview of women’s writing from various parts of the early modern world, including Asia and the Islamic World, and consider Indigenous and colonial influences.
+</p>
+<p>A first in early modern women’s scholarship, the Encyclopedia will create a living and expanding digital research environment that can adapt to new lines of inquiry and also be amended as new information comes to hand. It will cover six established chronological periods from the Reformation to the Restoration: Early Tudor (1526-1557), Elizabethan (1558-1603), Jacobean (1603-1625), Caroline (1625-1649), the English Civil War and Interregnum (1642-1660), and Restoration (1660-1686). In addition, the <i>Encyclopedia</i> will undertake further broad categories of analysis, including the theoretical, material, geographical, generic, and the thematic. The project will span a four year period commencing in 2019 with the final entries live in 2022. 
+</p>
+<p>Rosalind Smith and Patricia Pender are assisted in this project by Research and Editorial Assistant Kelly Peihopa, and a group of 23 Section Editors who each manage a team of scholars totalling over 260 authors. With over 400 entries and counting, our contributing scholars come from a diverse range of academic backgrounds and nationalities, including nations such as the UK, Belgium, Australia, Switzerland, New Zealand, India, USA, France, Japan, Netherlands, Spain, Denmark, Germany, and Canada. 
+</p>
+
+<h3>
+The Emmerson Collection
+ </h3>
+ <p>
+Led by Professor Ros Smith, members of the EMWRN team have secured an Australian Research Council three-year Linkage Project Grant titled ‘Transforming the Early Modern Archive: The Emmerson Collection at SLV’, to uncover and explore one of the world’s largest collections of rare English printed works, which has more than 5000 items bound in 3500 volumes. These were was donated by the late bibliophile and scholar John Emerson QC (1938-2014) to the State Library Victoria, Australia. <a href="https://www.slv.vic.gov.au/search-discover/explore-collections-theme/history-book/emmerson-collection"> The Emmerson Collection</a> has been catalogued, but its treasures have never been studied nor made public. EMWRN’s research team will work to not only research and explore the catalogue of works, but to make the collection accessible to the public through digital means. The research team for this project includes Professor Rosalind Smith, Associate Professor Patricia Pender, Professor Paul Salzman, Associate Professor Sarah Ross, Associate Professor Mitchell Whitelaw and Dr Anna Welch. </p>
+
+<h3>
+Complaint Grant and Database
+ </h3>
+ <p>
+EMWRN has recently completed significant research on early modern women and complaint poetry with the support of two substantial grants. Associate Professor Sarah C. E. Ross is the chief investigator of a Royal Society of New Zealand Marsden Grant titled Woe is Me: Women and Complaint in the English Renaissance, along with associate investigators Professor Rosalind Smith and Professor Michelle O'Callaghan. An ARC Discovery Project Grant titled Early Modern Women and the Poetry of Complaint, 1540-1660 is also held by Smith, O’Callaghan, and Ross, who have collaborated to discover, for the first time, how early modern women used the widespread, powerful, and diverse mode of complaint to voice expressions of protest and loss across the English Renaissance. An open-access digital archive poetry index is now live showcasing the projects’ discoveries of the extent and reach of early modern women’s participation in complaint’s poetry for future scholarship.</p>
+<p>Titled <i> Early Modern Women’s Complaint Poetry Index</i>, the digital index is an interface for exploring the corpus of early modern women’s complaint poetry, visualizing the data from our project in aggregate categories and individual examples and, where possible, linking to poems in open source repositories. <a href="https://cems.anu.edu.au/complaintindex/">
+Visit the Complaint Index here</a>.
+</p>
+
+
+
+<h3>
+Future Fellowship for Professor Ros Smith
+ </h3>
+ <p>
+Professor Rosalind Smith has received an outstanding mid-career researchers Future Fellowship grant from the Australian Research Council (ARC) to examine women’s textual practice in the English Renaissance. The ARC Future Fellowships encourage research in areas of national priority, and Rosalind will receive AUD $1,054,816 over the next five years to examine women’s textual practice in the English Renaissance, recognising the innovative work achieved by Ros and her colleagues at EMWRN in furthering the research of early modern women’s writing in Australia. 
+Titled, ‘Marginalia and the early modern woman writer, 1530-1660’, Ros will be examining the records of women’s reading and writing in the margins of their books from the 16th and 17th century to make new discoveries about how women used their books during that period. This research will be the first investigation into the history of early modern women’s textual practice through the traces they left in their books, at a time when book production and distribution was first appearing on a larger scale. 
+There is a lot to be excited about with this project as marginalia opens up an exciting new field of research in early modern studies, considering that the traces left behind, including marginalia annotations, can tell researchers how texts were used, understood and exchanged, as well as revealing a previously overlooked source of extraordinary writing. Ros says: “This project will be quite transformative within the field and should uncover a whole body of writing that we’ve never seen before. There will also be an element of crowd sourcing to the project, where we’ll ask librarians and archivists to send us material so we can create digital versions of the texts and extend their access to the public”. We are all looking forward to what will Ros uncover in her latest project and how her findings will expand the field of early modern women’s writing. </p>
+
+<h3>
+International Software Collaboration
+ </h3>
+ <p>
+Professor Wendy Wall, of Northwestern University and President of the Shakespeare Association of America (SAA), has requested to work with Professor Ros Smith and EMWRN to pattern the software used in EMWRN’s digital archive for a digital project researching seventeenth-century poet and writer Hester Pulter. Further details can be found in UoN News article <a href="https://www.newcastle.edu.au/newsroom/faculty-of-education-and-arts/software-success-for-uons-early-modern-women-research-network">‘Software success for UoN’s Early Modern Women Research Network.’</a> </p>
+
+<h3>
+Shakespeare & Beyond: ANZSA 2020 Biennial International Conference
+ </h3>
+ <p>
+The University of Newcastle will be hosting the Australian and New Zealand Shakespeare Association’s (ANZSA) Biennial international conference in the beautiful city of Newcastle in December 2020, and EMWRN is inviting everyone to come and visit us downunder! Keynote speakers are Professor Wendy Wall (Northwestern University), Professor Emma Smith (University of Oxford), Professor Ray Siemens (University of Victoria Canada), and Assistant Professor Emily Shortslef (University of Kentucky). The conference committee is EMWRN associates Trisha Pender, Sarah Ross, Paul Salzman, Ros Smith with Dr Gabriella Edelstein and Dr Erin McCarthy from University of Newcastle, and Dr Huw Griffiths from the University of Sydney. Go to https://conference.anzsa.org/ to register.
+</p>
+
+<h3>
+The Material Cultures of Early Modern Women's Writing: Editing, Reception and Meditation 
+</h3>
+ <p>
+This large-scale collaborative research program funded by an ARC Discovery Project (2012-2014) provided the first comprehensive study of the textual transmission of early modern women's writing. Focusing on the neglected areas of women's editing, reception and meditation, the project filled significant gaps in our understanding of the role that women's texts have played in the history of the book. EMWRN’S digital archive <i>The Material Cultures of Early Modern Women's Writing</i> was produced through this grant, as was a book of the same title. </p>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

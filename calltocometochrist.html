@@ -1,0 +1,595 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=calltocometochrist&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="13" class="authorheading">Elizabeth Melville</h2><h3>A Call to Come to Christ</h3><p><strong>Contributor:</strong> <a href="http://www.victoria.ac.nz/seftms/about/staff/sarah-">Associate Professor Sarah Ross</a></p><p><strong>Material:</strong> MSS</p><p><strong>Description:</strong> From the manuscript miscellany of Elizabeth Bruce Boswell. Other MS contents: this MS is an early eighteenth-century miscellany of devotional papers in the hand of Elizabeth Bruce Boswell (1673-1734), the grandmother of Samuel Johnson's biographer. Boswell's father knew / knew of Elizabeth Melville. The MS also includes a poem that Boswell attributes to Margaret More Roper; an extract from Henry Jessey's life of Sarah Wight; and a number of items with a connection to Culross.
+ </p><p><strong>Source:</strong> Beinecke Rare Book and Manuscript Library, Yale University, Boswell Collection, Gen MSS 89, Series XV, Box 105, Folder 1925, item 5</p><p><strong>Permissions:</strong> Not required</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 13 da calltocometochrist">
+                                 <script type="text/javascript" src="scripts/concertinaColumns.js"></script>
+ 
+ 
+ <div class="digarch">
+ 
+ <!-- C O N T E N T -->
+ <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+ <!-- APMS: End Header Start Content -->
+ 
+ <!-- Body inserted here. -->
+ 
+   <form action="https://c21ch.newcastle.edu.au/search.html" method="get">
+     <div id="search">
+       <p>Select versions to display:<br />
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription
+      	<br /><br />
+       <!-- <input name="checkbox" type="checkbox" value="checkbox"
+       	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+       	-->
+     </div>
+   </form>	
+ 
+ 
+ <div>
+ <table class="content" id="general">
+ <tr class="shade">
+ 	<th style="min-width: 200px;">Images</th>
+ 	<th style="min-width: 380px;">Transcription</th>
+ </tr>
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_call/melville_call_contents_01.jpg">
+     <img src="da/melville/img/melville_call/melville_call_contents_01-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+    <div class="indent"><p>
+          The following detached pieces wrote 
+     </p><p>
+          by the hand of Lady Elizabeth Boswel
+     </p><p>
+          of Auchinleak are here bound up together
+     </p>
+     </div>
+     <p>
+          1 A Poem by a Young Lady to her Brother a Youth at a 
+     </p>
+     <div class="indent"><div class="indent">
+     <p>
+          distance
+     </p>
+     </div></div>
+          <p>
+          2 A Poem by a Freind to a religious Lady
+     </p><p>
+          3 Coppy of a Letter by the Bp of Dumblane to George
+     </p>
+
+          <p>
+           Bruce of Carnock as to y<sup>e</sup> settlement of a Man in the 
+     </p><p>
+           Parish of Culross. 1631.
+     </p>
+
+     <p>
+          4 Observations upon effectual Calling. 
+     </p><p>
+          5 A Call to come to Christ a Poem by y<sup>e</sup> Lady Culross.
+     </p><p>
+          6 Coppy of a Devout Letter
+     </p><p>
+          7 Coppy of part of a Letter to a Lady under affliction
+     </p>
+
+          <p>
+           for the loss of her Husband.
+     </p>
+
+     <p>
+          8 Some of y<sup>e</sup> Articles of the Church of England concerning
+     </p>
+
+          <p>
+           Free Will.
+     </p>
+
+     <p>
+          9 Coppy of a devout Letter.
+     </p><p>
+          10 Cantique spirituelle de Monsr Poiret.
+     </p><p>
+          11 Anoth<sup>r</sup> coppy of the same.
+     </p><p>
+          12 Moral reflections upon the Mysteries of Jesus Christ.
+     </p><p>
+          13 An exercise of Love.
+     </p><p>
+          14 A Consolatory Letter to a person under trouble
+     </p><p>
+          15 Confession of Christian Faith made at Constantinople 1585
+     </p><p>
+          16 Verses made by Sir Thomas Mores Dau<sup>tt</sup>r when her
+     </p>
+
+          <p>
+           ffather was in Prison in Henry 8 time.
+     </p>
+
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_call/melville_call_contents_02.jpg">
+     <img src="da/melville/img/melville_call/melville_call_contents_02-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+<p>
+          17 A few devout resolutions well expresst
+     </p><p>
+          18 Some of Lady Bettys own occurrences in two short papers
+     </p><p>
+          19 Account of y<sup>e</sup> Manner of Miss Mary Cochranes death.
+     </p><p>
+          20 Verses on y<sup>e</sup> death of Miss Mary Cochrane by D<sup>r</sup> Cuthbert
+     </p><p>
+          ^20 A Devout Letter^
+     </p><p>
+          21 Notes of Some of y<sup>e</sup> Rev<sup>d</sup> M<sup>r</sup> George Mairs Sermons He
+     </p>
+
+          <p>
+           was Min<sup>r</sup> of Culross
+     </p>
+
+     <p>
+          22 A poem by a Christian under desertion & distress of mind. 
+     </p><p>
+          23 A Letter by James Nisbet Serjant in y<sup>e</sup> Castle of 
+     </p>
+
+          <p>
+           Ed<sup>r</sup> to a Young Lady, Extreamly devout
+     </p>
+
+     <p>
+          24
+     </p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_call/melville_call_01.jpg">
+     <img src="da/melville/img/melville_call/melville_call_01-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+
+     <div class="indent"><div class="indent">
+     <p>
+          A call to come to Christ
+     </p><p>
+          ^wrote by My Lady Culross^
+     </p>
+     </div></div>
+     <p>
+          Come live [with me] and be my love
+     </p>
+     <p class="indent">
+          And all these pleasurs thou shalt prove
+     </p>
+     <p>
+          That in my word hath warned thee
+     </p>
+     <p class="indent">
+          O loath this life and live with me
+</p>
+
+     <p>
+          This life is but a blast of breath
+     </p>
+<p class="indent">
+
+          Nothing so sure as dreadfull death
+     </p>
+
+     <p>
+          And since the time no man can know
+     </p>
+<p class="indent">
+          Sett not thy love on things below
+     </p>
+          
+
+     <p>
+          For things below will wear away
+     </p>
+          <p class="indent">
+          And beutie brave will soon decay
+     </p>
+          
+
+     <p>
+          Look to that life that last for ever
+     </p>
+<p class="indent">
+          And love the love that failes the[e] never
+     </p>
+          
+
+     <p>
+          I never failed the[e] in thy need
+     </p>
+     <p class="indent">
+          I call I cry ye come with speed
+     </p>
+          
+
+     <p>
+          Come near and gain a crown of Glore
+     </p><p>
+          Give me thy heart I seek no more
+     </p><p>
+          Thy heart is mine I bought it deir
+     </p>
+<p class="indent">
+          Then send it not a whooring here
+     </p>
+
+     <p>
+          This lawless lust and love prophane
+     </p>
+     <p class="indent">
+          Such pleasures false shall end in pain
+     </p>
+          
+
+     <p>
+          Should pleasures false pocesse thy heart
+     </p>
+<p class="indent">
+          Since thou and they with pain must part
+     </p>
+          
+
+     <p>
+          Then think upon these pleasures pure
+     </p>
+<p class="indent">
+          That shall for ever more endure
+     </p>
+          
+
+     <p class="alignright">
+          For
+     </p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_call/melville_call_02.jpg">
+     <img src="da/melville/img/melville_call/melville_call_02-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+      <p>
+          For ever more a word of weight
+     </p><p class="indent">
+          Stand still and strive faint not to fight
+     </p>
+<p>
+          And thou shall have that rich reward
+     </p><p class="indent">
+          That for the pure is now prepar’d
+     </p>
+<p>
+          It is prepar’d in heaven above
+     </p><p class="indent">
+          By me thy King thy Lord and love
+     </p>
+
+     <p>
+          That for thy love tholl’d torments sore
+     </p>
+<p class="indent">
+          Syne vanquished death and Reigns in Glore
+     </p>
+          
+
+     <p>
+          And though I Reing in Glore for ever
+     </p>
+<p class="indent">
+          Thy faithfull friend forgets the[e] never
+     </p>
+
+     <p>
+          But hath prepared a place for thee
+     </p>
+<p class="indent">
+          Wher thou may reing in joy with me
+     </p>
+
+     <p>
+          In endless joy with me and lasting light
+     </p>
+<p class="indent">
+          To sing amongst the Saints so bright
+     </p>
+          
+
+     <p>
+          Wher thou may sitt and sweetly sing
+     </p>
+<p class="indent">
+          A song of love to Christ thy King
+     </p>
+          
+
+     <p>
+          Then Christ thy King shall thee embrace
+     </p>
+<p class="indent">
+          Then thou shall see my blessed face
+     </p>
+          
+
+     <p>
+          Then thou shall hear such harmonie
+     </p>
+<p class="indent">
+          Which shall for sweetness ravish thee
+          </p>
+          
+
+     <p>
+          Thow ravished with grace and Glore
+     </p>
+     <p class="indent">
+          Shall soon forget thy labours sore
+     </p>
+          
+
+     <p>
+          Then thou shall see such heavenly sights
+     </p>
+<p class="indent">
+          And feed upon such dear delights
+     </p>
+          
+
+     <p>
+          Such dear delights cannot be told
+     </p>
+<p class="indent">
+          As to thy eyes thou shalt behold
+     </p>
+          
+
+     <p class="alignright">
+          Th
+     </p><p>
+           
+     </p>
+     
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_call/melville_call_03.jpg">
+     <img src="da/melville/img/melville_call/melville_call_03-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+
+     <p>
+          Then thou shall drink that living well
+     </p>
+<p class="indent">
+          Which shall thy dwining drowth* expell
+     </p>
+          
+
+     <p>
+          No ear hath heard, no heart can think
+     </p>
+<p class="indent">
+          The sweetness that thy soul shall drink
+     </p>
+<p>
+          Then thou shall feed on dainties dear
+     </p>
+<p class="indent">
+          And fill thy soul with Angles chear	
+     </p>
+          
+
+    <p>
+          Then thou shall hear those pleasant songs
+     </p><p>
+          That to thy Lord and love belongs
+     </p><p>
+      
+     </p><p>
+          <strong>dwining</strong>  pining, wasting away; drowth  drouth: thirst
+     </p>
+     
+     
+     
+ </td>
+ </tr>
+ 
+ 
+ 
+ </table>
+ 
+
+ 
+ 	</div>
+ </div>
+ 
+ 
+ 
+ 
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

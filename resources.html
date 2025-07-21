@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=resources&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="meta">
+                            <h2 id="6" class="authorheading">Digital resources on early modern women&rsquo;s writing</h2>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 0  resources">
+                                <h3> ABO: An Interactive Forum for Women in the Arts, 1640-1830
+</h3><p>
+An online annual publication that serves as a forum for interactive scholarly discussion on all aspects of women in arts between 1640 and 1830, especially literature, visual arts, music, performance art, film criticism, and production arts. <a href="https://scholarcommons.usf.edu/abo/">https://scholarcommons.usf.edu/abo/</a>
+</p>
+<h3>Bibliography of English Women Writers (1500-1640)
+</h3><p>
+A list of scholarship about more than 700 recovered women writers and located texts, including among them familiar figures, and identifying many hitherto unknown writers. Currently listing 738 recovered writers and their texts, canonical and non-canonical. Preliminaries consist of bibliographies and catalogues, contextual studies (i.e., studies providing extended narrative or analysis), reference works (i.e., compendia of entries), anthologies of essays, special issues of journals, genre studies, handbooks and pedagogical tools, compilations containing primary sources, and dissertations. Individual listings, the bulk of the bibliography, begin with a main heading supplying the writer's name and dates and contain lists of texts (along with English Short Title Catalogue numbers or locations of manuscripts), of editions, of compilations containing texts, and of both historical and analytical scholarship.
+<a href="https://www.itergateway.org/resources/beww#:~:text=Description:%20Compiled%20by%20Betty%20S.%20Travitsky,%20A%20Bibliography,recovered%20writers%20and%20their%20texts,%20canonical%20and%20non-canonical.</a>
+</p>
+<h3>British Women Romantic Poets 1789-1832
+</h3><p>
+An electronic collection of texts from the University of California, Davis. [Maybe too late but a good example of the kind of thing you’re looking for?] <a href="http://digital.lib.ucdavis.edu/projects/bwrp/">http://digital.lib.ucdavis.edu/projects/bwrp/</a>
+</p>
+<h3>Centre for the Study of Early English Women’s Writing, 1600 – 1830
+</h3><p>
+Centre for the Study of Early English Women’s Writing, 1600 – 1830, at the Chawton House Library and Study Centre, includes online novels and resources, especially for the eighteenth century 
+<a href="http://www.chawtonhouse.org/">http://www.chawtonhouse.org/</a>
+</p>
+<h3>Constructing Elizabeth Isham
+</h3><p>
+Includes a web edition of two partially concurrent manuscript diaries written by Elizabeth Isham (1609-1654), and secondly a collection of essays on self-construction in life writing by women in the early modern period.
+<a href="http://www2.warwick.ac.uk/fac/arts/ren/projects/isham/">http://www2.warwick.ac.uk/fac/arts/ren/projects/isham/</a>
+</p>
+<h3>Database of Early English Playbooks
+</h3><p>
+A database that allows scholars and students to investigate the publishing, printing, and marketing of English Renaissance drama in ways not possible using any other print or electronic resource. An easy-to-use and highly customizable search engine of every playbook produced in England, Scotland, and Ireland from the beginning of printing through 1660, DEEP provides a wealth of information about the original playbooks, their title-pages, paratextual matter, advertising features, bibliographic details, and theatrical backgrounds.
+<a href="http://deep.sas.upenn.edu/">http://deep.sas.upenn.edu/</a>
+</p>
+<h3>Early Modern Women: An Interdisciplinary Journal
+</h3><p>
+An onlinejournal devoted solely to the interdisciplinary and global study of women and gender during the years 1400 to 1750. Each volume gathers essays on early modern women from every country and region, by scholars from a wide range of academic disciplines, including art history, cultural studies, music, history, languages and literatures, political science, religion, theatre, history of science, and history of philosophy. 
+<a href="https://humanities.as.miami.edu/publications/early-modern-women/index.html">https://humanities.as.miami.edu/publications/early-modern-women/index.html</a>
+</p>
+<h3>Everything Early Modern Women
+</h3><p>
+Weblog with announcements of conferences and other news of interest to those studying early modern women. Includes links to other electronic resources and databases. 
+<a href="http://jcmurphy.wordpress.com/">http://jcmurphy.wordpress.com/</a>
+</p>
+<h3>The Lucy Hutchinson Project
+</h3><p>
+Lists bibliographical, biographical and scholarly resources on the work of Lucy Hutchinson (1620-81)
+<a href="https://earlymodern.web.ox.ac.uk/works-lucy-hutchinson">https://earlymodern.web.ox.ac.uk/works-lucy-hutchinson</a>
+</p>
+<h3>The Orlando Project
+</h3><p>
+An integrated history of Women's Writing in the British Isles. Includes a searchable database.
+<a href="http://www.artsrn.ualberta.ca/orlando/">http://www.artsrn.ualberta.ca/orlando/</a>
+</p>
+<h3>The Perdita Project
+</h3><p>
+An online catalogue of Early Modern Women's manuscript compilations
+<a href="http://web.warwick.ac.uk/english/perdita/html/">http://web.warwick.ac.uk/english/perdita/html/</a>
+</p>
+<h3>The Perdita Manuscripts 1500-1700
+</h3><p>
+This resource is produced in association with the Perdita Project based at the University of Warwick and Nottingham Trent University. Their goal was to identify and describe all manner of writing by early modern women from diaries to works of drama.We have now enhanced their path-breaking work by linking the new detailed catalogue descriptions with complete digital facsimiles of the original manuscripts. The result is a resource which is indispensable for anyone interested in women and women's writing in Early Modern Britain. This resource includes over two hundred and thirty manuscripts from 15 libraries and archives in the UK and North America. There are contextual essays from academics working in the field, as well as biographical and bibliographical resources.
+<a href="http://www.amdigital.co.uk/m-collections/collection/perdita-manuscripts-1500-1700/">http://www.amdigital.co.uk/m-collections/collection/perdita-manuscripts-1500-1700/</a>
+</p>
+<h3>Recent Studies and Editions of 18th-Century Women Writers, Readers, and Publishers
+</h3><p>
+A selective bibliography focusing on studies related to literature written, published, and read by women (1660-1800).
+<a href="http://www.personal.psu.edu/special/C18/women.htm">http://www.personal.psu.edu/special/C18/women.htm</a>
+</p>
+<h3>Seventeenth-Century Women Poets
+</h3><p>
+A list of electronic resources providing biographical and bibliographical information about the following women poets:  Aphra Behn, Anne Bradstreet, Margaret Cavendish, Anne Killigrew, Aemilia Lanyer, and Mary Wroth.
+<a href="http://www.uni-koeln.de/phil-fak/englisch/kurse/17c/poets.htm">http://www.uni-koeln.de/phil-fak/englisch/kurse/17c/poets.htm</a>
+</p>
+<h3>Society for the study of Early Modern Women
+</h3><p>
+Lists a number of electronic resources and societies for the study of early modern women’s writing.
+<a href="https://ssemwg.org/">https://ssemwg.org/</a>
+</p>
+<h3>The WEMLO project
+</h3><p>
+WEMLO is a British Academy/Leverhulme-funded project created to support researchers of early modern women letter writers. This site provides a scholarly meeting place for such researchers and offers an array of resources, including bibliographies, links to related resources, an image gallery of female letter writers, calls for papers, news, and a blog where scholars can communicate with each other about their work. The project also holds workshops that encourage scholarship in the area of early modern women’s epistolary culture.
+<a href="http://blogs.plymouth.ac.uk/wemlo/">http://blogs.plymouth.ac.uk/wemlo/</a>
+WEMLO has compiled a list of online resources (editions, projects, initiatives, finding aids, catalogues, gateways, collections, etc.)  that may prove useful to researchers of women’s letters.
+</p>
+<h3>Women and Eighteenth-Century Literature
+</h3><p>
+A list of resources on women and literature, including resources relating to earlier centuries, including the early modern period. 
+<a href="http://www.wright.edu/~martin.maner/18cwom99.html">http://www.wright.edu/~martin.maner/18cwom99.html</a>
+</p>
+<h3>The Women Writers Project
+</h3><p>
+(previously Brown Women Writers Project). A long-term research project devoted to early modern women's writing and electronic text encoding. Their stated goal is to bring texts by pre-Victorian women writers out of the archive and make them accessible to a wide audience of teachers, students, scholars, and the general reader. They support research on women's writing, text encoding, and the role of electronic texts in teaching and scholarship.
+<a href="http://www.wwp.northeastern.edu/">http://www.wwp.northeastern.edu/</a>
+</p>
+<h3>Women’s Studies Group
+</h3><p>
+Includes a list of electronic resources on early modern women’s writing 1558-1837.
+<a href="http://www.womensstudiesgroup.org/">http://www.womensstudiesgroup.org/</a>
+</p>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

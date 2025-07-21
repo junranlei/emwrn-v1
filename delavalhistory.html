@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=delavalhistory&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="38" class="authorheading">Elizabeth Delaval</h2><h3>Textual History</h3><p><strong>Contributor:</strong> <a href="http://www.bbk.ac.uk/english/our-staff/full-time-academic-staff/wiseman">Professor Susan Wiseman</a></p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 38 da delavalhistory">
+                                          <p>NB: Due to a pre-existing page numbering convention the following will refer to the 'Memoirs and Mediations' by page number, as marked on the original manuscript and at the top of scans, rather than by folio.</p>
+          <p>
+               The Delaval manuscripts in the digital archive consist primarily of the meditations and manuscript now held in the Bodleian Library as MS Rawlinson D. 78. This text is given in its entirety in digital format. It is supported by transcriptions of sections of letters between Delaval and her brother the Duke of Richmond and Lennox from roughly the same period as the events described in Rawlinson D.78. These letters were filed with his correspondence and are to be found in British Library MS Additional 21947 and Additional 21948. The third item provided is a transcription of a text from the State Papers, SP 34/37, which is the October 6 1713 ‘Deposition of Richard Robins of St James Westminster’. This gives ‘information about the religion, estate, etc., of Lady Elizabeth Hatcher, and her residence in France’. Further work remains to be done on the material held at Newcastle Archives, which is not included in the materials here. Some of this material now exists only in print quotation because some Newcastle material seems to have been pulped during World War II.<a href="delavalhistory.html#f1" class="foot">1</a> Delaval’s texts have complex and partially recovered transmission histories arranged around the fortunes of her main text, Bodleian Manuscript Rawlinson D. 78.
+          </p><h3>
+               1.Bodleian Manuscript Rawlinson D. 78.
+          </h3><p>
+               Bodleian Manuscript Rawlinson D. 78 is a large leather-bound volume (11” x 8.5”). It has a large number of blank pages at the back. It is written in a fairly large and generally fairly neat and legible hand. The manuscript as it stands seems to be a written out version of early material and may be prepared for a reader. Certainly, the large volume is well- suited to being a text for reading, and, conversely, due to its generally imposing presence would not be the most obvious volume in which to conceal secrets.
+          </p><p>
+               The text as it exists seems to curate and adumbrate several earlier texts. The reader approaches the text through a table of contents. It opens with an act of editorial retrospection as a heading tells us we are about to read ‘An introduction to some meditations and prayers’ written when the author was 14 to 20.<a href="delavalhistory.html#f2" class="foot">2</a> It appears, however, that at least the surviving narrative versions have been revised and updated. This may have happened only when the author was twenty or again later. Thus, from the start, the project is retrospective. Whereas the purpose of the meditations is clearly to assess the spiritual wellbeing of the author, any specific purposes in the collection and rewriting is only partially articulated. Further, only the period between the ages of 14 to 20 is discussed although it is clear that the text was actually written up later. The author is obviously guided by the dating of sequence of meditations, but also seems to be looking for logical places to house material.  Thus page 41 places a poem at the head of the meditations assigned to Delaval’s fifteenth year.<a href="delavalhistory.html#f3" class="foot">3</a> In this poem (which seems to be by Delaval), the timely lark is contrasted with the slothful sinner, but Psalm 16 verse 9 is invoked to suggest a hellish dimension to sloth and the divine promise of rescue from sin. The poem begins, ‘The early lark welcomes the breake of day, / But I alas drouse many hours away’, ending with a prayer to ‘now longer wast’ God’s time.<a href="delavalhistory.html#f4" class="foot">4</a>  
+          </p><p>
+               It may be that material in Rawlinson D 78 was later shaped, as well as written out. We can take the meditations of Delaval’s sixteenth year as a study in multiple times of composition.<a href="delavalhistory.html#f5" class="foot">5</a> The meditations open with the assertion that since her birth she ‘never had so much reason for sorrow as now upon the sudden news’ of her grandmother’s last illness. However, the meditations soon segue into a retrospective narrative indicating that Delaval is writing later, possibly, as Greene suggests, when transcribing in the eighteenth century.<a href="delavalhistory.html#f6" class="foot">6</a>  The passage recalls the effects of her grandmother’s legacy of £1000 used to pay off her debts from court.<a href="delavalhistory.html#f7" class="foot">7</a> It offers a transcription of letters written to Livingston by her grandmother when the girl was 14, and her grandmother 81.<a href="delavalhistory.html#f8" class="foot">8</a> Moreover, Delaval tells us that her meditations on the death of her grandmother are lost, and gives her motivation for copying out her grandmother’s letters as fear that these might disappear in an ‘unlucky accident’, as, indeed, seems to be the case. This passage, then, makes clear that although the book contains material apparently copied out (as also suggested, perhaps, by repetitions and omissions (e.g. p. 123), it represents not necessarily a final product but the version that currently exists – the sizeable book seems to be a place of safe storage as well as memory and expansion.<a href="delavalhistory.html#f9" class="foot">9</a> 
+          </p><p>
+               The text has a history of composition that suggests revision at one or more points in Delaval’s later life. Evidence for a fairly substantial part of the transcription having been done after Delaval’s first marriage ended was discussed in various places by its editor, Douglas Greene who edited the text for the Surtees Society, devoted to the history of Northumberland, in 1978. The text’s history of revision marks it in various ways. For example, figures are given titles considerably later than those they had when events described took place, such as the reference to Anglesey as ‘my Lord Prevy Seal’ at page 163.<a href="delavalhistory.html#f10" class="foot">10</a> The text strongly suggests a complex relationship between the temporality of events and the writing up of the manuscript. At one point, Delaval refers to her married suitor, John Roos, as ‘The Earle of Rutland (who at that time was only Lord Roos)’ (p. 242).<a href="delavalhistory.html#f11" class="foot">11</a> As Greene points out, Roos became Earl of Rutland in 1679 (much later than the date of the final meditation), but was raised to be a Duke in 1703, so either Delaval missed this or the passage was written between 1679-1703.<a href="delavalhistory.html#f12" class="foot">12</a> Such suggestive mistakes are supplemented by repeated substitutions of 17 for 16 in the starting of dates. For example, Delaval writes ‘Christmasse Holy day’s <span class="strike">1770</span> 1670’ (p. 316); she seems to start ‘July the 25th, 1771’ and a 17 can be seen clearly (p. 324); see also very clearly page 273 uncorrected ‘Easter day, 1770.’<a href="delavalhistory.html#f13" class="foot">13</a> This also suggests that Delaval returned to the text after 1700. What seems to be crossing out of some of the Gorges letters because copied out of order may suggest an ongoing revision.<a href="delavalhistory.html#f14" class="foot">14</a> Could Delaval have begun with a plan to make this a presentation copy (hence the large book), a plan which was gradually abandoned or changed? This remains speculation. The way this is crossed out also, perhaps, resembles an instruction not to copy as a neat editorial double strike-through. The motivations are enigmatic but the implication isthat the text has some status as a work in progress. What is the case is that the contents list is only partial – it lists only some of the contents – and that the text does present a ‘version’ apparently all written out sequentially and much later than the events described. 
+          </p><p>
+               As this representative sample of features indicating later writing suggests, the text is marked by something close to an internal transmission history. It offers an ordering and smoothing of texts from the early years of Delaval’s life as Elizabeth Livingston and then Elizabeth Delaval, as edited and curated and retold or told in later life. While we cannot know exactly when the text was written, or at how many times, it seems to have been edited and inflected in relation to some later circumstances. It may be that a reader was intended; one is addressed as ‘you’ at p. 242.<a href="delavalhistory.html#f15" class="foot">15</a> While it is possible that Delaval writes ‘as I have already told you’ considering an imaginary addressee, there are several possible contexts in which her meditations and life might have been read from her second marriage to Henry Hatcher to the court circles of James II’s court at St Germain, and future research may suggest more about any possible readers.
+          </p><p>
+               The later history of the manuscript has shaped the way the text comes to us. The date of Delaval’s death is at present unconfirmed but said to be 1717. Where she died is yet to be confirmed, though Greene places her in Rouen.<a href="delavalhistory.html#f16" class="foot">16</a> After Delaval’s death the exact whereabouts of the text are uncertain until it was acquired by the collector Richard Rawlinson. As Douglas Greene notes, Rawlinson had been in France.<a href="delavalhistory.html#f17" class="foot">17</a> Rawlinson finds Delaval through her marital family, so that we find on the volume ‘her maiden name don’t appear’.<a href="delavalhistory.html#f18" class="foot">18</a> Significantly, this description sheds Delaval’s titles in calling the text ‘Mrs. Delaval’s Memoirs and Mediations’, perhaps obscuring from scholars some of the most significant phases of her life as Elizabeth Livingston and Lady Elizabeth Hatcher, after her second marriage. The manuscript was perhaps further concealed by being catalogued under ‘Mystical Theology’ in the Bodleian.<a href="delavalhistory.html#f19" class="foot">19</a> 
+          </p><p>
+               In 1888 the search for a space for a church Sunday School led to the discovery of the contents of the Delaval library by a Newcastle reporter, John Robinson. A load of paper was removed from a colliery office and put ‘in a large room in the clay lofts of the bottle works’ – the papers were on the point of being destroyed when Robinson found them.<a href="delavalhistory.html#f20" class="foot">20</a> Amongst the treasure trove of the library as it was before the house was remodelled by Vanbrugh, Robinson found letters from Elizabeth Delaval’s miserable marriage and published excerpts, later lodging these letters with the Society of Antiquaries in Newcastle Upon Tyne.<a href="delavalhistory.html#f21" class="foot">21</a> These were transferred to what became Northumberland Archives. However, some of these papers were apparently later pulped.<a href="delavalhistory.html#f22" class="foot">22</a> It was in this context that H. H. Craster read a paper in Newcastle on the Bodleian Delaval manuscript (Rawlinson D 78) and in 1903, when his paper was published, the connection between the two bodies of material was formalised.<a href="delavalhistory.html#f23" class="foot">23</a> Finally, in 1978 the text was edited by Douglas G. Greene as <i>The Meditations of Lady Elizabeth Delaval</i>. The presentation of Delaval’s manuscript in the digital archive enables readers to more closely track the material aspects of the text. 
+          </p><h3>
+               2. Letters from Delaval MSS Additional 21947, 21948.
+          </h3><p>
+               The archive offers a basic transcription of the letters sent by Elizabeth Livingston to her brother, Charles Stuart the Duke of Richmond and Lennox. The correspondence also contains some letters from their sister, Catherine O’Brien during her first marriage.
+          </p><h3>
+               3. ‘Deposition of Richard Robins’ SP 34/37.
+          </h3><p>
+               This ‘Deposition’ by Richard Robins can be found in the papers of the Secretary of State. It seems that Robins worked for Lady Anne Newburgh, Elizabeth Delaval’s father’s widow. Relations between Delaval and Lady Newburgh were strained (see Biographical Introduction). It seems that Robins was employed also by Delaval to carry letters and that these were intercepted. It is possible that they were intercepted sufficiently systematically to provide most of the substantial amount of material in the State Papers which tracks Delaval (now Hatcher) after her flight from arrest for the Pewter Pot Plot in which documents were concealed in a pot to be sent to the exiled James II. The deposition is signed off by one of the Clerks of the Signet in the period when Robert Harley, 1st Earl of Oxford was Lord High Treasurer and the most powerful figure in Anne’s regime.  It seems, then, that the deposition is in the service of and perhaps the culmination of the long-running surveillance of Delaval (Hatcher) by the post-Revolution regime in London. The deposition shows that the English authorities were indeed concerned about Hatcher’s religion. It is the final external biographical source as yet available and the years 1713 up to and including her death in 1717? are notable for the current lack of documentation in the English State Papers. This area is ripe for research as is her role, if any substantial role it was, at the Court of James II at St-Germain-en-Laye.
+          </p>
+          
+          
+          
+          
+          <div class="footnotes">
+               <ol><li><a id="f1"></a>
+                    H. Craster, ‘Notes from a Delaval diary’, <i>Proceedings of the Society of Antiquaries of Newcastle-upon-Tyne</i>, 3rd ser. (1903–4), 149–153. On the pulping of Delaval material in the Northumberland Record Office see Douglas G. Greene, ‘Introduction’ in <i>The Meditations of Lady Elizabeth Delaval</i> (Gateshead: Surtees Society, 1978), p.13 see also n. 87.
+               </li>
+                    <li>
+                         <a id="f2"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_002.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_002.jpg</a>
+                    </li><li><a id="f3"></a><a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_041.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_041.jpg</a>
+                    </li><li><a id="f4"></a>
+                         To see the poems clearly see Greene, p. 44.
+                    </li><li><a id="f5"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_081.jpg.html"> /emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_081.jpg</a>
+                    </li><li><a id="f6"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_084.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_084.jpg</a>; Douglas G.Greene, <i>The Meditations of Lady Elizabeth Delaval</i> (Gateshead: Surtees Society, 1978), pp. 67, 214 n. 50. See also pp. 69, 215 n.53.
+                    </li><li><a id="f7"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_086.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_086.jpg</a> 
+                    </li><li><a id="f8"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_090.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_090.jpg</a>
+                    </li><li><a id="f9"></a>
+                         See Susan Wiseman, ‘Elizabeth Delaval’s <i>Memoirs and Meditations</i>: Textual Transmission and Jacobite Context’ <i>Early Modern Women: an Interdisciplinary Journal</i> 2015 (10/1), 68-92; 91-2; Greene, p. 70. <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_123.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_123.jpg</a>
+                    </li><li><a id="f10"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_163.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_163.jpg</a>
+                    </li><li><a id="f11"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_242.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_242.jpg</a>
+                    </li><li><a id="f12"></a>
+                         Greene, p. 218 n. 127.
+                    </li><li><a id="f13"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_316.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_316.jpg</a>; (<a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_324.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_324.jpg</a>; <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_273.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_273.jpg</a>).
+                    </li><li><a id="f14"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_093.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/</a>; <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_095.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_095.jpg</a>.
+                    </li><li><a id="f15"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_242.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_242.jpg</a>
+                    </li><li><a id="f16"></a>
+                         Greene, p. 17.
+                    </li><li><a id="f17"></a>
+                         W. D. Macray, <i>Annals of the Bodleian Library</i> (Oxford: Clarendon, 1980, 2nd edition), p. 231 cited in Greene, p. 25 n. 122. 
+                    </li><li><a id="f18"></a>
+                         <a href="da/viewer/facsimile.php%3Fcontent=memoirs&amp;open=%252Femwrn%252Fda%252Fdelaval%252Fimg%252Fdelaval_memoirs%252Fdelaval_memoirs_000_iii.jpg.html">/emwrn/da/viewer/facsimile.php?content=memoirs&open=/emwrn/da/delaval/img/delaval_memoirs/delaval_memoirs_000_iii.jpg</a>
+                    </li><li><a id="f19"></a>
+                         “Delaval, Lady Elizabeth (1648?–1717),” Margaret J. M. Ezell in <i>Oxford Dictionary of National Biography</i>, eee online ed., ed. Lawrence Goldman, Oxford: OUP, , <a href="http://www.oxforddnb.com/view/article/68215">http://www.oxforddnb.com/view/article/68215</a> (accessed August 6, 2014)
+                    </li><li><a id="f20"></a>
+                         John Robinson, <i>The Delaval Papers</i> (Newcastle: Browne & Brown, 1892), p. 1; <i>Archaeologia Aeliana</i>, n.s, 15 (1892), 125-143.
+                    </li><li><a id="f21"></a>
+                         John Robinson, <i>The Delaval Papers</i> (Newcastle: Browne & Brown, 1892) ‘printed at the office of the Blyth Weekly News’, 1.
+                    </li><li><a id="f22"></a>
+                         See Greene, p. 23 n. 87. 
+                    </li><li><a id="f23"></a>
+                         H. H. Craster, ‘Notes from a Delaval “Diary”, <i>Proceedings of the Society of Antiquaries of Newcastle-Upon-Tyne</i>, 3r ser., 1 (1903-4) 149-53.
+                    </li><li><a id="f24"></a>
+                         SP 34/37 f.201<i>CSPD Secretaries of State: Anne 1702-1714</i>, vol. 37 (Kew, National Archives, 2009), 5.
+                    </li></ol>
+          </div>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

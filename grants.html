@@ -1,0 +1,547 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=grants&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="meta">
+                            <h2 id="5" class="authorheading">Grants, Linkages &amp; Fellowships</h2>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 0  grants">
+                                <table>
+ <tr><td>
+ <h3>Project Team</h3>
+ </td><td>
+ <h3>Title</h3>
+ </td><td>
+ <h3>$</h3>
+ </td><td>
+ <h3>Funding Body</h3>
+ </td><td>
+ <h3>Years</h3>
+ </td></tr>
+
+<tr><td>
+ Professor Rosalind Smith
+ </td><td>
+ Marginalia and the Early Modern Woman Writer, 1530-1660
+ </td><td>
+ $1,054,816 
+ </td><td>
+ ARC Future Fellowship
+ </td><td>
+ 2019-2023
+ </td></tr>
+
+<tr><td>
+ Professor Rosalind Smith; Associate Professor Patricia Pender; Professor Paul Salzman; Associate Professor Sarah Ross; Associate Professor Mitchell Whitelaw (ANU); Dr Anna Welch (SLV) 
+ </td><td>
+ Transforming the Early Modern Archive: The Emmerson Collection at SLV 
+ </td><td>
+ $248,114
+ </td><td>
+ ARC Linkage Project Grant
+ </td><td>
+ 2019-2022
+ </td></tr>
+
+<tr><td>
+ Professor Rosalind Smith
+ </td><td>
+  2020 Lloyd Davies Memorial Fellowship  
+ </td><td>
+ 
+ </td><td>
+ School of Communication and Arts, The University of Queensland, Australia
+ </td><td>
+ 2020
+ </td></tr>
+
+<tr><td>
+ Professor Susan Wiseman
+ </td><td>
+  British Academy/Leverhulme Senior Research Fellowship. Project title: Wheatcroft's Written Worlds: Non-Elite Writing in Seventeenth-Century England 
+ </td><td>
+ 
+ </td><td>
+ Leverhulme Trust
+ </td><td>
+ 2019-2020
+ </td></tr>
+ 
+  <tr><td>
+ Professor Rosalind Smith
+ </td><td>
+  Merton Fellowship: Elected Merton Senior Common Room (SCR) Fellow  
+ </td><td>
+ 
+ </td><td>
+ Merton College, Oxford University and University of Newcastle
+ </td><td>
+ 2019-2020
+ </td></tr>
+
+ <tr><td>
+ Associate Professor Sarah C. E. Ross; Professor Rosalind Smith; Professor Michelle O'Callaghan
+ </td><td>
+ Woe is Me: Women and Complaint in the English Renaissance
+ </td><td>
+ $450,000
+ </td><td>
+ Royal Society of New Zealand Marsden Grant
+ </td><td>
+ 2017-2019
+ </td></tr>
+ <tr><td>
+ Associate Professor Rosalind Smith; Associate Professor Sarah C. E. Ross; Professor Michelle O’Callaghan
+ </td><td>
+ Early Modern Women and the Poetry of Complaint, 1540-1660
+ </td><td>
+ $114,550
+ </td><td>
+ Australian Research Council
+ </td><td>
+ 2017-2019
+ </td></tr>
+ <tr><td>
+ Professor Rosalind Smith and Associate Professor Patricia Pender
+ </td><td>
+ The Emmerson Collection at the State Library of Victoria: Australia’s new early modern archive, Stage 2 
+ </td><td>
+ $7,954
+ </td><td>
+ University of Newcastle Linkage Pilot Research Grant 
+ </td><td>
+ 2017
+ </td></tr>
+ <tr><td>
+ EMWRN team with Professor Lorna Hutson and Ms Alexandra Day
+ </td><td>
+ Early Modern Women Research Network
+ </td><td>
+ $14,500
+ </td><td>
+ University of Newcastle FEDUA Strategic Networks and Pilot Projects Scheme
+ </td><td>
+ 2016
+ </td></tr>
+ <tr><td>
+ Michelle O’Callaghan, Co-investigator
+ </td><td>
+ Authors and Readers: The History of the Eighteenth-century Poetic Miscellany
+ </td><td>
+ £203,360
+ </td><td>
+ Leverhulme Research Project Award
+ </td><td>
+ 2014-2016
+ </td></tr>
+ <tr><td>
+ Associate Professor Rosalind Smith and Dr Patricia Pender
+ </td><td>
+ The Emmerson Collection at the State Library of Victoria: The Early Modern Book in Australia
+ </td><td>
+ $9,706
+ </td><td>
+ University of Newcastle Linkage Pilot Research Grant
+ </td><td>
+ 2015
+ </td></tr> 
+ <tr><td>
+ Dr Patricia Pender and Associate Professor Ros Smith
+ </td><td>
+ Early Modern Women and the Institutions of Authorship: Publication, Collaboration, Translation
+ </td><td>
+ $157,309
+ </td><td>
+ Australian Research Council Discovery Project
+ </td><td>
+ 2014
+ </td></tr>
+ <tr><td>
+ EMWRN
+ </td><td>
+ Material Cultures of Early Modern Women’s Writing
+ </td><td>
+ $210,000
+ </td><td>
+ Australian Research Council Discovery Project
+ </td><td>
+ 2012-2014
+ </td></tr>
+ <tr><td>
+ Paul Salzman
+ </td><td>
+ Literature and Politics in the 1620s
+ </td><td>
+ $90,000
+ </td><td>
+ Australian Research Council
+ </td><td>
+ 2012-2014
+ </td></tr>
+ <tr><td>
+ Patricia Pender
+ </td><td>
+ Early Modern Women and the Institutions of Authorship
+ </td><td>
+ $20,000
+ </td><td>
+ University of Newcastle Near Miss Grant
+ </td><td>
+ 2013
+ </td></tr>
+ <tr><td>
+ Associate Professor Rosalind Smith; Dr Patricia Pender; Ms Wendy Alexander
+ </td><td>
+ The Early Modern Women Research Network
+ </td><td>
+ $15,000
+ </td><td>
+ University of Newcastle FEDUA Strategic Networks Grant
+ </td><td>
+ 2013
+ </td></tr>
+ <tr><td>
+ Associate Professor Rosalind Smith
+ </td><td>
+ International Visitor: O’Callaghan 
+ </td><td>
+ $7278
+ </td><td>
+ University of Newcastle DVCR International Visitor Support
+ </td><td>
+ 2013
+ </td></tr>
+ <tr><td>
+ Michelle O’Callaghan
+ </td><td>
+ A Digital Edition and Study of the Early Printed Poetry Miscellanies, 1557-1621
+ </td><td>
+ £92,714
+ </td><td>
+ British Academy Research Development Award
+ </td><td>
+ 2011-2012
+ </td></tr>
+ <tr><td>
+ Patricia Pender
+ </td><td>
+ Research Fellowship
+ </td><td>
+ $560,575
+ </td><td>
+ University of Newcastle Research Fellowship
+ </td><td>
+ 2007-2012
+ </td></tr>
+ <tr><td>
+ Rosalind Smith
+ </td><td>
+ Early Modern Women’s Writing and Expansion of the Early Modern Women Research Network
+ </td><td>
+ $8,000
+ </td><td>
+ University of Newcastle Career Enhancement Fellowship for Academic Women
+ </td><td>
+ 2011
+ </td></tr>
+ <tr><td>
+ Patricia Pender
+ </td><td>
+ Early Modern Women’s Writing and the Rhetoric of Modesty
+ </td><td>
+ $2,500
+ </td><td>
+ Australian Academy of the Humanities Travelling Fellowship
+ </td><td>
+ 2009-2010
+ </td></tr>
+ <tr><td>
+ Paul Salzman
+ </td><td>
+ Mary Wroth: A Contextual Biography and Electronic Edition
+ </td><td>
+ $132,536
+ </td><td>
+ Australian Research Council
+ </td><td>
+ 2007-2009
+ </td></tr>
+ <tr><td>
+ Patricia Pender
+ </td><td>
+ Early Modern Women’s Writing and the Rhetoric of Modesty
+ </td><td>
+ $10,000
+ </td><td>
+ University of Newcastle Early Career Researcher Grant
+ </td><td>
+ 2009
+ </td></tr>
+ <tr><td>
+ Dr Patricia Pender and Associate Professor Rosalind Smith
+ </td><td>
+ NEER Research Cluster – Early Modern Women’s Writers
+ </td><td>
+ $1,980
+ </td><td>
+ Australian Research Council Research Networks
+ </td><td>
+ 2009
+ </td></tr>
+ <tr><td>
+ Associate Professor Rosalind Smith and Dr Patricia Pender
+ </td><td>
+ NEER Research Cluster – Early Modern Women’s Writers
+ </td><td>
+ $2,000
+ </td><td>
+ Australian Research Council Research Networks
+ </td><td>
+ 2008
+ </td></tr>
+ <tr><td>
+ Sarah C. E. Ross
+ </td><td>
+ Women, Poetry, and Politics in Seventeenth-Century Britain
+ </td><td>
+ $140,000
+ </td><td>
+ Royal Society of New Zealand Marsden Fast-Start Grant - Early Career Researcher
+ </td><td>
+ 2007-2008
+ </td></tr>
+ <tr><td>
+ Michelle O’Callaghan
+ </td><td>
+ A Digital Edition and Study of the Early Printed Poetry Miscellanies, 1557-1621
+ </td><td>
+ £4,056
+ </td><td>
+ British Academy Small Grants Pilot Project
+ </td><td>
+ 2007-2008
+ </td></tr>
+ <tr><td>
+ Patricia Pender
+ </td><td>
+ Research Fellowship Project Grant
+ </td><td>
+ $15,000
+ </td><td>
+ University of Newcastle Fellowship Grant
+ </td><td>
+ 2007
+ </td></tr>
+ <tr><td>
+ Kate Lilley
+ </td><td>
+ Royalist Women’s Writing and Social Authorship 1640-1670
+ </td><td>
+ 
+ </td><td>
+ University of Sydney Bridging Support
+ </td><td>
+ 2007
+ 
+ </td></tr>
+ </table>
+  
+<h3>Research Grant Outcomes</h3>
+<p>
+<b>ARC Future Fellowship Marginalia and the early modern woman writer, 1530-1660</b></p>
+<p>Professor Rosalind Smith has received an outstanding mid-career researchers Future Fellowship grant from the Australian Research Council (ARC) to examine women’s textual practice in the English Renaissance. The ARC Future Fellowships encourage research in areas of national priority, and Rosalind will examine women’s textual practice in the English Renaissance, recognising the innovative work achieved by Ros and her colleagues at EMWRN in furthering the research of early modern women’s writing in Australia. 
+Ros will be examining the records of women’s reading and writing in the margins of their books from the 16th and 17th century to make new discoveries about how women used their books during that period. This research will be the first investigation into the history of early modern women’s textual practice through the traces they left in their books, at a time when book production and distribution was first appearing on a larger scale. 
+There is a lot to be excited about with this project as marginalia opens up an exciting new field of research in early modern studies, considering that the traces left behind, including marginalia annotations, can tell researchers how texts were used, understood and exchanged, as well as revealing a previously overlooked source of extraordinary writing. Ros says: “This project will be quite transformative within the field and should uncover a whole body of writing that we’ve never seen before. There will also be an element of crowd sourcing to the project, where we’ll ask librarians and archivists to send us material so we can create digital versions of the texts and extend their access to the public”.
+</p>
+<p>
+<b>ARC DP Early Modern Women and the Poetry of Complaint, 1540-1660 and Marsden Grant, Woe Is Me: Women and Complaint in the English Renaissance</b></p>
+<p>EMWRN colleagues Rosalind Smith (CI), Sarah C. E. Ross (CI) and Michelle O’Callaghan were granted an ARC DP and a Marsden Grant from the Royal Society of New Zealand in 2017 to investigate, for the first time, how early modern women used the widespread, powerful and diverse mode of complaint to voice expressions of protest and loss across the English Renaissance. Highlighting women's roles as some of the mode's most significant writers, patrons and textual producers and consumers, the anticipated outcomes of this research will rewrite the literary history of complaint, and will uncover, from a fresh perspective, how the imagined voices of the disempowered shaped the literary and political cultures of early modern England. Reconceptualising a significant mode in Renaissance literature will benefit Australia and New Zealand’s standing at the forefront of innovative research in early modern studies.</p>
+<p>The work involved in the Complaint grants will develop and model a new methodology within early modern literary studies that integrates macro and micro history with formal and material analyses, and disseminates its results through both digital and traditional research technologies. The project will produce a co-authored monograph, several journal articles as well as a special edition issue of a leading academic journal, and an extensive digital archive which will produce a digital first and last line index of women’s complaint poetry, which will enable archival research to establish the parameters of the mode throughout early modern England. Within the wider community, the results of this research will be disseminated through feature articles in online outlets such as The Conversation, articles in national and international electronic media, and through CI/PI engagement with schools, colleges and libraries.
+</p> 
+<p> 
+<b>ARC DP Early Modern Women and the Institutions of Authorship: Publication, Collaboration and Translation</b></p>
+<p>Dr Patricia Pender’s Institutions of Authorship ARC DP provided the first in-depth account of early modern women's contributions to the history of the book by considering their roles in publication, collaboration and translation. The project transformed early modern book history by considering agents and forms of literary labour that have previously been deemed marginal to the discipline as a whole. Pender’s research redefined categories of authorship that have been defined in almost exclusively masculine terms, providing a more complete and historically nuanced account of authorial institutions crucial to the future of early modern literary studies.</p> <p>Pender produced the edited collection, <a href="http://www.palgrave.com/gp/book/9783319587769#aboutBook"><i>Gender, Authorship, and Early Modern Women’s Collaboration</i></a> (Palgrave Macmillan, 2017). This book explores the collaborative practices – both literary and material – that women undertook in the production of early modern texts. It confronts two ongoing methodological dilemmas. How does conceiving women’s texts as collaborations between authors, readers, annotators, editors, printers, and patrons uphold or disrupt current understandings of authorship? And how does reconceiving such texts as collaborative illuminate some of the unresolved discontinuities and competing agendas in early modern women’s studies? From one perspective, viewing early modern women’s writing as collaborative seems to threaten the hard-won legitimacy of the authors we have already recovered; from another, developing our understanding of literary agency beyond capital “A” authorship opens the field to the surprising range of roles that women played in the history of early modern books. Instead of trying to simply shift, disaggregate or adjudicate between competing claims for male or female priority in the production of early modern texts, <i>Gender, Authorship, and Early Modern Women’s Collaboration</i> investigates the role that gender has played – and might continue to play – in understanding early modern collaboration and its consequences for women’s literary history. 
+</p>
+<p>
+<b>ARC DP Material Cultures of Early Modern Women’s Writing</b></P> <p>Through an ARC DP from 2012-2014, members of EMWRN produced and published <a href="http://www.palgrave.com/gp/book/9781137342423#aboutBook"><i>Material Cultures of Early Modern Women's Writing</i></a> (Palgrave Macmillan, 2014), edited by Patricia Pender and Rosalind Smith. The prestigious journal, <i>Studies in English Literature</i> recently proclaimed Material Cultures, “by far the most significant collection of essays on women writers this past year.” Including work by a selection of scholars in the field, each chapter focuses on the production, transmission and reception of key texts and figures in the history of early modern women writers. Collectively, the essays examine and discuss ways in which the material circumstances of these writers and the texts they produced have been, and continue to be read, understood and studied. <i>Material Cultures</i> engages with a range of theories of textual production and explores how a given text amounts to a material artifact embedded firmly within it’s time and place. In thinking about how we might understand this artifact from today’s perspective, special attention is drawn to the function of gender within textual production, both in terms of limitations and as a locus of patronage, collaboration and community. EMWRN’s <i>The Material Cultures of Early Modern Women’s Writing </i>digital archive was also produces as a result of this grant.
+</p>
+<p>
+<b>ARC DP Literature and Politics in the 1620s</b></p>
+<p>Professor Salzman’s ARC DP, Literature and Politics in the 1620s, produced a book of the same title published by Palgrave Macmillan (2014). <a href="http://www.palgrave.com/gp/book/9781137305978#otherversion=9781349454983"><i>Literature and Politics in the 1620s: Whisper'd Counsells</i></a> argues that literature during this decade was inextricably linked to politics, whether oppositional or authoritarian. A wide range of texts are analyzed, from Shakespeare's <i>First Folio</i> to Middleton's <i>A Game at Chess</i>, from romances and poetry to sermons, tracts and newsbooks. 
+</p>
+<p>
+<b>British Academy Research Development Award: A Digital Edition and Study of the Early Printed Poetry Miscellanies</b></p>
+<p> With the funding from the British Academy Research Development Award, Michelle O’Callaghan produced a searchable digital edition of selected verse miscellanies printed in the sixteenth and early seventeenth centuries, <a href="http://versemiscellaniesonline.bodleian.ox.ac.uk/"><i>Verse Miscellanies Online.</i></a> These verse miscellanies, or poetry anthologies, helped to shape the history of English poetry and can tell us much about how literary tastes developed and changed over the course of the English Renaissance and the growth of the book trade. Work on this digital edition has involved collaboration with various bodies, including the Bodleian Digital Library, Oxford University Computing Services, and the Digital Humanities Department at King's College, London. 
+</p> 
+<p>
+<b>ARC Network for Early European Research (NEER)</b></p>
+<p>The ARC Network for Early European Research (NEER) was funded between 2004 and 2010 as a national framework for enhancing and supporting current Australian research into the culture and history of Europe between the fifth and early nineteenth centuries. The ARC NEER Research Cluster: The Early Modern Women Writers Research Cluster, gathered together twelve national and international scholars working in the rapidly expanding cross-disciplinary field of early modern women's writing. Identifying and linking existing areas of research strength in this area across a range of institutions, the group worked to enhance Australia's already strong research reputation in this field by encouraging sustained collaboration between its members, nationally, internationally and across differing levels of experience. The organising principle and strength of the group was a shared interest in early modern women's textual practice. Its individual members work across a range of disciplines within English, including textual, historical and cultural studies, the history of the book, the new bibliography and electronic textual analysis. Rosalind Smith and Trisha Pender coordinated the cluster and worked with EMWRN members Kate Lilley, Sarah C. E. Ross, Paul Salzman and Susan Wiseman.
+</p>
+<p>
+<b>ARC DP Mary Wroth: A Contextual Biography and Electronic Edition</b></p>
+<p>The funding provided by Paul Salzman’s ARC DP resulted in the production of a digital archive titled <a href="http://wroth.latrobe.edu.au/"><i>Mary Wroth’s Poetry: An Electronic Edition</i></a>, which has become an essential digital resource for Wroth scholars. This comprehensive archive contains exceptional digital images and editions of all poems in the Folger Library MS version of Wroth’s <i>Pamphilia to Amphilanthus</i> sequence. In addition, it offers a comparison to these with the printed versions appended in Wroth’s 1621 <i>Urania</i>, as well as modernised and edited versions of Professor Salzman’s own transcriptions, a contextual biography and critical perspectives. 
+</p>
+<p>
+<b>Royal Society of New Zealand Marsden Fast-Start Early Career Researcher</b></p>
+<p>With the support of the Royal Society of New Zealand Marsden Early Career Researcher grant, Sarah C. E. Ross authored and published the <a href="http://ukcatalogue.oup.com/product/9780198724209.do"><i>Women, Poetry, and Politics in Seventeenth-Century Britain</i></a> (Oxford University Press, 2015). <i>Women, Poetry, and Politics</i> provides a new narrative of women's political poetics in the seventeenth century, offering the first sustained analysis of women's political poetry in manuscript. It includes new readings of Elizabeth Melville, Anne Southwell, Jane Cavendish, Hester Pulter, and Lucy Hutchinson, and explores the poetic genres favoured by women: devotional and social lyrics, biblical verse paraphrase, emblems, and elegies.
+</p>
+
+<h3>Potential Research Grants</h3>
+<p>
+<b>Australian Research Centre Future Fellowship </b></p>
+<p><a href="http://www.arc.gov.au/future-fellowships">The Future Fellowships</a> scheme supports research in areas of critical national importance by giving outstanding researchers incentives to conduct their research in Australia. The aim of Future Fellowships is to attract and retain the best and brightest mid-career researchers.</p>
+<p>At present, many highly qualified mid-career researchers choose to work overseas to further their careers due to lack of opportunities in Australia. The Future Fellowships scheme addresses this problem and will significantly boost Australia's research and innovation capacity in areas of national importance. Future Fellowships provides four-year fellowships to outstanding Australian mid-career researchers. In addition, the ARC may award the Administering Organisation up to $50 000 of non-salary funding per annum which may be used for personnel, equipment, travel and field research costs directly related to the Future Fellow's research.</p>
+<p>Future Fellowships will encourage proposals from researchers working in areas of national priority. Preference will be given to those researchers who can demonstrate a capacity to build collaboration across industry and/or research institutions and/or with other disciplines. Although international experience is important for Australian researchers, it is also important they have the opportunity to return home to continue their work. One call for submission of Future Fellowships proposals is made each year. </p>
+</p>
+<p>
+<b>Australian Research Centre DECRA</b></p>
+<p> <a href="https://www.arc.gov.au/grants/discovery-program/discovery-early-career-researcher-award-decra">The Discovery Early Career Researcher Award (DECRA)</a> scheme is a separate element of the Discovery Program. The DECRA scheme will provide more focused support for researchers and create more opportunities for early-career researchers in both teaching and research, and research-only positions.
+<p>The objectives of the DECRA scheme are to: support excellent basic and applied research by early career researchers; advance promising early career researchers and promote enhanced opportunities for diverse career pathways; enable research and research training in high quality and supportive environments; expand Australia’s knowledge base and research capability and enhance the scale and focus of research in the Science and Research Priorities. Researchers may be eligible to apply if they have been awarded a PhD within five years, or longer if combined with periods of significant career interruption. It is anticipated that up to 200 three-year Discovery Early Career Researcher Awards, including up to $40 000 per annum in project funds, may be awarded each year. 
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

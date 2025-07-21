@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=tombatcollessie&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="13" class="authorheading">Elizabeth Melville</h2><h3>Melville Tomb, Collessie, Fife</h3><p><strong>Contributor:</strong> <a href="http://www.victoria.ac.nz/seftms/about/staff/sarah-">Associate Professor Sarah Ross</a></p><p><strong>Material:</strong> Stone</p><p><strong>Source:</strong> Melville Tomb, Collessie, Fife</p><p><strong>Permissions:</strong> No permissions required.</p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 13 da tombatcollessie">
+                                 <script type="text/javascript" src="scripts/concertinaColumns.js"></script>
+ 
+ <div class="digarch">
+ 
+ <!-- C O N T E N T -->
+ <a id="content"></a><!-- InstanceBeginEditable name="Content" -->
+ <!-- APMS: End Header Start Content -->
+ 
+ <!-- Body inserted here. -->
+ 
+   <form action="https://c21ch.newcastle.edu.au/search.html" method="get">
+     <div id="search">
+       <p>Select versions to display:<br />
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 0);" /> Image
+       <input name="checkbox" type="checkbox" value="checkbox" checked="checked" onclick="show_hide_column(this, 'general', 1);" /> Transcription
+      	<br /><br />
+       <!-- <input name="checkbox" type="checkbox" value="checkbox"
+       	onclick="show_hide_element(this, 'tn');" /> View in-line transcription and other notes<br />
+       	-->
+     </div>
+   </form>	
+ 
+ 
+ <div>
+ <table class="content" id="general" >
+ <tr class="shade">
+ 	<th style="min-width: 200px;">Images</th>
+ 	<th style="min-width: 380px;">Transcription</th>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_tombcolessiefife/melville_tomb_01.jpg">
+     <img src="da/melville/img/melville_tombcolessiefife/melville_tomb_01-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+ <p> </p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_tombcolessiefife/melville_tomb_02.jpg">
+     <img src="da/melville/img/melville_tombcolessiefife/melville_tomb_02-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+     <p>
+          YE·LOADIN*·PILGRIMS·PASSING·LANGS*·THIS WAY·
+     </p><p>
+          PANS*·ON·YOVR·FALL·AND·YOVR·OFFENCES·PAST·
+     </p><p>
+          HOW·YOVR·FRAIL·FLESH·FIRST·FORMIT·OF·THE·CLAY·
+     </p><p>
+          IN·DVST·MON*·BE·DESOLVIT·AT·THE·LAST·
+     </p><p>
+          REPENT·AMEND·ON·CHRIST·THE·BVRDEN·CAST·
+     </p><p>
+          OF·YOVR·SAD·SINNES·WHO·CAN·YOVR·SAVLS REFRESH·
+     </p><p>
+          SYNE*·RAIS·FROM·GRAVE·TO·GLOIR·YOVR·GRISLIE FLESH
+     </p><p>
+           
+     </p><p>
+          <strong>loadin</strong> oppressed, laden
+     </p><p>
+          <strong>langs</strong>  along
+     </p><p>
+          <strong>pans</strong>  think, dwell
+     </p><p>
+          <strong>mon</strong>  must
+     </p><p>
+          <strong>syne</strong>  thereafter, then
+     </p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_tombcolessiefife/melville_tomb_03.jpg">
+     <img src="da/melville/img/melville_tombcolessiefife/melville_tomb_03-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+
+     <p>
+          DEFYLE·NOT·CHRISTS KIRK·WITH·YOVR·CARRION·
+     </p><p>
+          A·SOLEMNE·SAIT·FOR·GODS·SERVICE·PREPARD·
+     </p><p>
+          FOR·PRAIER·PREACHING·AND·COMMVNION·
+     </p><p>
+          [weather damage] VR [weather damage] LD·BE·IN·THE·KIRKYARD
+     </p><p>
+          [weather damage] R·VPRYSING·SET·YOVR·GREAT·REGARD
+     </p><p>
+          [weather damage] AVLL·A[weather damage]D·BODY·IOYNES·WITH·IOY·TO·RING*
+     </p><p>
+          IN·HEAVEN·FOR·AY·WITH·CHRIST·OVR·HEAD·AND·KING·
+     </p><p>
+           
+     </p><p>
+          <strong>For the damaged lines, Reid Baxter proposes:</strong> ‘Your burial suld be in the kirkyaird / On your uprysing set your great regard / Quhen saull and body ioynes with joy to ring’ (see Jamie Reid Baxter, Poems of Elizabeth Melville, Lady Culross (Edinburgh: Solsequium, 2010), p. 71).
+     </p><p>
+          <strong>ay</strong>  always, ever
+     </p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_tombcolessiefife/melville_tomb_04.jpg">
+     <img src="da/melville/img/melville_tombcolessiefife/melville_tomb_04-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+ <p> </p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ <tr>
+ <td>
+ <p>
+     <a href="da/melville/img/melville_tombcolessiefife/melville_tomb_05.jpg">
+     <img src="da/melville/img/melville_tombcolessiefife/melville_tomb_05-lowres.jpg" alt="Page of Melville manuscript." /></a>
+ </p>
+ 
+ </td>
+ <td>
+ <p> </p>
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </table>
+ 
+ 
+ 	</div>
+ </div>
+ 
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

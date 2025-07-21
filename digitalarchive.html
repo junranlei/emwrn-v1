@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=digitalarchive&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="meta">
+                            <h2 id="2" class="authorheading">Digital Archive</h2>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 0 da digitalarchive">
+                                <h3>Introduction</h3>
+<p>
+The <i>Material Cultures of Early Modern Women’s Writing Digital Archive</i> presents online editions of women’s writing that circulated in a variety of forms in the sixteenth and seventeenth centuries. Most of these texts were not published in single, stable and final print editions. Instead, they were read in different versions within manuscript, print and oral cultures in extended publication histories that are visually captured in this archive. This site uses the format of the digital medium to represent a broad range of material cultures in which early modern women wrote, providing high-quality visual images of their texts in manuscript, print and as inscriptions (often in parallel), accompanied by transcriptions, annotations and explanatory paratexts. The result is a collection of online editions that foregrounds the instability and diversity of early modern cultures of textual transmission. 
+</p><p>
+The archive includes several different types of digital edition, each tailored to the individual writer and their texts. Following this ‘bespoke’ approach, the archive places a scholarly edition of a text such as Lady Mary Wroth’s <i>Loves Victory</i> alongside more unfamiliar forms – tracing the transmission of a single poem through manuscript miscellanies using stemmatic principles, or creating a scholarly assemblage of materials surrounding a text and author. Linking all the sections of the archive is a concern with foregrounding the multiple material forms in which early modern women’s writing circulated. Its case studies augment the scope of early modern women's writing activities, which can in turn expand our understanding of book and manuscript history and transmission, the possibilities inherent in digital representations of texts, and editing as a process, rather than as product.
+</p><p>
+The archive was produced as part of an ARC Discovery Project, <i>The Material Cultures of Early Modern Women’s Writing: Editing, Reception and Mediation</i> (DP120101036 2012-15), involving seven researchers from six institutions in Australia, New Zealand and England. 
+</p>
+<h3>
+Editorial method
+</h3>
+<p>
+Each digital edition has developed protocols specific to its individual texts, necessitated by the different type of edition provided across the site. However, some common elements exist. Transcription of texts is diplomatic: italics, superscript etc. are reproduced. Where modernization is part of the edition, it aims to be as reader-friendly as possible, given that all modernizations also have images and transcripts: standard breaks are given between stanzas, spelling and punctuation are modernized. Each edition provides an author biography and a textual introduction in which its specific editorial approach is outlined. 
+</p>
+<h3>Using the archive</h3>
+<p>For information on using the archive see the <a href="index.php%3Fcontent=help.html">Help</a> section</p>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

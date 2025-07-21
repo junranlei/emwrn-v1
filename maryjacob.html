@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=maryjacob&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="writer-home-boxes">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="digitalarchive.html">Digital Archive</a></li>                            </ul>
+                        </div>
+                        <div class="meta">
+                            <h2 id="12" class="authorheading">Mary Jacob</h2><p><strong>Contributor:</strong> <a href="http://www.reading.ac.uk/english-literature/aboutus/Staff/m-f-ocallaghan.aspx">Professor Michelle O'Callaghan</a></p>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 2 da maryjacob">
+                                <p>Lady Mary Jacob (?-1622) was a scandalous figure in 17th century English letters and the author of bawdy 'answer poems'.</p>
+
+
+<ul class="nav">
+                                <li><a href="index.php%3Fcontent=jacobbio.html">Biography</a>
+                    </li>
+                                            <li><a href="index.php%3Fcontent=jacobhistory.html">TextualHistory</a>
+                    </li>
+                                                                                </ul>
+
+<h3>Texts</h3>
+
+<ul class="nav">
+                                <li><a href="da/index.php%3Fcontent=jacobbowyer.html">Bowyer MS</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobtodd.html">Todd MS</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobosborn.html">Osborn MS</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobphilips.html">Phillips MS</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobblprinted.html">BL Printed Books</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobpetrarch.html">Petrarch</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobgiles.html">Giles Earles Songbook</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobrosenbachi.html">Rosenbach MS I</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobrosenbachii.html">Rosenbach MS II</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobbodrawl.html">Bod. Rawl.poet.26</a>
+                    </li>
+                                            <li><a href="da/index.php%3Fcontent=jacobfolger.html">Folger MS V.a.124</a>
+                    </li>
+                                    </ul>
+                            </div>  
+                        </div>
+                        <div class="index">
+                            <h3>Index:</h3>
+                            <ul class=""><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobbio.html">Biography</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobhistory.html">TextualHistory</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobbowyer.html">Bowyer MS</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobtodd.html">Todd MS</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobosborn.html">Osborn MS</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobphilips.html">Phillips MS</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobblprinted.html">BL Printed Books</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobpetrarch.html">Petrarch</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobgiles.html">Giles Earles Songbook</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobrosenbachi.html">Rosenbach MS I</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobrosenbachii.html">Rosenbach MS II</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobbodrawl.html">Bod. Rawl.poet.26</a></li><li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="jacobfolger.html">Folger MS V.a.124</a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

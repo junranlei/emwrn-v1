@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=contacts&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="meta">
+                            <h2 id="21" class="authorheading">Contacts</h2>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 0  contacts">
+                                <p> For further enquiries, or to join the mailing list, please email the EMWRN research assistant, Kelly Peihopa <a href="mailto:kelly.a.peihopa@uon.edu.au"> Kelly.A.Peihopa@uon.edu.au</a></p>
+
+<table>
+<tr>
+        <td>
+            <img src="img/people/DrRosalindSmith.jpg" alt="Dr Rosalind Smith" />
+        </td><td>
+            <p>
+                <b>Professor Rosalind Smith</b>
+            </p><p>
+                <a href="https://researchers.anu.edu.au/researchers/smith-rl">Rosalind Smith</a> is a Professor in English at the Australian National University. Her primary field of research is Renaissance Literature, specialising in women's poetry, specially the relationship between genre, politics and history in the period.
+            </p>
+        </td>
+    </tr><tr>
+        <td>
+            <img src="img/people/DrPatriciaPender.jpg" alt="Dr Patricia Pender" />
+        </td><td>
+            <p>
+                <b>Associate Professor Patricia Pender</b>
+            </p><p>
+                <a href="http://www.newcastle.edu.au/profile/patricia-j-pender">Patricia Pender</a> is an Associate Professor in English at the University of Newcastle, Australia. Her active research areas are in early modern literature, particularly in women's writing, and feminist literary history and theory. 
+            </p>
+        </td>
+    </tr>
+
+</table>
+
+<h3>Contributors</h3>
+<ul>
+<li><a href="http://www.reading.ac.uk/english-literature/aboutus/Staff/m-f-ocallaghan.aspx">Professor Michelle O'Callaghan</a>
+</li><li><a href="http://www.newcastle.edu.au/profile/patricia-j-pender">Associate Professor Trisha Pender</a>
+</li><li><a href="http://www.victoria.ac.nz/seftms/about/staff/sarah-ross">Associate Professor Sarah Ross</a>
+</li><li><a href="https://www.newcastle.edu.au/profile/paul-salzman">Professor Paul Salzman</a>
+</li><li><a href="http://www.newcastle.edu.au/profile/ros-smith">Professor Ros Smith</a>
+</li><li><a href="http://www.bbk.ac.uk/english/our-staff/full-time-academic-staff/wiseman">Professor Susan Wiseman</a>
+</li>
+</ul>
+
+<h3>Translators</h3>
+<ul>
+<li>Professor Brenda Hosington (Latin)
+</li><li>Dr Mike Nolan (French)
+</li><li>Associate Professor Andrea Rizzi (Italian)
+</li><li>Julie Robarts (Italian)
+</li>
+</ul>
+
+<h3>Production Staff</h3>
+<ul>
+<li><a href="http://www.newcastle.edu.au/profile/bill-pascoe#contact">Dr Bill Pascoe:</a> Web development and IT project management.
+</li><li>Wendy Alexander: Project coordination and permissions.
+</li><li>Gayle Allan: Mary Wroth archive and image processing.
+</li><li>Kelly Peihopa: Research assistant.
+</li>
+</ul>
+
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

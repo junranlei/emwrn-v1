@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Modern Women Research Network</title>
+    <link rel="stylesheet" type="text/css" href="styles.css%3F1747311468.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="tweetie/tweetie.js%3F1747311468"></script>
+	<script src="scripts/concertinaColumns.js"></script>
+<script>
+$(document).ready(function() {
+    $('.BodyText a[href]').has('img').prop("href", function() {
+            return "/emwrn/da/viewer/facsimile.php?content=conferences&open=" + $(this).attr("href");
+    });
+    $('.twitter').twittie({
+        username: 'EMWRN_UON',
+        dateFormat: '%d %B %Y',
+        hideReplies: true,
+        template: '{{tweet}} <div class="date">{{date}}</div>',
+        apiPath: 'tweetie/api/tweet.php',
+        count: 10
+    }, function () {
+
+        setInterval(function() {
+
+            var item = $('.twitter ul').find('li:first');
+
+            item.animate( {
+                marginLeft: '-220px', 
+                'opacity': '0'
+            }, 500, function() {
+
+                $(this).detach().appendTo('.twitter ul').removeAttr('style');
+
+            });
+
+        }, 5000);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="l-header">
+                    <div class="header-left">
+                        <a href="index.html"><img src="img/emwrnlogo.png"></a>
+                    </div>
+                    <div class="header-right">
+                        <div id="maintitle">
+                        <h2>Early Modern Women Research Network</h2>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li class="has-child"><a href="digitalarchive.html">Digital Archive</a><ul><li><a href="bradstreet.html">Anne Bradstreet</a></li><li><a href="elizabethdelaval.html">Elizabeth Delaval</a></li><li><a href="maryjacob.html">Mary Jacob</a></li><li><a href="elizabethmelville.html">Elizabeth Melville</a></li><li><a href="lucyrussell.html">Lucy Russell</a></li><li><a href="marystuart.html">Mary Stuart</a></li><li><a href="marywroth.html">Mary Wroth</a></li><li><a href="techno.html">Technical Note</a></li></ul></li><li><a href="conferences.html">Conferences</a></li><li><a href="publications.html">Publications</a></li><li><a href="grants.html">Grants, Linkages & Fellowships</a></li><li><a href="resources.html">Resources</a></li><li><a href="networkaffiliates.html">Network Affiliates</a></li><li><a href="contacts.html">Contacts</a></li><li><a href="help.html">Help</a></li><li class="menu-hamburger"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="l-main">
+<script>
+$(document).ready(function () {
+
+    function doResize () {
+
+        var navSize = 0;
+
+        $(".header-left, .menu > ul > li:not(:last-child)").each(function () {
+
+            navSize += $(this).outerWidth(true);
+
+        });
+
+        var isMobile = $(".menu").hasClass("mobile");
+
+        if ($(window).width() > navSize) {
+
+            if (isMobile) {
+
+                $(".menu").removeClass("mobile");
+
+            }
+
+        } else {
+
+            if (!isMobile) {
+
+                $(".menu").addClass("mobile");
+
+            }
+
+        }
+
+    }
+
+    doResize();
+
+    $(window).resize(doResize);
+
+    $(".menu .menu-hamburger").click(function () {
+        $(".menu").toggleClass("open");
+    });
+
+
+});
+</script>
+                    <div class="content-boxes">
+                        <div class="meta">
+                            <h2 id="3" class="authorheading">Conferences &amp; Instutional Affiliations</h2>                        </div>
+                        <div class="BodyText">
+                            <div class="content contentwrap 0  conferences">
+                                 <ul>
+
+<li>
+EMWRN associates will be presenting papers at a two-day Complaint and Grievance: Literary Traditions Symposium on 14-15 February 2019, held at the National Library of New Zealand, Wellington, New Zealand. 
+</li><li>
+EMWRN associates will be attending and organising panels on Complaint for the <a href="http://anzamems.org/?page_id=186">12th Biennial ANZAMEMS Conference</a> which will be held at the University of Sydney in February 2019. 
+</li><li>
+EMWRN associates attended the <a href="http://www.shakespeareassociation.org/annual-meetings/future-meetings/">47th Annual Meeting of the Shakespeare Association of America</a> which was held in Washington, DC in April 2019. 
+</li><li>
+EMWRN associates chaired and organised panels on Complaint for the <a href="http://www.rsa.org/general/custom.asp?page=2018NOLA">64th Annual Meeting of the Renaissance Society of America</a> which was held in New Orleans in March 2018. 
+</li><li>
+EMWRN associates presented papers at the <a href="http://www.shakespeareassociation.org/annual-meetings/future-meetings/">46th Annual Meeting of the Shakespeare Association of America</a> which was held in Los Angeles, California in March 2018. 
+</li><li>
+EMWRN Associates Michelle O’Callaghan, Sarah C. E. Ross, Paul Salzman and Rosalind Smith presented papers on Complaint at the <a href="https://www.reading.ac.uk/emrc/conferences/emrc-conference.aspx">Reading Early Modern Studies Conference</a> held at University of Reading in July 2017.
+</li><li>
+Rosalind Smith was invited to be a keynote speaker at the RECIRC 2017 Conference titled, Reception, Reputation and Circulation in the Early Modern World, 1500-1800, and held at the National University of Ireland on 22-25 March, 2017. The title of Rosalind Smith’s paper was: <a href="https://soundcloud.com/mooreinstitute/sets/reception-reputation-and-circulation">“Daughter of Debate”: Untangling the Poetic Reputation of Mary Stuart, Queen of Scots.’</a> 
+</li><li>
+Sarah C. E. Ross was the conference chair and organiser of the <a href="https://anzamems2017.wordpress.com/">11th Biennial ANZAMEMS Conference</a> held at the Victoria University of Wellington, New Zealand on 7-10 February 2017. The conference theme was Mobility and Exchange, and hosted over 200 speakers from a wide variety of disciplines. EMWRN invited proposals for papers engaging with Gender and Textual Mobility and convened five separate panels.
+</li><li>
+EMWRN sponsored five panels at the <a href="https://rsa.site-ym.com/page/CopyofBoston2016">62nd Annual Meeting of the Renaissance Society America</a> held in Boston, USA on 31 March to 2 April 2016.
+</li><li>
+EMRWN sponsored five panels at the <a href="https://rsa.site-ym.com/page/CopyofBerlin2015">61st Annual Meeting of the Renaissance Society of America</a> held at Berlin in March, 2015.
+</li><li>
+EMWRN sponsored a series of panels at the <a href="http://anzamems.org/?page_id=188#A2015">ANZAMEMS 10th Biennial Conference</a> at the University of Queensland, Australia in July 2015.
+</li><li>
+EMWRN associates attended the Early Modern Women and Transmission Seminar held at La Trobe University, Melbourne in November 2015, to discuss the final outcome from the EMWRN Material Cultures of Early Modern Women’s Writing ARC DP. The outcomes of this seminar and workshop were the basis for a special issue of the journal <i>Women’s Writing</i>  on Early Modern Women and Transmission, with essays from each member of EMWRN. 
+</li><li>
+EMWRN associates organised panels and presented their work related to the ARC DP, The Material Cultures of Early Modern Women's Writing, at the 2014 Renaissance Society of America's 60th Annual Meeting held in New York City during March 2014. One of the EMWRN panels was sponsored by the Society for the Study of Early Modern Women (SSEMW). 
+</li><li>
+Associate Professor Rosalind Smith and Dr Patricia Pender convened the book:logic conference in Newcastle on 26 April 2014. Titled ‘Literary Histories, Material Cultures and Digital Futures,' keynote speakers were Thomas Augst, Associate Professor, New York University, and Molly O'Hagan Hardy, Digital Humanities Curator, American Antiquarian Society and American Council of Learned Societies Fellow.
+</li><li>
+EMWRN sponsored panels at the <a href="http://anzamems.org/?page_id=188#A2015">ANZAMEMS 9th Biennial Conference</a>, titled ‘Cultures in Translation,’ held at Monash University, Melbourne in February 2013.
+</li><li>
+Associate Professor Rosalind Smith and Dr Patricia Pender played a central role in the Early Modern Studies Conference at the University of Reading in July 2013. EMWRN sponsored a three-day stream of panels on the Material Cultures of Early Modern Women's Writing.
+</li><li>
+EMWRN and the University of Newcastle hosted <a href="files/symposiumprogram.pdf">The Early Modern Studies Symposium</a> at Newcastle in September 2013. Professor Stephen Orgel and Michael Wyatt of Stanford University were the keynote speakers. Following the symposium, Professor Stephen Orgel, on behalf of EMWRN, launched the <a href="https://parergon.org/29_2.html"> <i>Parergon</i> Special Issue (29.2:2012)</a> ‘Early Modern Women and the Apparatus of Authorship,’ edited by Rosalind Smith, Patricia Pender and Sarah C. E. Ross, which features a collection of articles exploring the material culture of early modern women writers and their writing. 
+</li><li>
+EMWRN sponsored two panels at the <a href="https://rsa.site-ym.com/page/CopyofDC2012">58th Annual Meeting of the Renaissance Society of America</a> held in Washington DC in March 2012.
+</li><li>
+EMWRN sponsored a series of panels at the <a href="https://anzamems.org/?page_id=188#A2011">ANZAMEMS 8th Biennial Conference</a> at the University of Otago, Dunedin, New Zealand in February, 2011.
+</li><li>
+EMWRN sponsored two panels at the <a href="https://cdn.ymaws.com/www.rsa.org/resource/resmgr/annual_meeting/2010programvenice.pdf">56th Annual Meeting of the Renaissance Society of America</a> held in Venice during April 2010.
+</li><li>
+EMWRN associates Sue Wiseman, Paul Salzman, Rosalind Smith and Patricia Pender organised the Early Modern Women’s Poetry Symposium, jointly sponsored by the London Renaissance Seminar and the ARC NEER Early Modern Women Writers Research Cluster on 17-18 July 2009. The two-day symposium, held at Birbeck College, University of London, focused on new developments in the field of early modern women’s poetry. 
+</li><li>
+Organised by Associate Professor Paul Salzman and held at La Trobe University, Melbourne in January 2008, international scholars gathered together for a two-day conference titled Women Writing 1550-1750 Revisited, to celebrate the significant and growing body of scholarship during the past decade. Keynote speakers included Professor Marion Wynn-Davies and Professor Elaine Hobby. Following the conference, the first meeting of the ARC NEER Early Modern Women Writers Research Cluster took place.
+</li><li>
+The ARC NEER Early Modern Women Writers Research Cluster sponsored a series of panels at the ANZAMEMS 7th Biennial Conference titled Alter Orbis, held at the University of Tasmania, Hobart in December 2008. Organised by Dr Rosalind Smith and Dr Patricia Pender, the panels focused on new directions in the field of early modern women’s writing, including scandal and crime, analyses of reading and coterie practices. 
+
+</li>
+ </ul>
+
+<h3>Institutional Affiliations</h3>
+<p>
+EMWRN is an affiliate member of the following international academic organisations: 
+</p>
+<ul>
+
+<li>
+<a href="http://anzamems.org/">Australian and New Zealand Association for Medieval and Early Modern Studies (ANZAMEMS)</a>: Since its conception, EMWRN has been an associate organisation of ANZAMEMS and participated widely in its biannual conferences. EMWRN affiliate Sarah C. E. Ross is the vice president of ANZAMEMS and was the chair and organiser of ANZAMEMS 2017 conference in Wellington, New Zealand.  
+</li><li>
+Australian Research Council (ARC) Network For Early European Research (NEER): The ARC Network for Early European Research (NEER) was funded between 2004 and 2010 as a national framework for enhancing and supporting current Australian research into the culture and history of Europe between the fifth and early nineteenth centuries. The ARC NEER Research Cluster: The Early Modern Women Writers Research Cluster, gathered together twelve national and international scholars working in the rapidly expanding cross-disciplinary field of early modern women's writing. Identifying and linking existing areas of research strength in this area across a range of institutions, the group aimed to enhance Australia's already strong research reputation in this field by encouraging sustained collaboration between its members, nationally, internationally and across differing levels of experience. The organising principle and strength of the group was a shared interest in early modern women's textual practice. Its individual members work across a range of disciplines within English, including textual, historical and cultural studies, the history of the book, the new bibliography and electronic textual analysis.
+</li><li>
+<a href="https://www.reading.ac.uk/emrc/">The Early Modern Research Centre (EMRC)</a> at the University of Reading has a long-standing international reputation for research excellence. The Centre builds on the successful collaboration between the Departments of English, History, Modern Languages and Politics. It provides the context for a number of externally-funded research projects, and runs a series of conferences, colloquia and seminars. EMWRN affiliate Michelle O’Callaghan is its director.
+</li><li>
+<a href="https://www.folger.edu/research-scholars?_ga=2.122956875.1723956972.1518575930-1681602190.1518575930">The Folger Institute</a>, located at the Shakespeare Folger Library, Washington DC, is a dedicated centre for collections-focused research and advanced study in the humanities. Through its multi-disciplinary, cross-cultural programs and residential research fellowships, the Institute establishes scholarly communities, fresh research approaches, and new teaching agendas for early modern fields. 
+</li><li>
+The Irish Renaissance Seminar is organised by Professor Marie Louise Coolahan, at the National University of Ireland, Galway.
+</li><li>
+<a href="http://www.bbk.ac.uk/english/our-research/research_seminars/lrs">The London Renaissance Seminar</a> is a forum for the discussion of all aspects of early modern history, literature and culture. It meets regularly at Birkbeck College, University of London. EMWRN affiliate Sue Wiseman is one of its co-directors.
+</li><li>
+EMWRN has been an Associate Organisation of the <a href="https://rsa.site-ym.com/">Renaissance Society of America</a> since 2014.
+</li><li>
+EMWRN is an Associate Organisation of the <a href="http://www.shakespeareassociation.org/">Shakespeare Association of America.
+</li>
+ </ul>                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="l-footer">
+                    <p>Copyright 2017-2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
